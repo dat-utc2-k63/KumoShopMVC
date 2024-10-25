@@ -1,0 +1,191 @@
+﻿@model IEnumerable<KumoShopMVC.ViewModels.CartItemVM>
+@{
+    ViewData["Title"] = "CheckOut";
+}
+
+<!-- ======================= Top Breadcrubms ======================== -->
+<div class="gray py-3">
+	<div class="container">
+		<div class="row">
+			<div class="colxl-12 col-lg-12 col-md-12">
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item"><a href="#">Home</a></li>
+						<li class="breadcrumb-item"><a href="#">Support</a></li>
+						<li class="breadcrumb-item active" aria-current="page">Checkout</li>
+					</ol>
+				</nav>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- ======================= Top Breadcrubms ======================== -->
+<!-- ======================= Product Detail ======================== -->
+<section class="middle">
+	<form asp-action="CheckOut" asp-controller="Cart">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+				<div class="text-center d-block mb-5">
+					<h2>Checkout</h2>
+				</div>
+			</div>
+		</div>
+
+		<div class="row justify-content-between">
+			<div class="col-12 col-lg-7 col-md-12">
+				
+					<h5 class="mb-4 ft-medium">Billing Details</h5>
+					<div class="row mb-2">
+						<div class="row mb-4">
+							<div class="col-12 d-block">
+								<input id="LikeUser" class="checkbox-custom" name="LikeUser" type="checkbox">
+								<label for="LikeUser" class="checkbox-custom-label">LikeUser?</label>
+							</div>
+						</div>
+						<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+							<div class="form-group delivery-info">
+								<label class="text-dark">FullName *</label>
+								<input type="text" name="FullName" class="form-control" placeholder="FullName" />
+							</div>
+						</div>
+
+						<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+							<div class="form-group delivery-info">
+								<label class="text-dark">Address *</label>
+								<input type="text" name="Address" class="form-control" placeholder="Address " />
+							</div>
+						</div>
+
+						<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+							<div class="form-group delivery-info">
+								<label class="text-dark">Mobile Number *</label>
+								<input type="text" name="PhoneNumber" class="form-control" placeholder="Mobile Number" />
+							</div>
+						</div>
+
+						<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+							<div class="form-group">
+								<label class="text-dark">Additional Information</label>
+								<textarea class="form-control ht-50" name="Desc"></textarea>
+							</div>
+						</div>
+
+					</div>
+	
+			</div>
+
+			<!-- Sidebar -->
+			<div class="col-12 col-lg-4 col-md-12">
+				<div class="d-block mb-3">
+					<h5 class="mb-4">Order Items (3)</h5>
+					<ul class="list-group list-group-sm list-group-flush-y list-group-flush-x mb-4">
+							@foreach (var item in Model)
+							{
+								<li class="list-group-item">
+									<div class="row align-items-center">
+
+									<div class="col-3">
+										<!-- Image -->
+										<a href="product.html"><img src="~/assets/img/product/@item.Image" alt="..." class="img-fluid"></a>
+									</div>
+									<div class="col d-flex align-items-center">
+										<div class="cart_single_caption pl-2">
+										<h4 class="product_title fs-md ft-medium mb-1 lh-1">@item.NameProduct</h4>
+										<p class="mb-1 lh-1"><span class="text-dark">Size: @item.Size</span></p>
+										<p class="mb-3 lh-1"><span class="text-dark">Color: @item.Color</span></p>
+										<h4 class="fs-md ft-medium mb-3 lh-1">@item.SubTotal.ToString("#,##0.00")</h4>
+									</div>
+								</div>
+							</div>
+						</li>}
+
+
+					</ul>
+				</div>
+
+				<div class="card mb-4 gray">
+					<div class="card-body">
+						<ul class="list-group list-group-sm list-group-flush-y list-group-flush-x">
+							<li class="list-group-item d-flex text-dark fs-sm ft-regular">
+								<span>Subtotal</span> <span class="ml-auto text-dark ft-medium">$@Model.Sum(p => p.SubTotal).ToString("#,##0.00")</span>
+							</li>
+							<li class="list-group-item d-flex text-dark fs-sm ft-regular">
+								<span>Tax</span> <span class="ml-auto text-dark ft-medium">$10.10</span>
+							</li>
+							<li class="list-group-item d-flex text-dark fs-sm ft-regular">
+								<span>Total</span> <span class="ml-auto text-dark ft-medium">$108.22</span>
+							</li>
+							<li class="list-group-item fs-sm text-center">
+								Shipping cost calculated at Checkout *
+							</li>
+						</ul>
+					</div>
+				</div>
+					<					<h5 class="mb-4 ft-medium">Payments</h5>
+					<div class="row mb-4">
+						<div class="col-12">
+							<div class="panel-group pay_opy980" id="payaccordion">
+
+								<!-- Pay By COD -->
+								<div class="panel panel-default border">
+									<div class="panel-heading" id="cod">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" role="button" data-parent="#payaccordion" href="#payCod" aria-expanded="true" aria-controls="payCod" class="">Thanh toán khi nhận hàng (COD)</a>
+										</h4>
+									</div>
+									<div id="payCod" class="panel-collapse collapse show" aria-labelledby="cod" data-parent="#payaccordion">
+										<div class="panel-body">
+											<p>Chọn phương thức COD để thanh toán khi nhận hàng.</p>
+											<div class="form-group">
+												<button type="submit" class="btn btn-dark btm-md full-width">Thanh toán COD</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!-- Pay By VNPay -->
+								<div class="panel panel-default border">
+									<div class="panel-heading" id="vnpay">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" role="button" data-parent="#payaccordion" href="#payVnpay" aria-expanded="false" aria-controls="payVnpay" class="">VNPay</a>
+										</h4>
+									</div>
+									<div id="payVnpay" class="collapse" aria-labelledby="vnpay" data-parent="#payaccordion">
+										<div class="panel-body">
+											<p>Chọn VNPay để thanh toán trực tuyến an toàn.</p>
+											<div class="form-group">
+												<button type="submit" class="btn btn-dark btm-md full-width">Thanh toán bằng VNPay</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+			</div>
+
+		</div>
+
+	</div>
+	</form>
+</section>
+@section Scripts {
+	<script>
+		$(document).ready(function () {
+			$("#LikeUser").change(function () {
+				if ($(this).prop("checked")) {
+					$(this).val(true);  
+					$(".delivery-info").addClass("d-none")
+				} else {
+					$(this).val(false);
+					$(".delivery-info").removeClass("d-none")
+				}
+			});
+		});
+	</script>
+}
+

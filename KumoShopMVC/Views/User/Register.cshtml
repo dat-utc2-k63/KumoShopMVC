@@ -1,0 +1,70 @@
+﻿@model KumoShopMVC.ViewModels.RegisterVM
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mfliud">
+							<form asp-action="Register" method="post" class="border p-3 rounded">
+
+									<div class="form-group">
+										<label asp-for="@Model.FullName">Full Name *</label>
+										<input asp-for="@Model.FullName" type="text" class="form-control" placeholder="Full Name">
+										<span asp-validation-for="@Model.FullName" class="text-danger"></span>
+									</div>
+								
+								<div class="form-group">
+										<label asp-for="@Model.Email">Email *</label>
+										<input asp-for="@Model.Email" type="text" class="form-control" placeholder="Email">
+										<span asp-validation-for="@Model.Email" class="text-danger"></span>
+								</div>
+								<div class="form-group">
+									<label asp-for="@Model.Address">Address *</label>
+									<input asp-for="@Model.Address" type="text" class="form-control" placeholder="Address">
+								</div>
+								<div class="form-group">
+									<label asp-for="@Model.Phone">Phone *</label>
+									<input asp-for="@Model.Phone" type="text" class="form-control" placeholder="Phone">
+								</div>
+								<div class="form-group">
+									<label asp-for="@Model.AboutUs">AboutUs *</label>
+									<input asp-for="@Model.AboutUs" type="text" class="form-control" placeholder="AboutUs">
+								</div>
+								
+								<div class="row">
+									<div class="form-group col-md-6">
+										<label asp-for="@Model.Password">Password *</label>
+										<input asp-for="@Model.Password" class="form-control" placeholder="Password">
+										<span asp-validation-for="@Model.Password" class="text-danger"></span>
+									</div>
+									
+									<div class="form-group col-md-6">
+										<label asp-for="@Model.ConfirmPassword">Confirm Password *</label>
+										<input asp-for="@Model.ConfirmPassword" class="form-control" placeholder="Confirm Password" />
+										<span asp-validation-for="@Model.ConfirmPassword" class="text-danger"></span>
+									</div>
+
+								</div>
+									<div class="form-group col-md-6">
+										<label asp-for="@Model.Status" class="form-check-input">Nam?</label>
+										<input type="password" class="form-control" placeholder="Status *">
+									</div>
+								
+								<div class="form-group">
+									<p>By registering your details, you agree with our Terms & Conditions, and Privacy and Cookie Policy.</p>
+								</div>
+								
+								<div class="form-group">
+									<div class="d-flex align-items-center justify-content-between">
+										<div class="flex-1">
+											<input id="ddd" class="checkbox-custom" name="ddd" type="checkbox">
+											<label for="ddd" class="checkbox-custom-label">Sign me up for the Newsletter!</label>
+										</div>		
+									</div>
+								</div>
+								
+								<div class="form-group">
+									<button type="submit" class="btn btn-md full-width bg-dark text-light fs-md ft-medium">Create An Account</button>
+								</div>
+							</form>
+						</div>
+

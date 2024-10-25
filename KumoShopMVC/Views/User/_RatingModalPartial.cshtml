@@ -1,0 +1,93 @@
+﻿
+<!-- Rating Modal -->
+<div class="modal fade" id="rating" tabindex="-1" role="dialog" aria-labelledby="ratingmodal" aria-hidden="true">
+    <div class="modal-dialog modal-xl login-pop-form" role="document">
+        <div class="modal-content" id="ratingmodal">
+            <div class="modal-headers">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span class="ti-close"></span>
+                </button>
+            </div>
+
+            <div class="modal-body p-5">
+                <div class="text-center mb-4">
+                    <h2 class="m-0 ft-regular">Submit Your Rating</h2>
+                </div>
+
+                <div class="reviews_rate">
+                    <form id="ratingForm" class="row" method="post">
+                        <input type="hidden" name="ProductId" id="ProductId" />
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <h4>Submit Rating</h4>
+                        </div>
+
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="revie_stars d-flex align-items-center justify-content-between px-2 py-2 gray rounded mb-2 mt-1">
+                                <div class="srt_013">
+                                    <div class="submit-rating">
+                                        <input id="star-5" type="radio" name="RatePoint" value="5" />
+                                        <label for="star-5" title="5 stars">
+                                            <i class="active fa fa-star" aria-hidden="true"></i>
+                                        </label>
+                                        <input id="star-4" type="radio" name="RatePoint" value="4" />
+                                        <label for="star-4" title="4 stars">
+                                            <i class="active fa fa-star" aria-hidden="true"></i>
+                                        </label>
+                                        <input id="star-3" type="radio" name="RatePoint" value="3" />
+                                        <label for="star-3" title="3 stars">
+                                            <i class="active fa fa-star" aria-hidden="true"></i>
+                                        </label>
+                                        <input id="star-2" type="radio" name="RatePoint" value="2" />
+                                        <label for="star-2" title="2 stars">
+                                            <i class="active fa fa-star" aria-hidden="true"></i>
+                                        </label>
+                                        <input id="star-1" type="radio" name="RatePoint" value="1" />
+                                        <label for="star-1" title="1 star">
+                                            <i class="active fa fa-star" aria-hidden="true"></i>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="srt_014">
+                                    <h6 class="mb-0">4 Star</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <label class="medium text-dark ft-medium">Full Name</label>
+                                <input name="FullName" type="text" class="form-control" />
+                            </div>
+                        </div>
+
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <div class="form-group">
+                                <label class="medium text-dark ft-medium">Email Address</label>
+                                <input type="email" class="form-control" />
+                            </div>
+                        </div>
+
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="form-group">
+                                <label  class="medium text-dark ft-medium">Description</label>
+                                <textarea name="DescRating" class="form-control"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="form-group m-0">
+                                <button type="submit" class="btn btn-white stretched-link hover-black">
+                                    Submit Review <i class="lni lni-arrow-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

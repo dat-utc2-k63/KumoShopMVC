@@ -111,50 +111,15 @@
 					<div class="nav-menus-wrapper" style="transition-property: none;">
 						<ul class="nav-menu">
 
-							<li><a asp-controller="Home">Home</a></li>
+							<li><a asp-controller="/">Home</a></li>
 
 							<li>
-								<a href="javascript:void(0);">Shop</a>
-								<ul class="nav-dropdown nav-submenu">
-									<li>
-										<a href="javascript:void(0);">Account Dashboard</a>
-										<ul class="nav-dropdown nav-submenu">
-											<li><a href="my-orders.html">My Order</a></li>
-											<li><a href="wishlist.html">Wishlist</a></li>
-											<li><a href="profile-info.html">Profile Info</a></li>
-											<li><a href="addresses.html">Addresses</a></li>
-											<li><a href="payment-methode.html">Payment Methode</a></li>
-										</ul>
-									</li>
-									<li>
-										<a href="javascript:void(0);">Support</a>
-										<ul class="nav-dropdown nav-submenu">
-											<li><a asp-controller="Cart" asp-action="Index">Shopping Cart</a></li>
-											<li><a href="checkout.html">Checkout</a></li>
-											<li><a href="complete-order.html">Order Complete</a></li>
-										</ul>
-									</li>
-									<li><a asp-controller="Product">Shopping</a></li>
-								</ul>
+								<a asp-controller="Cart" asp-action="Index">Cart</a>
 							</li>
-
 							<li>
-								<a href="shop-single-v4.html" href="javascript:void(0);">Product</a>
+								<a asp-controller="Product">Product</a>
 							</li>
 
-							<li>
-								<a href="javascript:void(0);">Pages</a>
-								<ul class="nav-dropdown nav-submenu">
-									<li><a href="blog.html">Blog Style</a></li>
-									<li><a href="about-us.html">About Us</a></li>
-									<li><a href="contact.html">Contact</a></li>
-									<li><a href="404.html">404 Page</a></li>
-									<li><a href="privacy.html">Privacy Policy</a></li>
-									<li><a href="faq.html">FAQs</a></li>
-								</ul>
-							</li>
-
-							<li><a href="docs.html">Docs</a></li>
 
 						</ul>
 

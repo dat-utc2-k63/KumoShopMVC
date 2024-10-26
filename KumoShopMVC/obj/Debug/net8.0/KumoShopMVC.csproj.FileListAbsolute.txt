@@ -254,3 +254,4 @@ D:\asp.net\KumoShopMVC\KumoShopMVC\bin\Debug\net8.0\AutoMapper.dll
 D:\asp.net\KumoShopMVC\KumoShopMVC\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\asp.net\KumoShopMVC\KumoShopMVC\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
 D:\asp.net\KumoShopMVC\KumoShopMVC\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\asp.net\KumoShopMVC\KumoShopMVC\obj\Debug\net8.0\KumoShopMVC.sourcelink.json

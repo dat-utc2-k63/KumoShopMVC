@@ -342,7 +342,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 411,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -351,6 +351,14 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
@@ -362,8 +370,7 @@
               "RelativeToolTip": "KumoShopMVC\\Views\\Home\\PageNotFound.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-26T08:15:09.105Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-26T08:15:09.105Z"
             },
             {
               "$type": "Document",
@@ -375,8 +382,7 @@
               "RelativeToolTip": "KumoShopMVC\\Controllers\\ProductController.cs",
               "ViewState": "AgIAAMQAAAAAAAAAAAAgwNQAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T11:56:47.228Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T11:56:47.228Z"
             },
             {
               "$type": "Document",
@@ -424,8 +430,7 @@
               "RelativeToolTip": "KumoShopMVC\\Views\\Home\\Privacy.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-24T09:45:28.275Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T09:45:28.275Z"
             },
             {
               "$type": "Document",
@@ -435,7 +440,7 @@
               "RelativeDocumentMoniker": "KumoShopMVC\\Views\\Shared\\_LayoutCustomer.cshtml",
               "ToolTip": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\Shared\\_LayoutCustomer.cshtml",
               "RelativeToolTip": "KumoShopMVC\\Views\\Shared\\_LayoutCustomer.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIIAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-10-15T06:56:02.812Z",
               "EditorCaption": ""
@@ -450,8 +455,7 @@
               "RelativeToolTip": "KumoShopMVC\\Views\\Shared\\_LayoutAdmin.cshtml",
               "ViewState": "AgIAAKQCAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-22T02:30:13.008Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-22T02:30:13.008Z"
             },
             {
               "$type": "Document",
@@ -475,8 +479,7 @@
               "RelativeToolTip": "KumoShopMVC\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-15T07:56:20.267Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T07:56:20.267Z"
             },
             {
               "$type": "Document",
@@ -536,8 +539,7 @@
               "RelativeToolTip": "KumoShopMVC\\Controllers\\CartController.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAhwCcAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T05:36:38.434Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T05:36:38.434Z"
             },
             {
               "$type": "Document",

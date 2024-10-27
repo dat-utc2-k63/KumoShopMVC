@@ -24,7 +24,7 @@
 						</div>
 
 						<div class="col-xl-4 col-lg-4 col-md-5 col-sm-12 hide-ipad">
-							<div class="top_second text-center"><p class="medium text-light m-0 p-0">Get Free delivery from $2000 <a asp-controller="Admin" class="medium text-light text-underline">Admin</a></p></div>
+							<div class="top_second text-center"><p class="medium text-light m-0 p-0">Get Free delivery from $2000 <a asp-controller="Admin" asp-action="Index" class="medium text-light text-underline">Admin</a></p></div>
 						</div>
 
 						<!-- Right Menu -->
@@ -111,13 +111,13 @@
 					<div class="nav-menus-wrapper" style="transition-property: none;">
 						<ul class="nav-menu">
 
-							<li><a asp-controller="/">Home</a></li>
+							<li><a asp-controller="/" asp-action="">Home</a></li>
 
 							<li>
 								<a asp-controller="Cart" asp-action="Index">Cart</a>
 							</li>
 							<li>
-								<a asp-controller="Product">Product</a>
+								<a asp-controller="Product" asp-action="Index">Product</a>
 							</li>
 
 

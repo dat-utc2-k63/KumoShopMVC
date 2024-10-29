@@ -13,16 +13,72 @@ namespace KumoShopMVC.Controllers
         {
             return View();
         }
-		[Authorize]
-		[HttpGet]
-		public IActionResult Create()
+		public IActionResult ProductList()
+		{
+			return View();
+		}
+		public IActionResult ProductCreate()
+		{
+			return View();
+		}
+
+		public IActionResult ProductEdit()
+		{
+			return View();
+		}
+        public IActionResult CategoryList()
+        {
+            return View();
+        }
+
+        public IActionResult CategoryCreate()
+		{
+			return View();
+		}
+		public IActionResult CategoryEdit()
+		{
+			return View();
+		}
+		public IActionResult OrderList()
+		{
+			return View();
+		}
+		public IActionResult OrderDetail()
+		{
+			return View();
+		}
+		public IActionResult RoleList()
+		{
+			return View();
+		}
+		public IActionResult RoleCreate()
+		{
+			return View();
+		}
+		public IActionResult RoleEdit()
+		{
+			return View();
+		}
+		public IActionResult UserList()
+		{
+			return View();
+		}
+		public IActionResult UserCreate()
+		{
+			return View();
+		}
+		public IActionResult UserEdit()
+		{
+			return View();
+		}
+		public IActionResult Contact()
 		{
 			return View();
 		}
 		[Authorize]
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public IActionResult Create(ProductVM model)
+		public IActionResult CreateProduct(ProductVM model)
 		{
 			if (!ModelState.IsValid)
 			{
@@ -45,35 +101,7 @@ namespace KumoShopMVC.Controllers
 
 			return RedirectToAction("Index");
 		}
-		public IActionResult Edit()
-		{
-			return View();
-		}
 
-		[Authorize]
-		[HttpGet]
-		public IActionResult Edit(int id)
-		{
-			var product = db.Products.Find(id);
-			if (product == null)
-			{
-				return NotFound();
-			}
-
-			var model = new ProductVM
-			{
-				ProductId = product.ProductId,
-				NameProduct = product.NameProduct,
-				Brand = product.Brands,
-				Gender = product.Gender ?? false,
-				Price = (float)(product.Price ?? 0),
-				Discount = (float)(product.Discount ?? 0),
-				IsHot = product.IsHot ?? false,
-				IsNew = product.IsNew ?? false
-			};
-
-			return View(model);
-		}
 		[Authorize]
 		[HttpPost]
 		[ValidateAntiForgeryToken]
@@ -84,7 +112,7 @@ namespace KumoShopMVC.Controllers
 				return View(model);
 			}
 
-			var product = db.Products.Find(model.ProductId);
+			var product = db.Products.FirstOrDefault(p => p.ProductId == model.ProductId);
 			if (product == null)
 			{
 				return NotFound();
@@ -106,9 +134,9 @@ namespace KumoShopMVC.Controllers
 		[Authorize]
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public IActionResult Delete(int id)
+		public IActionResult DeleteProduct(int id)
 		{
-			var product = db.Products.Find(id);
+			var product = db.Products.FirstOrDefault(p => p.ProductId == id);
 			if (product == null)
 			{
 				return NotFound();

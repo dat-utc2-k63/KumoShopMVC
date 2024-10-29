@@ -33,7 +33,7 @@ namespace KumoShopMVC.Controllers
 		}
 
 		[HttpPost]
-		public IActionResult Register(RegisterVM model)
+		public IActionResult Register(RegisterVM model, IFormFile Avatar)
 		{
 			if (ModelState.IsValid)
 			{
@@ -42,6 +42,10 @@ namespace KumoShopMVC.Controllers
 				user.Password = model.Password.ToMd5Hash(user.RandomKey);
 				user.Status = true;
 				user.RoleId = 1;
+				if(Avatar != null)
+				{
+					user.Avatar = MyUtil.UpLoadAvatar(Avatar, "User");
+				}
 				db.Users.Add(user);
 				db.SaveChanges();
 				return RedirectToAction("Index", "Home");

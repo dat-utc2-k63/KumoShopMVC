@@ -16,15 +16,18 @@ namespace KumoShopMVC.Controllers
 			db = context;
 		}
 
+
+		[HttpGet]
 		public IActionResult Index(int? category)
 		{
-			var products = db.Products.AsQueryable();
+			
+			var products = db.Products.Include(p=>p.Category).AsQueryable();
 
 			if (category.HasValue)
 			{
 				products = products.Where(p => p.CategoryId == category.Value);
 			}
-
+			
 			var productList = products.ToList();
 
 			var result = productList.Select(p => new ProductVM
@@ -36,10 +39,21 @@ namespace KumoShopMVC.Controllers
 				Price = (float)(p.Price ?? 0),
 				Discount = (float)(p.Discount ?? 0),
 				IsHot = p.IsHot ?? false,
-				IsNew = p.IsNew ?? false
-			}).ToList();
+				IsNew = p.IsNew ?? false,
+				Quantity = p.Quantity ?? 0,
+				NameCategory = p.Category.NameCategory??"",
+                RatePoint = (int)(p.RatingProducts.Average(r => r.RatePoint) ?? 0)
+                //Category = p.Category?.NameCategory ?? ""
+            }).ToList();
 
-			return View(result);
+			// Kiểm tra `result` trước khi truyền vào view
+			if (productList == null || !productList.Any())
+            {
+                return View("Error"); // Hoặc trả về một view thông báo lỗi
+            }
+
+
+            return View( result);
 		}
 
 		public IActionResult Search(string? query)
@@ -66,7 +80,8 @@ namespace KumoShopMVC.Controllers
 			return View(result);
 		}
 
-		public IActionResult Detail(int id)
+        
+        public IActionResult Detail(int id)
 		{
 			var product = db.Products
 				.Include(p => p.Category)

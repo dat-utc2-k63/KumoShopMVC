@@ -1,4 +1,6 @@
-﻿namespace KumoShopMVC.ViewModels
+﻿using KumoShopMVC.Data;
+
+namespace KumoShopMVC.ViewModels
 {
 	public class CategoryMenuVM
 	{
@@ -7,5 +9,9 @@
 
 		public DateTime? CreateDate { get; set; }
 
-	}
+        public float MinPrice { get; set; }
+        public float MaxPrice { get; set; }
+
+        public ICollection<ProductDetailVM>? Products { get; set; }
+    }
 }

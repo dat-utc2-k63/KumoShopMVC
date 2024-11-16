@@ -11,65 +11,8 @@
     <div class="container-xxl">
 
         <div class="row">
-            <div class="col-xl-3 col-lg-4">
-                <div class="card">
-                    @* <div class="card-body">
-                        <img src="assets/images/product/p-1.png" alt="" class="img-fluid rounded bg-light">
-                        <div class="mt-3">
-                            <h4>Men Black Slim Fit T-shirt <span class="fs-14 text-muted ms-1">(Fashion)</span></h4>
-                            <h5 class="text-dark fw-medium mt-3">Price :</h5>
-                            <h4 class="fw-semibold text-dark mt-2 d-flex align-items-center gap-2">
-                                <span class="text-muted text-decoration-line-through">$100</span> $80 <small class="text-muted"> (30% Off)</small>
-                            </h4>
-                            <div class="mt-3">
-                                <h5 class="text-dark fw-medium">Size :</h5>
-                                <div class="d-flex flex-wrap gap-2" role="group" aria-label="Basic checkbox toggle button group">
-                                    <input type="checkbox" class="btn-check" id="size-s">
-                                    <label class="btn btn-light avatar-sm rounded d-flex justify-content-center align-items-center" for="size-s">S</label>
 
-                                    <input type="checkbox" class="btn-check" id="size-m" checked>
-                                    <label class="btn btn-light avatar-sm rounded d-flex justify-content-center align-items-center" for="size-m">M</label>
-
-                                    <input type="checkbox" class="btn-check" id="size-xl">
-                                    <label class="btn btn-light avatar-sm rounded d-flex justify-content-center align-items-center" for="size-xl">Xl</label>
-
-                                    <input type="checkbox" class="btn-check" id="size-xxl">
-                                    <label class="btn btn-light avatar-sm rounded d-flex justify-content-center align-items-center" for="size-xxl">XXL</label>
-
-                                </div>
-                            </div>
-                            <div class="mt-3">
-                                <h5 class="text-dark fw-medium">Colors :</h5>
-                                <div class="d-flex flex-wrap gap-2" role="group" aria-label="Basic checkbox toggle button group">
-                                    <input type="checkbox" class="btn-check" id="color-dark">
-                                    <label class="btn btn-light avatar-sm rounded d-flex justify-content-center align-items-center" for="color-dark"> <i class="bx bxs-circle fs-18 text-dark"></i></label>
-
-                                    <input type="checkbox" class="btn-check" id="color-yellow">
-                                    <label class="btn btn-light avatar-sm rounded d-flex justify-content-center align-items-center" for="color-yellow"> <i class="bx bxs-circle fs-18 text-warning"></i></label>
-
-                                    <input type="checkbox" class="btn-check" id="color-white">
-                                    <label class="btn btn-light avatar-sm rounded d-flex justify-content-center align-items-center" for="color-white"> <i class="bx bxs-circle fs-18 text-white"></i></label>
-
-                                    <input type="checkbox" class="btn-check" id="color-red">
-                                    <label class="btn btn-light avatar-sm rounded d-flex justify-content-center align-items-center" for="color-red"> <i class="bx bxs-circle fs-18 text-danger"></i></label>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div> *@
-                    @* <div class="card-footer bg-light-subtle">
-                        <div class="row g-2">
-                            <div class="col-lg-6">
-                                <a href="#!" class="btn btn-outline-secondary w-100">Create Product</a>
-                            </div>
-                            <div class="col-lg-6">
-                                <a href="#!" class="btn btn-primary w-100">Cancel</a>
-                            </div>
-                        </div>
-                    </div> *@
-                </div>
-            </div>
-            <form asp-action="CreateProduct" method="post">
+            <form asp-action="CreateProduct" method="post" id="createProductForm" onsubmit="return validateForm()">
                 <div class="col-xl-9 col-lg-8 ">
                     <div class="card">
                         <div class="card-header">
@@ -101,7 +44,7 @@
                                     <form>
                                         <div class="mb-3">
                                             <label for="product-name" class="form-label">Product Name</label>
-                                            <input type="text" id="NameProduct" class="form-control" placeholder="Items Name">
+                                            <input type="text" id="NameProduct" name="NameProduct" class="form-control" placeholder="Items Name">
                                         </div>
                                     </form>
                                 </div>
@@ -128,7 +71,7 @@
                                     <form>
                                         <div class="mb-3">
                                             <label for="product-brand" class="form-label">Brand</label>
-                                            <input type="text" id="product-brand" class="form-control" placeholder="Brand Name">
+                                            <input type="text" id="Brands" name="Brand" class="form-control" placeholder="Brand Name">
                                         </div>
                                     </form>
                                 </div>
@@ -231,7 +174,7 @@
                                     <form>
                                         <div class="mb-3">
                                             <label for="product-stock" class="form-label">Stock</label>
-                                            <input type="number" id="product-stock" class="form-control" placeholder="Quantity">
+                                            <input type="number" id="product-stock" name="Quantity" class="form-control" placeholder="Quantity">
                                         </div>
 
                                     </form>
@@ -259,7 +202,7 @@
                                         <label for="product-price" class="form-label">Price</label>
                                         <div class="input-group mb-3">
                                             <span class="input-group-text fs-20"><i class='bx bx-dollar'></i></span>
-                                            <input type="number" id="product-price" class="form-control" placeholder="000">
+                                            <input type="number" id="product-price" name="Price" class="form-control" placeholder="000">
                                         </div>
                                     </form>
                                 </div>
@@ -268,7 +211,7 @@
                                         <label for="product-discount" class="form-label">Discount</label>
                                         <div class="input-group mb-3">
                                             <span class="input-group-text fs-20"><i class='bx bxs-discount'></i></span>
-                                            <input type="number" id="product-discount" class="form-control" placeholder="000">
+                                            <input type="number" id="product-discount" name="Discount" class="form-control" placeholder="000">
                                         </div>
                                     </form>
                                 </div>
@@ -284,26 +227,21 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Các phần khác... -->
                     <div class="p-3 bg-light mb-3 rounded">
                         <div class="row justify-content-end g-2">
-                            @* <div class="col-lg-2">
-                                <button type="submit" class="btn btn-outline-secondary w-100">Create Product</button>
-                            </div>
-                            <div class="col-lg-2">
-                                <button asp-action="ProductList" class="btn btn-primary w-100">Cancel</button>
-                            </div> *@
                             <div class="col-lg-2">
                                 <!-- Nút submit -->
-                                <button type="submit" class="btn btn-outline-secondary w-100" onclick="window.location.href='@Url.Action("ProductList", "Admin")'">Create Product</button>
+                                <button type="submit" class="btn btn-outline-secondary w-100">Create Product</button>
                             </div>
                             <div class="col-lg-2">
                                 <!-- Nút Cancel với type="button" -->
                                 <button type="button" class="btn btn-primary w-100" onclick="window.location.href='@Url.Action("ProductList", "Admin")'">Cancel</button>
                             </div>
                         </div>
-                        
                     </div>
                 </div>
+                
             </form>
 
 
@@ -322,5 +260,15 @@
         </div>
     </footer>
     <!-- ========== Footer End ========== -->
+    <script>
+        function validateForm() {
+            const productName = document.getElementById("NameProduct").value.trim();
 
+            if (!productName) {
+                alert("Product name cannot be empty. Please enter a product name.");
+                return false;
+            }
+            return true; // Cho phép submit form nếu hợp lệ
+        }
+    </script>
 </div>

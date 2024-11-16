@@ -48,7 +48,9 @@ namespace KumoShopMVC.ViewModels
 		public float? Discount { get; set; }
 		public List<RatingProductVM> Ratings { get; set; } = new List<RatingProductVM>();
 
+        public float MinPrice { get; set; }
+        public float MaxPrice { get; set; }
 
-	}
+    }
 
 }

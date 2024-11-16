@@ -100,9 +100,27 @@ namespace KumoShopMVC.Controllers
 
             return View(productDetail);
 		}
-        public IActionResult CategoryList()
+
+        public IActionResult CategoryList(int id)
         {
-            return View();
+            var categories = db.Categories.Select(c => new CategoryMenuVM
+            {
+                CaterogyId = c.CategoryId,
+                NameCategory = c.NameCategory ?? "",
+                MinPrice = c.Products.Min(p => (float?)p.Price) ?? 0,
+                MaxPrice = c.Products.Max(p => (float?)p.Price) ?? 0,
+                Products = c.Products.Select(p => new ProductDetailVM
+                {
+                    ProductId = p.ProductId,
+                    NameProduct = p.NameProduct ?? "",
+                    Price = (float)(p.Price ?? 0),
+					DescProduct = p.DescProduct ?? string.Empty,
+					
+                }).ToList()
+            }).ToList(); // Assuming each category has a Products collection
+        
+
+            return View(categories);
         }
 
         public IActionResult CategoryCreate()
@@ -157,10 +175,11 @@ namespace KumoShopMVC.Controllers
 		{
 			if (!ModelState.IsValid)
 			{
-				return View(model);
+				return View();
 			}
 
-			else 
+
+			else
 			{
 				var product = new Product
 				{
@@ -170,7 +189,7 @@ namespace KumoShopMVC.Controllers
 					Price = model.Price,
 					Discount = model.Discount,
 					IsHot = model.IsHot,
-					IsNew = model.IsNew	
+					IsNew = model.IsNew
 				};
 
 				db.Products.Add(product);
@@ -214,21 +233,25 @@ namespace KumoShopMVC.Controllers
             return RedirectToAction("Index");
 		}
 
-		[Authorize]
+		
 		[HttpPost]
 		[ValidateAntiForgeryToken]
 		public IActionResult DeleteProduct(int id)
 		{
-			var product = db.Products.FirstOrDefault(p => p.ProductId == id);
-			if (product == null)
-			{
-				return NotFound();
-			}
+            var product = db.Products
+                             .FirstOrDefault(p => p.ProductId == id);
+            if (product == null)
+            {
+                return NotFound();
+            }
 
-			db.Products.Remove(product);
-			db.SaveChanges();
+           
+            // Xóa sản phẩm
+            db.Products.Remove(product);
+            db.SaveChanges();
+            db.SaveChanges();
 
-			return RedirectToAction("Index");
+			return RedirectToAction("ProductList");
 		}
 	}
 }

@@ -101,6 +101,7 @@ namespace KumoShopMVC.Controllers
             return View(productDetail);
 		}
 
+		[HttpGet]
         public IActionResult CategoryList(int? id, int pageNumber = 1, int pageSize = 2)
         {
 			int totalCategories = db.Categories.Count();
@@ -261,5 +262,32 @@ namespace KumoShopMVC.Controllers
 
 			return RedirectToAction("ProductList");
 		}
-	}
+
+
+        [HttpPost]
+        public IActionResult CreateCategory(string NameCategory, DateTime DateCreate)
+        {
+            if (string.IsNullOrWhiteSpace(NameCategory))
+            {
+                // Handle validation error
+                ModelState.AddModelError("NameCategory", "Category name is required.");
+                return View();
+            }
+
+            // Create a new category object
+            var newCategory = new Category
+            {
+                NameCategory = NameCategory,
+                CreateDate = DateCreate
+            };
+
+            // Add the new category to the database
+            db.Categories.Add(newCategory);
+            db.SaveChanges();
+
+            // Redirect to the category list page
+            return RedirectToAction("CategoryList");
+        }
+
+    }
 }

@@ -101,24 +101,32 @@ namespace KumoShopMVC.Controllers
             return View(productDetail);
 		}
 
-        public IActionResult CategoryList(int id)
+        public IActionResult CategoryList(int? id, int pageNumber = 1, int pageSize = 2)
         {
-            var categories = db.Categories.Select(c => new CategoryMenuVM
-            {
-                CaterogyId = c.CategoryId,
-                NameCategory = c.NameCategory ?? "",
-                MinPrice = c.Products.Min(p => (float?)p.Price) ?? 0,
-                MaxPrice = c.Products.Max(p => (float?)p.Price) ?? 0,
-                Products = c.Products.Select(p => new ProductDetailVM
-                {
-                    ProductId = p.ProductId,
-                    NameProduct = p.NameProduct ?? "",
-                    Price = (float)(p.Price ?? 0),
-					DescProduct = p.DescProduct ?? string.Empty,
-					
-                }).ToList()
-            }).ToList(); // Assuming each category has a Products collection
-        
+			int totalCategories = db.Categories.Count();
+            var categories = db.Categories
+							.OrderBy(c => c.NameCategory) // Optional: Order categories by name
+							.Skip((pageNumber - 1) * pageSize)
+							.Take(pageSize)
+							.Select(c => new CategoryMenuVM
+							{
+								CaterogyId = c.CategoryId,
+								NameCategory = c.NameCategory ?? "",
+								MinPrice = c.Products.Min(p => (float?)p.Price) ?? 0,
+								MaxPrice = c.Products.Max(p => (float?)p.Price) ?? 0,
+								Products = c.Products.Select(p => new ProductDetailVM
+								{
+									ProductId = p.ProductId,
+									NameProduct = p.NameProduct ?? "",
+									Price = (float)(p.Price ?? 0),
+									DescProduct = p.DescProduct ?? string.Empty,
+								}).ToList()
+							})
+							.ToList();
+
+            // Pass data to the view
+            ViewBag.TotalPages = (int)Math.Ceiling((double)totalCategories / pageSize);
+            ViewBag.CurrentPage = pageNumber;
 
             return View(categories);
         }

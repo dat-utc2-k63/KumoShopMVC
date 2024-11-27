@@ -2,6 +2,8 @@
 {
 	public class OrderItemVM
 	{
+		public int OrderItemId { get; set; }
+
 		public int ProductId { get; set; }
 		public bool Status { get; set; }
 
@@ -13,5 +15,6 @@
 		public int OrderId { get; set; }
 		public int Quantity { get; set; }
 		public double SubTotal;
+		public bool IsRating { get; set; }
 	}
 }

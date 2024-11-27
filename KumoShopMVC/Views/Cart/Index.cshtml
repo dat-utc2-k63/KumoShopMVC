@@ -42,7 +42,7 @@
 							<div class="row align-items-center">
 								<div class="col-3">
 									<!-- Image -->
-									<a href="product.html"><img src="~/assets/img/product/@item.Image" alt="..." class="img-fluid"></a>
+									<img src="~/assets/img/product/@item.Image" alt="..." class="img-fluid">
 								</div>
 								<div class="col d-flex align-items-center justify-content-between">
 									<div class="cart_single_caption pl-2">
@@ -50,13 +50,21 @@
 										<p class="mb-1 lh-1"><span class="text-dark">@item.Size</span></p>
 										<p class="mb-3 lh-1"><span class="text-dark">@item.Color</span></p>
 										<h4 class="fs-md ft-medium mb-3 lh-1">@String.Format("${0}", item.Price)</h4>
-										<select class="mb-2 custom-select w-auto">
-											<option value="1" selected="">@item.Quantity</option>
-											<option value="2">2</option>
-											<option value="3">3</option>
-											<option value="4">4</option>
-											<option value="5">5</option>
-										</select>
+										<form asp-action="UpdateCart" method="post" class="d-inline">
+											<input type="hidden" name="productId" value="@item.ProductId" />
+											<input type="hidden" name="colors" value="@item.Color" />
+											<input type="hidden" name="sizes" value="@item.Size" />
+
+											<input type="number"
+												   name="quantity"
+												   class="mb-2 form-control w-auto"
+												   min="1"
+												   value="@item.Quantity" />
+
+											<div class="col-12 col-md-auto mfliud">
+												<button class="btn stretched-link borders">Update Cart</button>
+											</div>
+										</form>
 									</div>
 									<form asp-controller="Cart" asp-action="RemoveFromCart" method="post">
 										<input type="hidden" name="productId" value="@item.ProductId" />
@@ -72,20 +80,14 @@
 							</div>
 						</li>
 					}
-
 				</ul>
+
 						</div>
 
 						<div class="col-12 col-md-12 col-lg-4">
 							<div class="card mb-4 gray mfliud">
 							  <div class="card-body">
 								<ul class="list-group list-group-sm list-group-flush-y list-group-flush-x">
-								  <li class="list-group-item d-flex text-dark fs-sm ft-regular">
-									<span>Subtotal</span> <span class="ml-auto text-dark ft-medium">$98.12</span>
-								  </li>
-								  <li class="list-group-item d-flex text-dark fs-sm ft-regular">
-									<span>Tax</span> <span class="ml-auto text-dark ft-medium">$10.10</span>
-								  </li>
 								  <li class="list-group-item d-flex text-dark fs-sm ft-regular">
 								<span>Total</span> <span class="ml-auto text-dark ft-medium">$@Model.Sum(p => p.SubTotal).ToString("#,##0.00")</span>
 								  </li>

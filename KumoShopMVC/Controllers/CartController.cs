@@ -6,17 +6,20 @@ using System.Linq;
 using System.Security.Claims;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Authorization;
+using KumoShopMVC.Services;
 
 namespace KumoShopMVC.Controllers
 {
 	public class CartController : Controller
 	{
 		private readonly KumoShopContext db;
+		private readonly IVnPayService _vnPayService;
 		const string CART_KEY = "MYCART";
 
-		public CartController(KumoShopContext context)
+		public CartController(KumoShopContext context, IVnPayService vnPayService)
 		{
 			db = context;
+			_vnPayService = vnPayService;
 		}
 		public IActionResult Index()
 		{
@@ -28,7 +31,7 @@ namespace KumoShopMVC.Controllers
 		public List<CartItemVM> Cart => HttpContext.Session.Get<List<CartItemVM>>(CART_KEY) ?? new List<CartItemVM>();
 
 		[HttpPost]
-		public IActionResult AddToCart(int id, int quantity = 1, string colors = "", int sizes = 0)
+		public IActionResult AddToCart(int id, int quantity=1, string colors = "", int sizes = 0)
 		{
 			var product = db.ProductDetailsViews.FirstOrDefault(p => p.ProductId == id);
 			if (product == null)
@@ -90,62 +93,128 @@ namespace KumoShopMVC.Controllers
 		}
 		[Authorize]
 		[HttpPost]
-		public IActionResult CheckOut(CheckoutVM model)
+		public IActionResult CheckOut(CheckoutVM model, string payment = "COD")
 		{
-				if (ModelState.IsValid)
+			if (ModelState.IsValid)
 			{
-				var customerId = int.Parse(HttpContext.User.Claims.SingleOrDefault(p => p.Type == MySetting.CLAIM_CUSTOMERID).Value);
-				var user = new User();
-
-				if (model.LikeUser)
+				if (payment == "Thanh toán bằng VNPay")
 				{
-					user = db.Users.SingleOrDefault(u => u.UserId == customerId);
-				}
-				var order = new Order()
-				{
-					UserId = customerId,
-					Fullname = model.FullName ?? user.Fullname,
-					Address = model.Address ?? user.Address,
-					Phone = model.PhoneNumber ?? user.Phone,
-					OrderDate = DateTime.Now,
-					DescOrder = model.Desc,
-					StatusId = 0,
-					PaymentMethode = "COD"
-				};
-				db.Database.BeginTransaction();
-				try
-				{
-					db.Database.CommitTransaction();
-					db.Add(order);
-					db.SaveChanges();
-					var orderItems = new List<OrderItem>();
-					foreach (var item in Cart)
+					var vnPayModel = new VnPayRequestModel
 					{
-						orderItems.Add(new OrderItem()
-						{
-							OrderId = order.OrderId,
-							ProductId = item.ProductId,
-							NameProduct = item.NameProduct,
-							Color = item.Color,
-							Size = item.Size,
-							Image = item.Image,
-							Price = item.Price,
-							Quantity = item.Quantity,
-							SubTotal = item.Price * item.Quantity
-						});
-					}
-					db.AddRange(orderItems);
-					db.SaveChanges();
-					HttpContext.Session.Set<List<CartItemVM>>(MySetting.CART_KEY, new List<CartItemVM>());
-                    return View("Success");
+						Amount = Cart.Sum(p => p.SubTotal),
+						CreatedDate = DateTime.Now,
+						Description = $"{model.FullName} {model.PhoneNumber}",
+						FullName = model.FullName,
+						OrderId = new Random().Next(1000, 100000)
+					};
+					return Redirect(_vnPayService.CreatePaymentUrl(HttpContext, vnPayModel));
 				}
-				catch
+				else
 				{
-					db.Database.RollbackTransaction();
+					var customerId = int.Parse(HttpContext.User.Claims.SingleOrDefault(p => p.Type == MySetting.CLAIM_CUSTOMERID).Value);
+					var user = new User();
+
+					if (model.LikeUser)
+					{
+						user = db.Users.SingleOrDefault(u => u.UserId == customerId);
+					}
+					var order = new Order()
+					{
+						UserId = customerId,
+						Fullname = model.FullName ?? user.Fullname,
+						Address = model.Address ?? user.Address,
+						Phone = model.PhoneNumber ?? user.Phone,
+						OrderDate = DateTime.Now,
+						DescOrder = model.Desc,
+						StatusId = 0,
+						PaymentMethode = "COD"
+					};
+
+					db.Database.BeginTransaction();
+					try
+					{
+						db.Database.CommitTransaction();
+						db.Add(order);
+						db.SaveChanges();
+						var orderItems = new List<OrderItem>();
+						foreach (var item in Cart)
+						{
+							orderItems.Add(new OrderItem()
+							{
+								OrderId = order.OrderId,
+								ProductId = item.ProductId,
+								NameProduct = item.NameProduct,
+								Color = item.Color,
+								Size = item.Size,
+								Image = item.Image,
+								Price = item.Price,
+								Quantity = item.Quantity,
+								SubTotal = item.Price * item.Quantity,
+								IsRating = false
+							});
+						}
+						db.AddRange(orderItems);
+						db.SaveChanges();
+						ViewData["OrderItems"] = orderItems;
+						HttpContext.Session.Set<List<CartItemVM>>(MySetting.CART_KEY, new List<CartItemVM>());
+						return View("Success", order.OrderId);
+					}
+					catch
+					{
+						db.Database.RollbackTransaction();
+					}
 				}
 			}
 
 			return View(Cart);
 		}
+		[HttpPost]
+		public IActionResult UpdateCart(int productId, int quantity, string colors = "", int sizes = 0)
+		{
+			if (quantity <= 0)
+			{
+				TempData["Error"] = "Quantity must be greater than zero.";
+				return RedirectToAction("Index");
+			}
+
+			var cart = Cart;
+			var item = cart.SingleOrDefault(p => p.ProductId == productId
+												 && p.Color == colors
+												 && p.Size == sizes);
+			if (item != null)
+			{
+				item.Quantity = quantity;
+				HttpContext.Session.Set(CART_KEY, cart); 
+			}
+			else
+			{
+				TempData["Error"] = "Item not found in cart.";
+			}
+
+			return RedirectToAction("Index");
+		}
+
+		[Authorize]
+		public IActionResult PaymentFail()
+		{
+			return View();
+		}
+		[Authorize]
+		public IActionResult PaymentSuccess()
+		{
+			return View("Success");
+		}
+
+		[Authorize]
+		public ActionResult PaymentCallBack() {
+			var response = _vnPayService.PaymentExecute(Request.Query);
+			if (response == null || response.VnPayResponseCode != "00") {
+				TempData["Message"] = $"Lỗi thanh toán VN Pay: {response.VnPayResponseCode}";
+				return RedirectToAction("PaymentFail");
+			}
+			TempData["Message"] = $"Thanh toán VN Pay thành công";
+			return RedirectToAction("PaymentSuccess");
+		}
+
 	}
 }

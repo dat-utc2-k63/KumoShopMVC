@@ -1,5 +1,6 @@
 using KumoShopMVC.Data;
 using KumoShopMVC.Helpers;
+using KumoShopMVC.Services;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 
@@ -26,6 +27,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
 	options.LoginPath = "/User/Login";
 	options.AccessDeniedPath = "/AccessDenied";
 });
+builder.Services.AddSingleton<IVnPayService, VnPayService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

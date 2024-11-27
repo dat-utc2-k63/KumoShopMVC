@@ -15,7 +15,7 @@ namespace KumoShopMVC.ViewModels
 		public string? Phone { get; set; }
 		public string PaymentMethode { get; set; }
 		public List<OrderItemVM> OrderItems { get; set; } = new List<OrderItemVM>();
-
+		public int StatusShippingId { get; set; }
 
 	}
 }

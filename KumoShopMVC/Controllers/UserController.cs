@@ -12,6 +12,7 @@ using System.Linq;
 using System.Collections.Generic;
 using System.Net;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.CodeAnalysis;
 
 namespace KumoShopMVC.Controllers
 {
@@ -90,6 +91,7 @@ namespace KumoShopMVC.Controllers
 						var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
 						var claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
 						await HttpContext.SignInAsync(claimsPrincipal);
+						// Lưu thông tin vào ViewData hoặc ViewBag để sử dụng trong View
 
 						if (Url.IsLocalUrl(ReturnUrl))
 						{
@@ -112,12 +114,12 @@ namespace KumoShopMVC.Controllers
             {
                 return RedirectToAction("Login");
             }
-
+			
             var orders = db.Orders
-                           .Include(o => o.OrderItems) 
-                           .Where(o => o.UserId == userId)
-                           .ToList();
-
+						.Include(o => o.OrderItems)
+						.Include(o => o.Status)
+						.Where(o => o.UserId == userId)
+                        .ToList();
             if (orders == null || !orders.Any())
             {
                 return NotFound("No orders found for this user.");
@@ -129,13 +131,16 @@ namespace KumoShopMVC.Controllers
                 OrderDate = order.OrderDate,
                 DescOrder = order.DescOrder,
                 ShippingDate = order.ShippingDate,
-                StatusShipping = order.Status?.NameStatus ?? "Unknown",
-                FullName = order.Fullname,
+				StatusShippingId = order.StatusId ?? 0,
+				StatusShipping = order.Status?.NameStatus ?? "Unknown",
+				FullName = order.Fullname,
                 Address = order.Address,
                 Phone = order.Phone,
                 PaymentMethode = "COD",
                 OrderItems = order.OrderItems.Select(oi => new OrderItemVM
                 {
+					OrderItemId = oi.OrderItemId,
+					OrderId = oi.OrderId,
                     ProductId = oi.ProductId,
                     NameProduct = oi.NameProduct ?? string.Empty, 
                     Price = (float)(oi.Price ?? 0), 
@@ -143,7 +148,8 @@ namespace KumoShopMVC.Controllers
                     Color = oi.Color ?? string.Empty, 
                     Size = oi.Size ?? 0 ,
 					SubTotal = oi.SubTotal ?? 0,
-                }).ToList()
+					IsRating = oi.IsRating ?? false
+				}).ToList()
             }).ToList();
 
             return View(ordersVM);
@@ -161,6 +167,7 @@ namespace KumoShopMVC.Controllers
 		public IActionResult WriteRating(RatingProductVM model)
 		{
 			var userIdClaim = HttpContext.User.Claims.FirstOrDefault(p => p.Type == MySetting.CLAIM_CUSTOMERID);
+
 			if (userIdClaim == null || !int.TryParse(userIdClaim.Value, out int userId))
 			{
 				return Json(new { success = false, redirectUrl = Url.Action("Login") });
@@ -171,27 +178,38 @@ namespace KumoShopMVC.Controllers
 				return Json(new { success = false, errors = ModelState.Values.SelectMany(v => v.Errors).Select(e => e.ErrorMessage) });
 			}
 
-			var rating = new RatingProduct
+			using (var transaction = db.Database.BeginTransaction())
 			{
-				ProductId = model.ProductId,
-				Fullname = model.FullName,
-				UserId = userId,
-				CreateDate = DateTime.Now,
-				RatePoint = model.RatePoint,
-				DescRating = model.DescRating,
-			};
-
-			try
-			{
-				db.RatingProducts.Add(rating);
-				db.SaveChanges();
-
-				return Json(new { success = true, redirectUrl = Url.Action("ProductDetails", new { productId = model.ProductId }) });
-			}
-			catch (Exception ex)
+				try
 				{
-				return Json(new { success = false, message = "Có lỗi xảy ra: " + ex.Message });
+					var rating = new RatingProduct
+					{
+						ProductId = model.ProductId,
+						Fullname = model.FullName,
+						UserId = userId,
+						CreateDate = DateTime.Now,
+						RatePoint = model.RatePoint,
+						DescRating = model.DescRating
+					};
+					db.Add(rating);
+					db.SaveChanges();
+					var orderItem = db.OrderItems.FirstOrDefault(o => o.OrderItemId == model.OrderItemId);
+					if (orderItem != null)
+					{
+						orderItem.IsRating = true;
+						db.SaveChanges();
+					}
+					transaction.Commit();
+					return Json(new { success = true, message = "Your rating has been submitted successfully!" });
+
+				}
+				catch (Exception ex)
+				{
+					db.Database.RollbackTransaction();
+					return Json(new { success = false, message = "Có lỗi xảy ra: " + ex.Message });
+				}
 			}
+
 		}
 
 		[Authorize]
@@ -217,15 +235,20 @@ namespace KumoShopMVC.Controllers
 				Status = user.Status ?? true,
 				RoleId = user.RoleId = 1,
 				Address = user.Address,
-				Phone = user.Phone
+				Phone = user.Phone,
+				Avatar = user.Avatar,
+				AboutUs = user.AboutUs
 			};
+			ViewData["UserFullName"] = user.Fullname;
+			ViewData["UserAddress"] = user.Address;
+			ViewData["UserAvatar"] = user.Avatar;
 
 			return View(model);
 		}
 
         [HttpPost]
         [Authorize]
-        public IActionResult UpdateProfile(UpdateProfileVM model)
+        public IActionResult UpdateProfile(UpdateProfileVM model, IFormFile Avatar)
         {
             if (ModelState.IsValid)
             {
@@ -246,7 +269,10 @@ namespace KumoShopMVC.Controllers
                 user.Address = model.Address;
                 user.Phone = model.Phone;
                 user.AboutUs = model.AboutUs;
-
+                if (Avatar != null)
+                {
+                    user.Avatar = MyUtil.UpLoadAvatar(Avatar, "User");
+                }
                 if (!string.IsNullOrEmpty(model.NewPassword))
                 {
                     user.Password = model.NewPassword.ToMd5Hash(user.RandomKey);
@@ -329,10 +355,14 @@ namespace KumoShopMVC.Controllers
 			db.FavouriteItems.Remove(favouriteItem);
 			db.SaveChanges();
 
-			return Json(new { success = true, message = "Sản phẩm đã được xóa khỏi danh sách yêu thích" });
+			return Json(new
+			{
+				success = true,
+				message = "Sản phẩm đã được xóa khỏi danh sách yêu thích",
+				productId = productId,
+				favouriteCount = db.FavouriteItems.Count(fi => fi.FavouriteId == favourite.FavouriteId) // Trả về số lượng sản phẩm còn lại trong danh sách yêu thích
+			});
 		}
-
-
 
 		[Authorize]
 		public IActionResult WishList()

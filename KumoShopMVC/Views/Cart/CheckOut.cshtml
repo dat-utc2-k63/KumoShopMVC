@@ -88,7 +88,7 @@
 
 									<div class="col-3">
 										<!-- Image -->
-										<a href="product.html"><img src="~/assets/img/product/@item.Image" alt="..." class="img-fluid"></a>
+										<img src="~/assets/img/product/@item.Image" alt="..." class="img-fluid">
 									</div>
 									<div class="col d-flex align-items-center">
 										<div class="cart_single_caption pl-2">
@@ -110,12 +110,6 @@
 						<ul class="list-group list-group-sm list-group-flush-y list-group-flush-x">
 							<li class="list-group-item d-flex text-dark fs-sm ft-regular">
 								<span>Subtotal</span> <span class="ml-auto text-dark ft-medium">$@Model.Sum(p => p.SubTotal).ToString("#,##0.00")</span>
-							</li>
-							<li class="list-group-item d-flex text-dark fs-sm ft-regular">
-								<span>Tax</span> <span class="ml-auto text-dark ft-medium">$10.10</span>
-							</li>
-							<li class="list-group-item d-flex text-dark fs-sm ft-regular">
-								<span>Total</span> <span class="ml-auto text-dark ft-medium">$108.22</span>
 							</li>
 							<li class="list-group-item fs-sm text-center">
 								Shipping cost calculated at Checkout *
@@ -139,7 +133,7 @@
 										<div class="panel-body">
 											<p>Chọn phương thức COD để thanh toán khi nhận hàng.</p>
 											<div class="form-group">
-												<button type="submit" class="btn btn-dark btm-md full-width">Thanh toán COD</button>
+												<input type="submit" class="btn btn-dark btm-md full-width" name="payment" value="Thanh toán COD">
 											</div>
 										</div>
 									</div>
@@ -156,7 +150,7 @@
 										<div class="panel-body">
 											<p>Chọn VNPay để thanh toán trực tuyến an toàn.</p>
 											<div class="form-group">
-												<button type="submit" class="btn btn-dark btm-md full-width">Thanh toán bằng VNPay</button>
+												<input type="submit" class="btn btn-dark btm-md full-width" name="payment" value="Thanh toán bằng VNPay">
 											</div>
 										</div>
 									</div>

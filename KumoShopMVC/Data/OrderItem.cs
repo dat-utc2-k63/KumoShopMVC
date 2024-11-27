@@ -25,6 +25,8 @@ public partial class OrderItem
 
     public double? SubTotal { get; set; }
 
+    public bool? IsRating { get; set; }
+
     public virtual Order Order { get; set; } = null!;
 
     public virtual Product Product { get; set; } = null!;

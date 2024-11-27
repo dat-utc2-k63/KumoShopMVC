@@ -12,7 +12,7 @@ namespace KumoShopMVC.ViewModels
 		public string? DescRating { get; set; }
 		public List<string>? Images { get; set; } = new List<string>();
 		public string? FullName { get; set; }
-
+		public int? OrderItemId { get; set; }
 
 	}
 }

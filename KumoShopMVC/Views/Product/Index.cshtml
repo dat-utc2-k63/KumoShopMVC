@@ -29,8 +29,8 @@
 			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
 				<nav aria-label="breadcrumb">
 					<ol class="breadcrumb">
-						<li class="breadcrumb-item"><a href="#">Home</a></li>
-						<li class="breadcrumb-item"><a href="#">Shop</a></li>
+						<li class="breadcrumb-item"><a asp-controller="">Home</a></li>
+						<li class="breadcrumb-item"><a asp-controller="Product">Shop</a></li>
 					</ol>
 				</nav>
 			</div>
@@ -40,10 +40,22 @@
 }
 <!-- Single -->
 @await Html.PartialAsync("ProductItem", Model)
-				<!-- row -->
+<div class="clear-fix"></div>
+<br />
+	<div class="col-xl-12 col-lg-12 col-md-12 text-center">
+		<nav aria-label="Page navigation">
+			<ul class="pagination justify-content-center">
+				@if (ViewData["CurrentPage"] is int currentPage && ViewData["TotalPages"] is int totalPages)
+				{
+					for (var i = 1; i <= totalPages; i++)
+					{
+						<li class="page-item @(i == currentPage ? "active" : "")">
+							<a class="btn stretched-link borders m-auto" href="@Url.Action("Index", new { page = i, category = ViewData["Category"] })">@i</a>
+						</li>
+					}
+				}
+			</ul>
+		</nav>
+	</div>
 
-				<div class="row">
-					<div class="col-xl-12 col-lg-12 col-md-12 text-center">
-						<a href="#" class="btn stretched-link borders m-auto"><i class="lni lni-reload mr-2"></i>Load More</a>
-					</div>
-				</div>
+

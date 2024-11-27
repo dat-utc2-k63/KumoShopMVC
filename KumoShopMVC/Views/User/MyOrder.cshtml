@@ -35,7 +35,18 @@
 						</div>
 							<div class="col-xl-3 col-lg-3 col-md-3 col-6">
 								<p class="mb-1 p-0"><span class="text-muted">Status</span></p>
-								<div class="delv_status"><span class="ft-medium small text-danger bg-light-danger rounded px-3 py-1">@order.StatusShipping</span></div>
+								@if (order.StatusShippingId == -1)
+								{
+									<div class="delv_status"><span class="ft-medium small text-danger bg-light-danger rounded px-3 py-1">@order.StatusShipping</span></div>
+								}
+								else if (order.StatusShippingId == 0 || order.StatusShippingId == 1 || order.StatusShippingId == 2)
+								{
+									<div class="delv_status"><span class="ft-medium small text-warning bg-light-warning rounded px-3 py-1">@order.StatusShipping</span></div>
+								}
+								else if (order.StatusShippingId == 3)
+								{
+									<div class="delv_status"><span class="ft-medium small text-success bg-light-success rounded px-3 py-1">@order.StatusShipping</span></div>
+								}
 							</div>
 							<div class="col-xl-4 col-lg-4 col-md-4 col-6">
 								<p class="mb-1 p-0"><span class="text-muted">Order date by:</span></p>
@@ -66,8 +77,9 @@
 										<div class="delv_status"><span class="fs-sm ft-bold mb-0 lh-1">@item.SubTotal</span></div>
 									</div>
 									<div class="col-xl-3 col-lg-3 col-md-3 col-6">
-										<button type="button" class="btn btn-primary btn-rating" data-product-id="@item.ProductId"  data-toggle="modal" data-target="#rating">
-											Rating
+										<button type="button" class="btn stretched-link borders m-auto" data-order-item-id="@item.OrderItemId" @(item.IsRating && order.StatusShippingId != 3 ? "disabled" : "")
+												data-product-id="@item.ProductId" data-toggle="modal" data-target="#rating">
+											@(item.IsRating ? "Đã đánh giá" : "Đánh giá sản phẩm")
 										</button>
 									</div>
 						</div>
@@ -94,14 +106,15 @@
 		$(document).ready(function () {
 			$('.btn-rating').on('click', function () {
 				var productId = $(this).data('product-id');
+				var orderItemId = $(this).data('order-item-id');
 				$('#ProductId').val(productId);
+				$('#OrderItemId').val(orderItemId);
 				console.log('Product ID:', productId); // In ra ProductId để kiểm tra
+				console.log('Order Item ID:', orderItemId);
 			});
 
 			$('#ratingForm').on('submit', function (e) {
 				e.preventDefault();
-
-				// In ra dữ liệu sẽ gửi đi
 				console.log('Form data:', $(this).serialize());
 
 				$.ajax({
@@ -110,19 +123,32 @@
 					data: $(this).serialize(),
 					success: function (response) {
 						if (response.success) {
-							window.location.href = response.redirectUrl;
+							Swal.fire({
+								position: "center",
+								icon: "success",
+								title: response.message,
+								showConfirmButton: false,
+								timer: 1500
+							});
 						} else {
-							alert('Có lỗi xảy ra: ' + response.errors.join(', '));
+							Swal.fire({
+								icon: "error",
+								title: "Oops...",
+								text: response.message,
+								footer: '<a href="#">Why do I have this issue?</a>'
+							});
 						}
 					},
 					error: function (jqXHR, textStatus, errorThrown) {
-						console.log('Error Status:', textStatus);
-						console.log('Error Thrown:', errorThrown);
-						alert('Có lỗi xảy ra, vui lòng thử lại sau.');
+						Swal.fire({
+							icon: 'error',
+							title: 'Oops...',
+							text: 'Something went wrong with the request.',
+							footer: '<a href="#">Why do I have this issue?</a>'
+						});
 					}
 				});
 			});
 		});
 	</script>
-
 }

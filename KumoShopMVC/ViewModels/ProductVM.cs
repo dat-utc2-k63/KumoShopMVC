@@ -10,8 +10,8 @@ namespace KumoShopMVC.ViewModels
 		public bool Status { get; set; }
 		public string? Brand { get; set; }
 		public bool Gender { get; set; }
-		public bool? IsHot { get; set; }
-		public bool? IsNew { get; set; }
+		public bool IsHot { get; set; }
+		public bool IsNew { get; set; }
 		public float? Discount { get; set; }
 
 		public List<string>? Colors { get; set; }
@@ -37,8 +37,6 @@ namespace KumoShopMVC.ViewModels
 		public int SoLuongTon { get; set; }
 		public float? Discount { get; set; }
 		public List<RatingProductVM> Ratings { get; set; } = new List<RatingProductVM>();
-
-
 	}
 
 }

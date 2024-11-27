@@ -13,7 +13,7 @@ namespace KumoShopMVC.ViewComponents
 			// Lấy danh sách cart items từ session
 			var cartItems = HttpContext.Session.Get<List<CartItemVM>>(MySetting.CART_KEY) ?? new List<CartItemVM>();
 
-			return View("Default", cartItems); // Trả về view và truyền dữ liệu cart items
+			return View("Default", cartItems); 
 		}
 	}
 }

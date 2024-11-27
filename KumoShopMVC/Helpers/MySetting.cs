@@ -5,4 +5,11 @@
 		public const string CART_KEY = "MYCART";
 		public const string CLAIM_CUSTOMERID = "CustomerId";
 	}
+
+	public class PaymentType
+	{
+		public static string COD = "COD";
+		public static string VNPAY = "VnPay";
+		public static string MOMO = "MoMo";
+	}
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Rj7afQhf0K1K97IbBxDQNDgcWFyWmUjhxLVVOhTk03k=",
+  "Hash": "pyAuvrkntg1OSiLALPm5ffFn11Or1ldX85y6SSn/MHs=",
   "Source": "KumoShopMVC",
   "BasePath": "_content/KumoShopMVC",
   "Mode": "Default",
@@ -8660,6 +8660,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\img\\tshirt.png"
+    },
+    {
+      "Identity": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\User\\863afa8f-56a7-49f0-a00e-8207e4eae620.jpg",
+      "SourceId": "KumoShopMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\",
+      "BasePath": "_content/KumoShopMVC",
+      "RelativePath": "assets/img/User/863afa8f-56a7-49f0-a00e-8207e4eae620.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\User\\863afa8f-56a7-49f0-a00e-8207e4eae620.jpg"
     },
     {
       "Identity": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\js\\bootstrap.min.js",

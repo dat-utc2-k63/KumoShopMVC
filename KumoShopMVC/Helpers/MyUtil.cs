@@ -4,24 +4,36 @@ namespace KumoShopMVC.Helpers
 {
 	public class MyUtil
 	{
-		public static string UpLoadAvatar(IFormFile Avatar, string folder)
-		{
-			try
-			{
-				var fullPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "assets", "img", "User", folder, Avatar.FileName);
-				using (var myfile = new FileStream(fullPath, FileMode.CreateNew))
-				{
-					Avatar.CopyTo(myfile);
-				}
-				return Avatar.FileName;
-			}
-			catch (Exception ex)
-			{
-				return string.Empty;
-			}
-		}
+        public static string UpLoadAvatar(IFormFile Avatar, string folder)
+        {
+            try
+            {
+                var directoryPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "assets", "img", folder);
 
-		public static String GenerRateRandomKey(int length = 5)
+                if (!Directory.Exists(directoryPath))
+                {
+                    Directory.CreateDirectory(directoryPath);
+                }
+
+                var uniqueFileName = Guid.NewGuid().ToString() + Path.GetExtension(Avatar.FileName);
+                var fullPath = Path.Combine(directoryPath, uniqueFileName);
+
+                using (var myfile = new FileStream(fullPath, FileMode.CreateNew))
+                {
+                    Avatar.CopyTo(myfile);
+                }
+
+                return uniqueFileName;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+                return string.Empty;
+            }
+        }
+
+
+        public static String GenerRateRandomKey(int length = 5)
 		{
 			var pattern = @"qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM!";
 			var sb = new StringBuilder();

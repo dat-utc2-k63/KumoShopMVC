@@ -10,8 +10,8 @@
 						<div class="colxl-12 col-lg-12 col-md-12">
 							<nav aria-label="breadcrumb">
 								<ol class="breadcrumb">
-									<li class="breadcrumb-item"><a href="#">Home</a></li>
-									<li class="breadcrumb-item"><a href="#">Library</a></li>
+									<li class="breadcrumb-item"><a asp-controller="">Home</a></li>
+									<li class="breadcrumb-item"><a asp-controller="Product" asp-action="Index">Product</a></li>
 									<li class="breadcrumb-item active" aria-current="page">@Model.NameProduct</li>
 								</ol>
 							</nav>
@@ -26,10 +26,19 @@
 					<div class="row justify-content-between">
 
 						<div class="col-xl-5 col-lg-6 col-md-12 col-sm-12">
-							<div class="quick_view_slide">
-								<div class="single_view_slide"><a asp-action="Detail" asp-route-id="@Model.ProductId" data-lightbox="roadtrip" class="d-block mb-4"><img src="~/assets/img/product/4.jpg" class="img-fluid rounded" alt="" /></a></div>
-							</div>
-						</div>
+				<div class="quick_view_thumb">
+					<div class="quick_view_slide">
+				@if (Model.Images != null)
+				{
+					@foreach (var img in Model.Images)
+					{
+							<div class="single_view_slide"><img src="~/assets/img/product/@img" class="img-fluid rounded" alt="" /></div>
+					}
+
+				}
+				</div>
+				</div>
+			</div>
 
 						<div class="col-xl-7 col-lg-6 col-md-12 col-sm-12">
 							<div class="prd_details pl-3">
@@ -46,7 +55,7 @@
 											<i class="fas fa-star"></i>
 											<span class="small">(412 Reviews)</span>
 										</div>
-										<div class="elis_rty"><span class="ft-medium text-muted line-through fs-md mr-2">$199</span><span class="ft-bold theme-cl fs-lg mr-2">$110</span><span class="ft-regular text-danger bg-light-danger py-1 px-2 fs-sm">Out of Stock</span></div>
+										<div class="elis_rty"><span class="ft-bold theme-cl fs-lg mr-2">$@Model.Price</span><span class="ft-regular text-danger bg-light-danger py-1 px-2 fs-sm">Out of Stock</span></div>
 									</div>
 								</div>
 
@@ -91,15 +100,9 @@
 									<div class="form-row mb-7">
 										<div class="col-12 col-lg-auto">
 											<!-- Quantity -->
-											
-											<select class="mb-2 custom-select">
-											  <option value="1" selected="">1</option>
-											  <option value="2">2</option>
-											  <option value="3">3</option>
-											  <option value="4">4</option>
-											  <option value="5">5</option>
-											</select>
+											<input type="number" class="form-control mb-2" value="1" min="1" name="quantity" id="quantity">
 										</div>
+
 										<div class="col-12 col-lg">
 											<!-- Submit -->
 											<button type="submit" class="btn btn-block custom-height bg-dark mb-2 add-to-cart">
@@ -109,9 +112,9 @@
 										</form>
 										<div class="col-12 col-lg-auto">
 											<!-- Wishlist -->
-											<input type="hidden" name="productId" value="@Model.ProductId" />
 											<button type="submit" data-product-id="@Model.ProductId" class="btn custom-height btn-default btn-block mb-2 text-dark add-to-favourite">
-												<i class="lni lni-heart mr-2"></i>Wishlist
+												<i class="lni mr-2 @(ViewData["IsFavourite"] != null && (bool)ViewData["IsFavourite"] ? "lni-heart-filled" : "lni-heart")"></i>
+												Wishlist
 											</button>
 										</div>
 										</div>
@@ -231,74 +234,6 @@
 								</div>
 							}
 						</div>
-									<div class="reviews_rate">
-										<form class="row">
-											<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-												<h4>Submit Rating</h4>
-											</div>
-
-											<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-												<div class="revie_stars d-flex align-items-center justify-content-between px-2 py-2 gray rounded mb-2 mt-1">
-													<div class="srt_013">
-														<div class="submit-rating">
-														  <input id="star-5" type="radio" name="rating" value="star-5" />
-														  <label for="star-5" title="5 stars">
-															<i class="active fa fa-star" aria-hidden="true"></i>
-														  </label>
-														  <input id="star-4" type="radio" name="rating" value="star-4" />
-														  <label for="star-4" title="4 stars">
-															<i class="active fa fa-star" aria-hidden="true"></i>
-														  </label>
-														  <input id="star-3" type="radio" name="rating" value="star-3" />
-														  <label for="star-3" title="3 stars">
-															<i class="active fa fa-star" aria-hidden="true"></i>
-														  </label>
-														  <input id="star-2" type="radio" name="rating" value="star-2" />
-														  <label for="star-2" title="2 stars">
-															<i class="active fa fa-star" aria-hidden="true"></i>
-														  </label>
-														  <input id="star-1" type="radio" name="rating" value="star-1" />
-														  <label for="star-1" title="1 star">
-															<i class="active fa fa-star" aria-hidden="true"></i>
-														  </label>
-														</div>
-													</div>
-
-													<div class="srt_014">
-														<h6 class="mb-0">4 Star</h6>
-													</div>
-												</div>
-											</div>
-
-											<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-												<div class="form-group">
-													<label class="medium text-dark ft-medium">Full Name</label>
-													<input type="text" class="form-control" />
-												</div>
-											</div>
-
-											<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-												<div class="form-group">
-													<label class="medium text-dark ft-medium">Email Address</label>
-													<input type="email" class="form-control" />
-												</div>
-											</div>
-
-											<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-												<div class="form-group">
-													<label class="medium text-dark ft-medium">Description</label>
-													<textarea class="form-control"></textarea>
-												</div>
-											</div>
-
-											<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-												<div class="form-group m-0">
-													<a class="btn btn-white stretched-link hover-black">Submit Review <i class="lni lni-arrow-right"></i></a>
-												</div>
-											</div>
-
-										</form>
-									</div>
 
 								</div>
 							</div>
@@ -307,197 +242,6 @@
 				</div>
 			</section>
 			<!-- ======================= Product Description End ==================== -->
-
-			<!-- ======================= Similar Products Start ============================ -->
-			<section class="middle pt-0">
-				<div class="container">
-
-					<div class="row justify-content-center">
-						<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-							<div class="sec_title position-relative text-center">
-								<h2 class="off_title">Similar Products</h2>
-								<h3 class="ft-bold pt-3">Matching Producta</h3>
-							</div>
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-							<div class="slide_items">
-
-								<!-- single Item -->
-								<div class="single_itesm">
-									<div class="product_grid card b-0 mb-0">
-										<div class="badge bg-success text-white position-absolute ft-regular ab-left text-upper">Sale</div>
-										<button class="snackbar-wishlist btn btn_love position-absolute ab-right"><i class="far fa-heart"></i></button> 
-										<div class="card-body p-0">
-											<div class="shop_thumb position-relative">
-												<a class="card-img-top d-block overflow-hidden" href="shop-single-v1.html"><img class="card-img-top" src="assets/img/product/16.png" alt="..."></a>
-												<div class="product-hover-overlay bg-dark d-flex align-items-center justify-content-center">
-													<div class="edlio"><a href="#" data-toggle="modal" data-target="#quickview" class="text-white fs-sm ft-medium"><i class="fas fa-eye mr-1"></i>Quick View</a></div>
-												</div>
-											</div>
-										</div>
-										<div class="card-footer b-0 p-3 pb-0 d-flex align-items-start justify-content-center">
-											<div class="text-left">
-												<div class="text-center">
-													<h5 class="fw-bolder fs-md mb-0 lh-1 mb-1"><a href="shop-single-v1.html">Half Running Set</a></h5>
-													<div class="elis_rty"><span class="ft-bold fs-md text-dark">$119.00</span></div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<!-- single Item -->
-								<div class="single_itesm">
-									<div class="product_grid card b-0 mb-0">
-										<div class="badge bg-info text-white position-absolute ft-regular ab-left text-upper">New</div>
-										<button class="snackbar-wishlist btn btn_love position-absolute ab-right"><i class="far fa-heart"></i></button> 
-										<div class="card-body p-0">
-											<div class="shop_thumb position-relative">
-												<a class="card-img-top d-block overflow-hidden" href="shop-single-v1.html"><img class="card-img-top" src="assets/img/product/17.png" alt="..."></a>
-												<div class="product-hover-overlay bg-dark d-flex align-items-center justify-content-center">
-													<div class="edlio"><a href="#" data-toggle="modal" data-target="#quickview" class="text-white fs-sm ft-medium"><i class="fas fa-eye mr-1"></i>Quick View</a></div>
-												</div>
-											</div>
-										</div>
-										<div class="card-footer b-0 p-3 pb-0 d-flex align-items-start justify-content-center">
-											<div class="text-left">
-												<div class="text-center">
-													<h5 class="fw-bolder fs-md mb-0 lh-1 mb-1"><a href="shop-single-v1.html">Formal Men Lowers</a></h5>
-													<div class="elis_rty"><span class="text-muted ft-medium line-through mr-2">$129.00</span><span class="ft-bold theme-cl fs-md">$79.00</span></div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<!-- single Item -->
-								<div class="single_itesm">
-									<div class="product_grid card b-0 mb-0">
-										<button class="snackbar-wishlist btn btn_love position-absolute ab-right"><i class="far fa-heart"></i></button> 
-										<div class="card-body p-0">
-											<div class="shop_thumb position-relative">
-												<a class="card-img-top d-block overflow-hidden" href="shop-single-v1.html"><img class="card-img-top" src="assets/img/product/18.png" alt="..."></a>
-												<div class="product-hover-overlay bg-dark d-flex align-items-center justify-content-center">
-													<div class="edlio"><a href="#" data-toggle="modal" data-target="#quickview" class="text-white fs-sm ft-medium"><i class="fas fa-eye mr-1"></i>Quick View</a></div>
-												</div>
-											</div>
-										</div>
-										<div class="card-footer b-0 p-3 pb-0 d-flex align-items-start justify-content-center">
-											<div class="text-left">
-												<div class="text-center">
-													<h5 class="fw-bolder fs-md mb-0 lh-1 mb-1"><a href="shop-single-v1.html">Half Running Suit</a></h5>
-													<div class="elis_rty"><span class="ft-bold fs-md text-dark">$80.00</span></div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<!-- single Item -->
-								<div class="single_itesm">
-									<div class="product_grid card b-0 mb-0">
-										<div class="badge bg-warning text-white position-absolute ft-regular ab-left text-upper">Hot</div>
-										<button class="snackbar-wishlist btn btn_love position-absolute ab-right"><i class="far fa-heart"></i></button> 
-										<div class="card-body p-0">
-											<div class="shop_thumb position-relative">
-												<a class="card-img-top d-block overflow-hidden" href="shop-single-v1.html"><img class="card-img-top" src="assets/img/product/19.png" alt="..."></a>
-												<div class="product-hover-overlay bg-dark d-flex align-items-center justify-content-center">
-													<div class="edlio"><a href="#" data-toggle="modal" data-target="#quickview" class="text-white fs-sm ft-medium"><i class="fas fa-eye mr-1"></i>Quick View</a></div>
-												</div>
-											</div>
-										</div>
-										<div class="card-footer b-0 p-3 pb-0 d-flex align-items-start justify-content-center">
-											<div class="text-left">
-												<div class="text-center">
-													<h5 class="fw-bolder fs-md mb-0 lh-1 mb-1"><a href="shop-single-v1.html">Half Fancy Lady Dress</a></h5>
-													<div class="elis_rty"><span class="text-muted ft-medium line-through mr-2">$149.00</span><span class="ft-bold theme-cl fs-md">$110.00</span></div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<!-- single Item -->
-								<div class="single_itesm">
-									<div class="product_grid card b-0 mb-0">
-										<button class="snackbar-wishlist btn btn_love position-absolute ab-right"><i class="far fa-heart"></i></button> 
-										<div class="card-body p-0">
-											<div class="shop_thumb position-relative">
-												<a class="card-img-top d-block overflow-hidden" href="shop-single-v1.html"><img class="card-img-top" src="assets/img/product/20.png" alt="..."></a>
-												<div class="product-hover-overlay bg-dark d-flex align-items-center justify-content-center">
-													<div class="edlio"><a href="#" data-toggle="modal" data-target="#quickview" class="text-white fs-sm ft-medium"><i class="fas fa-eye mr-1"></i>Quick View</a></div>
-												</div>
-											</div>
-										</div>
-										<div class="card-footer b-0 p-3 pb-0 d-flex align-items-start justify-content-center">
-											<div class="text-left">
-												<div class="text-center">
-													<h5 class="fw-bolder fs-md mb-0 lh-1 mb-1"><a href="shop-single-v1.html">Flix Flox Jeans</a></h5>
-													<div class="elis_rty"><span class="text-muted ft-medium line-through mr-2">$90.00</span><span class="ft-bold theme-cl fs-md">$49.00</span></div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<!-- single Item -->
-								<div class="single_itesm">
-									<div class="product_grid card b-0 mb-0">
-										<div class="badge bg-danger text-white position-absolute ft-regular ab-left text-upper">Hot</div>
-										<button class="snackbar-wishlist btn btn_love position-absolute ab-right"><i class="far fa-heart"></i></button> 
-										<div class="card-body p-0">
-											<div class="shop_thumb position-relative">
-												<a class="card-img-top d-block overflow-hidden" href="shop-single-v1.html"><img class="card-img-top" src="assets/img/product/21.png" alt="..."></a>
-												<div class="product-hover-overlay bg-dark d-flex align-items-center justify-content-center">
-													<div class="edlio"><a href="#" data-toggle="modal" data-target="#quickview" class="text-white fs-sm ft-medium"><i class="fas fa-eye mr-1"></i>Quick View</a></div>
-												</div>
-											</div>
-										</div>
-										<div class="card-footer b-0 p-3 pb-0 d-flex align-items-start justify-content-center">
-											<div class="text-left">
-												<div class="text-center">
-													<h5 class="fw-bolder fs-md mb-0 lh-1 mb-1"><a href="shop-single-v1.html">Fancy Salwar Suits</a></h5>
-													<div class="elis_rty"><span class="ft-bold fs-md text-dark">$114.00</span></div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<!-- single Item -->
-								<div class="single_itesm">
-									<div class="product_grid card b-0 mb-0">
-										<div class="badge bg-success text-white position-absolute ft-regular ab-left text-upper">Sale</div>
-										<button class="snackbar-wishlist btn btn_love position-absolute ab-right"><i class="far fa-heart"></i></button> 
-										<div class="card-body p-0">
-											<div class="shop_thumb position-relative">
-												<a class="card-img-top d-block overflow-hidden" href="shop-single-v1.html"><img class="card-img-top" src="assets/img/product/22.png" alt="..."></a>
-												<div class="product-hover-overlay bg-dark d-flex align-items-center justify-content-center">
-													<div class="edlio"><a href="#" data-toggle="modal" data-target="#quickview" class="text-white fs-sm ft-medium"><i class="fas fa-eye mr-1"></i>Quick View</a></div>
-												</div>
-											</div>
-										</div>
-										<div class="card-footer b-0 p-3 pb-0 d-flex align-items-start justify-content-center">
-											<div class="text-left">
-												<div class="text-center">
-													<h5 class="fw-bolder fs-md mb-0 lh-1 mb-1"><a href="shop-single-v1.html">Collot Full Dress</a></h5>
-													<div class="elis_rty"><span class="ft-bold theme-cl fs-md text-dark">$120.00</span></div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</section>
-			<!-- ======================= Similar Products Start ============================ -->
 @section Scripts {
 	<script>
 		$(document).ready(function () {
@@ -573,9 +317,7 @@
 				success: function (response) {
 					if (response.success) {
 						alert(response.message); 
-
 						button.text("Đã yêu thích");
-						button.prop('disabled', true); 
 					} else {
 						alert(response.message); 
 					}

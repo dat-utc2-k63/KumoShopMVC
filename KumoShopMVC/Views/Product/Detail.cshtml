@@ -165,8 +165,7 @@
 								<!-- Description Content -->
 								<div class="tab-pane fade show active" id="description" role="tabpanel" aria-labelledby="description-tab">
 									<div class="description_info">
-										<p class="p-0 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-										<p class="p-0">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+										<p class="p-0 mb-2">@Model.DescProduct</p>
 									</div>
 								</div>
 
@@ -177,23 +176,24 @@
 											<tbody>
 												<tr>
 												  <th class="ft-medium text-dark">ID</th>
-												  <td>#1253458</td>
-												</tr>
-												<tr>
-												  <th class="ft-medium text-dark">SKU</th>
-												  <td>KUM125896</td>
+												  <td>#@Model.ProductId</td>
 												</tr>
 												<tr>
 												  <th class="ft-medium text-dark">Color</th>
-												  <td>Sky Blue</td>
+													<td>@foreach (var color in Model.Colors)
+														{
+															@color
+														}, 
+													</td>
 												</tr>
 												<tr>
 												  <th class="ft-medium text-dark">Size</th>
-												  <td>Xl, 42</td>
-												</tr>
-												<tr>
-												  <th class="ft-medium text-dark">Weight</th>
-												  <td>450 Gr</td>
+													<td>
+														@foreach (var size in Model.Sizes)
+														{
+															@size
+														},
+													</td>
 												</tr>
 											</tbody>
 										</table>

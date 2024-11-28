@@ -13,14 +13,14 @@ namespace KumoShopMVC.Controllers
 	public class CartController : Controller
 	{
 		private readonly KumoShopContext db;
-		private readonly IVnPayService _vnPayService;
-		const string CART_KEY = "MYCART";
+        private readonly IVnPayService _vnPayService;
+        const string CART_KEY = "MYCART";
 
 		public CartController(KumoShopContext context, IVnPayService vnPayService)
 		{
 			db = context;
-			_vnPayService = vnPayService;
-		}
+            _vnPayService = vnPayService;
+        }
 		public IActionResult Index()
 		{
 
@@ -95,29 +95,29 @@ namespace KumoShopMVC.Controllers
 		[HttpPost]
 		public IActionResult CheckOut(CheckoutVM model, string payment = "COD")
 		{
+			var customerId = int.Parse(HttpContext.User.Claims.SingleOrDefault(p => p.Type == MySetting.CLAIM_CUSTOMERID).Value);
+			var user = new User();
+
+			if (model.LikeUser)
+			{
+				user = db.Users.SingleOrDefault(u => u.UserId == customerId);
+			}
 			if (ModelState.IsValid)
 			{
 				if (payment == "Thanh toán bằng VNPay")
 				{
-					var vnPayModel = new VnPayRequestModel
+					var vnPayModel = new PaymentInformationModel()
 					{
 						Amount = Cart.Sum(p => p.SubTotal),
 						CreatedDate = DateTime.Now,
-						Description = $"{model.FullName} {model.PhoneNumber}",
-						FullName = model.FullName,
-						OrderId = new Random().Next(1000, 100000)
+						Description = model.Desc ?? "",
+						FullName = model.FullName ?? ""
 					};
-					return Redirect(_vnPayService.CreatePaymentUrl(HttpContext, vnPayModel));
-				}
+                    var paymentUrl = _vnPayService.CreatePaymentUrl(HttpContext, vnPayModel);
+                    return Redirect(paymentUrl);
+                }
 				else
 				{
-					var customerId = int.Parse(HttpContext.User.Claims.SingleOrDefault(p => p.Type == MySetting.CLAIM_CUSTOMERID).Value);
-					var user = new User();
-
-					if (model.LikeUser)
-					{
-						user = db.Users.SingleOrDefault(u => u.UserId == customerId);
-					}
 					var order = new Order()
 					{
 						UserId = customerId,
@@ -206,15 +206,16 @@ namespace KumoShopMVC.Controllers
 		}
 
 		[Authorize]
-		public ActionResult PaymentCallBack() {
+		public ActionResult PaymentCallBack()
+		{
 			var response = _vnPayService.PaymentExecute(Request.Query);
-			if (response == null || response.VnPayResponseCode != "00") {
+			if (response == null || response.VnPayResponseCode != "00")
+			{
 				TempData["Message"] = $"Lỗi thanh toán VN Pay: {response.VnPayResponseCode}";
 				return RedirectToAction("PaymentFail");
 			}
 			TempData["Message"] = $"Thanh toán VN Pay thành công";
 			return RedirectToAction("PaymentSuccess");
 		}
-
 	}
 }

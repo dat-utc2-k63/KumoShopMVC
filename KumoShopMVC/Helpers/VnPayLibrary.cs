@@ -3,8 +3,7 @@ using System.Net.Sockets;
 using System.Net;
 using System.Security.Cryptography;
 using System.Text;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using Newtonsoft.Json.Linq;
+using KumoShopMVC.ViewModels;
 
 namespace KumoShopMVC.Helpers
 {
@@ -12,6 +11,41 @@ namespace KumoShopMVC.Helpers
 	{
 		private readonly SortedList<string, string> _requestData = new SortedList<string, string>(new VnPayCompare());
 		private readonly SortedList<string, string> _responseData = new SortedList<string, string>(new VnPayCompare());
+		public PaymentResponseModel GetFullResponseData(IQueryCollection collection, string hashSecret)
+		{
+			var vnPay = new VnPayLibrary();
+			foreach (var (key, value) in collection)
+			{
+				if (!string.IsNullOrEmpty(key) && key.StartsWith("vnp_"))
+				{
+					vnPay.AddResponseData(key, value);
+				}
+			}
+			var orderId = Convert.ToInt64(vnPay.GetResponseData("vnp_TxnRef"));
+			var vnPayTranId = Convert.ToInt64(vnPay.GetResponseData("vnp_TransactionNo"));
+			var vnpResponseCode = vnPay.GetResponseData("vnp_ResponseCode");
+			var vnpSecureHash =
+				collection.FirstOrDefault(k => k.Key == "vnp_SecureHash").Value; //hash của dữ liệu trả về
+			var orderInfo = vnPay.GetResponseData("vnp_OrderInfo");
+			var checkSignature =
+				vnPay.ValidateSignature(vnpSecureHash, hashSecret); //check Signature
+			if (!checkSignature)
+				return new PaymentResponseModel()
+				{
+					Success = false
+				};
+			return new PaymentResponseModel()
+			{
+				Success = true,
+				PaymentMethod = "VnPay",
+				OrderDescription = orderInfo,
+				OrderId = orderId.ToString(),
+				PaymentId = vnPayTranId.ToString(),
+				TransactionId = vnPayTranId.ToString(),
+				Token = vnpSecureHash,
+				VnPayResponseCode = vnpResponseCode
+			};
+		}
 
 		public void AddRequestData(string key, string value)
 		{
@@ -20,6 +54,7 @@ namespace KumoShopMVC.Helpers
 				_requestData.Add(key, value);
 			}
 		}
+
 		public void AddResponseData(string key, string value)
 		{
 			if (!string.IsNullOrEmpty(value))
@@ -27,6 +62,7 @@ namespace KumoShopMVC.Helpers
 				_responseData.Add(key, value);
 			}
 		}
+
 		public string GetResponseData(string key)
 		{
 			return _responseData.TryGetValue(key, out var retValue) ? retValue : string.Empty;
@@ -45,29 +81,28 @@ namespace KumoShopMVC.Helpers
 			var querystring = data.ToString();
 
 			baseUrl += "?" + querystring;
-            var signData = querystring.TrimEnd('&');
-            if (signData.Length > 0)
+			var signData = querystring;
+			if (signData.Length > 0)
 			{
 				signData = signData.Remove(data.Length - 1, 1);
 			}
 
 			var vnpSecureHash = Utils.HmacSHA512(vnpHashSecret, signData);
 			baseUrl += "vnp_SecureHash=" + vnpSecureHash;
-            return baseUrl;
+
+			return baseUrl;
 		}
-        #endregion
+		#endregion
 
-        #region Response process
-        public bool ValidateSignature(string inputHash, string secretKey)
-        {
-            if (string.IsNullOrEmpty(inputHash)) return false;
+		#region Response process
+		public bool ValidateSignature(string inputHash, string secretKey)
+		{
+			var rspRaw = GetResponseData();
+			var myChecksum = Utils.HmacSHA512(secretKey, rspRaw);
+			return myChecksum.Equals(inputHash, StringComparison.InvariantCultureIgnoreCase);
+		}
 
-            var rspRaw = GetResponseData();
-            var myChecksum = Utils.HmacSHA512(secretKey, rspRaw);
-            return myChecksum.Equals(inputHash, StringComparison.InvariantCultureIgnoreCase);
-        }
-
-        private string GetResponseData()
+		private string GetResponseData()
 		{
 			var data = new StringBuilder();
 			if (_responseData.ContainsKey("vnp_SecureHashType"))
@@ -158,4 +193,5 @@ namespace KumoShopMVC.Helpers
 			return vnpCompare.Compare(x, y, CompareOptions.Ordinal);
 		}
 	}
+
 }

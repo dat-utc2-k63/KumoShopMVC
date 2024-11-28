@@ -35,7 +35,6 @@ namespace KumoShopMVC.Controllers
                 .Take(pageSize)            
                 .ToList();
 
-            // Tạo danh sách ProductVM
             var result = productList.Select(p => new ProductVM
             {
                 ProductId = p.ProductId,
@@ -52,7 +51,6 @@ namespace KumoShopMVC.Controllers
                 IsNew = p.IsNew ?? false
             }).ToList();
 
-            // Tính tổng số trang
             var totalPages = (int)Math.Ceiling((double)totalProducts / pageSize);
 
             ViewData["CurrentPage"] = page;
@@ -61,7 +59,6 @@ namespace KumoShopMVC.Controllers
 
             return View(result);
         }
-
         public IActionResult Search(string? query, float? minPrice, float? maxPrice, string? brands, bool? genders, int page = 1, int pageSize = 6)
 		{
 			var products = db.Products.AsQueryable();

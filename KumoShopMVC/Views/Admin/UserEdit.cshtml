@@ -1,7 +1,86 @@
 ﻿
+@model KumoShopMVC.ViewModels.UserVM
 @{
     ViewData["Title"] = "EditUser";
 }
-
 <h1>EditUser</h1>
 
+<div class="page-content">
+
+    <!-- Start Container Fluid -->
+    <div class="container-xxl">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">User Information</h4>
+                    </div>
+                    <form asp-action="UserEdit" method="post">
+                        <input type="hidden" asp-for="UserId" />
+                        <div class="form-group">
+                            <label for="Email">Email</label>
+                            <input type="email" class="form-control" asp-for="Email" value="@Model.Email" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Fullname">Full Name</label>
+                            <input type="text" class="form-control" asp-for="Fullname" />
+                            <span asp-validation-for="Fullname" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Phone">Phone</label>
+                            <input type="text" class="form-control" asp-for="Phone" />
+                            <span asp-validation-for="Phone" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Address">Address</label>
+                            <input type="text" class="form-control" asp-for="Address" />
+                            <span asp-validation-for="Address" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Status">Status</label>
+                            <select asp-for="Status" class="form-control">
+                                <option value="true">Active</option>
+                                <option value="false">NoActive</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Avatar">Avatar URL</label>
+                            <input type="text" class="form-control" asp-for="Avatar" />
+                            <span asp-validation-for="Avatar" class="text-danger"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="CreateDate">CreateDate</label>
+                            <input type="date" class="form-control" asp-for="CreateDate" />
+                            <span asp-validation-for="CreateDate" class="text-danger"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Lưu</button>
+                        <a href="@Url.Action("UserList", "Admin")" class="btn btn-secondary">Hủy</a>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Container Fluid -->
+<!-- ========== Footer Start ========== -->
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-center">
+                <script>document.write(new Date().getFullYear())</script> &copy; Larkon. Crafted by <iconify-icon icon="iconamoon:heart-duotone" class="fs-18 align-middle text-danger"></iconify-icon> <a href="#" class="fw-bold footer-text" target="_blank">Techzaa</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- ========== Footer End ========== -->
+</div>

@@ -35,6 +35,5 @@ namespace KumoShopMVC.ViewModels
 		public string? Phone { get; set; }
         public string? AboutUs { get; set; }
 
-
     }
 }

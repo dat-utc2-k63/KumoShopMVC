@@ -52,16 +52,11 @@
                             <input type="text" class="form-control" id="Avatar" name="Avatar" value="@Model.Avatar" />
                         </div>
 
-                        <div class="form-group mb-3">
-                            <label for="CreateDate">Create Date</label>
-                            <input type="date" class="form-control" id="CreateDate" name="CreateDate" value="@Model.CreateDate?.ToString("yyyy-MM-dd")" />
-                        </div>
 
                         <div class="form-group mb-3">
                             <label for="Namerole">Role</label>
                             <select class="form-control" id="Namerole" name="Namerole" asp-items="ViewBag.Roles">
                                 <option value="" selected>Select Role</option>
-     
                             </select>
                         </div>
 

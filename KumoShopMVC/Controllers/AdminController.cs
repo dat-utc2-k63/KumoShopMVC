@@ -1,4 +1,5 @@
 ﻿using KumoShopMVC.Data;
+using KumoShopMVC.Helpers;
 using KumoShopMVC.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -56,12 +57,12 @@ namespace KumoShopMVC.Controllers
 		public IActionResult RoleList()
 		{
 			var roles = db.Roles.Select(
-								r => new RoleVM
-								{
-									RoleId = r.RoleId,
-									NameRole = r.NameRole,
-									CreateDate = r.CreateDate
-								}).ToList();
+				r => new RoleVM
+			{
+				RoleId = r.RoleId,
+				NameRole = r.NameRole ?? "",
+				CreateDate = r.CreateDate
+			}).ToList();
 			return View(roles);
 		}
 		[HttpGet]
@@ -69,7 +70,6 @@ namespace KumoShopMVC.Controllers
 		{
 			return View(new RoleVM());
 		}
-        [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult RoleCreate(RoleVM model)
@@ -162,7 +162,7 @@ namespace KumoShopMVC.Controllers
           Fullname = u.Fullname,
           Phone = u.Phone,
           Address = u.Address,
-          Status = u.Status,
+          Status = u.Status ?? false,
           Avatar = u.Avatar,
           CreateDate = u.CreateDate,
           Namerole = u.Role != null ? u.Role.NameRole: "No Role"
@@ -206,7 +206,7 @@ namespace KumoShopMVC.Controllers
                 Fullname = model.Fullname,
                 Phone = model.Phone,
                 Address = model.Address,
-                Status = model.Status ?? false, // Mặc định false nếu không được cung cấp
+                Status = model.Status, // Mặc định false nếu không được cung cấp
                 Avatar = model.Avatar,
                 CreateDate = model.CreateDate ?? DateTime.Now, // Nếu không có giá trị, dùng ngày hiện tại
                 RoleId = role.RoleId // Gán RoleId dựa trên tên vai trò
@@ -216,41 +216,68 @@ namespace KumoShopMVC.Controllers
             db.SaveChanges();
             return RedirectToAction("UserList");
         }
+        [HttpGet]
         public IActionResult UserEdit(int id)
-		{
-			var user = db.Users
-			.Where(u => u.UserId == id)
-			.Select(u => new UserVM
-			{
-				UserId = u.UserId,
-				Email = u.Email,
-				Fullname = u.Fullname,
-				Phone = u.Phone,
-				Address = u.Address,
-				Status = u.Status,
-				Avatar = u.Avatar,
-				CreateDate = u.CreateDate,
-				Namerole = u.Role.NameRole
-			}).FirstOrDefault();
-			if(user == null)
-			{
+        {
+            var user = db.Users.SingleOrDefault(u => u.UserId == id);
+
+            if (user == null)
+            {
                 return NotFound();
             }
-                return View(user);
-		}
-        //public IActionResult UserEdit(UserVM user)
-        //{
-        //	var existed_user=db.Users.FirstOrDefault(u => u.UserId == user.UserId);
-        //          if (existed_user == null)
-        //	{
-        //              return NotFound();
-        //          }
-        //	if (ModelState.IsValid)
-        //	{
 
-        //	}
-        //      }
-       
+            ViewBag.Roles = new SelectList(db.Roles.ToList(), "RoleId", "NameRole", user.RoleId);
+
+            var model = new UserVM
+            {
+                UserId = user.UserId,
+                Email = user.Email,
+                Fullname = user.Fullname ?? "",
+                Status = user.Status ?? true,
+                RoleId = user.RoleId,
+                Namerole = user.Role.NameRole,
+                Address = user.Address,
+                Phone = user.Phone,
+                Avatar = user.Avatar
+            };
+
+            return View(model);
+        }
+
+        [HttpPost]
+        public IActionResult UserEdit(UserVM model, IFormFile Avatar)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = db.Users.FirstOrDefault(u => u.UserId == model.UserId);
+                if (user == null)
+                {
+                    return NotFound();
+                }
+
+                user.Email = model.Email;
+                user.Fullname = model.Fullname;
+                user.Phone = model.Phone;
+                user.Address = model.Address;
+                user.Status = model.Status;
+                user.RoleId = model.RoleId;
+
+                if (Avatar != null)
+                {
+                    user.Avatar = MyUtil.UpLoadAvatar(Avatar, "User");
+                }
+                else
+                {
+                    user.Avatar = user.Avatar ?? model.Avatar;
+                }
+
+                db.SaveChanges();
+                TempData["Message"] = "Cập nhật thông tin thành công!";
+                return RedirectToAction("UserList", "Admin");
+            }
+            return View(model);
+        }
+
         public IActionResult DeleteUser(int userId)
         {
             var user = db.Users.FirstOrDefault(u => u.UserId == userId);  // Tìm user theo UserId

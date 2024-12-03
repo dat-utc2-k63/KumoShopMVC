@@ -10,10 +10,12 @@ namespace KumoShopMVC.Controllers
     public class AdminController : Controller
     {
 		private readonly KumoShopContext db;
-		public AdminController(KumoShopContext context)
+        private readonly IWebHostEnvironment _webHostEnvironment;
+        public AdminController(KumoShopContext context, IWebHostEnvironment webHostEnvironment)
 		{
 			db = context;
-		}
+            _webHostEnvironment = webHostEnvironment;
+        }
 
 		public IActionResult Index()
         {
@@ -69,30 +71,36 @@ namespace KumoShopMVC.Controllers
 		{
 			return View(new RoleVM());
 		}
-        [Authorize]
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult RoleCreate(RoleVM model)
-		{
-			if (!ModelState.IsValid)
-			{
-				return View(model);
-			}
-			if (ModelState.IsValid)
-			{
-			var role = new Role
-			{
-				NameRole = model.NameRole,
-				CreateDate = DateTime.Now
-			};
-				//Lưu vào cơ sở dữ liệu
-				db.Roles.Add(role);
-				db.SaveChanges();
-				return RedirectToAction("Index");
-			}
-			return View(model);
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
 
-		}
+            try
+            {
+                var role = new Role
+                {
+                    NameRole = model.NameRole,
+                    CreateDate = DateTime.Now
+                };
+
+                db.Roles.Add(role);
+                db.SaveChanges();
+
+                return RedirectToAction("RoleList", "Admin");
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", "An error occurred while saving data: " + ex.Message);
+                return View(model);
+            }
+        }
+        [HttpGet]
         public IActionResult RoleEdit(int id)
         {
             // Lấy vai trò theo id từ cơ sở dữ liệu
@@ -104,52 +112,48 @@ namespace KumoShopMVC.Controllers
                 return NotFound(); // Trả về lỗi 404 nếu không tìm thấy vai trò
             }
 
-   
+            // Chuyển đổi từ Role sang RoleVM
             var model = new RoleVM
             {
                 RoleId = role.RoleId,
                 NameRole = role.NameRole,
-                
                 CreateDate = role.CreateDate
             };
 
+            // Truyền RoleVM vào View
             return View(model);
         }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult RoleEdit(RoleVM model)
         {
-            if (model == null)
+            if (!ModelState.IsValid)
             {
-                ModelState.AddModelError("", "Invalid model data.");
-                return View();
+                // Nếu ModelState không hợp lệ, trả lại View với dữ liệu người dùng đã nhập
+                return View(model);
             }
 
-            if (ModelState.IsValid)
+            // Tìm role từ cơ sở dữ liệu
+            var existed_role = db.Roles.FirstOrDefault(r => r.RoleId == model.RoleId);
+            if (existed_role == null)
             {
-                var role = db.Roles.FirstOrDefault(r => r.RoleId == model.RoleId);
-
-                // Kiểm tra nếu không tìm thấy vai trò
-                if (role == null)
-                {
-                    return NotFound(); // Trả về lỗi 404 nếu không tìm thấy vai trò
-                }
-
-                // Cập nhật thông tin vai trò
-                role.NameRole = model.NameRole;
-                if (model.CreateDate.HasValue)
-                {
-                    role.CreateDate = model.CreateDate.Value;
-                }
-                // Giữ nguyên CreateDate nếu không có giá trị mới
-                db.Update(role);
-                db.SaveChanges();
-
-                return RedirectToAction("RoleList","Admin"); // Redirect đến danh sách vai trò sau khi lưu
+                // Nếu không tìm thấy role, trả về lỗi 404
+                return NotFound();
             }
 
-            return View(model); // Nếu không hợp lệ, hiển thị lại form với lỗi
+            // Cập nhật thông tin
+            existed_role.NameRole = model.NameRole;
+            existed_role.CreateDate = model.CreateDate;
+
+            // Lưu thay đổi
+            db.Update(existed_role);
+            db.SaveChanges();
+
+            // Chuyển hướng về danh sách vai trò sau khi cập nhật thành công
+            return RedirectToAction("RoleList", "Admin");
         }
+
 
 
         public IActionResult UserList()
@@ -214,7 +218,7 @@ namespace KumoShopMVC.Controllers
 
             db.Users.Add(user);
             db.SaveChanges();
-            return RedirectToAction("UserList");
+            return RedirectToAction("UserList","Admin");
         }
         public IActionResult UserEdit(int id)
 		{
@@ -238,19 +242,59 @@ namespace KumoShopMVC.Controllers
             }
                 return View(user);
 		}
-        //public IActionResult UserEdit(UserVM user)
-        //{
-        //	var existed_user=db.Users.FirstOrDefault(u => u.UserId == user.UserId);
-        //          if (existed_user == null)
-        //	{
-        //              return NotFound();
-        //          }
-        //	if (ModelState.IsValid)
-        //	{
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult UserEdit(UserVM user)
+        {
+            // Kiểm tra xem user có null không
+            if (user == null)
+            {
+                return BadRequest("Invalid user data.");
+            }
 
-        //	}
-        //      }
-       
+            // Kiểm tra nếu không tìm thấy người dùng trong cơ sở dữ liệu
+            var existed_user = db.Users.FirstOrDefault(u => u.UserId == user.UserId);
+            if (existed_user == null)
+            {
+                return NotFound(); // Trả về lỗi 404 nếu không tìm thấy người dùng
+            }
+
+            // Kiểm tra ModelState hợp lệ
+            if (!ModelState.IsValid)
+            {
+                return View(user); // Trả về lại View nếu có lỗi
+            }
+
+            // Cập nhật thông tin người dùng
+            existed_user.Email = user.Email;
+            existed_user.Fullname = user.Fullname;
+            existed_user.Phone = user.Phone;
+            existed_user.Address = user.Address;
+            existed_user.Status = user.Status;
+            existed_user.Avatar = user.Avatar;
+            existed_user.CreateDate = user.CreateDate ?? DateTime.Now;
+
+            // Cập nhật role của người dùng
+            var role = db.Roles.FirstOrDefault(r => r.NameRole == user.Namerole);
+            if (role != null)
+            {
+                existed_user.RoleId = role.RoleId; // Gán RoleId cho người dùng
+            }
+            else
+            {
+                ModelState.AddModelError("Namerole", "Role not found.");
+                return View(user); // Trả về View nếu không tìm thấy role
+            }
+
+            
+            db.Update(existed_user);
+            db.SaveChanges();
+
+            // Chuyển hướng về danh sách người dùng sau khi cập nhật thành công
+            return RedirectToAction("UserList", "Admin");
+        }
+
+
         public IActionResult DeleteUser(int userId)
         {
             var user = db.Users.FirstOrDefault(u => u.UserId == userId);  // Tìm user theo UserId

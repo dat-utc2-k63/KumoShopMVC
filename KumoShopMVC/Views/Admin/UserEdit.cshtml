@@ -17,6 +17,7 @@
                         <h4 class="card-title">User Information</h4>
                     </div>
                     <form asp-action="UserEdit" method="post">
+                        @Html.AntiForgeryToken()
                         <input type="hidden" asp-for="UserId" />
                         <div class="form-group">
                             <label for="Email">Email</label>
@@ -62,8 +63,8 @@
                             <span asp-validation-for="CreateDate" class="text-danger"></span>
                         </div>
 
-                        <button type="submit" class="btn btn-primary">Lưu</button>
-                        <a href="@Url.Action("UserList", "Admin")" class="btn btn-secondary">Hủy</a>
+                        <button type="submit" class="btn btn-primary">Update</button>
+                        <a href="@Url.Action("UserList", "Admin")" class="btn btn-secondary">Cancel</a>
                     </form>
                 </div>
 

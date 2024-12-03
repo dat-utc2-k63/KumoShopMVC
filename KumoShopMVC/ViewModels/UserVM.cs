@@ -1,4 +1,5 @@
 ﻿using KumoShopMVC.Data;
+using System.ComponentModel.DataAnnotations;
 
 namespace KumoShopMVC.ViewModels
 {
@@ -14,13 +15,13 @@ namespace KumoShopMVC.ViewModels
 
         public string? Address { get; set; }
 
-        public bool? Status { get; set; }
+        public bool Status { get; set; }
 
         public string? Avatar { get; set; }
 
         public DateTime? CreateDate { get; set; }
 
-        public int? RoleId { get; set; } // Tên Role, được lấy từ đối tượng Role
+        public int RoleId { get; set; } 
         public string? Namerole { get; set; }
     }
 }

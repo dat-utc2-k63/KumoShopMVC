@@ -277,7 +277,6 @@ namespace KumoShopMVC.Controllers
                 {
                     user.Password = model.NewPassword.ToMd5Hash(user.RandomKey);
                 }
-
                 db.SaveChanges();
                 return RedirectToAction("Profile");
             }

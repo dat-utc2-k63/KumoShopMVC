@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ft5tnm6crUxWie1ydkSTMsiBE1CoVe8BtQubSCN805g=",
+  "Hash": "7ZwjbWL1m5311cs3JWvOsWAy6OdY4f8JVFnKs4hJSzw=",
   "Source": "KumoShopMVC",
   "BasePath": "_content/KumoShopMVC",
   "Mode": "Default",
@@ -8662,6 +8662,25 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\tshirt.png"
     },
     {
+      "Identity": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\User\\18f53b08-ec80-4e44-9b18-484a98e6e3a3.jpg",
+      "SourceId": "KumoShopMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\",
+      "BasePath": "_content/KumoShopMVC",
+      "RelativePath": "assets/img/User/18f53b08-ec80-4e44-9b18-484a98e6e3a3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\User\\18f53b08-ec80-4e44-9b18-484a98e6e3a3.jpg"
+    },
+    {
       "Identity": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\User\\863afa8f-56a7-49f0-a00e-8207e4eae620.jpg",
       "SourceId": "KumoShopMVC",
       "SourceType": "Discovered",
@@ -8679,6 +8698,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\img\\User\\863afa8f-56a7-49f0-a00e-8207e4eae620.jpg"
+    },
+    {
+      "Identity": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\User\\f6412d68-6963-402d-b117-eed76b01abc7.png",
+      "SourceId": "KumoShopMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\",
+      "BasePath": "_content/KumoShopMVC",
+      "RelativePath": "assets/img/User/f6412d68-6963-402d-b117-eed76b01abc7.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\User\\f6412d68-6963-402d-b117-eed76b01abc7.png"
     },
     {
       "Identity": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\js\\bootstrap.min.js",

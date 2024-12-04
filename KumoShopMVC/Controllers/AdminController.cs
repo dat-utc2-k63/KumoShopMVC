@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using X.PagedList.Extensions;
 
 namespace KumoShopMVC.Controllers
 {
@@ -56,17 +57,7 @@ namespace KumoShopMVC.Controllers
 		{
 			return View();
 		}
-		public IActionResult RoleList()
-		{
-			var roles = db.Roles.Select(
-				r => new RoleVM
-			{
-				RoleId = r.RoleId,
-				NameRole = r.NameRole ?? "",
-				CreateDate = r.CreateDate
-			}).ToList();
-			return View(roles);
-		}
+		
 		[HttpGet]
 		public IActionResult RoleCreate()
 		{
@@ -156,25 +147,34 @@ namespace KumoShopMVC.Controllers
 
 
 
-        public IActionResult UserList()
-		{
+        public IActionResult UserList(int? page)
+        {
+            int pageSize = 5; // Số lượng mục hiển thị trên mỗi trang
+            int pageNumber = page ?? 1; // Lấy số trang từ tham số, mặc định là trang 1
+
+            // Lấy danh sách người dùng từ cơ sở dữ liệu và chuyển đổi thành một danh sách trang
             var users = db.Users
-      .Select(u => new UserVM
-      {
-          UserId = u.UserId,
-          Email = u.Email,
-          Fullname = u.Fullname,
-          Phone = u.Phone,
-          Address = u.Address,
-          Status = u.Status ?? false,
-          Avatar = u.Avatar,
-          CreateDate = u.CreateDate,
-          Namerole = u.Role != null ? u.Role.NameRole: "No Role"
-      })
-      .ToList();
+                .Select(u => new UserVM
+                {
+                    UserId = u.UserId,
+                    Email = u.Email,
+                    Fullname = u.Fullname,
+                    Phone = u.Phone,
+                    Address = u.Address,
+                    Status = u.Status ?? false,
+                    Avatar = u.Avatar,
+                    CreateDate = u.CreateDate,
+                    Namerole = u.Role != null ? u.Role.NameRole : "No Role"
+                })
+                .OrderBy(u => u.UserId) // Sắp xếp theo UserId để đảm bảo phân trang hoạt động đúng
+                .ToPagedList(pageNumber, pageSize); // Phân trang
+
+            // Trả về view với model là danh sách phân trang
             return View(users);
-		}
-		public IActionResult UserCreate()
+        }
+
+
+        public IActionResult UserCreate()
         {
             ViewBag.Roles = db.Roles
     .Select(r => new SelectListItem
@@ -187,39 +187,75 @@ namespace KumoShopMVC.Controllers
            
 		}
         [HttpPost]
-        [ValidateAntiForgeryToken]
-		public IActionResult UserCreate(UserVM model)
-		{
+       
+        public IActionResult UserCreate(UserVM model, IFormFile Avatar)
+        {
             if (!ModelState.IsValid)
             {
-                //ViewBag.Roles = db.Roles.Select(r => new { r.RoleId, r.NameRole }).ToList();
-				ViewBag.Roles=new SelectList(db.Roles.ToList(), "RoleId", "NameRole");
-                return View(model);
-            }
-            var role = db.Roles.FirstOrDefault(r => r.NameRole == model.Namerole);
-            if (role == null)
-            {
-                ModelState.AddModelError("Namerole", "Role not found in the database.");
                 ViewBag.Roles = new SelectList(db.Roles.ToList(), "RoleId", "NameRole");
                 return View(model);
             }
 
+            var role = db.Roles.FirstOrDefault(r => r.RoleId == model.RoleId);
+            if (role == null)
+            {
+                ModelState.AddModelError("RoleId", "Selected role not found in the database.");
+                ViewBag.Roles = new SelectList(db.Roles.ToList(), "RoleId", "NameRole");
+                return View(model);
+            }
+
+            // Xử lý thông tin người dùng
             var user = new User
             {
                 Email = model.Email,
                 Fullname = model.Fullname,
                 Phone = model.Phone,
                 Address = model.Address,
-                Status = model.Status, // Mặc định false nếu không được cung cấp
-                Avatar = model.Avatar,
-                CreateDate = model.CreateDate ?? DateTime.Now, // Nếu không có giá trị, dùng ngày hiện tại
-                RoleId = role.RoleId // Gán RoleId dựa trên tên vai trò
+                Status = model.Status,
+                CreateDate = model.CreateDate.HasValue ? model.CreateDate.Value : DateTime.Now,
+                RoleId = role.RoleId
             };
 
-            db.Users.Add(user);
-            db.SaveChanges();
-            return RedirectToAction("UserList","Admin");
+            // Xử lý Avatar
+            if (Avatar != null && Avatar.Length > 0)
+            {
+                if (Avatar.ContentType.StartsWith("image/"))
+                {
+                    try
+                    {
+                        string fileName = MyUtil.UpLoadAvatar(Avatar, "User");
+                        user.Avatar = fileName;
+                    }
+                    catch (Exception ex)
+                    {
+                        ModelState.AddModelError("Avatar", "Error uploading avatar: " + ex.Message);
+                        ViewBag.Roles = new SelectList(db.Roles.ToList(), "RoleId", "NameRole");
+                        return View(model);
+                    }
+                }
+                else
+                {
+                    ModelState.AddModelError("Avatar", "Please upload a valid image file.");
+                    ViewBag.Roles = new SelectList(db.Roles.ToList(), "RoleId", "NameRole");
+                    return View(model);
+                }
+            }
+
+            // Lưu thông tin vào cơ sở dữ liệu
+            try
+            {
+                db.Users.Add(user);
+                db.SaveChanges();
+                return RedirectToAction("UserList", "Admin");
+            }
+            catch (Exception ex)
+            {
+                TempData["Error"] = "Error saving user: " + ex.Message;
+                ViewBag.Roles = new SelectList(db.Roles.ToList(), "RoleId", "NameRole");
+                return View(model);
+            }
         }
+
         [HttpGet]
         public IActionResult UserEdit(int id)
         {
@@ -248,38 +284,71 @@ namespace KumoShopMVC.Controllers
         }
 
         [HttpPost]
-        public IActionResult UserEdit(UserVM model, IFormFile Avatar)
+        public IActionResult UserEdit(UserVM model, IFormFile? Avatar)
         {
-            if (ModelState.IsValid)
+          
+            if (!ModelState.IsValid)
             {
-                var user = db.Users.FirstOrDefault(u => u.UserId == model.UserId);
-                if (user == null)
-                {
-                    return NotFound();
-                }
+                TempData["Error"] = "Thông tin không hợp lệ. Vui lòng kiểm tra lại.";
+                return View(model);
+            }
 
-                user.Email = model.Email;
-                user.Fullname = model.Fullname;
-                user.Phone = model.Phone;
-                user.Address = model.Address;
-                user.Status = model.Status;
-                user.RoleId = model.RoleId;
+            var user = db.Users.FirstOrDefault(u => u.UserId == model.UserId);
+            ViewBag.Roles = new SelectList(db.Roles.ToList(), "RoleId", "NameRole", user.RoleId);
+            if (user == null)
+            {
+                TempData["Error"] = "Người dùng không tồn tại.";
+                return RedirectToAction("UserList", "Admin");
+            }
 
-                if (Avatar != null)
+            // Cập nhật các thuộc tính dù Avatar có thay đổi hay không
+            user.Email = model.Email;
+            user.Fullname = model.Fullname;
+            user.Phone = model.Phone;
+            user.Address = model.Address;
+            user.Status = model.Status;
+            user.RoleId = model.RoleId;
+
+            // Xử lý ảnh đại diện nếu có thay đổi
+            if (Avatar != null)
+            {
+                if (Avatar.Length > 0 && Avatar.ContentType.StartsWith("image/"))
                 {
-                    user.Avatar = MyUtil.UpLoadAvatar(Avatar, "User");
+                    try
+                    {
+                        user.Avatar = MyUtil.UpLoadAvatar(Avatar, "User");
+                    }
+                    catch (Exception ex)
+                    {
+                        TempData["Error"] = "Lỗi khi tải lên ảnh đại diện: " + ex.Message;
+                        return View(model);
+                    }
                 }
                 else
                 {
-                    user.Avatar = user.Avatar ?? model.Avatar;
+                    TempData["Error"] = "Tệp không hợp lệ. Vui lòng chọn một hình ảnh.";
+                    return View(model);
                 }
+            }
+            // Nếu Avatar không thay đổi, giữ nguyên giá trị cũ
 
+            // Cập nhật đối tượng và lưu vào cơ sở dữ liệu
+            try
+            {
+                db.Entry(user).State = EntityState.Modified;  // Đảm bảo rằng EF nhận diện tất cả thay đổi
                 db.SaveChanges();
                 TempData["Message"] = "Cập nhật thông tin thành công!";
-                return RedirectToAction("UserList", "Admin");
             }
-            return View(model);
+            catch (Exception ex)
+            {
+                TempData["Error"] = "Đã xảy ra lỗi khi lưu thông tin: " + ex.Message;
+                return View(model);
+            }
+
+            return RedirectToAction("UserList", "Admin");
         }
+
+
 
         public IActionResult DeleteUser(int userId)
         {
@@ -307,6 +376,25 @@ namespace KumoShopMVC.Controllers
             db.SaveChanges();  // Lưu thay đổi vào cơ sở dữ liệu
             return RedirectToAction("RoleList");  // Quay lại trang danh sách role sau khi xóa
         }
+
+        public IActionResult RoleList(int? page)
+        {
+            int pageSize = 5;
+            int pageNumber = page ?? 1;
+
+            var roles = db.Roles
+                                .OrderBy(r => r.RoleId)
+                                .Select(r => new RoleVM
+                                {
+                                    RoleId = r.RoleId,
+                                    NameRole = r.NameRole,
+                                    CreateDate = r.CreateDate
+                                })
+                                .ToPagedList(pageNumber, pageSize);
+
+            return View(roles);
+        }
+
         public IActionResult Contact()
 		{
 			return View();

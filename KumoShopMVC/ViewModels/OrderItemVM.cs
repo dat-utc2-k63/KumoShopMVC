@@ -4,7 +4,7 @@
 	{
 		public int OrderItemId { get; set; }
 
-		public int ProductId { get; set; }
+		public int? ProductId { get; set; }
 		public bool Status { get; set; }
 
 		public string NameProduct { get; set; }

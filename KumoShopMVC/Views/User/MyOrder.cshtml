@@ -55,15 +55,20 @@
 
 					</div>
 					<div class="ord_list_body text-left">
-
-						<!-- First Product -->
 						@foreach(var item in order.OrderItems){
 						<div class="row align-items-center justify-content-center m-0 py-4">
 							<div class="col-xl-5 col-lg-5 col-md-5 col-12">
 								<div class="cart_single d-flex align-items-start mfliud-bot">
 									<div class="cart_selected_single_thumb">
-										<a href="#"><img src="~/assets/img/product/@item.Image" width="75" class="img-fluid rounded" alt=""></a>
-									</div>
+												@if (item.ProductId == null)
+												{
+													<p class="text-muted">Sản phẩm đã xóa</p>
+												}
+												else
+												{
+													<a href="#"><img src="~/assets/img/product/@item.Image" width="75" class="img-fluid rounded" alt=""></a>
+												}
+											</div>
 									<div class="cart_single_caption pl-3">
 										<p class="mb-0"><span class="text-muted small">Men's</span></p>
 										<h4 class="product_title fs-sm ft-medium mb-1 lh-1">@item.NameProduct</h4>

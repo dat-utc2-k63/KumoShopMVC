@@ -28,7 +28,7 @@ namespace KumoShopMVC.ViewModels
 
 		public bool? Status { get; set; }
 
-		public int RoleId { get; set; }
+		public int? RoleId { get; set; }
 
 		public DateTime? CreateDate { get; set; }
 		public string? Address { get; set; }

@@ -515,3 +515,6 @@ D:\HỌC KỲ 1 2024-2025\Lập trình Web\Thực hành\KumoShopMVC\KumoShopMVC\
 D:\HỌC KỲ 1 2024-2025\Lập trình Web\Thực hành\KumoShopMVC\KumoShopMVC\bin\Debug\net8.0\X.PagedList.dll
 D:\HỌC KỲ 1 2024-2025\Lập trình Web\Thực hành\KumoShopMVC\KumoShopMVC\bin\Debug\net8.0\X.PagedList.Mvc.Core.dll
 D:\HỌC KỲ 1 2024-2025\Lập trình Web\Thực hành\KumoShopMVC\KumoShopMVC\obj\Debug\net8.0\KumoShopMVC.MvcApplicationPartsAssemblyInfo.cs
+D:\asp.net\KumoShopMVC\KumoShopMVC\obj\Debug\net8.0\KumoShopMVC.MvcApplicationPartsAssemblyInfo.cs
+D:\asp.net\KumoShopMVC\KumoShopMVC\bin\Debug\net8.0\X.PagedList.dll
+D:\asp.net\KumoShopMVC\KumoShopMVC\bin\Debug\net8.0\X.PagedList.Mvc.Core.dll

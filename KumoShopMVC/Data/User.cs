@@ -17,7 +17,7 @@ public partial class User
 
     public bool? Status { get; set; }
 
-    public int RoleId { get; set; }
+    public int? RoleId { get; set; }
 
     public DateTime? CreateDate { get; set; }
 
@@ -33,9 +33,7 @@ public partial class User
 
     public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
 
-    public virtual ICollection<Payment> Payments { get; set; } = new List<Payment>();
-
     public virtual ICollection<RatingProduct> RatingProducts { get; set; } = new List<RatingProduct>();
 
-    public virtual Role Role { get; set; } = null!;
+    public virtual Role? Role { get; set; }
 }

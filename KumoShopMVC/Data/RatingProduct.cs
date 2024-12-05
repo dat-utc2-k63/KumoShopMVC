@@ -7,9 +7,9 @@ public partial class RatingProduct
 {
     public int RatingId { get; set; }
 
-    public int UserId { get; set; }
+    public int? UserId { get; set; }
 
-    public int ProductId { get; set; }
+    public int? ProductId { get; set; }
 
     public string? DescRating { get; set; }
 
@@ -19,9 +19,9 @@ public partial class RatingProduct
 
     public string? Fullname { get; set; }
 
-    public virtual Product Product { get; set; } = null!;
+    public virtual Product? Product { get; set; }
 
     public virtual ICollection<RatingImage> RatingImages { get; set; } = new List<RatingImage>();
 
-    public virtual User User { get; set; } = null!;
+    public virtual User? User { get; set; }
 }

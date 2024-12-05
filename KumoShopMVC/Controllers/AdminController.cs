@@ -273,7 +273,7 @@ namespace KumoShopMVC.Controllers
                 Email = user.Email,
                 Fullname = user.Fullname ?? "",
                 Status = user.Status ?? true,
-                RoleId = user.RoleId,
+                RoleId = user.RoleId ?? 0,
                 Namerole = user.Role.NameRole,
                 Address = user.Address,
                 Phone = user.Phone,

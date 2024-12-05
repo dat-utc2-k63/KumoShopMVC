@@ -21,7 +21,7 @@ public partial class Product
 
     public bool? Status { get; set; }
 
-    public int CategoryId { get; set; }
+    public int? CategoryId { get; set; }
 
     public DateTime? CreateDate { get; set; }
 
@@ -31,7 +31,7 @@ public partial class Product
 
     public bool? IsHot { get; set; }
 
-    public virtual Category Category { get; set; } = null!;
+    public virtual Category? Category { get; set; }
 
     public virtual ICollection<FavouriteItem> FavouriteItems { get; set; } = new List<FavouriteItem>();
 

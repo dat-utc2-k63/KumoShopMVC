@@ -441,8 +441,7 @@
               "RelativeToolTip": "KumoShopMVC\\ViewModels\\ProductVM.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAiwA0AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T07:16:32.483Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T07:16:32.483Z"
             },
             {
               "$type": "Document",
@@ -454,8 +453,7 @@
               "RelativeToolTip": "KumoShopMVC\\ViewModels\\RatingProductVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T06:31:48.047Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-19T06:31:48.047Z"
             },
             {
               "$type": "Document",
@@ -467,8 +465,7 @@
               "RelativeToolTip": "KumoShopMVC\\ViewModels\\RegisterVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T07:30:07.852Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T07:30:07.852Z"
             },
             {
               "$type": "Document",
@@ -480,8 +477,7 @@
               "RelativeToolTip": "KumoShopMVC\\ViewModels\\RoleVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T07:06:19.048Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-02T07:06:19.048Z"
             },
             {
               "$type": "Document",
@@ -493,8 +489,7 @@
               "RelativeToolTip": "KumoShopMVC\\ViewModels\\ShippingAddressVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T05:00:38.969Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T05:00:38.969Z"
             },
             {
               "$type": "Document",
@@ -506,8 +501,7 @@
               "RelativeToolTip": "KumoShopMVC\\ViewModels\\UpdateProfileVM.cs",
               "ViewState": "AgIAACIAAAAAAAAAAADwvxoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T01:09:04.274Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T01:09:04.274Z"
             },
             {
               "$type": "Document",
@@ -517,7 +511,7 @@
               "RelativeDocumentMoniker": "KumoShopMVC\\Views\\User\\MyOrder.cshtml",
               "ToolTip": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\User\\MyOrder.cshtml",
               "RelativeToolTip": "KumoShopMVC\\Views\\User\\MyOrder.cshtml",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAAwGUAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAADoAAAAAAAAAAAAAwEUAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-10-17T00:41:06.862Z",
               "EditorCaption": ""
@@ -532,8 +526,7 @@
               "RelativeToolTip": "KumoShopMVC\\ViewModels\\PaymentResponseModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T01:25:47.355Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-28T01:25:47.355Z"
             },
             {
               "$type": "Document",
@@ -545,8 +538,7 @@
               "RelativeToolTip": "KumoShopMVC\\ViewModels\\PaymentInformationModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T01:11:23.155Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-28T01:11:23.155Z"
             },
             {
               "$type": "Document",
@@ -558,8 +550,7 @@
               "RelativeToolTip": "KumoShopMVC\\ViewModels\\OrderVM.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAwAYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-15T03:51:26.085Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-15T03:51:26.085Z"
             },
             {
               "$type": "Document",
@@ -571,8 +562,7 @@
               "RelativeToolTip": "KumoShopMVC\\ViewModels\\OrderItemVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T06:11:59.206Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T06:11:59.206Z"
             },
             {
               "$type": "Document",
@@ -584,8 +574,7 @@
               "RelativeToolTip": "KumoShopMVC\\ViewModels\\LoginVM.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T07:16:31.438Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T07:16:31.438Z"
             },
             {
               "$type": "Document",
@@ -597,8 +586,7 @@
               "RelativeToolTip": "KumoShopMVC\\ViewModels\\FavouriteItemVM.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAxwAYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T06:13:11.846Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T06:13:11.846Z"
             },
             {
               "$type": "Document",
@@ -610,8 +598,7 @@
               "RelativeToolTip": "KumoShopMVC\\ViewModels\\CheckoutVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T02:08:00.519Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-16T02:08:00.519Z"
             },
             {
               "$type": "Document",
@@ -623,8 +610,7 @@
               "RelativeToolTip": "KumoShopMVC\\ViewModels\\CategoryMenuVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T06:16:51.359Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T06:16:51.359Z"
             },
             {
               "$type": "Document",
@@ -636,8 +622,7 @@
               "RelativeToolTip": "KumoShopMVC\\ViewModels\\CartModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T07:28:45.387Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T07:28:45.387Z"
             },
             {
               "$type": "Document",
@@ -649,8 +634,7 @@
               "RelativeToolTip": "KumoShopMVC\\ViewModels\\CartItemVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-10T13:16:29.346Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T13:16:29.346Z"
             },
             {
               "$type": "Document",
@@ -662,8 +646,7 @@
               "RelativeToolTip": "KumoShopMVC\\Views\\User\\WishList.cshtml",
               "ViewState": "AgIAABUAAAAAAAAAAAAAADgAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-10T07:18:14.57Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-10T07:18:14.57Z"
             },
             {
               "$type": "Document",

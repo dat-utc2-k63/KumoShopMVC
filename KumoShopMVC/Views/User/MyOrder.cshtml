@@ -59,10 +59,13 @@
 						<div class="row align-items-center justify-content-center m-0 py-4">
 							<div class="col-xl-5 col-lg-5 col-md-5 col-12">
 								<div class="cart_single d-flex align-items-start mfliud-bot">
-									<div class="cart_selected_single_thumb">
+											<div class="cart_selected_single_thumb">
 												@if (item.ProductId == null)
 												{
-													<p class="text-muted">Sản phẩm đã xóa</p>
+													<div class="image-wrapper">
+														<img src="~/assets/img/product/@item.Image" width="75" class="img-fluid rounded" alt="">
+														<span class="overlay-text">Sản phẩm đã xóa</span>
+													</div>
 												}
 												else
 												{

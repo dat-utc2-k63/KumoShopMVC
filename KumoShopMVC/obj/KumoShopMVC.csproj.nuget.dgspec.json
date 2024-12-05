@@ -71,6 +71,14 @@
               "target": "Package",
               "version": "[4.0.0, )"
             },
+            "X.PagedList": {
+              "target": "Package",
+              "version": "[10.5.7, )"
+            },
+            "X.PagedList.Mvc.Core": {
+              "target": "Package",
+              "version": "[10.5.7, )"
+            },
             "jQuery.Validation": {
               "target": "Package",
               "version": "[1.21.0, )"

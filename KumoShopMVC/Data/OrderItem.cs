@@ -23,8 +23,6 @@ public partial class OrderItem
 
     public double? Price { get; set; }
 
-    public double? SubTotal { get; set; }
-
     public bool? IsRating { get; set; }
 
     public virtual Order Order { get; set; } = null!;

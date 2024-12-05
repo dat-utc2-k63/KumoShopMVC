@@ -147,7 +147,7 @@ namespace KumoShopMVC.Controllers
                     Image = oi.Image ?? string.Empty,
                     Color = oi.Color ?? string.Empty, 
                     Size = oi.Size ?? 0 ,
-					SubTotal = oi.SubTotal ?? 0,
+					Quantity = oi.Quantity ?? 0,
 					IsRating = oi.IsRating ?? false
 				}).ToList()
             }).ToList();

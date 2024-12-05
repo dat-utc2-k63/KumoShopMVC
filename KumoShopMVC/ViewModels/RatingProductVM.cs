@@ -13,6 +13,6 @@ namespace KumoShopMVC.ViewModels
 		public List<string>? Images { get; set; } = new List<string>();
 		public string? FullName { get; set; }
 		public int? OrderItemId { get; set; }
-
-	}
+        
+    }
 }

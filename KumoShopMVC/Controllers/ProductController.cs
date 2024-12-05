@@ -113,6 +113,7 @@ namespace KumoShopMVC.Controllers
 
 			var product = db.Products
 				.Include(p => p.Category)
+                .Include(p => p.RatingProducts)
 				.FirstOrDefault(p => p.ProductId == id);
 
 			bool IsFavourite = false;
@@ -136,9 +137,11 @@ namespace KumoShopMVC.Controllers
 			{
 				ProductId = product.ProductId,
 				NameProduct = product.NameProduct ?? "",
+				NameCategory = product.Category.NameCategory,
 				Brand = product.Brands ?? "",
 				Gender = product.Gender.HasValue ? product.Gender.Value : false,
-				Images = db.Images
+                AverageRatePoint = product.RatingProducts.Any() ? product.RatingProducts.Average(r => r.RatePoint) : 0,
+                Images = db.Images
 					.Where(img => img.ProductId == product.ProductId)
 					.Select(img => img.ImageUrl ?? "")
 					.ToList(),

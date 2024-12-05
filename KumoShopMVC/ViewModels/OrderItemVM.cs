@@ -14,7 +14,7 @@
 		public int Size { get; set; }
 		public int OrderId { get; set; }
 		public int Quantity { get; set; }
-		public double SubTotal;
-		public bool IsRating { get; set; }
+        public double SubTotal => Quantity * Price;
+        public bool IsRating { get; set; }
 	}
 }

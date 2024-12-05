@@ -19,11 +19,46 @@ namespace KumoShopMVC.Controllers
             _webHostEnvironment = webHostEnvironment;
         }
 
-		public IActionResult Index()
+        public IActionResult Index()
         {
-            return View();
+            // Lấy danh sách đơn hàng và tính toán dữ liệu
+            var monthlyReports = db.Orders
+                .Include(o => o.OrderItems)
+                .AsEnumerable()
+                .Where(o => o.OrderDate.HasValue) 
+                .GroupBy(o => o.OrderDate.Value.ToString("MM-yyyy"))
+                .Select(g => new
+                {
+                    MonthYear = g.Key,
+                    TotalOrders = g.Count(),
+                    TotalRevenue = g.Sum(o => o.OrderItems != null
+                                              ? o.OrderItems.Sum(oi => (oi.Price ?? 0) * (oi.Quantity ?? 0))
+                                              : 0)
+                })
+                .ToList();
+
+            var dashBoardAdmin = new DashBoardAdmin
+            {
+                TotalUser = db.Users.Count(), // Tổng số người dùng
+                totalProducts = db.Products.Count(), // Tổng số sản phẩm
+                totalOrders = db.Orders.Count(),
+                totalRevenue = db.Orders
+                                .SelectMany(o => o.OrderItems)
+                                .Sum(oi => (oi.Price ?? 0) * (oi.Quantity ?? 0)), // Tổng doanh thu
+
+                // Dữ liệu biểu đồ
+                monthYears = monthlyReports.Select(r => r.MonthYear).ToList(),
+                totalOrdersData = monthlyReports.Select(r => r.TotalOrders).ToList(),
+                totalRevenueData = monthlyReports.Select(r => r.TotalRevenue).ToList()
+            };
+
+            // Truyền ViewModel vào View
+            return View(dashBoardAdmin);
         }
-		public IActionResult ProductList()
+
+
+
+        public IActionResult ProductList()
 		{
 			return View();
 		}
@@ -356,13 +391,13 @@ namespace KumoShopMVC.Controllers
 
             if (user == null)
             {
-                return NotFound();  // Nếu không tìm thấy user, trả về lỗi 404
+                return NotFound();
             }
 
-            db.Users.Remove(user);  // Xóa user khỏi cơ sở dữ liệu
+            db.Users.Remove(user); 
 			TempData["sucess"] = "Xóa User thành công";
-            db.SaveChanges();  // Lưu thay đổi vào cơ sở dữ liệu
-            return RedirectToAction("UserList");  // Quay lại trang danh sách user sau khi xóa
+            db.SaveChanges();  
+            return RedirectToAction("UserList");
         }
 		public IActionResult DeleteRole(int roleId)
 		{
@@ -371,9 +406,9 @@ namespace KumoShopMVC.Controllers
 			{
 				return NotFound();  // Nếu không tìm thấy role, trả về lỗi 404
             }
-            db.Roles.Remove(role);  // Xóa role khỏi cơ sở dữ liệu
+            db.Roles.Remove(role); 
             TempData["sucess"] = "Xóa Role thành công";
-            db.SaveChanges();  // Lưu thay đổi vào cơ sở dữ liệu
+            db.SaveChanges();
             return RedirectToAction("RoleList");  // Quay lại trang danh sách role sau khi xóa
         }
 

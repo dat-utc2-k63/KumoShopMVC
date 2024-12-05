@@ -24,9 +24,10 @@
 
     <!-- Theme Config js (Require in all Page) -->
     <script src="~/admin/assets/js/config.js"></script>
-    
+
 </head>
 <body>
+    
     <div class="wrapper">
         <!-- ========== Topbar Start ========== -->
         <header class="topbar">
@@ -634,5 +635,6 @@
 
     <!-- Dashboard Js -->
     <script src="~/admin/assets/js/pages/dashboard.js"></script>
+    @RenderSection("ScriptAdmin", required: false)
 </body>
 </html>

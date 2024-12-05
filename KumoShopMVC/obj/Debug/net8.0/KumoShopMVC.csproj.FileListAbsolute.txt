@@ -518,3 +518,10 @@ D:\HỌC KỲ 1 2024-2025\Lập trình Web\Thực hành\KumoShopMVC\KumoShopMVC\
 D:\asp.net\KumoShopMVC\KumoShopMVC\obj\Debug\net8.0\KumoShopMVC.MvcApplicationPartsAssemblyInfo.cs
 D:\asp.net\KumoShopMVC\KumoShopMVC\bin\Debug\net8.0\X.PagedList.dll
 D:\asp.net\KumoShopMVC\KumoShopMVC\bin\Debug\net8.0\X.PagedList.Mvc.Core.dll
+D:\asp.net\KumoShopMVC\KumoShopMVC\bin\Debug\net8.0\System.Web.Mvc.dll
+D:\asp.net\KumoShopMVC\KumoShopMVC\bin\Debug\net8.0\System.Web.Razor.dll
+D:\asp.net\KumoShopMVC\KumoShopMVC\bin\Debug\net8.0\System.Web.Helpers.dll
+D:\asp.net\KumoShopMVC\KumoShopMVC\bin\Debug\net8.0\System.Web.WebPages.Deployment.dll
+D:\asp.net\KumoShopMVC\KumoShopMVC\bin\Debug\net8.0\System.Web.WebPages.Razor.dll
+D:\asp.net\KumoShopMVC\KumoShopMVC\bin\Debug\net8.0\System.Web.WebPages.dll
+D:\asp.net\KumoShopMVC\KumoShopMVC\bin\Debug\net8.0\Microsoft.Web.Infrastructure.dll

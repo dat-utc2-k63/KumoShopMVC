@@ -32,7 +32,6 @@ namespace KumoShopMVC.Helpers
             }
         }
 
-
         public static String GenerRateRandomKey(int length = 5)
 		{
 			var pattern = @"qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM!";

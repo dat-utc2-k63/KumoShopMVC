@@ -256,7 +256,7 @@
 
 				var button = $(this);
 				var productId = '@Model.ProductId';
-				var quantity = $('#quantity').val();
+				var quantity = parseInt($('#quantity').val(), 10); 
 
 				var colors = $('input[name="color"]:checked').map(function () {
 					return $(this).val();
@@ -267,7 +267,7 @@
 				}).get();
 
 				if (colors.length === 0 || sizes.length === 0) {
-					$('#cartMessage').html('<div class="alert alert-danger">Please select at least one color and one size.</div>');
+					alert('Please select at least one color and one size.');
 					return;
 				}
 				console.log("Selected Colors: ", colors);
@@ -301,9 +301,11 @@
 				})
 					.done(function () {
 						$('#cartMessage').html('<div class="alert alert-success">Added to cart successfully</div>');
+						var currentCount = parseInt($('.cart-count').text(), 10) || 0; // Lấy số lượng hiện tại
+						$('.cart-count').text(currentCount + quantity); // Cộng thêm quantity mới
 					})
 					.fail(function () {
-						$('#cartMessage').html('<div class="alert alert-danger">Error adding to cart</div>');
+						alert('Error adding to cart.');
 					});
 			});
 		}); 

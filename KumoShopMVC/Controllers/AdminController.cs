@@ -11,6 +11,7 @@ using X.PagedList.Extensions;
 
 namespace KumoShopMVC.Controllers
 {
+    //[Authorize]
     public class AdminController : Controller
     {
 		private readonly KumoShopContext db;
@@ -21,14 +22,14 @@ namespace KumoShopMVC.Controllers
             _webHostEnvironment = webHostEnvironment;
         }
 
-        public IActionResult Index()
+        //[Authorize(Policy = "Admin")]
+        public IActionResult Index(string filter = "dd-MM-yyyy")
         {
-            // Lấy danh sách đơn hàng và tính toán dữ liệu
             var monthlyReports = db.Orders
                 .Include(o => o.OrderItems)
                 .AsEnumerable()
                 .Where(o => o.OrderDate.HasValue) 
-                .GroupBy(o => o.OrderDate.Value.ToString("MM-yyyy"))
+                .GroupBy(o => o.OrderDate.Value.ToString(filter))
                 .Select(g => new
                 {
                     MonthYear = g.Key,
@@ -41,7 +42,7 @@ namespace KumoShopMVC.Controllers
 
             var dashBoardAdmin = new DashBoardAdmin
             {
-                TotalUser = db.Users.Count(), // Tổng số người dùng
+                TotalUser = db.Users.Count(u =>u.RoleId == 1), // Tổng khách hàng
                 totalProducts = db.Products.Count(), // Tổng số sản phẩm
                 totalOrders = db.Orders.Count(),
                 totalRevenue = db.Orders
@@ -58,8 +59,12 @@ namespace KumoShopMVC.Controllers
             return View(dashBoardAdmin);
         }
 
+<<<<<<< HEAD
 		[HttpGet]
 		public IActionResult ProductList(int? category, int pageNumber = 1, int pageSize = 5)
+=======
+        public IActionResult ProductList()
+>>>>>>> 3ea2af6254ba2fb9e9b3eae78c55563c1ddb9117
 		{
 
             var products = db.Products.Include(p => p.Category).AsQueryable();
@@ -271,9 +276,6 @@ namespace KumoShopMVC.Controllers
             // Chuyển hướng về danh sách vai trò sau khi cập nhật thành công
             return RedirectToAction("RoleList", "Admin");
         }
-
-
-
         public IActionResult UserList(int? page)
         {
             int pageSize = 5; // Số lượng mục hiển thị trên mỗi trang
@@ -299,7 +301,6 @@ namespace KumoShopMVC.Controllers
             // Trả về view với model là danh sách phân trang
             return View(users);
         }
-
 
         public IActionResult UserCreate()
         {

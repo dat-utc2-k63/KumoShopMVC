@@ -1042,3 +1042,4 @@ C:\Users\PC\OneDrive\KumoShop\KumoShopMVC\KumoShopMVC\obj\Debug\net8.0\KumoShopM
 C:\Users\PC\OneDrive\KumoShop\KumoShopMVC\KumoShopMVC\obj\Debug\net8.0\KumoShopMVC.genruntimeconfig.cache
 C:\Users\PC\OneDrive\KumoShop\KumoShopMVC\KumoShopMVC\obj\Debug\net8.0\ref\KumoShopMVC.dll
 >>>>>>> product-category-view
+C:\Users\PC\OneDrive\KumoShop\KumoShopMVC\KumoShopMVC\obj\Debug\net8.0\KumoShopMVC.MvcApplicationPartsAssemblyInfo.cs

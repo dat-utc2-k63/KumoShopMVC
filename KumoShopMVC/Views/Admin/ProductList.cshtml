@@ -79,7 +79,7 @@
                                             </td>
                                             <td>$@product.Price</td>
                                             <td>
-                                                <p class="mb-1 text-muted"><span class="text-dark fw-medium">@product.Quantity</span> Left</p>
+                                                <p class="mb-1 text-muted"><span class="text-dark fw-medium">@product.Discount</span> Left</p>
                                                 <p class="mb-0 text-muted">@product.Discount Sold</p>
                                             </td>
                                             
@@ -101,7 +101,7 @@
                                                     @* double averageRating = (double)product.RatingProducts.Average(r => r.RatePoint);
                                                     int reviewCount = product.RatingProducts.Count(); *@
                                                     <span class="badge p-1 bg-light text-dark fs-12 me-1">
-                                                        <i class="bx bxs-star align-text-top fs-14 text-warning me-1"></i> @product.RatePoint
+                                                        <i class="bx bxs-star align-text-top fs-14 text-warning me-1"></i> @product.Status
                                                     </span>
                                                 @* }
                                                 else

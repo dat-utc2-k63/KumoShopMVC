@@ -3,20 +3,17 @@ using KumoShopMVC.Helpers;
 using KumoShopMVC.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-<<<<<<< HEAD
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using X.PagedList.Extensions;
-=======
-using Microsoft.EntityFrameworkCore;
->>>>>>> product-category-view
+
+
 
 namespace KumoShopMVC.Controllers
 {
     public class AdminController : Controller
     {
 		private readonly KumoShopContext db;
-<<<<<<< HEAD
         private readonly IWebHostEnvironment _webHostEnvironment;
         public AdminController(KumoShopContext context, IWebHostEnvironment webHostEnvironment)
 		{
@@ -61,26 +58,8 @@ namespace KumoShopMVC.Controllers
             return View(dashBoardAdmin);
         }
 
-
-
-        public IActionResult ProductList()
-=======
-		
-		public AdminController(KumoShopContext db)
-		{
-			this.db = db;
-		}
-
-		[HttpGet]
-		public IActionResult Index()
-        {
-			var products = db.Products.ToList();
-            return View(products);
-        }
-
 		[HttpGet]
 		public IActionResult ProductList(int? category, int pageNumber = 1, int pageSize = 5)
->>>>>>> product-category-view
 		{
 
             var products = db.Products.Include(p => p.Category).AsQueryable();
@@ -102,9 +81,9 @@ namespace KumoShopMVC.Controllers
                 Discount = (float)(p.Discount ?? 0),
                 IsHot = p.IsHot ?? false,
                 IsNew = p.IsNew ?? false,
-                Quantity = p.Quantity ?? 0,
+                //Quantity = p.Quantity ?? 0,
                 NameCategory = p.Category.NameCategory ?? "",
-                RatePoint = (int)(p.RatingProducts.Average(r => r.RatePoint) ?? 0)
+                //RatePoint = (int)(p.RatingProducts.Average(r => r.RatePoint) ?? 0)
             }).ToList();
 
             // Gán thông tin phân trang vào ViewBag

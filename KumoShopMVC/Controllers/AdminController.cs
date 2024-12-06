@@ -3,15 +3,20 @@ using KumoShopMVC.Helpers;
 using KumoShopMVC.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+<<<<<<< HEAD
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using X.PagedList.Extensions;
+=======
+using Microsoft.EntityFrameworkCore;
+>>>>>>> product-category-view
 
 namespace KumoShopMVC.Controllers
 {
     public class AdminController : Controller
     {
 		private readonly KumoShopContext db;
+<<<<<<< HEAD
         private readonly IWebHostEnvironment _webHostEnvironment;
         public AdminController(KumoShopContext context, IWebHostEnvironment webHostEnvironment)
 		{
@@ -59,21 +64,129 @@ namespace KumoShopMVC.Controllers
 
 
         public IActionResult ProductList()
+=======
+		
+		public AdminController(KumoShopContext db)
 		{
-			return View();
+			this.db = db;
 		}
+
+		[HttpGet]
+		public IActionResult Index()
+        {
+			var products = db.Products.ToList();
+            return View(products);
+        }
+
+		[HttpGet]
+		public IActionResult ProductList(int? category, int pageNumber = 1, int pageSize = 5)
+>>>>>>> product-category-view
+		{
+
+            var products = db.Products.Include(p => p.Category).AsQueryable();
+
+            if (category.HasValue)
+            {
+                products = products.Where(p => p.CategoryId == category.Value);
+            }
+
+            var productList = products.Skip((pageNumber - 1) * pageSize).Take(pageSize).ToList();
+
+            var result = productList.Select(p => new ProductVM
+            {
+                ProductId = p.ProductId,
+                NameProduct = p.NameProduct ?? "",
+                Brand = p.Brands ?? "",
+                Gender = p.Gender.HasValue ? p.Gender.Value : false,
+                Price = (float)(p.Price ?? 0),
+                Discount = (float)(p.Discount ?? 0),
+                IsHot = p.IsHot ?? false,
+                IsNew = p.IsNew ?? false,
+                Quantity = p.Quantity ?? 0,
+                NameCategory = p.Category.NameCategory ?? "",
+                RatePoint = (int)(p.RatingProducts.Average(r => r.RatePoint) ?? 0)
+            }).ToList();
+
+            // Gán thông tin phân trang vào ViewBag
+            ViewBag.TotalPages = (int)Math.Ceiling((double)products.Count() / pageSize);
+            ViewBag.CurrentPage = pageNumber;
+
+            return View(result);
+        }
+
+		[HttpGet]
 		public IActionResult ProductCreate()
 		{
 			return View();
 		}
 
-		public IActionResult ProductEdit()
+		[HttpGet]
+		public IActionResult ProductEdit(int id)
 		{
-			return View();
+            var product = db.Products
+			.Include(p => p.Category)
+			.FirstOrDefault(p => p.ProductId == id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+			var productDetail = new ProductDetailVM
+			{
+				ProductId = product.ProductId,
+				NameProduct = product.NameProduct ?? "",
+                NameCategory = product.Category.NameCategory ?? "",
+                Brand = product.Brands ?? "",
+				Gender = product.Gender.HasValue ? product.Gender.Value : false,
+				Images = db.Images
+						.Where(img => img.ProductId == product.ProductId)
+						.Select(img => img.ImageUrl ?? "")
+						.ToList(),
+								Colors = db.ProductColors
+						.Where(pc => pc.ProductId == product.ProductId)
+						.Select(pc => pc.Color != null ? pc.Color.ColorName : "")
+						.ToList(),
+								Sizes = db.ProductSizes
+						.Where(ps => ps.ProductId == product.ProductId)
+						.Select(ps => ps.Size != null ? ps.Size.SizeNumber : 0)
+						.ToList(),
+				Price = (float)(product.Price ?? 0),
+				DescProduct = product.DescProduct ?? string.Empty,
+				
+				Quantity = product.Quantity ?? 0
+			};
+
+            return View(productDetail);
 		}
-        public IActionResult CategoryList()
+
+		[HttpGet]
+        public IActionResult CategoryList(int? id, int pageNumber = 1, int pageSize = 2)
         {
-            return View();
+			int totalCategories = db.Categories.Count();
+            var categories = db.Categories
+							.OrderBy(c => c.NameCategory) // Optional: Order categories by name
+							.Skip((pageNumber - 1) * pageSize)
+							.Take(pageSize)
+							.Select(c => new CategoryMenuVM
+							{
+								CaterogyId = c.CategoryId,
+								NameCategory = c.NameCategory ?? "",
+								MinPrice = c.Products.Min(p => (float?)p.Price) ?? 0,
+								MaxPrice = c.Products.Max(p => (float?)p.Price) ?? 0,
+								Products = c.Products.Select(p => new ProductDetailVM
+								{
+									ProductId = p.ProductId,
+									NameProduct = p.NameProduct ?? "",
+									Price = (float)(p.Price ?? 0),
+									DescProduct = p.DescProduct ?? string.Empty,
+								}).ToList()
+							})
+							.ToList();
+
+            // Pass data to the view
+            ViewBag.TotalPages = (int)Math.Ceiling((double)totalCategories / pageSize);
+            ViewBag.CurrentPage = pageNumber;
+
+            return View(categories);
         }
 
         public IActionResult CategoryCreate()
@@ -434,37 +547,44 @@ namespace KumoShopMVC.Controllers
 		{
 			return View();
 		}
-		[Authorize]
+
+		
 		[HttpPost]
 		[ValidateAntiForgeryToken]
 		public IActionResult CreateProduct(ProductVM model)
 		{
 			if (!ModelState.IsValid)
 			{
-				return View(model);
+				return View();
 			}
 
-			var product = new Product
+
+			else
 			{
-				NameProduct = model.NameProduct,
-				Brands = model.Brand,
-				Gender = model.Gender,
-				Price = model.Price,
-				Discount = model.Discount,
-				IsHot = model.IsHot,
-				IsNew = model.IsNew
-			};
+				var product = new Product
+				{
+					NameProduct = model.NameProduct,
+					Brands = model.Brand,
+					Gender = model.Gender,
+					Price = model.Price,
+					Discount = model.Discount,
+					IsHot = model.IsHot,
+					IsNew = model.IsNew
+				};
 
-			db.Products.Add(product);
-			db.SaveChanges();
+				db.Products.Add(product);
+				db.SaveChanges();
 
-			return RedirectToAction("Index");
+				return RedirectToAction("ProductList");
+			}
+
+			
 		}
 
 		[Authorize]
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public IActionResult Edit(ProductVM model)
+		public IActionResult Edit(ProductDetailVM model)
 		{
 			if (!ModelState.IsValid)
 			{
@@ -482,29 +602,63 @@ namespace KumoShopMVC.Controllers
 			product.Gender = model.Gender;
 			product.Price = model.Price;
 			product.Discount = model.Discount;
-			product.IsHot = model.IsHot;
-			product.IsNew = model.IsNew;
+			//product.IsHot = model.IsHot;
+			//product.IsNew = model.IsNew;
+			product.DescProduct = model.DescProduct;
+			
 
 			db.SaveChanges();
+            TempData["SuccessMessage"] = "Product created successfully!";
 
-			return RedirectToAction("Index");
+            return RedirectToAction("Index");
 		}
 
-		[Authorize]
+		
 		[HttpPost]
 		[ValidateAntiForgeryToken]
 		public IActionResult DeleteProduct(int id)
 		{
-			var product = db.Products.FirstOrDefault(p => p.ProductId == id);
-			if (product == null)
-			{
-				return NotFound();
-			}
+            var product = db.Products
+                             .FirstOrDefault(p => p.ProductId == id);
+            if (product == null)
+            {
+                return NotFound();
+            }
 
-			db.Products.Remove(product);
-			db.SaveChanges();
+           
+            // Xóa sản phẩm
+            db.Products.Remove(product);
+            db.SaveChanges();
+            db.SaveChanges();
 
-			return RedirectToAction("Index");
+			return RedirectToAction("ProductList");
 		}
-	}
+
+
+        [HttpPost]
+        public IActionResult CreateCategory(string NameCategory, DateTime DateCreate)
+        {
+            if (string.IsNullOrWhiteSpace(NameCategory))
+            {
+                // Handle validation error
+                ModelState.AddModelError("NameCategory", "Category name is required.");
+                return View();
+            }
+
+            // Create a new category object
+            var newCategory = new Category
+            {
+                NameCategory = NameCategory,
+                CreateDate = DateCreate
+            };
+
+            // Add the new category to the database
+            db.Categories.Add(newCategory);
+            db.SaveChanges();
+
+            // Redirect to the category list page
+            return RedirectToAction("CategoryList");
+        }
+
+    }
 }

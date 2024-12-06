@@ -19,6 +19,7 @@ namespace KumoShopMVC.Controllers
 			db = context;
 		}
 
+<<<<<<< HEAD
         public IActionResult Index(int? category, int page = 1, int pageSize = 6)
         {
             var products = db.Products.AsQueryable();
@@ -63,6 +64,16 @@ namespace KumoShopMVC.Controllers
 		{
 			var products = db.Products.AsQueryable();
 			if (!string.IsNullOrEmpty(query))
+=======
+
+		[HttpGet]
+		public IActionResult Index(int? category)
+		{
+			
+			var products = db.Products.Include(p=>p.Category).AsQueryable();
+
+			if (category.HasValue)
+>>>>>>> product-category-view
 			{
 				products = products.Where(p => p.NameProduct.Contains(query));
 			}
@@ -74,11 +85,16 @@ namespace KumoShopMVC.Controllers
 			{
 				products = products.Where(p => p.Price <= maxPrice);
 			}
+<<<<<<< HEAD
 
 			if (genders != null )
 			{
 				products = products.Where(p => p.Gender == genders); // Assuming Gender is stored as string (e.g., "Male", "Female", "Unisex")
 			}
+=======
+			
+			var productList = products.ToList();
+>>>>>>> product-category-view
 
 			var totalProducts = products.Count();
 			var productList = products
@@ -98,9 +114,49 @@ namespace KumoShopMVC.Controllers
 					.ToList(),
 				Discount = (float)(p.Discount ?? 0),
 				IsHot = p.IsHot ?? false,
+<<<<<<< HEAD
 				IsNew = p.IsNew ?? false
 			}).ToList();
 			var totalPages = (int)Math.Ceiling((double)totalProducts / pageSize);
+=======
+				IsNew = p.IsNew ?? false,
+				Quantity = p.Quantity ?? 0,
+				NameCategory = p.Category.NameCategory??"",
+                RatePoint = (int)(p.RatingProducts.Average(r => r.RatePoint) ?? 0)
+                //Category = p.Category?.NameCategory ?? ""
+            }).ToList();
+
+			// Kiểm tra `result` trước khi truyền vào view
+			if (productList == null || !productList.Any())
+            {
+                return View("Error"); // Hoặc trả về một view thông báo lỗi
+            }
+
+
+            return View( result);
+		}
+
+		public IActionResult Search(string? query)
+		{
+			var products = db.Products.AsQueryable();
+			if (!string.IsNullOrEmpty(query))
+			{
+				products = products.Where(p => p.NameProduct.Contains(query));
+			}
+
+			var result = products.Select(p => new ProductVM
+			{
+				ProductId = p.ProductId,
+				NameProduct = p.NameProduct ?? "",
+				Brand = p.Brands ?? "",
+				Gender = p.Gender.HasValue ? p.Gender.Value : false,
+				Price = (float)(p.Price ?? 0),
+				Discount = (float)(p.Discount ?? 0),
+				IsHot = p.IsHot ?? false,
+				IsNew = p.IsNew ?? false
+			}).ToList();
+
+>>>>>>> product-category-view
 			ViewData["SearchQuery"] = query;
 			ViewData["CurrentPage"] = page;
 			ViewData["TotalPages"] = totalPages;
@@ -108,7 +164,8 @@ namespace KumoShopMVC.Controllers
 			return View(result);
 		}
 
-		public IActionResult Detail(int id)
+        
+        public IActionResult Detail(int id)
 		{
 
 			var product = db.Products

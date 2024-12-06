@@ -19,14 +19,14 @@ namespace KumoShopMVC.Controllers
             _webHostEnvironment = webHostEnvironment;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(string filter = "dd-MM-yyyy")
         {
             // Lấy danh sách đơn hàng và tính toán dữ liệu
             var monthlyReports = db.Orders
                 .Include(o => o.OrderItems)
                 .AsEnumerable()
                 .Where(o => o.OrderDate.HasValue) 
-                .GroupBy(o => o.OrderDate.Value.ToString("dd-MM-yyyy"))
+                .GroupBy(o => o.OrderDate.Value.ToString(filter))
                 .Select(g => new
                 {
                     MonthYear = g.Key,
@@ -39,7 +39,7 @@ namespace KumoShopMVC.Controllers
 
             var dashBoardAdmin = new DashBoardAdmin
             {
-                TotalUser = db.Users.Count(u =>u.UserId == 1), // Tổng khách hàng
+                TotalUser = db.Users.Count(u =>u.RoleId == 1), // Tổng khách hàng
                 totalProducts = db.Products.Count(), // Tổng số sản phẩm
                 totalOrders = db.Orders.Count(),
                 totalRevenue = db.Orders

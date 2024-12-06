@@ -1,22 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\PC\\OneDrive\\KumoShopMVC\\",
+  "WorkspaceRootPath": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|c:\\users\\pc\\onedrive\\kumoshopmvc\\kumoshopmvc\\views\\admin\\categorycreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|c:\\users\\pc\\onedrive\\kumoshop\\kumoshopmvc\\kumoshopmvc\\views\\admin\\productedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|solutionrelative:kumoshopmvc\\views\\admin\\productedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|c:\\users\\pc\\onedrive\\kumoshop\\kumoshopmvc\\kumoshopmvc\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|solutionrelative:kumoshopmvc\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|c:\\users\\pc\\onedrive\\kumoshop\\kumoshopmvc\\kumoshopmvc\\views\\admin\\categorycreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|solutionrelative:kumoshopmvc\\views\\admin\\categorycreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|c:\\users\\pc\\onedrive\\kumoshopmvc\\kumoshopmvc\\views\\admin\\productcreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|c:\\users\\pc\\onedrive\\kumoshop\\kumoshopmvc\\kumoshopmvc\\views\\admin\\productcreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|solutionrelative:kumoshopmvc\\views\\admin\\productcreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|c:\\users\\pc\\onedrive\\kumoshopmvc\\kumoshopmvc\\views\\admin\\productlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|c:\\users\\pc\\onedrive\\kumoshop\\kumoshopmvc\\kumoshopmvc\\views\\admin\\productlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|solutionrelative:kumoshopmvc\\views\\admin\\productlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|c:\\users\\pc\\onedrive\\kumoshopmvc\\kumoshopmvc\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|solutionrelative:kumoshopmvc\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,17 +30,17 @@
       "DocumentGroups": [
         {
           "DockedHeight": 411,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "AdminController.cs",
-              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\KumoShopMVC\\KumoShopMVC\\Controllers\\AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "KumoShopMVC\\Controllers\\AdminController.cs",
-              "ToolTip": "C:\\Users\\PC\\OneDrive\\KumoShopMVC\\KumoShopMVC\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\Controllers\\AdminController.cs",
               "RelativeToolTip": "KumoShopMVC\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAAAoBAAAAAAAAAAAAAAkBAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAANQAAAAAAAAAAAAqwAkBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-07T00:51:53.084Z",
               "IsPinned": true,
@@ -60,42 +64,53 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProductCreate.cshtml",
-              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\KumoShopMVC\\KumoShopMVC\\Views\\Admin\\ProductCreate.cshtml",
-              "RelativeDocumentMoniker": "KumoShopMVC\\Views\\Admin\\ProductCreate.cshtml",
-              "ToolTip": "C:\\Users\\PC\\OneDrive\\KumoShopMVC\\KumoShopMVC\\Views\\Admin\\ProductCreate.cshtml",
-              "RelativeToolTip": "KumoShopMVC\\Views\\Admin\\ProductCreate.cshtml",
-              "ViewState": "AgIAANgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "ProductEdit.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\Views\\Admin\\ProductEdit.cshtml",
+              "RelativeDocumentMoniker": "KumoShopMVC\\Views\\Admin\\ProductEdit.cshtml",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\Views\\Admin\\ProductEdit.cshtml",
+              "RelativeToolTip": "KumoShopMVC\\Views\\Admin\\ProductEdit.cshtml",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAAAFUAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-17T03:36:46.912Z",
+              "WhenOpened": "2024-12-06T13:39:37.213Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "ProductCreate.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\Views\\Admin\\ProductCreate.cshtml",
+              "RelativeDocumentMoniker": "KumoShopMVC\\Views\\Admin\\ProductCreate.cshtml",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\Views\\Admin\\ProductCreate.cshtml",
+              "RelativeToolTip": "KumoShopMVC\\Views\\Admin\\ProductCreate.cshtml",
+              "ViewState": "AgIAANgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-17T03:36:46.912Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "CategoryCreate.cshtml",
-              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\KumoShopMVC\\KumoShopMVC\\Views\\Admin\\CategoryCreate.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\Views\\Admin\\CategoryCreate.cshtml",
               "RelativeDocumentMoniker": "KumoShopMVC\\Views\\Admin\\CategoryCreate.cshtml",
-              "ToolTip": "C:\\Users\\PC\\OneDrive\\KumoShopMVC\\KumoShopMVC\\Views\\Admin\\CategoryCreate.cshtml",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\Views\\Admin\\CategoryCreate.cshtml",
               "RelativeToolTip": "KumoShopMVC\\Views\\Admin\\CategoryCreate.cshtml",
-              "ViewState": "AgIAAGIAAAAAAAAAAAAAAHwAAABQAAAAAAAAAA==",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAAAHYAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-17T02:33:14.376Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ProductList.cshtml",
-              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\KumoShopMVC\\KumoShopMVC\\Views\\Admin\\ProductList.cshtml",
+              "DocumentMoniker": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\Views\\Admin\\ProductList.cshtml",
               "RelativeDocumentMoniker": "KumoShopMVC\\Views\\Admin\\ProductList.cshtml",
-              "ToolTip": "C:\\Users\\PC\\OneDrive\\KumoShopMVC\\KumoShopMVC\\Views\\Admin\\ProductList.cshtml",
+              "ToolTip": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\Views\\Admin\\ProductList.cshtml",
               "RelativeToolTip": "KumoShopMVC\\Views\\Admin\\ProductList.cshtml",
               "ViewState": "AgIAAGkAAAAAAAAAAAAAAJgAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-16T14:12:38.078Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-16T14:12:38.078Z"
             }
           ]
         },
@@ -105,15 +120,15 @@
           "Children": [
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }

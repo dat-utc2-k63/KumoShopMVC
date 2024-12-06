@@ -32,17 +32,13 @@
                                     </div>
                                     <div class="col-6 text-end">
                                         <p class="text-muted mb-0 text-truncate">Total Orders</p>
-                                        <h3 class="text-dark mt-1 mb-0">13, 647</h3>
+                                        <h3 class="text-dark mt-1 mb-0">@Model.totalOrdersData</h3>
                                     </div>
                                 </div>
                             </div>
                             <div class="card-footer py-2 bg-light bg-opacity-50">
                                 <div class="d-flex align-items-center justify-content-between">
-                                    <div>
-                                        <span class="text-success"> <i class="bx bxs-up-arrow fs-12"></i> 2.3%</span>
-                                        <span class="text-muted ms-1 fs-12">Last Week</span>
-                                    </div>
-                                    <a href="#!" class="text-reset fw-semibold fs-12">View More</a>
+                                    <a asp-controller="Admin" asp-action="OrderList" class="text-reset fw-semibold fs-12">View More</a>
                                 </div>
                             </div>
                         </div>
@@ -57,18 +53,14 @@
                                         </div>
                                     </div>
                                     <div class="col-6 text-end">
-                                        <p class="text-muted mb-0 text-truncate">New Leads</p>
-                                        <h3 class="text-dark mt-1 mb-0">9, 526</h3>
+                                        <p class="text-muted mb-0 text-truncate">Total Products</p>
+                                        <h3 class="text-dark mt-1 mb-0">@Model.totalProducts</h3>
                                     </div>
                                 </div>
                             </div>
                             <div class="card-footer py-2 bg-light bg-opacity-50">
                                 <div class="d-flex align-items-center justify-content-between">
-                                    <div>
-                                        <span class="text-success"> <i class="bx bxs-up-arrow fs-12"></i> 8.1%</span>
-                                        <span class="text-muted ms-1 fs-12">Last Month</span>
-                                    </div>
-                                    <a href="#!" class="text-reset fw-semibold fs-12">View More</a>
+                                    <a asp-action="ProductList" class="text-reset fw-semibold fs-12">View More</a>
                                 </div>
                             </div>
                         </div>
@@ -83,18 +75,14 @@
                                         </div>
                                     </div>
                                     <div class="col-6 text-end">
-                                        <p class="text-muted mb-0 text-truncate">Deals</p>
-                                        <h3 class="text-dark mt-1 mb-0">976</h3>
+                                        <p class="text-muted mb-0 text-truncate">Total Customer</p>
+                                        <h3 class="text-dark mt-1 mb-0">@Model.TotalUser</h3>
                                     </div>
                                 </div>
                             </div>
                             <div class="card-footer py-2 bg-light bg-opacity-50">
                                 <div class="d-flex align-items-center justify-content-between">
-                                    <div>
-                                        <span class="text-danger"> <i class="bx bxs-down-arrow fs-12"></i> 0.3%</span>
-                                        <span class="text-muted ms-1 fs-12">Last Month</span>
-                                    </div>
-                                    <a href="#!" class="text-reset fw-semibold fs-12">View More</a>
+                                    <a asp-action="UserList" class="text-reset fw-semibold fs-12">View More</a>
                                 </div>
                             </div>
                         </div>
@@ -109,18 +97,9 @@
                                         </div>
                                     </div>
                                     <div class="col-6 text-end">
-                                        <p class="text-muted mb-0 text-truncate">Booked Revenue</p>
-                                        <h3 class="text-dark mt-1 mb-0">$123.6k</h3>
+                                        <p class="text-muted mb-0 text-truncate">Total Revenue</p>
+                                        <h3 class="text-dark mt-1 mb-0">$@Model.totalRevenue</h3>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="card-footer py-2 bg-light bg-opacity-50">
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <div>
-                                        <span class="text-danger"> <i class="bx bxs-down-arrow fs-12"></i> 10.6%</span>
-                                        <span class="text-muted ms-1 fs-12">Last Month</span>
-                                    </div>
-                                    <a href="#!" class="text-reset fw-semibold fs-12">View More</a>
                                 </div>
                             </div>
                         </div>
@@ -254,7 +233,7 @@
                 y: [{
                     formatter: function (y) {
                         if (typeof y !== "undefined") {
-                            return y.toFixed(1) + "k";
+                            return y.toFixed(1);
                         }
                         return y;
                     },
@@ -262,7 +241,7 @@
                 {
                     formatter: function (y) {
                         if (typeof y !== "undefined") {
-                            return y.toFixed(1) + "k";
+                            return y.toFixed(1);
                         }
                         return y;
                     },

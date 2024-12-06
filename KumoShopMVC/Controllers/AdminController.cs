@@ -26,7 +26,7 @@ namespace KumoShopMVC.Controllers
                 .Include(o => o.OrderItems)
                 .AsEnumerable()
                 .Where(o => o.OrderDate.HasValue) 
-                .GroupBy(o => o.OrderDate.Value.ToString("MM-yyyy"))
+                .GroupBy(o => o.OrderDate.Value.ToString("dd-MM-yyyy"))
                 .Select(g => new
                 {
                     MonthYear = g.Key,
@@ -39,7 +39,7 @@ namespace KumoShopMVC.Controllers
 
             var dashBoardAdmin = new DashBoardAdmin
             {
-                TotalUser = db.Users.Count(), // Tổng số người dùng
+                TotalUser = db.Users.Count(u =>u.UserId == 1), // Tổng khách hàng
                 totalProducts = db.Products.Count(), // Tổng số sản phẩm
                 totalOrders = db.Orders.Count(),
                 totalRevenue = db.Orders

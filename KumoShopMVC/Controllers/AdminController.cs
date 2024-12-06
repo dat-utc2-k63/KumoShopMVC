@@ -9,6 +9,7 @@ using X.PagedList.Extensions;
 
 namespace KumoShopMVC.Controllers
 {
+    //[Authorize]
     public class AdminController : Controller
     {
 		private readonly KumoShopContext db;
@@ -19,9 +20,9 @@ namespace KumoShopMVC.Controllers
             _webHostEnvironment = webHostEnvironment;
         }
 
+        //[Authorize(Policy = "Admin")]
         public IActionResult Index(string filter = "dd-MM-yyyy")
         {
-            // Lấy danh sách đơn hàng và tính toán dữ liệu
             var monthlyReports = db.Orders
                 .Include(o => o.OrderItems)
                 .AsEnumerable()
@@ -55,8 +56,6 @@ namespace KumoShopMVC.Controllers
             // Truyền ViewModel vào View
             return View(dashBoardAdmin);
         }
-
-
 
         public IActionResult ProductList()
 		{
@@ -179,9 +178,6 @@ namespace KumoShopMVC.Controllers
             // Chuyển hướng về danh sách vai trò sau khi cập nhật thành công
             return RedirectToAction("RoleList", "Admin");
         }
-
-
-
         public IActionResult UserList(int? page)
         {
             int pageSize = 5; // Số lượng mục hiển thị trên mỗi trang
@@ -207,7 +203,6 @@ namespace KumoShopMVC.Controllers
             // Trả về view với model là danh sách phân trang
             return View(users);
         }
-
 
         public IActionResult UserCreate()
         {

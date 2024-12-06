@@ -86,7 +86,7 @@ namespace KumoShopMVC.Controllers
 							new Claim(ClaimTypes.Email, model.Email),
 							new Claim(ClaimTypes.Name, user.Fullname),
 							new Claim(MySetting.CLAIM_CUSTOMERID, user.UserId.ToString()),
-							new Claim(ClaimTypes.Role, "Customer")
+							new Claim(ClaimTypes.Role, user.RoleId.ToString())
 						};
 						var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
 						var claimsPrincipal = new ClaimsPrincipal(claimsIdentity);

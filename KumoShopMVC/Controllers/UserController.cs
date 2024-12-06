@@ -136,7 +136,7 @@ namespace KumoShopMVC.Controllers
 				FullName = order.Fullname,
                 Address = order.Address,
                 Phone = order.Phone,
-                PaymentMethode = "COD",
+                PaymentMethode = order.PaymentMethode ?? "",
                 OrderItems = order.OrderItems.Select(oi => new OrderItemVM
                 {
 					OrderItemId = oi.OrderItemId,

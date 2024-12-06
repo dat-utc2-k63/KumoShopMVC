@@ -31,7 +31,7 @@ namespace KumoShopMVC.Controllers
 		public List<CartItemVM> Cart => HttpContext.Session.Get<List<CartItemVM>>(CART_KEY) ?? new List<CartItemVM>();
 
 		[HttpPost]
-		public IActionResult AddToCart(int id, int quantity=1, string? colors = "", int? sizes = 0)
+		public IActionResult AddToCart(int id, int quantity=1, string colors = "", int sizes = 0)
 		{
 			var product = db.ProductDetailsViews.FirstOrDefault(p => p.ProductId == id);
 			if (product == null)

@@ -534,7 +534,7 @@ namespace KumoShopMVC.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult ProductCreate(ProductVM model)
+        public IActionResult ProductCreate(ProductVM model, List<IFormFile>? Images)
         {
             if (ModelState.IsValid)
             {
@@ -595,17 +595,40 @@ namespace KumoShopMVC.Controllers
                         }
                     }
                     db.AddRange(productColor);
-                    db.SaveChanges();
-                    return RedirectToAction("ProductList");
                 }
                 catch
                 {
                     db.Database.RollbackTransaction();
-                    return RedirectToAction("ProductList");
                 }
+                db.Database.BeginTransaction();
+                try
+                {
+                    db.Database.CommitTransaction();
+                    var image = new List<Image>();
 
-            }
-            else
+                    if (model.Images != null && model.Images.Any())
+                    {
+                        var uploadedImageNames = MyUtil.UpLoadListProduct(Images, "products");
+                        foreach (var item in model.Images)
+                        {
+                            image.Add(new Image()
+                            {
+                                ProductId = product.ProductId,
+                                ImageUrl = item
+                            });
+                        }
+                    }
+                    db.AddRange(image);
+                    db.SaveChanges();
+                }
+                catch
+                {
+                    db.Database.RollbackTransaction();
+                }
+                return RedirectToAction("ProductList");
+
+			}
+			else
             {
                 return View(model);
             }
@@ -653,7 +676,6 @@ namespace KumoShopMVC.Controllers
                 return NotFound();
             }
 
-           
             // Xóa sản phẩm
             db.Products.Remove(product);
             db.SaveChanges();

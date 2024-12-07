@@ -181,16 +181,14 @@ public partial class KumoShopContext : DbContext
 
         modelBuilder.Entity<ProductColor>(entity =>
         {
-            entity
-                .HasNoKey()
-                .ToTable("ProductColor");
+            entity.ToTable("ProductColor");
 
-            entity.HasOne(d => d.Color).WithMany()
+            entity.HasOne(d => d.Color).WithMany(p => p.ProductColors)
                 .HasForeignKey(d => d.ColorId)
                 .OnDelete(DeleteBehavior.SetNull)
                 .HasConstraintName("FK_ProductColor_Color");
 
-            entity.HasOne(d => d.Product).WithMany()
+            entity.HasOne(d => d.Product).WithMany(p => p.ProductColors)
                 .HasForeignKey(d => d.ProductId)
                 .OnDelete(DeleteBehavior.Cascade)
                 .HasConstraintName("FK_ProductColor_Products");

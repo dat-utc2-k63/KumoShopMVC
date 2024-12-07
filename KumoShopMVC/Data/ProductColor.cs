@@ -5,6 +5,8 @@ namespace KumoShopMVC.Data;
 
 public partial class ProductColor
 {
+    public int ProductColorId { get; set; }
+
     public int? ProductId { get; set; }
 
     public int? ColorId { get; set; }

@@ -39,6 +39,8 @@ public partial class Product
 
     public virtual ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
 
+    public virtual ICollection<ProductColor> ProductColors { get; set; } = new List<ProductColor>();
+
     public virtual ICollection<ProductSize> ProductSizes { get; set; } = new List<ProductSize>();
 
     public virtual ICollection<RatingProduct> RatingProducts { get; set; } = new List<RatingProduct>();

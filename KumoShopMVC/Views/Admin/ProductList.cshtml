@@ -1,7 +1,6 @@
 ﻿
 @model IEnumerable<KumoShopMVC.ViewModels.ProductVM> 
 
-
 @{
     ViewData["Title"] = "ListProduct";
 }
@@ -50,8 +49,10 @@
                                         </th>
                                         <th>Product Name & Size</th>
                                         <th>Price</th>
-                                        <th>Stock</th>
                                         <th>Category</th>
+                                        <th>Brand</th>
+                                        <th>IsHot</th>
+                                        <th>IsNew</th>
                                         <th>Rating</th>
                                         <th>Action</th>
                                     </tr>
@@ -73,43 +74,49 @@
                                                     </div>
                                                     <div>
                                                         <a href="#!" class="text-dark fw-medium fs-15">@product.NameProduct</a>
-                                                        <p class="text-muted mb-0 mt-1 fs-13"><span>Size : </span>S, M, L, XL</p>
+                                                        <p class="text-muted mb-0 mt-1 fs-13">
+                                                            <span>Size : </span>
+                                                            @foreach (var size in product.Sizes)
+                                                            {
+                                                                <span>@size</span>
+                                                                @if (size != product.Sizes.Last())
+                                                                {
+                                                                    <span>, </span>  <!-- Add a comma separator between sizes -->
+                                                                }
+                                                            }
+                                                        </p>
                                                     </div>
                                                 </div>
                                             </td>
                                             <td>$@product.Price</td>
-                                            <td>
-                                                <p class="mb-1 text-muted"><span class="text-dark fw-medium">@product.Discount</span> Left</p>
-                                                <p class="mb-0 text-muted">@product.Discount Sold</p>
-                                            </td>
+
                                             
                                             <td>
-                                                @* @if (product.Category != null)
-                                                {
-                                                    <span class="badge p-1 bg-light text-dark fs-12 me-1">@product.Category?.NameCategory</span>
-                                                }
-                                                else
-                                                {
-                                                    <span class="badge p-1 bg-light text-dark fs-12 me-1">No Category</span>
-                                                } *@
                                                 <span class="badge p-1 bg-light text-dark fs-12 me-1">@product.NameCategory</span>
                                             </td>
-
                                             <td>
-                                               @*  @if (product.RatingProducts != null && product.RatingProducts.Any())
-                                                { *@
-                                                    @* double averageRating = (double)product.RatingProducts.Average(r => r.RatePoint);
-                                                    int reviewCount = product.RatingProducts.Count(); *@
-                                                    <span class="badge p-1 bg-light text-dark fs-12 me-1">
-                                                        <i class="bx bxs-star align-text-top fs-14 text-warning me-1"></i> @product.Status
-                                                    </span>
-                                                @* }
-                                                else
-                                                {
-                                                    <span class="badge p-1 bg-light text-dark fs-12 me-1">
-                                                        <i class="bx bxs-star align-text-top fs-14 text-warning me-1"></i> No Reviews
-                                                    </span>
-                                                } *@
+                                                <span class="badge p-1 bg-light text-dark fs-12 me-1">@product.Brand</span>
+                                            </td>
+                                            <td>
+                                                <span class="badge p-1 bg-light text-dark fs-12 me-1">@product.IsHot</span>
+                                            </td>
+                                            <td>
+                                                <span class="badge p-1 bg-light text-dark fs-12 me-1">@product.IsNew</span>
+                                            </td>
+                                            <td>
+                                                <span class="badge p-1 bg-light text-dark fs-12 me-1">
+                                                    <i class="bx bxs-star align-text-top fs-14 text-warning me-1"></i> 										@for (int i = 1; i <= 5; i++)
+                                                    {
+                                                        if (i <= product.AverageRatePoint)
+                                                        {
+                                                            <i class="fas fa-star filled"></i>
+                                                        }
+                                                        else
+                                                        {
+                                                            <i class="fas fa-star"></i>
+                                                        }
+                                                    }
+                                                </span>
                                             </td>
                                             <td>
                                                 <div class="d-flex gap-2">

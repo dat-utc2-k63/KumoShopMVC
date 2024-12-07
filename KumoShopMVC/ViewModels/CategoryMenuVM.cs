@@ -8,8 +8,6 @@ namespace KumoShopMVC.ViewModels
 		public string NameCategory { get; set; }
 		public DateTime? CreateDate { get; set; }
 
-        public float MinPrice { get; set; }
-        public float MaxPrice { get; set; }
 
         public ICollection<ProductDetailVM>? Products { get; set; }
     }

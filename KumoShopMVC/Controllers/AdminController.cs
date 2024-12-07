@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using System.Web.Helpers;
 using X.PagedList.Extensions;
 
 
@@ -59,20 +60,13 @@ namespace KumoShopMVC.Controllers
             return View(dashBoardAdmin);
         }
 
-<<<<<<< HEAD
-		[HttpGet]
-		public IActionResult ProductList(int? category, int pageNumber = 1, int pageSize = 5)
-=======
-        public IActionResult ProductList()
->>>>>>> 3ea2af6254ba2fb9e9b3eae78c55563c1ddb9117
-		{
 
-            var products = db.Products.Include(p => p.Category).AsQueryable();
-
-            if (category.HasValue)
-            {
-                products = products.Where(p => p.CategoryId == category.Value);
-            }
+        [HttpGet]
+        public IActionResult ProductList(int pageNumber = 1, int pageSize = 5)
+        {
+            var products = db.Products.AsQueryable()
+                .Include(p =>p.Category)
+                .Include(p =>p.RatingProducts);  // Removed the Include for Category
 
             var productList = products.Skip((pageNumber - 1) * pageSize).Take(pageSize).ToList();
 
@@ -80,15 +74,25 @@ namespace KumoShopMVC.Controllers
             {
                 ProductId = p.ProductId,
                 NameProduct = p.NameProduct ?? "",
+                NameCategory = p.Category.NameCategory ??"",
                 Brand = p.Brands ?? "",
-                Gender = p.Gender.HasValue ? p.Gender.Value : false,
+                Gender = p.Gender,
                 Price = (float)(p.Price ?? 0),
-                Discount = (float)(p.Discount ?? 0),
                 IsHot = p.IsHot ?? false,
                 IsNew = p.IsNew ?? false,
-                //Quantity = p.Quantity ?? 0,
-                NameCategory = p.Category.NameCategory ?? "",
-                //RatePoint = (int)(p.RatingProducts.Average(r => r.RatePoint) ?? 0)
+                Images = db.Images
+                    .Where(img => img.ProductId == p.ProductId)
+                    .Select(img => img.ImageUrl ?? "")
+                    .ToList(),
+                Colors = db.ProductColors
+                    .Where(pc => pc.ProductId == p.ProductId)
+                    .Select(pc => pc.Color != null ? pc.Color.ColorName : "")
+                    .ToList(),
+                Sizes = db.ProductSizes
+                    .Where(ps => ps.ProductId == p.ProductId)
+                    .Select(ps => ps.Size != null ? ps.Size.SizeNumber : 0)
+                    .ToList(),
+                AverageRatePoint = p.RatingProducts.Any() ? p.RatingProducts.Average(r => r.RatePoint) : 0
             }).ToList();
 
             // Gán thông tin phân trang vào ViewBag
@@ -98,13 +102,8 @@ namespace KumoShopMVC.Controllers
             return View(result);
         }
 
-		[HttpGet]
-		public IActionResult ProductCreate()
-		{
-			return View();
-		}
 
-		[HttpGet]
+        [HttpGet]
 		public IActionResult ProductEdit(int id)
 		{
             var product = db.Products
@@ -154,15 +153,7 @@ namespace KumoShopMVC.Controllers
 							{
 								CaterogyId = c.CategoryId,
 								NameCategory = c.NameCategory ?? "",
-								MinPrice = c.Products.Min(p => (float?)p.Price) ?? 0,
-								MaxPrice = c.Products.Max(p => (float?)p.Price) ?? 0,
-								Products = c.Products.Select(p => new ProductDetailVM
-								{
-									ProductId = p.ProductId,
-									NameProduct = p.NameProduct ?? "",
-									Price = (float)(p.Price ?? 0),
-									DescProduct = p.DescProduct ?? string.Empty,
-								}).ToList()
+                                CreateDate = c.CreateDate,
 							})
 							.ToList();
 
@@ -305,14 +296,13 @@ namespace KumoShopMVC.Controllers
         public IActionResult UserCreate()
         {
             ViewBag.Roles = db.Roles
-    .Select(r => new SelectListItem
-    {
-        Value = r.RoleId.ToString(),
-        Text = r.NameRole
-    })
-    .ToList();
+            .Select(r => new SelectListItem
+            {
+                Value = r.RoleId.ToString(),
+                Text = r.NameRole
+            })
+            .ToList();
             return View(new UserVM());
-           
 		}
         [HttpPost]
        
@@ -332,7 +322,6 @@ namespace KumoShopMVC.Controllers
                 return View(model);
             }
 
-            // Xử lý thông tin người dùng
             var user = new User
             {
                 Email = model.Email,
@@ -344,7 +333,6 @@ namespace KumoShopMVC.Controllers
                 RoleId = role.RoleId
             };
 
-            // Xử lý Avatar
             if (Avatar != null && Avatar.Length > 0)
             {
                 if (Avatar.ContentType.StartsWith("image/"))
@@ -369,7 +357,6 @@ namespace KumoShopMVC.Controllers
                 }
             }
 
-            // Lưu thông tin vào cơ sở dữ liệu
             try
             {
                 db.Users.Add(user);
@@ -429,7 +416,6 @@ namespace KumoShopMVC.Controllers
                 return RedirectToAction("UserList", "Admin");
             }
 
-            // Cập nhật các thuộc tính dù Avatar có thay đổi hay không
             user.Email = model.Email;
             user.Fullname = model.Fullname;
             user.Phone = model.Phone;
@@ -475,7 +461,6 @@ namespace KumoShopMVC.Controllers
 
             return RedirectToAction("UserList", "Admin");
         }
-
 
 
         public IActionResult DeleteUser(int userId)
@@ -528,43 +513,108 @@ namespace KumoShopMVC.Controllers
 			return View();
 		}
 
-		
+        [HttpGet]
+        public IActionResult ProductCreate()
+        {
+            ViewBag.Categories = db.Categories
+                .Select(r => new SelectListItem
+                {
+                    Value = r.CategoryId.ToString(),
+                    Text = r.NameCategory
+                })
+                .ToList();
+
+            var colors = db.Colors.ToList();
+            var sizes = db.Sizes.ToList();
+            ViewBag.Colors = colors;
+            ViewBag.Sizes = sizes;
+
+            return View(new ProductVM());
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult ProductCreate(ProductVM model)
+        {
+            if (ModelState.IsValid)
+            {
+                        var product = new Product
+                        {
+                            NameProduct = model.NameProduct,
+                            Brands = model.Brand,
+                            Gender = model.Gender,
+                            Price = model.Price,
+                            IsHot = model.IsHot,
+                            IsNew = model.IsNew,
+                            CategoryId = model.CategoryId,
+                            CreateDate = DateTime.Now
+                        };
+                db.Database.BeginTransaction();
+                try
+                {
+                    db.Database.CommitTransaction();
+                    db.Add(product);
+                    db.SaveChanges();
+                    var productSize = new List<ProductSize>();
+
+                    if (model.Sizes != null && model.Sizes.Any())
+                    {
+                        foreach (var item in model.Sizes)
+                        {
+                            productSize.Add(new ProductSize()
+                            {
+                                ProductId = product.ProductId,
+                                SizeId = item
+                            });
+                        }
+                    }
+
+                    db.AddRange(productSize);
+                    db.SaveChanges();
+                }
+                catch
+                {
+                    db.Database.RollbackTransaction();
+                }
+                db.Database.BeginTransaction();
+                try
+                {
+                    db.Database.CommitTransaction();
+                    var productColor = new List<ProductColor>();
+
+                    if (model.Colors != null && model.Colors.Any())
+                    {
+                        foreach (var item in model.Colors)
+                        {
+                            int colorId = int.Parse(item);
+                            productColor.Add(new ProductColor()
+                            {
+                                ProductId = product.ProductId,
+                                ColorId = colorId
+                            });
+                        }
+                    }
+                    db.AddRange(productColor);
+                    db.SaveChanges();
+                    return RedirectToAction("ProductList");
+                }
+                catch
+                {
+                    db.Database.RollbackTransaction();
+                    return RedirectToAction("ProductList");
+                }
+
+            }
+            else
+            {
+                return View(model);
+            }
+        }
+
+        [Authorize]
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public IActionResult CreateProduct(ProductVM model)
-		{
-			if (!ModelState.IsValid)
-			{
-				return View();
-			}
-
-
-			else
-			{
-				var product = new Product
-				{
-					NameProduct = model.NameProduct,
-					Brands = model.Brand,
-					Gender = model.Gender,
-					Price = model.Price,
-					Discount = model.Discount,
-					IsHot = model.IsHot,
-					IsNew = model.IsNew
-				};
-
-				db.Products.Add(product);
-				db.SaveChanges();
-
-				return RedirectToAction("ProductList");
-			}
-
-			
-		}
-
-		[Authorize]
-		[HttpPost]
-		[ValidateAntiForgeryToken]
-		public IActionResult Edit(ProductDetailVM model)
+		public IActionResult Edit(ProductVM model)
 		{
 			if (!ModelState.IsValid)
 			{
@@ -581,12 +631,10 @@ namespace KumoShopMVC.Controllers
 			product.Brands = model.Brand;
 			product.Gender = model.Gender;
 			product.Price = model.Price;
-			product.Discount = model.Discount;
-			//product.IsHot = model.IsHot;
-			//product.IsNew = model.IsNew;
-			product.DescProduct = model.DescProduct;
-			
-
+            product.IsHot = model.IsHot;
+            product.IsNew = model.IsNew;
+            product.DescProduct = model.DescProduct;
+			//product.Images = model.Images
 			db.SaveChanges();
             TempData["SuccessMessage"] = "Product created successfully!";
 
@@ -614,7 +662,6 @@ namespace KumoShopMVC.Controllers
 			return RedirectToAction("ProductList");
 		}
 
-
         [HttpPost]
         public IActionResult CreateCategory(string NameCategory, DateTime DateCreate)
         {
@@ -629,7 +676,7 @@ namespace KumoShopMVC.Controllers
             var newCategory = new Category
             {
                 NameCategory = NameCategory,
-                CreateDate = DateCreate
+                CreateDate = DateTime.Now
             };
 
             // Add the new category to the database

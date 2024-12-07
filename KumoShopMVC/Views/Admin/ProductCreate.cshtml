@@ -1,4 +1,5 @@
-﻿
+﻿@using KumoShopMVC.Data
+@model KumoShopMVC.ViewModels.ProductVM
 @{
     ViewData["Title"] = "CreateProduct";
 }
@@ -6,250 +7,113 @@
 <h1>CreateProduct</h1>
 
 <div class="page-content">
-
-    <!-- Start Container Fluid -->
     <div class="container-xxl">
+        <form id="create-product-form" method="post" asp-action="ProductCreate" asp-controller="Admin" enctype="multipart/form-data">
+                <label for="Images">Chọn nhiều ảnh:</label>
+                <input type="file" name="Images" accept="image/*" multiple />
+                <button type="submit">Tải lên ảnh</button>
 
-        <div class="row">
-
-            <form asp-action="CreateProduct" method="post" id="createProductForm" onsubmit="return validateForm()">
-                <div class="col-xl-9 col-lg-8 ">
-                    <div class="card">
-                        <div class="card-header">
-                            <h4 class="card-title">Add Product Photo</h4>
-                        </div>
-                        <div class="card-body">
-                            <!-- File Upload -->
-                            <form asp-action="ProductCreate" method="post" class="dropzone" id="myAwesomeDropzone" data-plugin="dropzone" data-previews-container="#file-previews" data-upload-preview-template="#uploadPreviewTemplate">
-                                <div class="fallback">
-                                    <input name="file" type="file" multiple />
-                                </div>
-                                <div class="dz-message needsclick">
-                                    <i class="bx bx-cloud-upload fs-48 text-primary"></i>
-                                    <h3 class="mt-4">Drop your images here, or <span class="text-primary">click to browse</span></h3>
-                                    <span class="text-muted fs-13">
-                                        1600 x 1200 (4:3) recommended. PNG, JPG and GIF files are allowed
-                                    </span>
-                                </div>
-                            </form>
-                        </div>
+            <!-- Product Name -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="mb-3">
+                        <label for="product-name" class="form-label">Product Name</label>
+                        <input type="text" id="product-name" class="form-control" placeholder="Items Name" name="NameProduct" required />
                     </div>
-                    <div class="card">
-                        <div class="card-header">
-                            <h4 class="card-title">Product Information</h4>
-                        </div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <form>
-                                        <div class="mb-3">
-                                            <label for="product-name" class="form-label">Product Name</label>
-                                            <input type="text" id="NameProduct" name="NameProduct" class="form-control" placeholder="Items Name">
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="col-lg-6">
-                                    <form>
-                                        <label for="product-categories" class="form-label">Product Categories</label>
-                                        <select class="form-control" id="NameCategory" data-choices data-choices-groups data-placeholder="Select Categories" name="choices-single-groups">
-                                            <option value="">Choose a categories</option>
-                                            <option value="Fashion">Fashion</option>
-                                            <option value="Electronics">Electronics</option>
-                                            <option value="Footwear">Footwear</option>
-                                            <option value="Sportswear">Sportswear</option>
-                                            <option value="Watches">Watches</option>
-                                            <option value="Furniture">Furniture</option>
-                                            <option value="Appliances">Appliances</option>
-                                            <option value="Headphones">Headphones</option>
-                                            <option value="Other Accessories">Other Accessories</option>
-                                        </select>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <form>
-                                        <div class="mb-3">
-                                            <label for="product-brand" class="form-label">Brand</label>
-                                            <input type="text" id="Brands" name="Brand" class="form-control" placeholder="Brand Name">
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="col-lg-4">
-                                    <form>
-                                        <div class="mb-3">
-                                            <label for="product-weight" class="form-label">Weight</label>
-                                            <input type="text" id="product-weight" class="form-control" placeholder="In gm & kg">
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="col-lg-4">
-                                    <form>
-                                        <label for="gender" class="form-label">Gender</label>
-                                        <select class="form-control" id="gender" data-choices data-choices-groups data-placeholder="Select Gender">
-                                            <option value="">Select Gender</option>
-                                            <option value="Men">Men</option>
-                                            <option value="Women">Women</option>
-                                            <option value="Other">Other</option>
-                                        </select>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="row mb-4">
-                                <div class="col-lg-4">
-                                    <div class="mt-3">
-                                        <h5 class="text-dark fw-medium">Size :</h5>
-                                        <div class="d-flex flex-wrap gap-2" role="group" aria-label="Basic checkbox toggle button group">
-                                            <input type="checkbox" class="btn-check" id="size-xs1">
-                                            <label class="btn btn-light avatar-sm rounded d-flex justify-content-center align-items-center" for="size-xs1">XS</label>
-
-                                            <input type="checkbox" class="btn-check" id="size-s1">
-                                            <label class="btn btn-light avatar-sm rounded d-flex justify-content-center align-items-center" for="size-s1">S</label>
-
-                                            <input type="checkbox" class="btn-check" id="size-m1">
-                                            <label class="btn btn-light avatar-sm rounded d-flex justify-content-center align-items-center" for="size-m1">M</label>
-
-                                            <input type="checkbox" class="btn-check" id="size-xl1">
-                                            <label class="btn btn-light avatar-sm rounded d-flex justify-content-center align-items-center" for="size-xl1">Xl</label>
-
-                                            <input type="checkbox" class="btn-check" id="size-xxl1">
-                                            <label class="btn btn-light avatar-sm rounded d-flex justify-content-center align-items-center" for="size-xxl1">XXL</label>
-                                            <input type="checkbox" class="btn-check" id="size-3xl1">
-                                            <label class="btn btn-light avatar-sm rounded d-flex justify-content-center align-items-center" for="size-3xl1">3XL</label>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-5">
-                                    <div class="mt-3">
-                                        <h5 class="text-dark fw-medium">Colors :</h5>
-                                        <div class="d-flex flex-wrap gap-2" role="group" aria-label="Basic checkbox toggle button group">
-                                            <input type="checkbox" class="btn-check" id="color-dark1">
-                                            <label class="btn btn-light avatar-sm rounded d-flex justify-content-center align-items-center" for="color-dark1"> <i class="bx bxs-circle fs-18 text-dark"></i></label>
-
-                                            <input type="checkbox" class="btn-check" id="color-yellow1">
-                                            <label class="btn btn-light avatar-sm rounded d-flex justify-content-center align-items-center" for="color-yellow1"> <i class="bx bxs-circle fs-18 text-warning"></i></label>
-
-                                            <input type="checkbox" class="btn-check" id="color-white1">
-                                            <label class="btn btn-light avatar-sm rounded d-flex justify-content-center align-items-center" for="color-white1"> <i class="bx bxs-circle fs-18 text-white"></i></label>
-
-                                            <input type="checkbox" class="btn-check" id="color-red1">
-                                            <label class="btn btn-light avatar-sm rounded d-flex justify-content-center align-items-center" for="color-red1"> <i class="bx bxs-circle fs-18 text-primary"></i></label>
-
-                                            <input type="checkbox" class="btn-check" id="color-green1">
-                                            <label class="btn btn-light avatar-sm rounded d-flex justify-content-center align-items-center" for="color-green1"> <i class="bx bxs-circle fs-18 text-success"></i></label>
-
-                                            <input type="checkbox" class="btn-check" id="color-blue1">
-                                            <label class="btn btn-light avatar-sm rounded d-flex justify-content-center align-items-center" for="color-blue1"> <i class="bx bxs-circle fs-18 text-danger"></i></label>
-
-                                            <input type="checkbox" class="btn-check" id="color-sky1">
-                                            <label class="btn btn-light avatar-sm rounded d-flex justify-content-center align-items-center" for="color-sky1"> <i class="bx bxs-circle fs-18 text-info"></i></label>
-
-                                            <input type="checkbox" class="btn-check" id="color-gray1">
-                                            <label class="btn btn-light avatar-sm rounded d-flex justify-content-center align-items-center" for="color-gray1"> <i class="bx bxs-circle fs-18 text-secondary"></i></label>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="mb-3">
-                                        <label for="description" class="form-label">Description</label>
-                                        <textarea class="form-control bg-light-subtle" id="description" rows="7" placeholder="Short description about the product"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <form>
-                                        <div class="mb-3">
-                                            <label for="product-id" class="form-label">Tag Number</label>
-                                            <input type="number" id="product-id" class="form-control" placeholder="#******">
-                                        </div>
-
-                                    </form>
-                                </div>
-                                <div class="col-lg-4">
-                                    <form>
-                                        <div class="mb-3">
-                                            <label for="product-stock" class="form-label">Stock</label>
-                                            <input type="number" id="product-stock" name="Quantity" class="form-control" placeholder="Quantity">
-                                        </div>
-
-                                    </form>
-                                </div>
-                                <div class="col-lg-4">
-                                    <label for="product-stock" class="form-label">Tag</label>
-                                    <select class="form-control" id="choices-multiple-remove-button" data-choices data-choices-removeItem name="choices-multiple-remove-button" multiple>
-                                        <option value="Fashion" selected>Fashion</option>
-                                        <option value="Electronics">Electronics</option>
-                                        <option value="Watches">Watches</option>
-                                        <option value="Headphones">Headphones</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
+                </div>
+                <!-- Product Categories -->
+                <div class="col-lg-6">
+                    <div class="mb-3">
+                        <label for="product-categories" class="form-label">Product Categories</label>
+                        <select class="form-control" id="CategoryId" name="CategoryId" asp-for="CategoryId" asp-items="ViewBag.Categories" required>
+                        </select>
                     </div>
-                    <div class="card">
-                        <div class="card-header">
-                            <h4 class="card-title">Pricing Details</h4>
-                        </div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <form>
-                                        <label for="product-price" class="form-label">Price</label>
-                                        <div class="input-group mb-3">
-                                            <span class="input-group-text fs-20"><i class='bx bx-dollar'></i></span>
-                                            <input type="number" id="product-price" name="Price" class="form-control" placeholder="000">
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="col-lg-4">
-                                    <form>
-                                        <label for="product-discount" class="form-label">Discount</label>
-                                        <div class="input-group mb-3">
-                                            <span class="input-group-text fs-20"><i class='bx bxs-discount'></i></span>
-                                            <input type="number" id="product-discount" name="Discount" class="form-control" placeholder="000">
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="col-lg-4">
-                                    <form>
-                                        <label for="product-tex" class="form-label">Tex</label>
-                                        <div class="input-group mb-3">
-                                            <span class="input-group-text fs-20"><i class='bx bxs-file-txt'></i></span>
-                                            <input type="number" id="product-tex" class="form-control" placeholder="000">
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <!-- Brand, Price, Gender -->
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="mb-3">
+                        <label for="product-brand" class="form-label">Brand</label>
+                        <input type="text" id="product-brand" class="form-control" placeholder="Brand Name" name="Brand" required />
                     </div>
-                    <!-- Các phần khác... -->
-                    <div class="p-3 bg-light mb-3 rounded">
-                        <div class="row justify-content-end g-2">
-                            <div class="col-lg-2">
-                                <!-- Nút submit -->
-                                <button type="submit" class="btn btn-outline-secondary w-100">Create Product</button>
-                            </div>
-                            <div class="col-lg-2">
-                                <!-- Nút Cancel với type="button" -->
-                                <button type="button" class="btn btn-primary w-100" onclick="window.location.href='@Url.Action("ProductList", "Admin")'">Cancel</button>
-                            </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="mb-3">
+                        <label for="product-price" class="form-label">Price</label>
+                        <div class="input-group">
+                            <span class="input-group-text fs-20"><i class='bx bx-dollar'></i></span>
+                            <input type="number" id="product-price" class="form-control" placeholder="000" name="Price" required />
                         </div>
                     </div>
                 </div>
-                
-            </form>
+                <div class="col-lg-4">
+                    <div class="mb-3">
+                        <label for="gender" class="form-label">Gender</label>
+                        <select class="form-control" id="gender" name="Gender" required>
+                            <option value="">Select Gender</option>
+                            <option value="True">Men</option>
+                            <option value="False">Women</option>
+                            <option value="null">Other</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
 
+            <div class="row">
+                <!-- Size -->
+                <div class="col-lg-4">
+                    <div class="mt-3">
+                        <h5 class="text-dark fw-medium">Size:</h5>
+                        <div class="d-flex flex-wrap gap-2" role="group" aria-label="Size Selection">
+                            @foreach (var size in ViewBag.Sizes as List<Size>)
+                            {
+                                <input type="checkbox" class="btn-check" id="size-@size.SizeId" name="Sizes" value="@size.SizeId">
+                                <label class="btn btn-light avatar-sm rounded" for="size-@size.SizeId">@size.SizeNumber</label>
+                            }
+                        </div>
+                    </div>
+                </div>
 
-            
-        </div>
+                <!-- Colors -->
+                <div class="col-lg-5">
+                    <div class="mt-3">
+                        <h5 class="text-dark fw-medium">Colors:</h5>
+                        <div class="d-flex flex-wrap gap-2" role="group" aria-label="Color Selection">
+                            @foreach (var color in ViewBag.Colors as List<Color>)
+                            {
+                                <input type="checkbox" class="btn-check" id="color-@color.ColorId" name="Colors" value="@color.ColorId">
+                                <label class="btn btn-light avatar-sm rounded" for="color-@color.ColorId">
+                                    <i class="bx bxs-circle fs-18" style="color: @color.ColorName;"></i>
+                                </label>
+                            }
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Description -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="mb-3">
+                        <label for="description" class="form-label">Description</label>
+                        <textarea class="form-control bg-light-subtle" id="description" name="Description" rows="7" placeholder="Short description about the product"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <button type="submit" class="btn btn-primary">Create Product</button>
+                </div>
+            </div>
+        </form>
+
     </div>
     <!-- End Container Fluid -->
-    <!-- ========== Footer Start ========== -->
+
     <footer class="footer">
         <div class="container-fluid">
             <div class="row">
@@ -259,16 +123,16 @@
             </div>
         </div>
     </footer>
-    <!-- ========== Footer End ========== -->
-    <script>
-        function validateForm() {
-            const productName = document.getElementById("NameProduct").value.trim();
-
-            if (!productName) {
-                alert("Product name cannot be empty. Please enter a product name.");
-                return false;
-            }
-            return true; // Cho phép submit form nếu hợp lệ
-        }
-    </script>
 </div>
+
+<script>
+    function validateForm() {
+        const productName = document.getElementById("product-name").value.trim();
+
+        if (!productName) {
+            alert("Product name cannot be empty. Please enter a product name.");
+            return false;
+        }
+        return true;
+    }
+</script>

@@ -31,7 +31,39 @@ namespace KumoShopMVC.Helpers
                 return string.Empty;
             }
         }
+        public static List<string> UpLoadListProduct(List<IFormFile> files, string folder)
+        {
+            var fileNames = new List<string>();
 
+            foreach (var file in files)
+            {
+                try
+                {
+                    var directoryPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "assets", "img", folder);
+
+                    if (!Directory.Exists(directoryPath))
+                    {
+                        Directory.CreateDirectory(directoryPath);
+                    }
+
+                    var uniqueFileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
+                    var fullPath = Path.Combine(directoryPath, uniqueFileName);
+
+                    using (var myfile = new FileStream(fullPath, FileMode.CreateNew))
+                    {
+                        file.CopyTo(myfile);
+                    }
+
+                    fileNames.Add(uniqueFileName);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Error uploading file {file.FileName}: {ex.Message}");
+                }
+            }
+
+            return fileNames; // Trả về danh sách tên file
+        }
         public static String GenerRateRandomKey(int length = 5)
 		{
 			var pattern = @"qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM!";

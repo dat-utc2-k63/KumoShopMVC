@@ -42,7 +42,6 @@ namespace KumoShopMVC.Controllers
                 Brand = p.Brands ?? "",
                 Gender = p.Gender.HasValue ? p.Gender.Value : false,
                 Price = (float)(p.Price ?? 0),
-                Discount = (float)(p.Discount ?? 0),
                 Images = db.Images
                     .Where(img => img.ProductId == p.ProductId)
                     .Select(img => img.ImageUrl ?? "")
@@ -96,7 +95,6 @@ namespace KumoShopMVC.Controllers
                     .Where(img => img.ProductId == p.ProductId)
                     .Select(img => img.ImageUrl ?? "")
                     .ToList(),
-                Discount = (float)(p.Discount ?? 0),
                 IsHot = p.IsHot ?? false,
                 IsNew = p.IsNew ?? false
             }).ToList();
@@ -110,7 +108,6 @@ namespace KumoShopMVC.Controllers
 
         public IActionResult Detail(int id)
         {
-
             var product = db.Products
                 .Include(p => p.Category)
                 .Include(p => p.RatingProducts)
@@ -210,7 +207,6 @@ namespace KumoShopMVC.Controllers
                 Brand = p.Brands ?? "",
                 Gender = p.Gender.HasValue ? p.Gender.Value : false,
                 Price = (float)(p.Price ?? 0),
-                Discount = (float)(p.Discount ?? 0),
                 Images = db.Images
                     .Where(img => img.ProductId == p.ProductId)
                     .Select(img => img.ImageUrl ?? "")

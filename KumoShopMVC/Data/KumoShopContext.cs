@@ -92,7 +92,7 @@ public partial class KumoShopContext : DbContext
             entity.HasOne(d => d.User).WithMany(p => p.Favourites)
                 .HasForeignKey(d => d.UserId)
                 .OnDelete(DeleteBehavior.Cascade)
-                .HasConstraintName("FK_Favourite_User");
+                .HasConstraintName("FK_Favourite_Users");
         });
 
         modelBuilder.Entity<FavouriteItem>(entity =>
@@ -103,13 +103,12 @@ public partial class KumoShopContext : DbContext
 
             entity.HasOne(d => d.Favourite).WithMany(p => p.FavouriteItems)
                 .HasForeignKey(d => d.FavouriteId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_FavouriteItem_Favourite");
 
             entity.HasOne(d => d.Product).WithMany(p => p.FavouriteItems)
                 .HasForeignKey(d => d.ProductId)
-                .OnDelete(DeleteBehavior.SetNull)
-                .HasConstraintName("FK_FavouriteItem_Product");
+                .OnDelete(DeleteBehavior.Cascade)
+                .HasConstraintName("FK_FavouriteItem_Products");
         });
 
         modelBuilder.Entity<Image>(entity =>
@@ -120,16 +119,13 @@ public partial class KumoShopContext : DbContext
 
             entity.HasOne(d => d.Product).WithMany(p => p.Images)
                 .HasForeignKey(d => d.ProductId)
-                .HasConstraintName("FK_Image_Products");
+                .OnDelete(DeleteBehavior.Cascade)
+                .HasConstraintName("FK_Images_Product");
         });
 
         modelBuilder.Entity<Order>(entity =>
         {
             entity.HasKey(e => e.OrderId).HasName("PK_orders");
-
-            entity.HasIndex(e => e.StatusId, "IX_Orders_StatusId");
-
-            entity.HasIndex(e => e.UserId, "IX_Orders_UserId");
 
             entity.Property(e => e.Address).HasMaxLength(50);
             entity.Property(e => e.DescOrder).HasColumnType("ntext");
@@ -141,12 +137,13 @@ public partial class KumoShopContext : DbContext
 
             entity.HasOne(d => d.Status).WithMany(p => p.Orders)
                 .HasForeignKey(d => d.StatusId)
+                .OnDelete(DeleteBehavior.SetNull)
                 .HasConstraintName("FK_Orders_StatusShipping");
 
             entity.HasOne(d => d.User).WithMany(p => p.Orders)
                 .HasForeignKey(d => d.UserId)
                 .OnDelete(DeleteBehavior.Cascade)
-                .HasConstraintName("FK_Order_User");
+                .HasConstraintName("FK_Orders_Users");
         });
 
         modelBuilder.Entity<OrderItem>(entity =>
@@ -155,22 +152,18 @@ public partial class KumoShopContext : DbContext
 
             entity.ToTable("OrderItem");
 
-            entity.HasIndex(e => e.OrderId, "IX_OrderItem_OrderId");
-
-            entity.HasIndex(e => e.ProductId, "IX_OrderItem_ProductId");
-
             entity.Property(e => e.Color).HasMaxLength(50);
             entity.Property(e => e.Image).HasMaxLength(50);
             entity.Property(e => e.NameProduct).HasMaxLength(50);
 
             entity.HasOne(d => d.Order).WithMany(p => p.OrderItems)
                 .HasForeignKey(d => d.OrderId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_Order_item_Orders");
+                .HasConstraintName("FK_OrderItem_Orders");
 
             entity.HasOne(d => d.Product).WithMany(p => p.OrderItems)
                 .HasForeignKey(d => d.ProductId)
-                .HasConstraintName("FK_Order_item_Products");
+                .OnDelete(DeleteBehavior.SetNull)
+                .HasConstraintName("FK_OrderItem_Products");
         });
 
         modelBuilder.Entity<Product>(entity =>
@@ -183,7 +176,7 @@ public partial class KumoShopContext : DbContext
             entity.HasOne(d => d.Category).WithMany(p => p.Products)
                 .HasForeignKey(d => d.CategoryId)
                 .OnDelete(DeleteBehavior.SetNull)
-                .HasConstraintName("FK_Product_Category");
+                .HasConstraintName("FK_Products_Categories");
         });
 
         modelBuilder.Entity<ProductColor>(entity =>
@@ -194,12 +187,12 @@ public partial class KumoShopContext : DbContext
 
             entity.HasOne(d => d.Color).WithMany()
                 .HasForeignKey(d => d.ColorId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_ProductColor_Color1");
+                .OnDelete(DeleteBehavior.SetNull)
+                .HasConstraintName("FK_ProductColor_Color");
 
             entity.HasOne(d => d.Product).WithMany()
                 .HasForeignKey(d => d.ProductId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
+                .OnDelete(DeleteBehavior.Cascade)
                 .HasConstraintName("FK_ProductColor_Products");
         });
 
@@ -219,19 +212,15 @@ public partial class KumoShopContext : DbContext
 
         modelBuilder.Entity<ProductSize>(entity =>
         {
-            entity
-                .HasNoKey()
-                .ToTable("ProductSize");
+            entity.ToTable("ProductSize");
 
-            entity.HasOne(d => d.Product).WithMany()
+            entity.HasOne(d => d.Product).WithMany(p => p.ProductSizes)
                 .HasForeignKey(d => d.ProductId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_ProductSize_Products");
 
-            entity.HasOne(d => d.Size).WithMany()
+            entity.HasOne(d => d.Size).WithMany(p => p.ProductSizes)
                 .HasForeignKey(d => d.SizeId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_ProductSize_Size1");
+                .HasConstraintName("FK_ProductSize_Size");
         });
 
         modelBuilder.Entity<RatingImage>(entity =>
@@ -243,7 +232,6 @@ public partial class KumoShopContext : DbContext
 
             entity.HasOne(d => d.Rating).WithMany(p => p.RatingImages)
                 .HasForeignKey(d => d.RatingId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_RatingImage_RatingProduct");
         });
 
@@ -253,21 +241,19 @@ public partial class KumoShopContext : DbContext
 
             entity.ToTable("RatingProduct");
 
-            entity.HasIndex(e => e.ProductId, "IX_RatingProduct_ProductId");
-
-            entity.HasIndex(e => e.UserId, "IX_RatingProduct_UserId");
-
             entity.Property(e => e.CreateDate).HasColumnType("datetime");
             entity.Property(e => e.DescRating).HasColumnType("ntext");
             entity.Property(e => e.Fullname).HasMaxLength(50);
 
             entity.HasOne(d => d.Product).WithMany(p => p.RatingProducts)
                 .HasForeignKey(d => d.ProductId)
-                .HasConstraintName("FK_Rating_product_Products");
+                .OnDelete(DeleteBehavior.Cascade)
+                .HasConstraintName("FK_RatingProduct_Products");
 
             entity.HasOne(d => d.User).WithMany(p => p.RatingProducts)
                 .HasForeignKey(d => d.UserId)
-                .HasConstraintName("FK_Rating_product_Users");
+                .OnDelete(DeleteBehavior.SetNull)
+                .HasConstraintName("FK_RatingProduct_Users");
         });
 
         modelBuilder.Entity<Role>(entity =>
@@ -311,7 +297,7 @@ public partial class KumoShopContext : DbContext
             entity.HasOne(d => d.Role).WithMany(p => p.Users)
                 .HasForeignKey(d => d.RoleId)
                 .OnDelete(DeleteBehavior.SetNull)
-                .HasConstraintName("FK_User_Role");
+                .HasConstraintName("FK_Users_Roles");
         });
 
         OnModelCreatingPartial(modelBuilder);

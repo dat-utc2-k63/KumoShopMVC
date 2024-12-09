@@ -50,6 +50,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cT3JkZXJEZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/Admin/OrderEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cT3JkZXJFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/asp.net/KumoShopMVC/KumoShopMVC/Views/Admin/OrderList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cT3JkZXJMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -108,6 +112,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/asp.net/KumoShopMVC/KumoShopMVC/Views/Cart/Success.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxTdWNjZXNzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/Contact/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/asp.net/KumoShopMVC/KumoShopMVC/Views/Home/Index.cshtml]

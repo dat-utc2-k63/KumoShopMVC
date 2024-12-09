@@ -290,15 +290,6 @@ namespace KumoShopMVC.Controllers
 		{
 			return View();
 		}
-
-		public IActionResult OrderList()
-		{
-			return View();
-		}
-		public IActionResult OrderDetail()
-		{
-			return View();
-		}
 		
 		[HttpGet]
 		public IActionResult RoleCreate()
@@ -625,10 +616,6 @@ namespace KumoShopMVC.Controllers
             return View(roles);
         }
 
-        public IActionResult Contact()
-		{
-			return View();
-		}
 
         [HttpGet]
         public IActionResult ProductCreate()
@@ -846,6 +833,140 @@ namespace KumoShopMVC.Controllers
 
             return View(model);
         }
+        public IActionResult OrderList()
+        {
+            var orders = db.Orders
+                .Select(o => new OrderVM
+                {
+                    OrderId = o.OrderId,
+                    OrderDate = o.OrderDate,
+                    DescOrder = o.DescOrder,
+                    ShippingDate = o.ShippingDate,
+                    FullName = o.Fullname,
+                    Address = o.Address,
+                    Phone = o.Phone,
+                    PaymentMethode = o.PaymentMethode,
+                    StatusShipping = o.Status.NameStatus,
+                    OrderItems = db.OrderItems.Where(oi => oi.OrderId == o.OrderId).Select(oi => new OrderItemVM
+                    {
+                        NameProduct = oi.Product.NameProduct,
+                        Quantity = (int)oi.Product.Quantity,
+                        Price = (float)oi.Product.Price
+                    }).ToList()
+                })
+                .ToList();
 
+            // Truyền dữ liệu vào view
+            return View(orders);
+        }
+        public IActionResult GetOrderDetails(int orderId)
+        {
+            var orderItems = db.OrderItems
+                .Where(oi => oi.OrderId == orderId)
+                .Select(oi => new OrderItemVM
+                {
+                    OrderItemId = oi.OrderItemId,
+                    OrderId = oi.OrderId,
+                    ProductId = oi.ProductId,
+                    NameProduct = oi.NameProduct ?? string.Empty,
+                    Price = (float)(oi.Price ?? 0),
+                    Image = oi.Image ?? string.Empty,
+                    Color = oi.Color ?? string.Empty,
+                    Size = oi.Size ?? 0,
+                    Quantity = oi.Quantity ?? 0,
+                    IsRating = oi.IsRating ?? false
+                })
+                .ToList();
+
+            if (orderItems == null || !orderItems.Any())
+            {
+                return NotFound();
+            }
+
+            return Json(orderItems);
+        }
+
+        [HttpGet]
+        public IActionResult OrderEdit(int id)
+        {
+            var order = db.Orders
+                .Include(o => o.Status)  // Bao gồm thông tin trạng thái
+                .FirstOrDefault(o => o.OrderId == id);
+            ViewBag.StatusShipping = new SelectList(db.StatusShippings.ToList(), "StatusId", "NameStatus", order.StatusId);
+            if (order == null)
+            {
+                return NotFound();  // Nếu không tìm thấy đơn hàng, trả về lỗi 404
+            }
+            var orderVM = new OrderVM
+            {
+                OrderId = order.OrderId,
+                OrderDate = order.OrderDate ?? DateTime.MinValue,
+                DescOrder = order.DescOrder ?? "No Description",
+                ShippingDate = order.ShippingDate,
+                FullName = order.Fullname ?? "Unknown",
+                Address = order.Address ?? "No Address",
+                Phone = order.Phone ?? "No Phone",
+                PaymentMethode = order.PaymentMethode ?? "Unknown",
+                StatusShipping = order.Status.NameStatus,  // Lấy tên trạng thái giao hàng
+            };
+
+            return View(orderVM);  // Truyền OrderVM vào view
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult OrderEdit(OrderVM model)
+        {
+            if (ModelState.IsValid)
+            {
+                var order = db.Orders.FirstOrDefault(o => o.OrderId == model.OrderId);
+                if (order == null)
+                {
+                    return NotFound();
+                }
+                order.Fullname = model.FullName;
+                order.Address = model.Address;
+                order.Phone = model.Phone;
+                order.StatusId = model.StatusShippingId;
+
+                db.SaveChanges();
+                return RedirectToAction("OrderList");  // Sau khi lưu thay đổi, chuyển về danh sách đơn hàng
+            }
+            return View(model); 
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult DeleteOrder(int id)
+        {
+            var order = db.Orders.FirstOrDefault(o => o.OrderId == id);
+            if (order == null)
+            {
+                return NotFound(); // Nếu không tìm thấy đơn hàng
+            }
+
+            // Xóa các mục trong đơn hàng (nếu có) trước khi xóa đơn hàng
+            var orderItems = db.OrderItems.Where(oi => oi.OrderId == order.OrderId).ToList();
+            db.OrderItems.RemoveRange(orderItems); // Xóa tất cả các mục của đơn hàng
+
+            db.Orders.Remove(order); // Xóa đơn hàng
+            db.SaveChanges(); // Lưu thay đổi
+
+            return RedirectToAction("OrderList"); // Quay lại danh sách đơn hàng
+        }
+        public IActionResult Contact()
+        {
+            var contact = db.Contacts
+                .Select(c => new ContactVM
+                {
+                    ContactId = c.ContactId,
+                    Name = c.Name,
+                    Email = c.Email,
+                    Subject = c.Subject,
+                    DescContact = c.DescContact,
+                    Status = c.Status,
+                    CreateDate = c.CreateDate,
+                })
+                .ToList();
+            return View(contact);
+        }
     }
 }

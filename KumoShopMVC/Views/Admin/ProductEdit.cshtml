@@ -1,4 +1,5 @@
-﻿@model KumoShopMVC.ViewModels.ProductDetailVM
+﻿@using KumoShopMVC.Data
+@model KumoShopMVC.ViewModels.ProductDetailVM
 
 @{
     ViewData["Title"] = "EditProduct";
@@ -9,63 +10,43 @@
 <div class="page-content">
     <!-- Start Container Fluid -->
     <div class="container-xxl">
+        <form asp-action="ProductEdit" asp-controller="Admin" method="post" enctype="multipart/form-data">
 
         <div class="row">
             <div class="col-xl-3 col-lg-4">
                 <div class="card">
-                    <div class="card-body">
-                        <!-- Hiển thị ảnh sản phẩm -->
-                       @*  <img src="~/assets/images/product/@Model.ImagePath" alt="" class="img-fluid rounded bg-light"> *@
-
+                        <div class="card-body">
+                            @foreach (var image in Model.Images.Take(1))
+                            {
+                                <img src="~/assets/img/products/@image" alt="" class="img-fluid rounded bg-light">
+                            }
                         <div class="mt-3">
-                            <!-- Hiển thị tên sản phẩm và danh mục -->
-                            <h4>@Model.NameProduct <span class="fs-14 text-muted ms-1">(@Model.NameCategory)</span></h4>
+                            <h4>@Model.NameProduct -<span class="fs-14 text-muted ms-1">(@Model.NameCategory)</span></h4>
 
-                            <h5 class="text-dark fw-medium mt-3">Price : @Model.Price</h5>
-
-
-                            <!-- Hiển thị kích cỡ sản phẩm -->
+                            <!-- Hiển thị kích thước -->
                             <div class="mt-3">
-                                <h5 class="text-dark fw-medium">Size :</h5>
+                                <h5 class="text-dark fw-medium">Size:</h5>
                                 <div class="d-flex flex-wrap gap-2" role="group" aria-label="Basic checkbox toggle button group">
-                                    <input type="checkbox" class="btn-check" id="size-s">
-                                    <label class="btn btn-light avatar-sm rounded d-flex justify-content-center align-items-center" for="size-s">S</label>
-
-                                    <input type="checkbox" class="btn-check" id="size-m" checked>
-                                    <label class="btn btn-light avatar-sm rounded d-flex justify-content-center align-items-center" for="size-m">M</label>
-
-                                    <input type="checkbox" class="btn-check" id="size-xl">
-                                    <label class="btn btn-light avatar-sm rounded d-flex justify-content-center align-items-center" for="size-xl">XL</label>
-
-                                    <input type="checkbox" class="btn-check" id="size-xxl">
-                                    <label class="btn btn-light avatar-sm rounded d-flex justify-content-center align-items-center" for="size-xxl">XXL</label>
+                                @foreach (var size in ViewBag.Sizes as List<Size>)
+                                    {
+                                    var isChecked = Model.Sizes.Contains(size.SizeNumber) ? "checked" : "";
+                                     <input type="checkbox" class="btn-check" id="size-@size.SizeId" name="Sizes" value="@size.SizeId" ) @isChecked>
+                                     <label class="btn btn-light" for="size-@size.SizeId">@size.SizeNumber</label>
+                                    }
                                 </div>
                             </div>
 
                             <!-- Hiển thị màu sắc -->
                             <div class="mt-3">
                                 <h5 class="text-dark fw-medium">Colors :</h5>
-                                <div class="d-flex flex-wrap gap-2" role="group" aria-label="Basic checkbox toggle button group">
-                                    <input type="checkbox" class="btn-check" id="color-dark">
-                                    <label class="btn btn-light avatar-sm rounded d-flex justify-content-center align-items-center" for="color-dark">
-                                        <i class="bx bxs-circle fs-18 text-dark"></i>
+                                @foreach (var color in ViewBag.Colors as List<Color>)
+                                {
+                                    var isChecked = Model.Colors.Contains(color.ColorName) ? "checked" : "";
+                                    <input type="checkbox" class="btn-check" id="color-@color.ColorId" name="Colors" value="@color.ColorId" @isChecked>
+                                    <label class="btn btn-light avatar-sm rounded" for="color-@color.ColorId">
+                                        <i class="bx bxs-circle fs-18" style="color: @color.ColorName;"></i>
                                     </label>
-
-                                    <input type="checkbox" class="btn-check" id="color-yellow">
-                                    <label class="btn btn-light avatar-sm rounded d-flex justify-content-center align-items-center" for="color-yellow">
-                                        <i class="bx bxs-circle fs-18 text-warning"></i>
-                                    </label>
-
-                                    <input type="checkbox" class="btn-check" id="color-white">
-                                    <label class="btn btn-light avatar-sm rounded d-flex justify-content-center align-items-center" for="color-white">
-                                        <i class="bx bxs-circle fs-18 text-white"></i>
-                                    </label>
-
-                                    <input type="checkbox" class="btn-check" id="color-red">
-                                    <label class="btn btn-light avatar-sm rounded d-flex justify-content-center align-items-center" for="color-red">
-                                        <i class="bx bxs-circle fs-18 text-danger"></i>
-                                    </label>
-                                </div>
+                                }
                             </div>
                         </div>
                     </div>
@@ -78,7 +59,6 @@
                         <h4 class="card-title">Product Information</h4>
                     </div>
                     <div class="card-body"> 
-                        <form asp-action="Edit" asp-controller="Admin" method="post">
                             @Html.AntiForgeryToken()
                             <div class="row">
                                 
@@ -91,9 +71,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <label for="product-categories" class="form-label">Product Categories</label>
-                                    <select class="form-control" id="product-categories" name="NameCategory">
-                                        <option value="Fashion" >Fashion</option>
-                                        <option value="Electronics" >Electronics</option>
+                                    <select name="CategoryId" class="form-control" asp-for="CategoryId" asp-items="ViewBag.Category">
                                     </select>
                                 </div>
                             </div>
@@ -108,9 +86,11 @@
                     
                                 <div class="col-lg-4">
                                     <label for="gender" class="form-label">Gender</label>
-                                    <select class="form-control" id="gender" name="Gender">
-                                        <option value="false">Men</option>
-                                        <option value="true">Women</option>
+                                    <select class="form-control" id="gender" name="Gender" required>
+                                        <option value="">Select Gender</option>
+                                        <option value="True">Men</option>
+                                        <option value="False">Women</option>
+                                        <option value="null">Other</option>
                                     </select>
                                 </div>
                             </div>
@@ -136,9 +116,27 @@
                                         <input type="number" id="product-price" class="form-control" name="Price" value="@Model.Price" />
                                         @Html.ValidationMessageFor(m => m.Price, "", new { @class = "text-danger" })
                                     </div>
+                                    <div class="col-lg-4">
+                                        <label for="IsHot" class="form-label">Is Hot</label>
+                                        <select class="form-control" id="IsHot" name="IsHot" required>
+                                            <option value="False">False</option>
+                                            <option value="True">True</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <label for="IsNew" class="form-label">Is New</label>
+                                        <select class="form-control" id="IsNew" name="IsNew" required>
+                                            <option value="False">False</option>
+                                            <option value="True">True</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
-
+                            <label for="Images">Choose Image:</label>
+                            <input type="file" name="Images" /><br />
+                            <input type="file" name="Images" /><br />
+                            <input type="file" name="Images" /><br />
+                            <input type="file" name="Images" /><br />
                             <div class="p-3 bg-light mb-3 rounded">
                                 <div class="row justify-content-end g-2">
                                     <div class="col-lg-2">
@@ -152,13 +150,12 @@
 
                             <input type="hidden" name="ProductId" value="@Model.ProductId" />
 
-                        </form>
                     </div>
                 </div>
                 
             </div>
         </div>
-
+        </form>
     </div>
     <!-- End Container Fluid -->
 </div>

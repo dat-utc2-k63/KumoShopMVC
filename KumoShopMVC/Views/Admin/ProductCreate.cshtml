@@ -9,11 +9,6 @@
 <div class="page-content">
     <div class="container-xxl">
         <form id="create-product-form" method="post" asp-action="ProductCreate" asp-controller="Admin" enctype="multipart/form-data">
-                <label for="Images">Chọn nhiều ảnh:</label>
-                <input type="file" name="Images"/>
-                <input type="file" name="Images"/>
-                <input type="file" name="Images"/>
-                <input type="file" name="Images"/>
 
             <!-- Product Name -->
             <div class="row">
@@ -100,11 +95,15 @@
                 <div class="col-lg-12">
                     <div class="mb-3">
                         <label for="description" class="form-label">Description</label>
-                        <textarea class="form-control bg-light-subtle" id="description" name="Description" rows="7" placeholder="Short description about the product"></textarea>
+                        <textarea class="form-control bg-light-subtle" id="description" name="DescProduct" rows="7" placeholder="Short description about the product"></textarea>
                     </div>
                 </div>
             </div>
-
+            <label for="Images">Choose Image:</label>
+            <input type="file" name="Images" /><br />
+            <input type="file" name="Images" /><br />
+            <input type="file" name="Images" /><br />
+            <input type="file" name="Images" /><br />
             <!-- Submit Button -->
             <div class="row">
                 <div class="col-lg-12">

@@ -137,7 +137,7 @@ namespace KumoShopMVC.Controllers
                 OrderItems = order.OrderItems.Select(oi => new OrderItemVM
                 {
                     ProductId = oi.ProductId,
-                    NameProduct = oi.NameProduct ?? string.Empty, 
+					NameProduct = oi.NameProduct ?? string.Empty, 
                     Price = (float)(oi.Price ?? 0), 
                     Image = oi.Image ?? string.Empty,
                     Color = oi.Color ?? string.Empty, 

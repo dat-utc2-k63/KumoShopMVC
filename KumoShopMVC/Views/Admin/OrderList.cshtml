@@ -1,4 +1,5 @@
-﻿
+﻿@model IEnumerable<KumoShopMVC.ViewModels.OrderVM>
+
 @{
     ViewData["Title"] = "ListOrder";
 }
@@ -185,219 +186,42 @@
                                         <th>Total</th>
                                         <th>Payment Status</th>
                                         <th>Items</th>
-                                        <th>Delivery Number</th>
                                         <th>Order Status</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>
-                                            #583488/80
-                                        </td>
-                                        <td>Apr 23 , 2024</td>
-                                        <td>
-                                            <a href="#!" class="link-primary fw-medium">Gail C. Anderson</a>
-                                        </td>
-                                        <td> Normal</td>
-                                        <td> $1,230.00</td>
-                                        <td> <span class="badge bg-light text-dark  px-2 py-1 fs-13">Unpaid</span></td>
-                                        <td> 4</td>
-                                        <td> -</td>
-                                        <td> <span class="badge border border-secondary text-secondary  px-2 py-1 fs-13">Draft</span></td>
-                                        <td>
-                                            <div class="d-flex gap-2">
-                                                <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
-                                                <a href="#!" class="btn btn-soft-primary btn-sm"><iconify-icon icon="solar:pen-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                                                <a href="#!" class="btn btn-soft-danger btn-sm"><iconify-icon icon="solar:trash-bin-minimalistic-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                            #456754/80
-                                        </td>
-                                        <td>Apr 20 , 2024</td>
-                                        <td>
-                                            <a href="#!" class="link-primary fw-medium">Jung S. Ayala</a>
-                                        </td>
-                                        <td> Normal</td>
-                                        <td> $987.00</td>
-                                        <td> <span class="badge bg-success text-light  px-2 py-1 fs-13">Paid</span></td>
-                                        <td> 2</td>
-                                        <td> -</td>
-                                        <td> <span class="badge border border-warning text-warning  px-2 py-1 fs-13">Packaging</span></td>
-                                        <td>
-                                            <div class="d-flex gap-2">
-                                                <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
-                                                <a href="#!" class="btn btn-soft-primary btn-sm"><iconify-icon icon="solar:pen-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                                                <a href="#!" class="btn btn-soft-danger btn-sm"><iconify-icon icon="solar:trash-bin-minimalistic-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            #578246/80
-                                        </td>
-                                        <td>Apr 19 , 2024</td>
-                                        <td>
-                                            <a href="#!" class="link-primary fw-medium">David A. Arnold</a>
-                                        </td>
-                                        <td> High</td>
-                                        <td> $1,478.00</td>
-                                        <td> <span class="badge  bg-success text-light px-2 py-1 fs-13">Paid</span></td>
-                                        <td> 5</td>
-                                        <td> #D-57837678</td>
-                                        <td> <span class="badge border border-success text-success  px-2 py-1 fs-13">Completed</span></td>
-                                        <td>
-                                            <div class="d-flex gap-2">
-                                                <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
-                                                <a href="#!" class="btn btn-soft-primary btn-sm"><iconify-icon icon="solar:pen-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                                                <a href="#!" class="btn btn-soft-danger btn-sm"><iconify-icon icon="solar:trash-bin-minimalistic-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                            #348930/80
-                                        </td>
-                                        <td>Apr 04 , 2024</td>
-                                        <td>
-                                            <a href="#!" class="link-primary fw-medium">Cecile D. Gordon</a>
-                                        </td>
-                                        <td> Normal</td>
-                                        <td> $720.00</td>
-                                        <td> <span class="badge bg-light text-dark  px-2 py-1 fs-13">Refund</span></td>
-                                        <td> 4</td>
-                                        <td> -</td>
-                                        <td> <span class="badge border border-danger text-danger  px-2 py-1 fs-13">Canceled</span></td>
-                                        <td>
-                                            <div class="d-flex gap-2">
-                                                <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
-                                                <a href="#!" class="btn btn-soft-primary btn-sm"><iconify-icon icon="solar:pen-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                                                <a href="#!" class="btn btn-soft-danger btn-sm"><iconify-icon icon="solar:trash-bin-minimalistic-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-
-
-                                    <tr>
-                                        <td>
-                                            #391367/80
-                                        </td>
-                                        <td>Apr 02 , 2024</td>
-                                        <td>
-                                            <a href="#!" class="link-primary fw-medium">William Moreno</a>
-                                        </td>
-                                        <td> Normal</td>
-                                        <td> $1,909.00</td>
-                                        <td><span class="badge  bg-success text-light px-2 py-1 fs-13">Paid</span></td>
-                                        <td> 6</td>
-                                        <td> #D-89734235</td>
-                                        <td> <span class="badge border border-success text-success  px-2 py-1 fs-13">Completed</span></td>
-                                        <td>
-                                            <div class="d-flex gap-2">
-                                                <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
-                                                <a href="#!" class="btn btn-soft-primary btn-sm"><iconify-icon icon="solar:pen-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                                                <a href="#!" class="btn btn-soft-danger btn-sm"><iconify-icon icon="solar:trash-bin-minimalistic-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-
-
-                                    <tr>
-                                        <td>
-                                            #930447/80
-                                        </td>
-                                        <td>March 28 , 2024</td>
-                                        <td>
-                                            <a href="#!" class="link-primary fw-medium">Alphonse Roy</a>
-                                        </td>
-                                        <td> High</td>
-                                        <td> $879.00</td>
-                                        <td><span class="badge  bg-success text-light px-2 py-1 fs-13">Paid</span></td>
-                                        <td> 4</td>
-                                        <td> #D-35227268</td>
-                                        <td><span class="badge border border-success text-success  px-2 py-1 fs-13">Completed</span></td>
-                                        <td>
-                                            <div class="d-flex gap-2">
-                                                <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
-                                                <a href="#!" class="btn btn-soft-primary btn-sm"><iconify-icon icon="solar:pen-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                                                <a href="#!" class="btn btn-soft-danger btn-sm"><iconify-icon icon="solar:trash-bin-minimalistic-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                            #462397/80
-                                        </td>
-                                        <td>March 20 , 2024</td>
-                                        <td>
-                                            <a href="#!" class="link-primary fw-medium">Pierpont Marleau</a>
-                                        </td>
-                                        <td> High</td>
-                                        <td> $1,230.00</td>
-                                        <td> <span class="badge bg-light text-dark  px-2 py-1 fs-13">Refund</span></td>
-                                        <td> 2</td>
-                                        <td> -</td>
-                                        <td> <span class="badge border border-danger text-danger  px-2 py-1 fs-13">Canceled</span></td>
-                                        <td>
-                                            <div class="d-flex gap-2">
-                                                <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
-                                                <a href="#!" class="btn btn-soft-primary btn-sm"><iconify-icon icon="solar:pen-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                                                <a href="#!" class="btn btn-soft-danger btn-sm"><iconify-icon icon="solar:trash-bin-minimalistic-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                            #472356/80
-                                        </td>
-                                        <td>March 12 , 2024</td>
-                                        <td>
-                                            <a href="#!" class="link-primary fw-medium">Madeleine Gervais</a>
-                                        </td>
-                                        <td> Normal</td>
-                                        <td> $1,264.00</td>
-                                        <td> <span class="badge bg-success text-light  px-2 py-1 fs-13">Paid</span></td>
-                                        <td> 3</td>
-                                        <td> #D-74922656</td>
-                                        <td> <span class="badge border border-success text-success  px-2 py-1 fs-13">Completed</span></td>
-                                        <td>
-                                            <div class="d-flex gap-2">
-                                                <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
-                                                <a href="#!" class="btn btn-soft-primary btn-sm"><iconify-icon icon="solar:pen-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                                                <a href="#!" class="btn btn-soft-danger btn-sm"><iconify-icon icon="solar:trash-bin-minimalistic-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>
-                                            #448226/80
-                                        </td>
-                                        <td>March 02 , 2024</td>
-                                        <td>
-                                            <a href="#!" class="link-primary fw-medium">Satordi Gaillou</a>
-                                        </td>
-                                        <td> High</td>
-                                        <td> $1,787.00</td>
-                                        <td> <span class="badge bg-success text-light  px-2 py-1 fs-13">Paid</span></td>
-                                        <td> 4</td>
-                                        <td> -</td>
-                                        <td> <span class="badge border border-warning text-warning  px-2 py-1 fs-13">Packaging</span></td>
-                                        <td>
-                                            <div class="d-flex gap-2">
-                                                <a href="#!" class="btn btn-light btn-sm"><iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon></a>
-                                                <a href="#!" class="btn btn-soft-primary btn-sm"><iconify-icon icon="solar:pen-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                                                <a href="#!" class="btn btn-soft-danger btn-sm"><iconify-icon icon="solar:trash-bin-minimalistic-2-broken" class="align-middle fs-18"></iconify-icon></a>
-                                            </div>
-                                        </td>
-                                    </tr>
+                                    @foreach (var order in Model)
+                                    {
+                                        <tr>
+                                            <td>#@order.OrderId</td>
+                                            <td>@order.OrderDate</td>
+                                            <td>
+                                                <a href="#!" class="link-primary fw-medium">@order.FullName</a>
+                                            </td>
+                                            <td>Normal</td>
+                                            <td>$@order.OrderItems.Sum(oi => oi.Price * oi.Quantity)</td>
+                                            <td>
+                                                <span class="badge @(order.PaymentMethode == "Paid" ? "bg-success" : "bg-light text-dark") px-2 py-1 fs-13">@order.PaymentMethode</span>
+                                            </td>
+                                            <td>@order.OrderItems.Count</td>
+                                            <td>@order.StatusShipping</td>
+                                            <td>
+                                                <span class="badge border border-secondary text-secondary px-2 py-1 fs-13">Draft</span>
+                                            </td>
+                                            <td>
+                                                <div class="d-flex gap-2">
+                                                    <a href="@Url.Action("OrderEdit", "Admin", new { id = order.OrderId })" class="btn btn-light btn-sm" class="btn btn-soft-primary btn-sm"><iconify-icon icon="solar:pen-2-broken" class="align-middle fs-18"></iconify-icon></a>
+                                                    <form asp-action="DeleteOrder" method="post" onsubmit="return confirm('Are you sure you want to delete this order?');">
+                                                        <input type="hidden" name="id" value="@order.OrderId" />
+                                                        <button type="submit" class="btn btn-soft-danger btn-sm">
+                                                            <iconify-icon icon="solar:trash-bin-minimalistic-2-broken" class="align-middle fs-18"></iconify-icon>
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    }
 
 
                                 </tbody>

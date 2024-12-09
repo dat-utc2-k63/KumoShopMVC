@@ -9,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<KumoShopContext>(options =>
 {
-	options.UseSqlServer(builder.Configuration.GetConnectionString("Kshop"));
+	options.UseSqlServer(builder.Configuration.GetConnectionString("KShop"));
 });
 
 builder.Services.AddDistributedMemoryCache();

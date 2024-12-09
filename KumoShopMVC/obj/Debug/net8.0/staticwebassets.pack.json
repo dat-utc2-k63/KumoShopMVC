@@ -1,2003 +1,2011 @@
 {
   "Files": [
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\KumoShopMVC.bundle.scp.css",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\KumoShopMVC.bundle.scp.css",
       "PackagePath": "staticwebassets\\KumoShopMVC.bundle.scp.css"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\404.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\404.html",
       "PackagePath": "staticwebassets\\404.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\about-us.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\about-us.html",
       "PackagePath": "staticwebassets\\about-us.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\add-card.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\add-card.html",
       "PackagePath": "staticwebassets\\add-card.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\addresses.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\addresses.html",
       "PackagePath": "staticwebassets\\addresses.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\apps-calendar.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\apps-calendar.html",
       "PackagePath": "staticwebassets\\admin\\apps-calendar.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\apps-chat.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\apps-chat.html",
       "PackagePath": "staticwebassets\\admin\\apps-chat.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\apps-email.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\apps-email.html",
       "PackagePath": "staticwebassets\\admin\\apps-email.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\apps-todo.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\apps-todo.html",
       "PackagePath": "staticwebassets\\admin\\apps-todo.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\css\\app.min.css",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\css\\app.min.css",
       "PackagePath": "staticwebassets\\admin\\assets\\css\\app.min.css"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\css\\icons.min.css",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\css\\icons.min.css",
       "PackagePath": "staticwebassets\\admin\\assets\\css\\icons.min.css"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\css\\vendor.min.css",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\css\\vendor.min.css",
       "PackagePath": "staticwebassets\\admin\\assets\\css\\vendor.min.css"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\fonts\\boxicons.eot",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\fonts\\boxicons.eot",
       "PackagePath": "staticwebassets\\admin\\assets\\fonts\\boxicons.eot"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\fonts\\boxicons.ttf",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\fonts\\boxicons.ttf",
       "PackagePath": "staticwebassets\\admin\\assets\\fonts\\boxicons.ttf"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\fonts\\boxicons.woff",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\fonts\\boxicons.woff",
       "PackagePath": "staticwebassets\\admin\\assets\\fonts\\boxicons.woff"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\fonts\\boxicons.woff2",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\fonts\\boxicons.woff2",
       "PackagePath": "staticwebassets\\admin\\assets\\fonts\\boxicons.woff2"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\fonts\\boxiconsd41d.svg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\fonts\\boxiconsd41d.svg",
       "PackagePath": "staticwebassets\\admin\\assets\\fonts\\boxiconsd41d.svg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\fonts\\tabler-icons3026.ttf",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\fonts\\tabler-icons3026.ttf",
       "PackagePath": "staticwebassets\\admin\\assets\\fonts\\tabler-icons3026.ttf"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\fonts\\tabler-icons3026.woff2",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\fonts\\tabler-icons3026.woff2",
       "PackagePath": "staticwebassets\\admin\\assets\\fonts\\tabler-icons3026.woff2"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\fonts\\tabler-iconsd41d.woff",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\fonts\\tabler-iconsd41d.woff",
       "PackagePath": "staticwebassets\\admin\\assets\\fonts\\tabler-iconsd41d.woff"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\404-error.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\404-error.png",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\404-error.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\app-calendar\\facebook.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\app-calendar\\facebook.png",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\app-calendar\\facebook.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\app-calendar\\google-analytics.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\app-calendar\\google-analytics.png",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\app-calendar\\google-analytics.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\app-calendar\\google-mail.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\app-calendar\\google-mail.png",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\app-calendar\\google-mail.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\app-calendar\\google-meet.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\app-calendar\\google-meet.png",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\app-calendar\\google-meet.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\app-calendar\\slack.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\app-calendar\\slack.png",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\app-calendar\\slack.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\app-calendar\\stripe.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\app-calendar\\stripe.png",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\app-calendar\\stripe.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\app-calendar\\zoom.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\app-calendar\\zoom.png",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\app-calendar\\zoom.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\brands\\dhl.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\brands\\dhl.png",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\brands\\dhl.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\brands\\fedex.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\brands\\fedex.png",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\brands\\fedex.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\brands\\ups.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\brands\\ups.png",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\brands\\ups.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\card\\mastercard.svg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\card\\mastercard.svg",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\card\\mastercard.svg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\card\\paypal.svg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\card\\paypal.svg",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\card\\paypal.svg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\card\\stripe.svg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\card\\stripe.svg",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\card\\stripe.svg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\card\\visa.svg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\card\\visa.svg",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\card\\visa.svg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\check-2.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\check-2.png",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\check-2.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\coming-soon.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\coming-soon.png",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\coming-soon.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\double.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\double.png",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\double.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\favicon.ico",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\favicon.ico",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\favicon.ico"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\logo-dark.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\logo-dark.png",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\logo-dark.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\logo-light.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\logo-light.png",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\logo-light.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\logo-sm.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\logo-sm.png",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\logo-sm.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\maintenance-2.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\maintenance-2.png",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\maintenance-2.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\party.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\party.png",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\party.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\product\\p-1.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\product\\p-1.png",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\product\\p-1.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\product\\p-10.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\product\\p-10.png",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\product\\p-10.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\product\\p-11.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\product\\p-11.png",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\product\\p-11.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\product\\p-12.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\product\\p-12.png",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\product\\p-12.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\product\\p-13.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\product\\p-13.png",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\product\\p-13.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\product\\p-14.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\product\\p-14.png",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\product\\p-14.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\product\\p-2.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\product\\p-2.png",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\product\\p-2.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\product\\p-3.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\product\\p-3.png",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\product\\p-3.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\product\\p-4.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\product\\p-4.png",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\product\\p-4.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\product\\p-5.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\product\\p-5.png",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\product\\p-5.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\product\\p-6.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\product\\p-6.png",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\product\\p-6.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\product\\p-7.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\product\\p-7.png",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\product\\p-7.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\product\\p-8.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\product\\p-8.png",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\product\\p-8.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\product\\p-9.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\product\\p-9.png",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\product\\p-9.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\products\\product-1(1).png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\products\\product-1(1).png",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\products\\product-1(1).png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\products\\product-1(2).png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\products\\product-1(2).png",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\products\\product-1(2).png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\products\\product-4.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\products\\product-4.png",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\products\\product-4.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\products\\product-5.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\products\\product-5.png",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\products\\product-5.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\products\\product-6.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\products\\product-6.png",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\products\\product-6.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\qr-code.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\qr-code.png",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\qr-code.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\seller\\dyson.svg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\seller\\dyson.svg",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\seller\\dyson.svg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\seller\\gopro.svg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\seller\\gopro.svg",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\seller\\gopro.svg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\seller\\h&m.svg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\seller\\h&m.svg",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\seller\\h&m.svg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\seller\\huawei.svg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\seller\\huawei.svg",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\seller\\huawei.svg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\seller\\image.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\seller\\image.html",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\seller\\image.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\seller\\nike.svg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\seller\\nike.svg",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\seller\\nike.svg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\seller\\rolex.svg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\seller\\rolex.svg",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\seller\\rolex.svg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\seller\\thenorthface.svg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\seller\\thenorthface.svg",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\seller\\thenorthface.svg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\seller\\zara.svg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\seller\\zara.svg",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\seller\\zara.svg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\small\\img-1.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\small\\img-1.jpg",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\small\\img-1.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\small\\img-10.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\small\\img-10.jpg",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\small\\img-10.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\small\\img-2.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\small\\img-2.jpg",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\small\\img-2.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\small\\img-3.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\small\\img-3.jpg",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\small\\img-3.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\small\\img-4.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\small\\img-4.jpg",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\small\\img-4.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\small\\img-5.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\small\\img-5.jpg",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\small\\img-5.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\small\\img-6.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\small\\img-6.jpg",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\small\\img-6.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\small\\img-7.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\small\\img-7.jpg",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\small\\img-7.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\small\\img-8.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\small\\img-8.jpg",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\small\\img-8.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\small\\img-9.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\small\\img-9.jpg",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\small\\img-9.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\user-profile.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\user-profile.png",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\user-profile.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\users\\avatar-1.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\users\\avatar-1.jpg",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\users\\avatar-1.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\users\\avatar-10.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\users\\avatar-10.jpg",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\users\\avatar-10.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\users\\avatar-11.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\users\\avatar-11.jpg",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\users\\avatar-11.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\users\\avatar-12.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\users\\avatar-12.jpg",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\users\\avatar-12.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\users\\avatar-2.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\users\\avatar-2.jpg",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\users\\avatar-2.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\users\\avatar-3.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\users\\avatar-3.jpg",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\users\\avatar-3.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\users\\avatar-4.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\users\\avatar-4.jpg",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\users\\avatar-4.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\users\\avatar-5.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\users\\avatar-5.jpg",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\users\\avatar-5.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\users\\avatar-6.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\users\\avatar-6.jpg",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\users\\avatar-6.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\users\\avatar-7.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\users\\avatar-7.jpg",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\users\\avatar-7.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\users\\avatar-8.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\users\\avatar-8.jpg",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\users\\avatar-8.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\users\\avatar-9.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\users\\avatar-9.jpg",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\users\\avatar-9.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\users\\chat.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\users\\chat.jpg",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\users\\chat.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\users\\dummy-avatar.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\images\\users\\dummy-avatar.jpg",
       "PackagePath": "staticwebassets\\admin\\assets\\images\\users\\dummy-avatar.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\app.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\app.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\app.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\apexchart-area.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\apexchart-area.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\components\\apexchart-area.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\apexchart-bar.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\apexchart-bar.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\components\\apexchart-bar.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\apexchart-boxplot.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\apexchart-boxplot.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\components\\apexchart-boxplot.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\apexchart-bubble.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\apexchart-bubble.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\components\\apexchart-bubble.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\apexchart-candlestick.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\apexchart-candlestick.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\components\\apexchart-candlestick.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\apexchart-column.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\apexchart-column.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\components\\apexchart-column.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\apexchart-heatmap.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\apexchart-heatmap.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\components\\apexchart-heatmap.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\apexchart-line.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\apexchart-line.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\components\\apexchart-line.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\apexchart-mixed.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\apexchart-mixed.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\components\\apexchart-mixed.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\apexchart-pie.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\apexchart-pie.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\components\\apexchart-pie.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\apexchart-polar-area.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\apexchart-polar-area.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\components\\apexchart-polar-area.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\apexchart-radar.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\apexchart-radar.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\components\\apexchart-radar.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\apexchart-radialbar.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\apexchart-radialbar.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\components\\apexchart-radialbar.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\apexchart-scatter.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\apexchart-scatter.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\components\\apexchart-scatter.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\apexchart-timeline.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\apexchart-timeline.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\components\\apexchart-timeline.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\apexchart-treemap.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\apexchart-treemap.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\components\\apexchart-treemap.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\extended-rating.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\extended-rating.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\components\\extended-rating.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\extended-sweetalert.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\extended-sweetalert.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\components\\extended-sweetalert.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\form-clipboard.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\form-clipboard.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\components\\form-clipboard.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\form-flatepicker.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\form-flatepicker.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\components\\form-flatepicker.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\form-quilljs.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\form-quilljs.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\components\\form-quilljs.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\form-slider.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\form-slider.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\components\\form-slider.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\maps-canada.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\maps-canada.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\components\\maps-canada.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\maps-google.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\maps-google.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\components\\maps-google.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\maps-iraq.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\maps-iraq.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\components\\maps-iraq.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\maps-russia.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\maps-russia.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\components\\maps-russia.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\maps-spain.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\maps-spain.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\components\\maps-spain.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\maps-us-aea-en.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\maps-us-aea-en.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\components\\maps-us-aea-en.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\maps-us-lcc-en.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\maps-us-lcc-en.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\components\\maps-us-lcc-en.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\maps-us-mill-en.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\maps-us-mill-en.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\components\\maps-us-mill-en.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\maps-vector.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\maps-vector.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\components\\maps-vector.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\table-gridjs.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\components\\table-gridjs.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\components\\table-gridjs.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\config.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\config.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\config.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\pages\\app-calendar.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\pages\\app-calendar.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\pages\\app-calendar.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\pages\\app-chat.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\pages\\app-chat.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\pages\\app-chat.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\pages\\app-email.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\pages\\app-email.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\pages\\app-email.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\pages\\coming-soon.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\pages\\coming-soon.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\pages\\coming-soon.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\pages\\coupons-add.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\pages\\coupons-add.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\pages\\coupons-add.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\pages\\customer-details.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\pages\\customer-details.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\pages\\customer-details.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\pages\\dashboard.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\pages\\dashboard.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\pages\\dashboard.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\pages\\invoice-add.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\pages\\invoice-add.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\pages\\invoice-add.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\pages\\order-cart.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\pages\\order-cart.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\pages\\order-cart.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\pages\\product-details.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\pages\\product-details.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\pages\\product-details.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\pages\\product-grid.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\pages\\product-grid.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\pages\\product-grid.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\pages\\seller-add.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\pages\\seller-add.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\pages\\seller-add.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\pages\\seller-detail.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\pages\\seller-detail.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\pages\\seller-detail.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\pages\\widgets.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\pages\\widgets.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\pages\\widgets.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\vendor.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\vendor.js",
       "PackagePath": "staticwebassets\\admin\\assets\\js\\vendor.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\vendor\\fullcalendar\\main.min.css",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\vendor\\fullcalendar\\main.min.css",
       "PackagePath": "staticwebassets\\admin\\assets\\vendor\\fullcalendar\\main.min.css"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\vendor\\fullcalendar\\main.min.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\vendor\\fullcalendar\\main.min.js",
       "PackagePath": "staticwebassets\\admin\\assets\\vendor\\fullcalendar\\main.min.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\vendor\\gmaps\\gmaps.min.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\vendor\\gmaps\\gmaps.min.js",
       "PackagePath": "staticwebassets\\admin\\assets\\vendor\\gmaps\\gmaps.min.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\vendor\\gridjs\\gridjs.umd.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\vendor\\gridjs\\gridjs.umd.js",
       "PackagePath": "staticwebassets\\admin\\assets\\vendor\\gridjs\\gridjs.umd.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\vendor\\gridjs\\theme\\mermaid.min.css",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\vendor\\gridjs\\theme\\mermaid.min.css",
       "PackagePath": "staticwebassets\\admin\\assets\\vendor\\gridjs\\theme\\mermaid.min.css"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\vendor\\jsvectormap\\js\\jsvectormap.min.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\vendor\\jsvectormap\\js\\jsvectormap.min.js",
       "PackagePath": "staticwebassets\\admin\\assets\\vendor\\jsvectormap\\js\\jsvectormap.min.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\vendor\\jsvectormap\\maps\\world-merc.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\vendor\\jsvectormap\\maps\\world-merc.js",
       "PackagePath": "staticwebassets\\admin\\assets\\vendor\\jsvectormap\\maps\\world-merc.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\vendor\\jsvectormap\\maps\\world.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\vendor\\jsvectormap\\maps\\world.js",
       "PackagePath": "staticwebassets\\admin\\assets\\vendor\\jsvectormap\\maps\\world.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\attributes-add.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\attributes-add.html",
       "PackagePath": "staticwebassets\\admin\\attributes-add.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\attributes-edit.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\attributes-edit.html",
       "PackagePath": "staticwebassets\\admin\\attributes-edit.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\attributes-list.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\attributes-list.html",
       "PackagePath": "staticwebassets\\admin\\attributes-list.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\auth-lock-screen.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\auth-lock-screen.html",
       "PackagePath": "staticwebassets\\admin\\auth-lock-screen.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\auth-password.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\auth-password.html",
       "PackagePath": "staticwebassets\\admin\\auth-password.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\auth-signin.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\auth-signin.html",
       "PackagePath": "staticwebassets\\admin\\auth-signin.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\auth-signup.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\auth-signup.html",
       "PackagePath": "staticwebassets\\admin\\auth-signup.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\category-add.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\category-add.html",
       "PackagePath": "staticwebassets\\admin\\category-add.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\category-edit.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\category-edit.html",
       "PackagePath": "staticwebassets\\admin\\category-edit.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\category-list.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\category-list.html",
       "PackagePath": "staticwebassets\\admin\\category-list.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-area.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-area.html",
       "PackagePath": "staticwebassets\\admin\\charts-apex-area.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-bar.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-bar.html",
       "PackagePath": "staticwebassets\\admin\\charts-apex-bar.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-boxplot.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-boxplot.html",
       "PackagePath": "staticwebassets\\admin\\charts-apex-boxplot.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-bubble.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-bubble.html",
       "PackagePath": "staticwebassets\\admin\\charts-apex-bubble.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-candlestick.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-candlestick.html",
       "PackagePath": "staticwebassets\\admin\\charts-apex-candlestick.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-column.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-column.html",
       "PackagePath": "staticwebassets\\admin\\charts-apex-column.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-heatmap.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-heatmap.html",
       "PackagePath": "staticwebassets\\admin\\charts-apex-heatmap.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-line.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-line.html",
       "PackagePath": "staticwebassets\\admin\\charts-apex-line.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-mixed.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-mixed.html",
       "PackagePath": "staticwebassets\\admin\\charts-apex-mixed.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-pie.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-pie.html",
       "PackagePath": "staticwebassets\\admin\\charts-apex-pie.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-polar-area.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-polar-area.html",
       "PackagePath": "staticwebassets\\admin\\charts-apex-polar-area.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-radar.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-radar.html",
       "PackagePath": "staticwebassets\\admin\\charts-apex-radar.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-radialbar.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-radialbar.html",
       "PackagePath": "staticwebassets\\admin\\charts-apex-radialbar.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-scatter.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-scatter.html",
       "PackagePath": "staticwebassets\\admin\\charts-apex-scatter.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-timeline.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-timeline.html",
       "PackagePath": "staticwebassets\\admin\\charts-apex-timeline.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-treemap.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-treemap.html",
       "PackagePath": "staticwebassets\\admin\\charts-apex-treemap.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\coupons-add.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\coupons-add.html",
       "PackagePath": "staticwebassets\\admin\\coupons-add.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\coupons-list.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\coupons-list.html",
       "PackagePath": "staticwebassets\\admin\\coupons-list.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\customer-detail.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\customer-detail.html",
       "PackagePath": "staticwebassets\\admin\\customer-detail.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\customer-list.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\customer-list.html",
       "PackagePath": "staticwebassets\\admin\\customer-list.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\extended-ratings.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\extended-ratings.html",
       "PackagePath": "staticwebassets\\admin\\extended-ratings.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\extended-scrollbar.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\extended-scrollbar.html",
       "PackagePath": "staticwebassets\\admin\\extended-scrollbar.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\extended-sweetalert.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\extended-sweetalert.html",
       "PackagePath": "staticwebassets\\admin\\extended-sweetalert.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\extended-swiper-silder.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\extended-swiper-silder.html",
       "PackagePath": "staticwebassets\\admin\\extended-swiper-silder.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\extended-toastify.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\extended-toastify.html",
       "PackagePath": "staticwebassets\\admin\\extended-toastify.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\forms-basic.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\forms-basic.html",
       "PackagePath": "staticwebassets\\admin\\forms-basic.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\forms-checkbox-radio.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\forms-checkbox-radio.html",
       "PackagePath": "staticwebassets\\admin\\forms-checkbox-radio.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\forms-choices.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\forms-choices.html",
       "PackagePath": "staticwebassets\\admin\\forms-choices.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\forms-clipboard.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\forms-clipboard.html",
       "PackagePath": "staticwebassets\\admin\\forms-clipboard.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\forms-editors.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\forms-editors.html",
       "PackagePath": "staticwebassets\\admin\\forms-editors.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\forms-fileuploads.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\forms-fileuploads.html",
       "PackagePath": "staticwebassets\\admin\\forms-fileuploads.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\forms-flatepicker.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\forms-flatepicker.html",
       "PackagePath": "staticwebassets\\admin\\forms-flatepicker.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\forms-input-mask.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\forms-input-mask.html",
       "PackagePath": "staticwebassets\\admin\\forms-input-mask.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\forms-range-slider.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\forms-range-slider.html",
       "PackagePath": "staticwebassets\\admin\\forms-range-slider.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\forms-validation.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\forms-validation.html",
       "PackagePath": "staticwebassets\\admin\\forms-validation.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\forms-wizard.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\forms-wizard.html",
       "PackagePath": "staticwebassets\\admin\\forms-wizard.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\help-center.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\help-center.html",
       "PackagePath": "staticwebassets\\admin\\help-center.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\icons-boxicons.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\icons-boxicons.html",
       "PackagePath": "staticwebassets\\admin\\icons-boxicons.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\icons-solar.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\icons-solar.html",
       "PackagePath": "staticwebassets\\admin\\icons-solar.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\index.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\index.html",
       "PackagePath": "staticwebassets\\admin\\index.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\inventory-received-orders.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\inventory-received-orders.html",
       "PackagePath": "staticwebassets\\admin\\inventory-received-orders.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\inventory-warehouse.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\inventory-warehouse.html",
       "PackagePath": "staticwebassets\\admin\\inventory-warehouse.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\invoice-add.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\invoice-add.html",
       "PackagePath": "staticwebassets\\admin\\invoice-add.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\invoice-details.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\invoice-details.html",
       "PackagePath": "staticwebassets\\admin\\invoice-details.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\invoice-list.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\invoice-list.html",
       "PackagePath": "staticwebassets\\admin\\invoice-list.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\maps-google.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\maps-google.html",
       "PackagePath": "staticwebassets\\admin\\maps-google.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\maps-vector.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\maps-vector.html",
       "PackagePath": "staticwebassets\\admin\\maps-vector.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\order-cart.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\order-cart.html",
       "PackagePath": "staticwebassets\\admin\\order-cart.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\order-checkout.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\order-checkout.html",
       "PackagePath": "staticwebassets\\admin\\order-checkout.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\order-detail.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\order-detail.html",
       "PackagePath": "staticwebassets\\admin\\order-detail.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\orders-list.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\orders-list.html",
       "PackagePath": "staticwebassets\\admin\\orders-list.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\pages-404-alt.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\pages-404-alt.html",
       "PackagePath": "staticwebassets\\admin\\pages-404-alt.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\pages-404.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\pages-404.html",
       "PackagePath": "staticwebassets\\admin\\pages-404.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\pages-comingsoon.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\pages-comingsoon.html",
       "PackagePath": "staticwebassets\\admin\\pages-comingsoon.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\pages-faqs.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\pages-faqs.html",
       "PackagePath": "staticwebassets\\admin\\pages-faqs.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\pages-maintenance.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\pages-maintenance.html",
       "PackagePath": "staticwebassets\\admin\\pages-maintenance.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\pages-permissions.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\pages-permissions.html",
       "PackagePath": "staticwebassets\\admin\\pages-permissions.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\pages-pricing.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\pages-pricing.html",
       "PackagePath": "staticwebassets\\admin\\pages-pricing.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\pages-profile.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\pages-profile.html",
       "PackagePath": "staticwebassets\\admin\\pages-profile.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\pages-review.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\pages-review.html",
       "PackagePath": "staticwebassets\\admin\\pages-review.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\pages-starter.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\pages-starter.html",
       "PackagePath": "staticwebassets\\admin\\pages-starter.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\pages-timeline.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\pages-timeline.html",
       "PackagePath": "staticwebassets\\admin\\pages-timeline.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\privacy-policy.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\privacy-policy.html",
       "PackagePath": "staticwebassets\\admin\\privacy-policy.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\product-add.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\product-add.html",
       "PackagePath": "staticwebassets\\admin\\product-add.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\product-details.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\product-details.html",
       "PackagePath": "staticwebassets\\admin\\product-details.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\product-edit.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\product-edit.html",
       "PackagePath": "staticwebassets\\admin\\product-edit.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\product-grid.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\product-grid.html",
       "PackagePath": "staticwebassets\\admin\\product-grid.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\product-list.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\product-list.html",
       "PackagePath": "staticwebassets\\admin\\product-list.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\purchase-list.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\purchase-list.html",
       "PackagePath": "staticwebassets\\admin\\purchase-list.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\purchase-order.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\purchase-order.html",
       "PackagePath": "staticwebassets\\admin\\purchase-order.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\purchase-returns.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\purchase-returns.html",
       "PackagePath": "staticwebassets\\admin\\purchase-returns.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\role-add.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\role-add.html",
       "PackagePath": "staticwebassets\\admin\\role-add.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\role-edit.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\role-edit.html",
       "PackagePath": "staticwebassets\\admin\\role-edit.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\role-list.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\role-list.html",
       "PackagePath": "staticwebassets\\admin\\role-list.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\seller-add.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\seller-add.html",
       "PackagePath": "staticwebassets\\admin\\seller-add.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\seller-details.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\seller-details.html",
       "PackagePath": "staticwebassets\\admin\\seller-details.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\seller-edit.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\seller-edit.html",
       "PackagePath": "staticwebassets\\admin\\seller-edit.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\seller-list.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\seller-list.html",
       "PackagePath": "staticwebassets\\admin\\seller-list.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\settings.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\settings.html",
       "PackagePath": "staticwebassets\\admin\\settings.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\tables-basic.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\tables-basic.html",
       "PackagePath": "staticwebassets\\admin\\tables-basic.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\tables-gridjs.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\tables-gridjs.html",
       "PackagePath": "staticwebassets\\admin\\tables-gridjs.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-accordion.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-accordion.html",
       "PackagePath": "staticwebassets\\admin\\ui-accordion.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-alerts.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-alerts.html",
       "PackagePath": "staticwebassets\\admin\\ui-alerts.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-avatar.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-avatar.html",
       "PackagePath": "staticwebassets\\admin\\ui-avatar.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-badge.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-badge.html",
       "PackagePath": "staticwebassets\\admin\\ui-badge.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-breadcrumb.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-breadcrumb.html",
       "PackagePath": "staticwebassets\\admin\\ui-breadcrumb.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-buttons.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-buttons.html",
       "PackagePath": "staticwebassets\\admin\\ui-buttons.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-card.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-card.html",
       "PackagePath": "staticwebassets\\admin\\ui-card.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-carousel.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-carousel.html",
       "PackagePath": "staticwebassets\\admin\\ui-carousel.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-collapse.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-collapse.html",
       "PackagePath": "staticwebassets\\admin\\ui-collapse.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-dropdown.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-dropdown.html",
       "PackagePath": "staticwebassets\\admin\\ui-dropdown.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-list-group.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-list-group.html",
       "PackagePath": "staticwebassets\\admin\\ui-list-group.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-modal.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-modal.html",
       "PackagePath": "staticwebassets\\admin\\ui-modal.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-offcanvas.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-offcanvas.html",
       "PackagePath": "staticwebassets\\admin\\ui-offcanvas.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-pagination.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-pagination.html",
       "PackagePath": "staticwebassets\\admin\\ui-pagination.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-placeholders.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-placeholders.html",
       "PackagePath": "staticwebassets\\admin\\ui-placeholders.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-popovers.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-popovers.html",
       "PackagePath": "staticwebassets\\admin\\ui-popovers.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-progress.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-progress.html",
       "PackagePath": "staticwebassets\\admin\\ui-progress.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-scrollspy.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-scrollspy.html",
       "PackagePath": "staticwebassets\\admin\\ui-scrollspy.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-spinners.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-spinners.html",
       "PackagePath": "staticwebassets\\admin\\ui-spinners.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-tabs.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-tabs.html",
       "PackagePath": "staticwebassets\\admin\\ui-tabs.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-toasts.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-toasts.html",
       "PackagePath": "staticwebassets\\admin\\ui-toasts.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-tooltips.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-tooltips.html",
       "PackagePath": "staticwebassets\\admin\\ui-tooltips.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\widgets.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\widgets.html",
       "PackagePath": "staticwebassets\\admin\\widgets.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\apexcharts.com\\samples\\assets\\github-data.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\apexcharts.com\\samples\\assets\\github-data.js",
       "PackagePath": "staticwebassets\\apexcharts.com\\samples\\assets\\github-data.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\apexcharts.com\\samples\\assets\\irregular-data-series.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\apexcharts.com\\samples\\assets\\irregular-data-series.js",
       "PackagePath": "staticwebassets\\apexcharts.com\\samples\\assets\\irregular-data-series.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\apexcharts.com\\samples\\assets\\ohlc.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\apexcharts.com\\samples\\assets\\ohlc.js",
       "PackagePath": "staticwebassets\\apexcharts.com\\samples\\assets\\ohlc.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\apexcharts.com\\samples\\assets\\series1000.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\apexcharts.com\\samples\\assets\\series1000.js",
       "PackagePath": "staticwebassets\\apexcharts.com\\samples\\assets\\series1000.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\apexcharts.com\\samples\\assets\\stock-prices.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\apexcharts.com\\samples\\assets\\stock-prices.js",
       "PackagePath": "staticwebassets\\apexcharts.com\\samples\\assets\\stock-prices.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\Flaticon.eot",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\Flaticon.eot",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\Flaticon.eot"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\Flaticon.svg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\Flaticon.svg",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\Flaticon.svg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\Flaticon.ttf",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\Flaticon.ttf",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\Flaticon.ttf"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\Flaticon.woff",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\Flaticon.woff",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\Flaticon.woff"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\Flaticond41d.eot",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\Flaticond41d.eot",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\Flaticond41d.eot"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\LineIcons.eot",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\LineIcons.eot",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\LineIcons.eot"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\LineIcons.svg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\LineIcons.svg",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\LineIcons.svg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\LineIcons.ttf",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\LineIcons.ttf",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\LineIcons.ttf"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\LineIcons.woff",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\LineIcons.woff",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\LineIcons.woff"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\LineIcons.woff2",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\LineIcons.woff2",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\LineIcons.woff2"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fa-brands-400.eot",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fa-brands-400.eot",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-brands-400.eot"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fa-brands-400.svg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fa-brands-400.svg",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-brands-400.svg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fa-brands-400.ttf",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fa-brands-400.ttf",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-brands-400.ttf"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fa-brands-400.woff",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fa-brands-400.woff",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-brands-400.woff"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fa-brands-400.woff2",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fa-brands-400.woff2",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-brands-400.woff2"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fa-brands-400d41d.eot",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fa-brands-400d41d.eot",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-brands-400d41d.eot"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fa-regular-400.eot",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fa-regular-400.eot",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-regular-400.eot"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fa-regular-400.svg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fa-regular-400.svg",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-regular-400.svg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fa-regular-400.ttf",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fa-regular-400.ttf",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-regular-400.ttf"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fa-regular-400.woff",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fa-regular-400.woff",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-regular-400.woff"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fa-regular-400.woff2",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fa-regular-400.woff2",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-regular-400.woff2"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fa-regular-400d41d.eot",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fa-regular-400d41d.eot",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-regular-400d41d.eot"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fa-solid-900.eot",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fa-solid-900.eot",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-solid-900.eot"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fa-solid-900.svg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fa-solid-900.svg",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-solid-900.svg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fa-solid-900.ttf",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fa-solid-900.ttf",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-solid-900.ttf"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fa-solid-900.woff",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fa-solid-900.woff",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-solid-900.woff"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fa-solid-900.woff2",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fa-solid-900.woff2",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-solid-900.woff2"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fa-solid-900d41d.eot",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fa-solid-900d41d.eot",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-solid-900d41d.eot"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fontawesome-webfont3e6e.eot",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fontawesome-webfont3e6e.eot",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fontawesome-webfont3e6e.eot"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fontawesome-webfont3e6e.svg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fontawesome-webfont3e6e.svg",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fontawesome-webfont3e6e.svg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fontawesome-webfont3e6e.ttf",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fontawesome-webfont3e6e.ttf",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fontawesome-webfont3e6e.ttf"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fontawesome-webfont3e6e.woff",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fontawesome-webfont3e6e.woff",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fontawesome-webfont3e6e.woff"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fontawesome-webfont3e6e.woff2",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fontawesome-webfont3e6e.woff2",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fontawesome-webfont3e6e.woff2"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fontawesome-webfontd41d.eot",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\fontawesome-webfontd41d.eot",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\fontawesome-webfontd41d.eot"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\houses.eot",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\houses.eot",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\houses.eot"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\houses.svg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\houses.svg",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\houses.svg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\houses.ttf",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\houses.ttf",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\houses.ttf"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\houses.woff",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\houses.woff",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\houses.woff"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\housesd41d.eot",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\housesd41d.eot",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\housesd41d.eot"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\icofont.woff",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\icofont.woff",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\icofont.woff"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\icofont.woff2",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\icofont.woff2",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\icofont.woff2"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\slick.eot",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\slick.eot",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\slick.eot"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\slick.ttf",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\slick.ttf",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\slick.ttf"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\slick.woff",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\slick.woff",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\slick.woff"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\slickd41d.eot",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\slickd41d.eot",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\slickd41d.eot"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\themify9f24.eot",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\themify9f24.eot",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\themify9f24.eot"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\themify9f24.svg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\themify9f24.svg",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\themify9f24.svg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\themify9f24.ttf",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\themify9f24.ttf",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\themify9f24.ttf"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\themify9f24.woff",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\themify9f24.woff",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\themify9f24.woff"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\themifyd41d.eot",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\fonts\\themifyd41d.eot",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\themifyd41d.eot"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\img\\loading.gif",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\img\\loading.gif",
       "PackagePath": "staticwebassets\\assets\\css\\img\\loading.gif"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\plugins\\ajax-loader.gif",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\plugins\\ajax-loader.gif",
       "PackagePath": "staticwebassets\\assets\\css\\plugins\\ajax-loader.gif"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\plugins\\animation.css",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\plugins\\animation.css",
       "PackagePath": "staticwebassets\\assets\\css\\plugins\\animation.css"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\plugins\\bootstrap.min.css",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\plugins\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\assets\\css\\plugins\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\plugins\\flaticon.css",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\plugins\\flaticon.css",
       "PackagePath": "staticwebassets\\assets\\css\\plugins\\flaticon.css"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\plugins\\font-awesome.css",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\plugins\\font-awesome.css",
       "PackagePath": "staticwebassets\\assets\\css\\plugins\\font-awesome.css"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\plugins\\fonts\\LineIcons.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\plugins\\fonts\\LineIcons.html",
       "PackagePath": "staticwebassets\\assets\\css\\plugins\\fonts\\LineIcons.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\plugins\\fonts\\slick.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\plugins\\fonts\\slick.html",
       "PackagePath": "staticwebassets\\assets\\css\\plugins\\fonts\\slick.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\plugins\\iconfont.css",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\plugins\\iconfont.css",
       "PackagePath": "staticwebassets\\assets\\css\\plugins\\iconfont.css"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\plugins\\ion.rangeSlider.min.css",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\plugins\\ion.rangeSlider.min.css",
       "PackagePath": "staticwebassets\\assets\\css\\plugins\\ion.rangeSlider.min.css"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\plugins\\light-box.css",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\plugins\\light-box.css",
       "PackagePath": "staticwebassets\\assets\\css\\plugins\\light-box.css"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\plugins\\line-icons.css",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\plugins\\line-icons.css",
       "PackagePath": "staticwebassets\\assets\\css\\plugins\\line-icons.css"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\plugins\\slick-theme.css",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\plugins\\slick-theme.css",
       "PackagePath": "staticwebassets\\assets\\css\\plugins\\slick-theme.css"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\plugins\\slick.css",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\plugins\\slick.css",
       "PackagePath": "staticwebassets\\assets\\css\\plugins\\slick.css"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\plugins\\snackbar.min.css",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\plugins\\snackbar.min.css",
       "PackagePath": "staticwebassets\\assets\\css\\plugins\\snackbar.min.css"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\plugins\\themify.css",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\plugins\\themify.css",
       "PackagePath": "staticwebassets\\assets\\css\\plugins\\themify.css"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\styles.css",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\css\\styles.css",
       "PackagePath": "staticwebassets\\assets\\css\\styles.css"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\1.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\1.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\2.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\2.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\3.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\3.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\4.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\4.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\4.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\5.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\5.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\5.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\6.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\6.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\6.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\User\\18f53b08-ec80-4e44-9b18-484a98e6e3a3.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\User\\18f53b08-ec80-4e44-9b18-484a98e6e3a3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\User\\18f53b08-ec80-4e44-9b18-484a98e6e3a3.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\User\\1ecb397e-1c13-4a95-b8dd-8936ecd9488f.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\User\\1ecb397e-1c13-4a95-b8dd-8936ecd9488f.png",
       "PackagePath": "staticwebassets\\assets\\img\\User\\1ecb397e-1c13-4a95-b8dd-8936ecd9488f.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\User\\6842a493-7a39-4d89-92a4-19bc91e39b7f.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\User\\6842a493-7a39-4d89-92a4-19bc91e39b7f.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\User\\6842a493-7a39-4d89-92a4-19bc91e39b7f.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\User\\734c77c9-64c4-4c80-8704-494acf9ff81a.gif",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\User\\734c77c9-64c4-4c80-8704-494acf9ff81a.gif",
       "PackagePath": "staticwebassets\\assets\\img\\User\\734c77c9-64c4-4c80-8704-494acf9ff81a.gif"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\User\\7a127ea1-40d7-40db-a759-75d8effe7430.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\User\\7a127ea1-40d7-40db-a759-75d8effe7430.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\User\\7a127ea1-40d7-40db-a759-75d8effe7430.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\User\\863afa8f-56a7-49f0-a00e-8207e4eae620.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\User\\863afa8f-56a7-49f0-a00e-8207e4eae620.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\User\\863afa8f-56a7-49f0-a00e-8207e4eae620.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\User\\8d311a99-f0f0-421f-9fad-ff996aeab956.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\User\\8d311a99-f0f0-421f-9fad-ff996aeab956.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\User\\8d311a99-f0f0-421f-9fad-ff996aeab956.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\User\\976bf233-055e-49de-a92d-70d297bd62fd.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\User\\976bf233-055e-49de-a92d-70d297bd62fd.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\User\\976bf233-055e-49de-a92d-70d297bd62fd.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\User\\ad93131c-6854-458d-bef2-fd93170ec723.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\User\\ad93131c-6854-458d-bef2-fd93170ec723.png",
       "PackagePath": "staticwebassets\\assets\\img\\User\\ad93131c-6854-458d-bef2-fd93170ec723.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\User\\c75d5be0-c144-4342-b498-43f21616fdc0.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\User\\c75d5be0-c144-4342-b498-43f21616fdc0.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\User\\c75d5be0-c144-4342-b498-43f21616fdc0.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\User\\d2cd7d5d-d799-4621-99bc-56b9f13bdd48.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\User\\d2cd7d5d-d799-4621-99bc-56b9f13bdd48.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\User\\d2cd7d5d-d799-4621-99bc-56b9f13bdd48.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\User\\d74289c8-721a-40da-804b-01e45bcb1ae7.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\User\\d74289c8-721a-40da-804b-01e45bcb1ae7.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\User\\d74289c8-721a-40da-804b-01e45bcb1ae7.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\User\\f6412d68-6963-402d-b117-eed76b01abc7.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\User\\f6412d68-6963-402d-b117-eed76b01abc7.png",
       "PackagePath": "staticwebassets\\assets\\img\\User\\f6412d68-6963-402d-b117-eed76b01abc7.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\User\\f67d0e6c-ea85-471f-a338-69325f4ce202.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\User\\f67d0e6c-ea85-471f-a338-69325f4ce202.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\User\\f67d0e6c-ea85-471f-a338-69325f4ce202.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\a-1.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\a-1.png",
       "PackagePath": "staticwebassets\\assets\\img\\a-1.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\a-10.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\a-10.png",
       "PackagePath": "staticwebassets\\assets\\img\\a-10.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\a-2.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\a-2.png",
       "PackagePath": "staticwebassets\\assets\\img\\a-2.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\a-3.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\a-3.png",
       "PackagePath": "staticwebassets\\assets\\img\\a-3.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\a-7.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\a-7.png",
       "PackagePath": "staticwebassets\\assets\\img\\a-7.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\a-8.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\a-8.png",
       "PackagePath": "staticwebassets\\assets\\img\\a-8.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\a-9.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\a-9.png",
       "PackagePath": "staticwebassets\\assets\\img\\a-9.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\about-1.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\about-1.png",
       "PackagePath": "staticwebassets\\assets\\img\\about-1.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\about-2.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\about-2.png",
       "PackagePath": "staticwebassets\\assets\\img\\about-2.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\accessories.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\accessories.png",
       "PackagePath": "staticwebassets\\assets\\img\\accessories.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\b-1.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\b-1.png",
       "PackagePath": "staticwebassets\\assets\\img\\b-1.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\b-3.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\b-3.png",
       "PackagePath": "staticwebassets\\assets\\img\\b-3.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\b-5.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\b-5.png",
       "PackagePath": "staticwebassets\\assets\\img\\b-5.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\b-7.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\b-7.png",
       "PackagePath": "staticwebassets\\assets\\img\\b-7.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\b-8.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\b-8.png",
       "PackagePath": "staticwebassets\\assets\\img\\b-8.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\banner-2.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\banner-2.png",
       "PackagePath": "staticwebassets\\assets\\img\\banner-2.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\banner-c.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\banner-c.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\banner-c.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\bg-2.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\bg-2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\bg-2.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\bg.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\bg.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\bg.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\bl-1.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\bl-1.png",
       "PackagePath": "staticwebassets\\assets\\img\\bl-1.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\bl-2.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\bl-2.png",
       "PackagePath": "staticwebassets\\assets\\img\\bl-2.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\bl-3.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\bl-3.png",
       "PackagePath": "staticwebassets\\assets\\img\\bl-3.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\bt-1.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\bt-1.png",
       "PackagePath": "staticwebassets\\assets\\img\\bt-1.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\bt-2.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\bt-2.png",
       "PackagePath": "staticwebassets\\assets\\img\\bt-2.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\c-1.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\c-1.png",
       "PackagePath": "staticwebassets\\assets\\img\\c-1.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\c-11.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\c-11.png",
       "PackagePath": "staticwebassets\\assets\\img\\c-11.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\c-12.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\c-12.png",
       "PackagePath": "staticwebassets\\assets\\img\\c-12.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\c-22.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\c-22.png",
       "PackagePath": "staticwebassets\\assets\\img\\c-22.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\c-3.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\c-3.png",
       "PackagePath": "staticwebassets\\assets\\img\\c-3.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\c-44.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\c-44.png",
       "PackagePath": "staticwebassets\\assets\\img\\c-44.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\c-5.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\c-5.png",
       "PackagePath": "staticwebassets\\assets\\img\\c-5.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\c-8.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\c-8.png",
       "PackagePath": "staticwebassets\\assets\\img\\c-8.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\card.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\card.png",
       "PackagePath": "staticwebassets\\assets\\img\\card.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\cover-1.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\cover-1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\cover-1.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\debit.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\debit.html",
       "PackagePath": "staticwebassets\\assets\\img\\debit.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\fashion.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\fashion.png",
       "PackagePath": "staticwebassets\\assets\\img\\fashion.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\i-1.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\i-1.png",
       "PackagePath": "staticwebassets\\assets\\img\\i-1.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\i-2.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\i-2.png",
       "PackagePath": "staticwebassets\\assets\\img\\i-2.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\i-3.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\i-3.png",
       "PackagePath": "staticwebassets\\assets\\img\\i-3.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\i-4.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\i-4.png",
       "PackagePath": "staticwebassets\\assets\\img\\i-4.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\i-5.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\i-5.png",
       "PackagePath": "staticwebassets\\assets\\img\\i-5.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\i-6.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\i-6.png",
       "PackagePath": "staticwebassets\\assets\\img\\i-6.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\i-7.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\i-7.png",
       "PackagePath": "staticwebassets\\assets\\img\\i-7.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\i-8.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\i-8.png",
       "PackagePath": "staticwebassets\\assets\\img\\i-8.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\logo-light.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\logo-light.png",
       "PackagePath": "staticwebassets\\assets\\img\\logo-light.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\logo.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\logo.png",
       "PackagePath": "staticwebassets\\assets\\img\\logo.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\offer-1.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\offer-1.png",
       "PackagePath": "staticwebassets\\assets\\img\\offer-1.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\offer-2.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\offer-2.png",
       "PackagePath": "staticwebassets\\assets\\img\\offer-2.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\p-13.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\p-13.png",
       "PackagePath": "staticwebassets\\assets\\img\\p-13.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\p-14.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\p-14.png",
       "PackagePath": "staticwebassets\\assets\\img\\p-14.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\p-15.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\p-15.png",
       "PackagePath": "staticwebassets\\assets\\img\\p-15.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\p-16.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\p-16.png",
       "PackagePath": "staticwebassets\\assets\\img\\p-16.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\p-17.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\p-17.png",
       "PackagePath": "staticwebassets\\assets\\img\\p-17.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\p-18.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\p-18.png",
       "PackagePath": "staticwebassets\\assets\\img\\p-18.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\p-19.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\p-19.png",
       "PackagePath": "staticwebassets\\assets\\img\\p-19.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\p-20.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\p-20.png",
       "PackagePath": "staticwebassets\\assets\\img\\p-20.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\pant.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\pant.png",
       "PackagePath": "staticwebassets\\assets\\img\\pant.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\paypal.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\paypal.html",
       "PackagePath": "staticwebassets\\assets\\img\\paypal.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\1-a.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\1-a.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\1-a.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\1.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\1.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\10-a.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\10-a.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\10-a.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\10.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\10.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\10.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\11-a.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\11-a.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\11-a.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\11.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\11.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\11.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\12-a.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\12-a.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\12-a.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\12.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\12.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\12.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\13-a.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\13-a.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\13-a.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\13.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\13.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\13.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\14-a.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\14-a.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\14-a.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\14.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\14.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\14.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\15.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\15.png",
       "PackagePath": "staticwebassets\\assets\\img\\product\\15.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\16.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\16.png",
       "PackagePath": "staticwebassets\\assets\\img\\product\\16.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\17.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\17.png",
       "PackagePath": "staticwebassets\\assets\\img\\product\\17.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\18.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\18.png",
       "PackagePath": "staticwebassets\\assets\\img\\product\\18.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\19.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\19.png",
       "PackagePath": "staticwebassets\\assets\\img\\product\\19.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\2-a.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\2-a.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\2-a.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\2.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\2.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\20.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\20.png",
       "PackagePath": "staticwebassets\\assets\\img\\product\\20.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\21.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\21.png",
       "PackagePath": "staticwebassets\\assets\\img\\product\\21.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\22.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\22.png",
       "PackagePath": "staticwebassets\\assets\\img\\product\\22.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\3.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\3.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\4.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\4.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\4.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\5-a.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\5-a.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\5-a.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\5.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\5.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\5.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\6-a.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\6-a.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\6-a.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\6.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\6.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\6.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\7-a.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\7-a.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\7-a.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\7.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\7.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\7.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\8-a.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\8-a.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\8-a.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\8.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\8.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\8.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\9-a.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\9-a.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\9-a.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\9.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\9.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\9.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\a.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\a.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\a.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\b.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\b.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\b.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\c.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\c.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\c.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\d.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\d.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\d.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\e.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\e.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\e.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\f.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\f.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\f.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\g.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\g.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\product\\g.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\sneakers.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\products\\5a425623-dc1e-4b96-8f71-ef259a18259f.png",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\5a425623-dc1e-4b96-8f71-ef259a18259f.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\products\\85effbe6-20ea-4211-8784-cc0ebfa88145.png",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\85effbe6-20ea-4211-8784-cc0ebfa88145.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\sneakers.png",
       "PackagePath": "staticwebassets\\assets\\img\\sneakers.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\strip.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\strip.html",
       "PackagePath": "staticwebassets\\assets\\img\\strip.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\team-1.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\team-1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\team-1.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\team-2.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\team-2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\team-2.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\team-3.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\team-3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\team-3.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\team-4.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\team-4.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\team-4.jpg"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\television.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\television.png",
       "PackagePath": "staticwebassets\\assets\\img\\television.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\tshirt.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\tshirt.png",
       "PackagePath": "staticwebassets\\assets\\img\\tshirt.png"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\assets\\js\\bootstrap.min.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\js\\custom.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\js\\custom.js",
       "PackagePath": "staticwebassets\\assets\\js\\custom.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\js\\ion.rangeSlider.min.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\js\\ion.rangeSlider.min.js",
       "PackagePath": "staticwebassets\\assets\\js\\ion.rangeSlider.min.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\js\\jQuery.style.switcher.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\js\\jQuery.style.switcher.js",
       "PackagePath": "staticwebassets\\assets\\js\\jQuery.style.switcher.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\js\\jquery.min.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\js\\jquery.min.js",
       "PackagePath": "staticwebassets\\assets\\js\\jquery.min.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\js\\lightbox.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\js\\lightbox.js",
       "PackagePath": "staticwebassets\\assets\\js\\lightbox.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\js\\popper.min.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\js\\popper.min.js",
       "PackagePath": "staticwebassets\\assets\\js\\popper.min.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\js\\slick.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\js\\slick.js",
       "PackagePath": "staticwebassets\\assets\\js\\slick.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\js\\slider-bg.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\js\\slider-bg.js",
       "PackagePath": "staticwebassets\\assets\\js\\slider-bg.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\js\\smoothproducts.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\js\\smoothproducts.js",
       "PackagePath": "staticwebassets\\assets\\js\\smoothproducts.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\js\\snackbar.min.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\js\\snackbar.min.js",
       "PackagePath": "staticwebassets\\assets\\js\\snackbar.min.js"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\backblue.gif",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\backblue.gif",
       "PackagePath": "staticwebassets\\backblue.gif"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\blog-detail.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\blog-detail.html",
       "PackagePath": "staticwebassets\\blog-detail.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\blog.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\blog.html",
       "PackagePath": "staticwebassets\\blog.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\checkout.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\checkout.html",
       "PackagePath": "staticwebassets\\checkout.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\complete-order.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\complete-order.html",
       "PackagePath": "staticwebassets\\complete-order.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\contact.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\contact.html",
       "PackagePath": "staticwebassets\\contact.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\docs.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\docs.html",
       "PackagePath": "staticwebassets\\docs.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\edit-account-address.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\edit-account-address.html",
       "PackagePath": "staticwebassets\\edit-account-address.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\fade.gif",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\fade.gif",
       "PackagePath": "staticwebassets\\fade.gif"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\faq.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\faq.html",
       "PackagePath": "staticwebassets\\faq.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\index.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\login.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\login.html",
       "PackagePath": "staticwebassets\\login.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\my-orders.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\my-orders.html",
       "PackagePath": "staticwebassets\\my-orders.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\payment-methode.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\payment-methode.html",
       "PackagePath": "staticwebassets\\payment-methode.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\privacy.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\privacy.html",
       "PackagePath": "staticwebassets\\privacy.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\profile-info.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\profile-info.html",
       "PackagePath": "staticwebassets\\profile-info.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\shop-list-sidebar.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\shop-list-sidebar.html",
       "PackagePath": "staticwebassets\\shop-list-sidebar.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\shop-single-v4.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\shop-single-v4.html",
       "PackagePath": "staticwebassets\\shop-single-v4.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\shop-style-5.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\shop-style-5.html",
       "PackagePath": "staticwebassets\\shop-style-5.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\shoping-cart.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\shoping-cart.html",
       "PackagePath": "staticwebassets\\shoping-cart.html"
     },
     {
-      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\wishlist.html",
+      "Id": "C:\\Users\\PC\\OneDrive\\KumoShop\\KumoShopMVC\\KumoShopMVC\\wwwroot\\wishlist.html",
       "PackagePath": "staticwebassets\\wishlist.html"
     },
     {

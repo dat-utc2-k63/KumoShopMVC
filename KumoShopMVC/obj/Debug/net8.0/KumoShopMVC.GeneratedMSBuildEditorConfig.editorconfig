@@ -17,195 +17,195 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = KumoShopMVC
 build_property.RootNamespace = KumoShopMVC
-build_property.ProjectDir = D:\asp.net\KumoShopMVC\KumoShopMVC\
+build_property.ProjectDir = C:\Users\PC\OneDrive\KumoShop\KumoShopMVC\KumoShopMVC\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\asp.net\KumoShopMVC\KumoShopMVC
+build_property.MSBuildProjectDirectory = C:\Users\PC\OneDrive\KumoShop\KumoShopMVC\KumoShopMVC
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/Admin/CategoryCreate.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/Admin/CategoryCreate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2F0ZWdvcnlDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/Admin/CategoryEdit.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/Admin/CategoryEdit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2F0ZWdvcnlFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/Admin/CategoryList.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/Admin/CategoryList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2F0ZWdvcnlMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/Admin/Contact.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/Admin/Contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ29udGFjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/Admin/Index.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/Admin/OrderDetail.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/Admin/OrderDetail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cT3JkZXJEZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/Admin/OrderList.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/Admin/OrderList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cT3JkZXJMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/Admin/ProductCreate.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/Admin/ProductCreate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUHJvZHVjdENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/Admin/ProductEdit.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/Admin/ProductEdit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUHJvZHVjdEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/Admin/ProductList.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/Admin/ProductList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUHJvZHVjdExpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/Admin/RoleCreate.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/Admin/RoleCreate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUm9sZUNyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/Admin/RoleEdit.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/Admin/RoleEdit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUm9sZUVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/Admin/RoleList.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/Admin/RoleList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cUm9sZUxpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/Admin/UserCreate.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/Admin/UserCreate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXNlckNyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/Admin/UserEdit.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/Admin/UserEdit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXNlckVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/Admin/UserList.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/Admin/UserList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXNlckxpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/Admin/_ViewStart.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/Admin/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/Cart/CheckOut.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/Cart/CheckOut.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxDaGVja091dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/Cart/Index.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/Cart/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/Cart/PaymentFail.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/Cart/PaymentFail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxQYXltZW50RmFpbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/Cart/Success.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/Cart/Success.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxTdWNjZXNzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/Home/Index.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/Home/PageNotFound.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/Home/PageNotFound.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQYWdlTm90Rm91bmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/Home/Privacy.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/Product/Detail.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/Product/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/Product/Index.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/Product/ProductItem.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/Product/ProductItem.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxQcm9kdWN0SXRlbS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/Product/Search.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/Product/Search.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxTZWFyY2guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/Shared/Components/CartItem/Default.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/Shared/Components/CartItem/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2FydEl0ZW1cRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/Shared/Components/Cart/CartPanel.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/Shared/Components/Cart/CartPanel.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2FydFxDYXJ0UGFuZWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/Shared/Components/CategoryMenu/Default.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/Shared/Components/CategoryMenu/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2F0ZWdvcnlNZW51XERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/Shared/Components/DashboardNavigation/Default.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/Shared/Components/DashboardNavigation/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcRGFzaGJvYXJkTmF2aWdhdGlvblxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/Shared/Error.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/Shared/_LayoutAdmin.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/Shared/_LayoutAdmin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/Shared/_LayoutCustomer.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/Shared/_LayoutCustomer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRDdXN0b21lci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/Shared/_TemplateProduct.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/Shared/_TemplateProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9UZW1wbGF0ZVByb2R1Y3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/User/Login.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/User/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/User/MyOrder.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/User/MyOrder.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxNeU9yZGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/User/Profile.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/User/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxQcm9maWxlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/User/Register.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/User/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/User/WishList.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/User/WishList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxXaXNoTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/User/_RatingModalPartial.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/User/_RatingModalPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxfUmF0aW5nTW9kYWxQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/_ViewImports.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/_ViewStart.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/asp.net/KumoShopMVC/KumoShopMVC/Views/Shared/_Layout.cshtml]
+[C:/Users/PC/OneDrive/KumoShop/KumoShopMVC/KumoShopMVC/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-lztb6wipgq

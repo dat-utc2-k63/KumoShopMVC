@@ -634,38 +634,47 @@ namespace KumoShopMVC.Controllers
             }
         }
 
-        [Authorize]
+        
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public IActionResult Edit(ProductVM model)
-		{
-			if (!ModelState.IsValid)
-			{
-				return View(model);
-			}
+		public IActionResult Edit(ProductDetailVM model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View("ProductEdit", model);
+            }
 
-			var product = db.Products.FirstOrDefault(p => p.ProductId == model.ProductId);
-			if (product == null)
-			{
-				return NotFound();
-			}
-
-			product.NameProduct = model.NameProduct;
-			product.Brands = model.Brand;
-			product.Gender = model.Gender;
-			product.Price = model.Price;
+            var product = db.Products.FirstOrDefault(p => p.ProductId == model.ProductId);
+            if (product == null)
+            {
+                return NotFound();
+            }
+            
+            product.NameProduct = model.NameProduct;
+            product.Brands = model.Brand;
+            product.Gender = model.Gender;
+            product.Price = model.Price;
             product.IsHot = model.IsHot;
             product.IsNew = model.IsNew;
             product.DescProduct = model.DescProduct;
-			//product.Images = model.Images
-			db.SaveChanges();
+            //product.Discount = 0;
+            //product.Status = true;
+            //product.CreateDate = DateTime.Now;
+            //product.Quantity = 100;
+
+            //product.Images = model.Images
+            db.SaveChanges();
             TempData["SuccessMessage"] = "Product created successfully!";
 
-            return RedirectToAction("Index");
-		}
+            return RedirectToAction("ProductList");
+        }
 
-		
-		[HttpPost]
+        private static DateTime GetUtcNow()
+        {
+            return DateTime.UtcNow;
+        }
+
+        [HttpPost]
 		[ValidateAntiForgeryToken]
 		public IActionResult DeleteProduct(int id)
 		{

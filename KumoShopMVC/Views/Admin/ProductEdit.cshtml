@@ -79,16 +79,19 @@
                     </div>
                     <div class="card-body"> 
                         <form asp-action="Edit" asp-controller="Admin" method="post">
+                            @Html.AntiForgeryToken()
                             <div class="row">
+                                
                                 <div class="col-lg-6">
                                     <div class="mb-3">
                                         <label for="product-name" class="form-label">Product Name</label>
-                                        <input type="text" id="product-name" class="form-control" name="NameProduct" value="@Model.NameProduct" placeholder="Items Name">
-                                    </div>  
+                                        <input type="text" id="product-name" class="form-control" name="NameProduct" value="@Model.NameProduct" placeholder="Items Name" />
+                                        @Html.ValidationMessageFor(m => m.NameProduct, "", new { @class = "text-danger" })
+                                    </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <label for="product-categories" class="form-label">Product Categories</label>
-                                    <select class="form-control" id="product-categories" name="Category">
+                                    <select class="form-control" id="product-categories" name="NameCategory">
                                         <option value="Fashion" >Fashion</option>
                                         <option value="Electronics" >Electronics</option>
                                     </select>
@@ -98,15 +101,16 @@
                                 <div class="col-lg-4">
                                     <div class="mb-3">
                                         <label for="product-brand" class="form-label">Brand</label>
-                                        <input type="text" id="product-brand" class="form-control" name="Brands" value="@Model.Brand" placeholder="Brand Name">
+                                        <input type="text" id="product-brand" class="form-control" name="Brand" value="@Model.Brand" placeholder="Brand Name" />
+                                        @Html.ValidationMessageFor(m => m.Brand, "", new { @class = "text-danger" })
                                     </div>
                                 </div>
                     
                                 <div class="col-lg-4">
                                     <label for="gender" class="form-label">Gender</label>
                                     <select class="form-control" id="gender" name="Gender">
-                                        <option value="Men">Men</option>
-                                        <option value="Women">Women</option>
+                                        <option value="false">Men</option>
+                                        <option value="true">Women</option>
                                     </select>
                                 </div>
                             </div>
@@ -129,9 +133,9 @@
                                 <div class="row">
                                     <div class="col-lg-4">
                                         <label for="product-price" class="form-label">Price</label>
-                                        <input type="number" id="product-price" class="form-control" name="Price" value="@Model.Price"/>
+                                        <input type="number" id="product-price" class="form-control" name="Price" value="@Model.Price" />
+                                        @Html.ValidationMessageFor(m => m.Price, "", new { @class = "text-danger" })
                                     </div>
-
                                 </div>
                             </div>
 
@@ -145,6 +149,9 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <input type="hidden" name="ProductId" value="@Model.ProductId" />
+
                         </form>
                     </div>
                 </div>

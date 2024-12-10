@@ -43,14 +43,13 @@ namespace KumoShopMVC.Controllers
 
             var dashBoardAdmin = new DashBoardAdmin
             {
-                TotalUser = db.Users.Count(u =>u.RoleId == 1), // Tổng khách hàng
-                totalProducts = db.Products.Count(), // Tổng số sản phẩm
+                TotalUser = db.Users.Count(u =>u.RoleId == 1),
+                totalProducts = db.Products.Count(),
                 totalOrders = db.Orders.Count(),
                 totalRevenue = db.Orders
                                 .SelectMany(o => o.OrderItems)
                                 .Sum(oi => (oi.Price ?? 0) * (oi.Quantity ?? 0)), // Tổng doanh thu
 
-                // Dữ liệu biểu đồ
                 monthYears = monthlyReports.Select(r => r.MonthYear).ToList(),
                 totalOrdersData = monthlyReports.Select(r => r.TotalOrders).ToList(),
                 totalRevenueData = monthlyReports.Select(r => r.TotalRevenue).ToList()
@@ -833,7 +832,7 @@ namespace KumoShopMVC.Controllers
         }
         public IActionResult OrderList(int? page)
         {
-            int pageSize = 10;
+            int pageSize = 5;
             int pageNumber = page ?? 1;
 
             ViewBag.TotalOrders = db.Orders.Count();
@@ -857,7 +856,6 @@ namespace KumoShopMVC.Controllers
                     OrderItems = db.OrderItems.Where(oi => oi.OrderId == o.OrderId).Select(oi => new OrderItemVM
                     {
                         NameProduct = oi.Product.NameProduct,
-                        Quantity = (int)oi.Product.Quantity,
                         Price = (float)oi.Product.Price
                     }).ToList()
                 })

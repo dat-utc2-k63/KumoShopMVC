@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("KumoShopMVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e26a2ac96004f3c9a7b2e0d889cdda2be1dda29f")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+948f30c2efd7c05fdb28230981fe719d39f8a3b1")]
->>>>>>> 6090a977ad382aebfe9df359c56ee4b7560681c1
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+143c614e42be2870fabdb18f8df58637eac2e464")]
 [assembly: System.Reflection.AssemblyProductAttribute("KumoShopMVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("KumoShopMVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

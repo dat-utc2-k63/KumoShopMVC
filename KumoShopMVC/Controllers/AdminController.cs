@@ -60,7 +60,6 @@ namespace KumoShopMVC.Controllers
             return View(dashBoardAdmin);
         }
 
-
         [HttpGet]
         public IActionResult ProductList(int pageNumber = 1, int pageSize = 5)
         {
@@ -233,7 +232,7 @@ namespace KumoShopMVC.Controllers
                     if (model.Images != null && model.Images.Any())
                     {
                         var uploadedImageNames = MyUtil.UpLoadListProduct(Images, "products");
-                        foreach (var item in model.Images)
+                        foreach (var item in uploadedImageNames)
                         {
                             image.Add(new Image()
                             {
@@ -242,7 +241,6 @@ namespace KumoShopMVC.Controllers
                             });
                         }
                     }
-
                     db.AddRange(image);
                     db.SaveChanges();
                 }
@@ -712,7 +710,7 @@ namespace KumoShopMVC.Controllers
                     if (model.Images != null && model.Images.Any())
                     {
                         var uploadedImageNames = MyUtil.UpLoadListProduct(Images, "products");
-                        foreach (var item in model.Images)
+                        foreach (var item in uploadedImageNames)
                         {
                             image.Add(new Image()
                             {
@@ -833,9 +831,18 @@ namespace KumoShopMVC.Controllers
 
             return View(model);
         }
-        public IActionResult OrderList()
+        public IActionResult OrderList(int? page)
         {
-            var orders = db.Orders
+            int pageSize = 10;
+            int pageNumber = page ?? 1;
+
+            ViewBag.TotalOrders = db.Orders.Count();
+			ViewBag.TotalOrdersStatusMinus1 = db.Orders.Count(o => o.StatusId == -1);
+			ViewBag.TotalOrdersStatus0 = db.Orders.Count(o => o.StatusId == 0);
+			ViewBag.TotalOrdersStatus1 = db.Orders.Count(o => o.StatusId == 1);
+			ViewBag.TotalOrdersStatus2 = db.Orders.Count(o => o.StatusId == 2);
+			ViewBag.TotalOrdersStatus3 = db.Orders.Count(o => o.StatusId == 3);
+			var orders = db.Orders
                 .Select(o => new OrderVM
                 {
                     OrderId = o.OrderId,
@@ -854,9 +861,7 @@ namespace KumoShopMVC.Controllers
                         Price = (float)oi.Product.Price
                     }).ToList()
                 })
-                .ToList();
-
-            // Truyền dữ liệu vào view
+                .ToPagedList(pageNumber, pageSize);
             return View(orders);
         }
         public IActionResult GetOrderDetails(int orderId)

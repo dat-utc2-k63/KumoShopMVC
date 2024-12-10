@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Yyr+3lfoWdKENGU7g6NAjssN1aQdlRKvfm3FwBfCknA=",
+  "Hash": "/9yEL34nVBPXIp8ASCpAREBDFWu3ErezcQ9RDQB7aKs=",
   "Source": "KumoShopMVC",
   "BasePath": "_content/KumoShopMVC",
   "Mode": "Default",
@@ -8529,6 +8529,25 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\products\\1.jpg"
     },
     {
+      "Identity": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\products\\117c222b-3f18-42fa-8324-6a7716825122.jpg",
+      "SourceId": "KumoShopMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\",
+      "BasePath": "_content/KumoShopMVC",
+      "RelativePath": "assets/img/products/117c222b-3f18-42fa-8324-6a7716825122.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\products\\117c222b-3f18-42fa-8324-6a7716825122.jpg"
+    },
+    {
       "Identity": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\products\\1b52c0ee-2e35-42fd-8587-cd848f80af3e.png",
       "SourceId": "KumoShopMVC",
       "SourceType": "Discovered",
@@ -8567,6 +8586,25 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\products\\2.jpg"
     },
     {
+      "Identity": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\products\\24e459ab-8770-4004-a3d1-cc46ae5bca3a.jpg",
+      "SourceId": "KumoShopMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\",
+      "BasePath": "_content/KumoShopMVC",
+      "RelativePath": "assets/img/products/24e459ab-8770-4004-a3d1-cc46ae5bca3a.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\products\\24e459ab-8770-4004-a3d1-cc46ae5bca3a.jpg"
+    },
+    {
       "Identity": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\products\\319d144a-9044-41d1-834b-118217e4f419.png",
       "SourceId": "KumoShopMVC",
       "SourceType": "Discovered",
@@ -8603,6 +8641,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\img\\products\\5a425623-dc1e-4b96-8f71-ef259a18259f.png"
+    },
+    {
+      "Identity": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\products\\707c775e-ed7e-4380-a79f-2a84ffda9ce3.jpg",
+      "SourceId": "KumoShopMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\",
+      "BasePath": "_content/KumoShopMVC",
+      "RelativePath": "assets/img/products/707c775e-ed7e-4380-a79f-2a84ffda9ce3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\products\\707c775e-ed7e-4380-a79f-2a84ffda9ce3.jpg"
     },
     {
       "Identity": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\products\\85effbe6-20ea-4211-8784-cc0ebfa88145.png",

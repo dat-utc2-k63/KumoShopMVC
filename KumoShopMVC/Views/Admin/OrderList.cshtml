@@ -1,5 +1,5 @@
-﻿@model IEnumerable<KumoShopMVC.ViewModels.OrderVM>
-
+﻿@using X.PagedList.Mvc.Core
+@model X.PagedList.IPagedList<KumoShopMVC.ViewModels.OrderVM>
 @{
     ViewData["Title"] = "ListOrder";
 }
@@ -17,8 +17,8 @@
                     <div class="card-body">
                         <div class="d-flex align-items-center justify-content-between">
                             <div>
-                                <h4 class="card-title mb-2">Payment Refund</h4>
-                                <p class="text-muted fw-medium fs-22 mb-0">490</p>
+                                <h4 class="card-title mb-2">Total Order</h4>
+                                <p class="text-muted fw-medium fs-22 mb-0">@ViewBag.TotalOrders</p>
                             </div>
                             <div>
                                 <div class="avatar-md bg-primary bg-opacity-10 rounded">
@@ -35,7 +35,7 @@
                         <div class="d-flex align-items-center justify-content-between">
                             <div>
                                 <h4 class="card-title mb-2">Order Cancel</h4>
-                                <p class="text-muted fw-medium fs-22 mb-0">241</p>
+                                <p class="text-muted fw-medium fs-22 mb-0">@ViewBag.TotalOrdersStatusMinus1</p>
                             </div>
                             <div>
                                 <div class="avatar-md bg-primary bg-opacity-10 rounded">
@@ -52,8 +52,8 @@
                     <div class="card-body">
                         <div class="d-flex align-items-center justify-content-between">
                             <div>
-                                <h4 class="card-title mb-2">Order Shipped</h4>
-                                <p class="text-muted fw-medium fs-22 mb-0">630</p>
+                                <h4 class="card-title mb-2">Order Preparing</h4>
+                                <p class="text-muted fw-medium fs-22 mb-0">@ViewBag.TotalOrdersStatus0</p>
                             </div>
                             <div>
                                 <div class="avatar-md bg-primary bg-opacity-10 rounded">
@@ -70,8 +70,8 @@
                     <div class="card-body">
                         <div class="d-flex align-items-center justify-content-between">
                             <div>
-                                <h4 class="card-title mb-2">Order Delivering</h4>
-                                <p class="text-muted fw-medium fs-22 mb-0">170</p>
+                                <h4 class="card-title mb-2">Order Payment</h4>
+                                <p class="text-muted fw-medium fs-22 mb-0">@ViewBag.TotalOrdersStatus1</p>
                             </div>
                             <div>
                                 <div class="avatar-md bg-primary bg-opacity-10 rounded">
@@ -88,8 +88,8 @@
                     <div class="card-body">
                         <div class="d-flex align-items-center justify-content-between">
                             <div>
-                                <h4 class="card-title mb-2">Pending Review</h4>
-                                <p class="text-muted fw-medium fs-22 mb-0">210</p>
+                                <h4 class="card-title mb-2">Order Delivery</h4>
+                                <p class="text-muted fw-medium fs-22 mb-0">@ViewBag.TotalOrdersStatus2</p>
                             </div>
                             <div>
                                 <div class="avatar-md bg-primary bg-opacity-10 rounded">
@@ -105,46 +105,12 @@
                     <div class="card-body">
                         <div class="d-flex align-items-center justify-content-between">
                             <div>
-                                <h4 class="card-title mb-2">Pending Payment</h4>
-                                <p class="text-muted fw-medium fs-22 mb-0">608</p>
+                                <h4 class="card-title mb-2">Order Success</h4>
+                                <p class="text-muted fw-medium fs-22 mb-0">@ViewBag.TotalOrdersStatus3</p>
                             </div>
                             <div>
                                 <div class="avatar-md bg-primary bg-opacity-10 rounded">
                                     <iconify-icon icon="solar:clock-circle-broken" class="fs-32 text-primary avatar-title"></iconify-icon>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-xl-3">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="d-flex align-items-center justify-content-between">
-                            <div>
-                                <h4 class="card-title mb-2">Delivered</h4>
-                                <p class="text-muted fw-medium fs-22 mb-0">200</p>
-                            </div>
-                            <div>
-                                <div class="avatar-md bg-primary bg-opacity-10 rounded">
-                                    <iconify-icon icon="solar:clipboard-check-broken" class="fs-32 text-primary avatar-title"></iconify-icon>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-xl-3">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="d-flex align-items-center justify-content-between">
-                            <div>
-                                <h4 class="card-title mb-2">In Progress</h4>
-                                <p class="text-muted fw-medium fs-22 mb-0">656</p>
-                            </div>
-                            <div>
-                                <div class="avatar-md bg-primary bg-opacity-10 rounded">
-                                    <iconify-icon icon="solar:inbox-line-broken" class="fs-32 text-primary avatar-title"></iconify-icon>
                                 </div>
                             </div>
                         </div>
@@ -224,15 +190,22 @@
                     </div>
                     <div class="card-footer border-top">
                         <nav aria-label="Page navigation example">
-                            <ul class="pagination justify-content-end mb-0">
-                                <li class="page-item"><a class="page-link" href="javascript:void(0);">Previous</a></li>
-                                <li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
-                                <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
-                                <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
-                                <li class="page-item"><a class="page-link" href="javascript:void(0);">Next</a></li>
-                            </ul>
+                            @Html.PagedListPager(
+                                     Model, // Model phải là kiểu IPagedList
+                                     page => Url.Action("OrderList", new { page }),
+                                     new PagedListRenderOptions
+                            {
+                                LiElementClasses = new[] { "page-item" },
+                                PageClasses = new[] { "page-link" },
+                                ActiveLiElementClass = "active",
+                                PreviousElementClass = "page-item",
+                                NextElementClass = "page-item"
+                            }
+                                     )
                         </nav>
                     </div>
+
+
                 </div>
             </div>
 
@@ -248,7 +221,6 @@
                 </div>
                 <div class="modal-body">
                     <div id="orderDetailsContent">
-                        <!-- Nội dung sẽ được cập nhật bằng JavaScript -->
                         <p>Loading...</p>
                     </div>
                 </div>

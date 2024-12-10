@@ -1845,6 +1845,10 @@
       "PackagePath": "staticwebassets\\assets\\img\\products\\1.jpg"
     },
     {
+      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\products\\117c222b-3f18-42fa-8324-6a7716825122.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\117c222b-3f18-42fa-8324-6a7716825122.jpg"
+    },
+    {
       "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\products\\1b52c0ee-2e35-42fd-8587-cd848f80af3e.png",
       "PackagePath": "staticwebassets\\assets\\img\\products\\1b52c0ee-2e35-42fd-8587-cd848f80af3e.png"
     },
@@ -1853,12 +1857,20 @@
       "PackagePath": "staticwebassets\\assets\\img\\products\\2.jpg"
     },
     {
+      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\products\\24e459ab-8770-4004-a3d1-cc46ae5bca3a.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\24e459ab-8770-4004-a3d1-cc46ae5bca3a.jpg"
+    },
+    {
       "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\products\\319d144a-9044-41d1-834b-118217e4f419.png",
       "PackagePath": "staticwebassets\\assets\\img\\products\\319d144a-9044-41d1-834b-118217e4f419.png"
     },
     {
       "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\products\\5a425623-dc1e-4b96-8f71-ef259a18259f.png",
       "PackagePath": "staticwebassets\\assets\\img\\products\\5a425623-dc1e-4b96-8f71-ef259a18259f.png"
+    },
+    {
+      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\products\\707c775e-ed7e-4380-a79f-2a84ffda9ce3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\707c775e-ed7e-4380-a79f-2a84ffda9ce3.jpg"
     },
     {
       "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\products\\85effbe6-20ea-4211-8784-cc0ebfa88145.png",

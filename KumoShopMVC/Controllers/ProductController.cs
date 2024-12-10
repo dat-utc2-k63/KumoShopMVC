@@ -58,7 +58,7 @@ namespace KumoShopMVC.Controllers
 
             return View(result);
         }
-        public IActionResult Search(string? query, float? minPrice, float? maxPrice, string? brands, bool? genders, int page = 1, int pageSize = 6)
+        public IActionResult Search(string? query, float? minPrice, float? maxPrice, string? brands, bool? genders)
         {
             var products = db.Products.AsQueryable();
             if (!string.IsNullOrEmpty(query))
@@ -76,15 +76,10 @@ namespace KumoShopMVC.Controllers
 
             if (genders != null)
             {
-                products = products.Where(p => p.Gender == genders); // Assuming Gender is stored as string (e.g., "Male", "Female", "Unisex")
+                products = products.Where(p => p.Gender == genders);
             }
 
-            var totalProducts = products.Count();
-            var productList = products
-                .Skip((page - 1) * pageSize)
-                .Take(pageSize)
-                .ToList();
-            var result = productList.Select(p => new ProductVM
+            var result = products.Select(p => new ProductVM
             {
                 ProductId = p.ProductId,
                 NameProduct = p.NameProduct ?? "",
@@ -98,11 +93,7 @@ namespace KumoShopMVC.Controllers
                 IsHot = p.IsHot ?? false,
                 IsNew = p.IsNew ?? false
             }).ToList();
-            var totalPages = (int)Math.Ceiling((double)totalProducts / pageSize);
-            ViewData["SearchQuery"] = query;
-            ViewData["CurrentPage"] = page;
-            ViewData["TotalPages"] = totalPages;
-            ViewData["TotalProducts"] = totalProducts;
+
             return View(result);
         }
 
@@ -152,8 +143,6 @@ namespace KumoShopMVC.Controllers
                     .ToList(),
                 Price = (float)(product.Price ?? 0),
                 DescProduct = product.DescProduct ?? string.Empty,
-
-                Quantity = product.Quantity ?? 0,
                 SoLuongTon = 10,
                 Ratings = db.RatingProducts
             .Where(r => r.ProductId == product.ProductId)

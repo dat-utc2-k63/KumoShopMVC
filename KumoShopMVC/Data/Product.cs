@@ -17,15 +17,11 @@ public partial class Product
 
     public bool? Gender { get; set; }
 
-    public double? Discount { get; set; }
-
     public bool? Status { get; set; }
 
     public int? CategoryId { get; set; }
 
     public DateTime? CreateDate { get; set; }
-
-    public int? Quantity { get; set; }
 
     public bool? IsNew { get; set; }
 

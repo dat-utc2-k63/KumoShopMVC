@@ -15,15 +15,14 @@ namespace KumoShopMVC.Helpers
                     Directory.CreateDirectory(directoryPath);
                 }
 
-                var uniqueFileName = Guid.NewGuid().ToString() + Path.GetExtension(Avatar.FileName);
-                var fullPath = Path.Combine(directoryPath, uniqueFileName);
-
-                using (var myfile = new FileStream(fullPath, FileMode.CreateNew))
+                var originalFileName = Path.GetFileName(Avatar.FileName);
+                var fullPath = Path.Combine(directoryPath, originalFileName);
+                using (var myfile = new FileStream(fullPath, FileMode.Create))
                 {
                     Avatar.CopyTo(myfile);
                 }
 
-                return uniqueFileName;
+                return originalFileName;
             }
             catch (Exception ex)
             {
@@ -31,6 +30,7 @@ namespace KumoShopMVC.Helpers
                 return string.Empty;
             }
         }
+
         public static List<string> UpLoadListProduct(List<IFormFile> files, string folder)
         {
             var fileNames = new List<string>();
@@ -46,15 +46,14 @@ namespace KumoShopMVC.Helpers
                         Directory.CreateDirectory(directoryPath);
                     }
 
-                    var uniqueFileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
-                    var fullPath = Path.Combine(directoryPath, uniqueFileName);
-
-                    using (var myfile = new FileStream(fullPath, FileMode.CreateNew))
+                    var originalFileName = Path.GetFileName(file.FileName);
+                    var fullPath = Path.Combine(directoryPath, originalFileName);
+                    using (var myfile = new FileStream(fullPath, FileMode.Create))
                     {
                         file.CopyTo(myfile);
                     }
 
-                    fileNames.Add(uniqueFileName);
+                    fileNames.Add(originalFileName);
                 }
                 catch (Exception ex)
                 {
@@ -64,6 +63,7 @@ namespace KumoShopMVC.Helpers
 
             return fileNames; // Trả về danh sách tên file
         }
+
         public static String GenerRateRandomKey(int length = 5)
 		{
 			var pattern = @"qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM!";

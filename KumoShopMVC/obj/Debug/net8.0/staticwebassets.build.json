@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "Hash": "csEXahhVopPSjKinIb37vmU1bz5SB19qDPCzL74fAPI=",
+=======
+  "Hash": "NI7qoPKoVzbeiROKOgDu3SS8kfKfc1W1ybb+kYrjJK4=",
+>>>>>>> 6c90aa46334017e0c49df0750d917739b1b883ce
   "Source": "KumoShopMVC",
   "BasePath": "_content/KumoShopMVC",
   "Mode": "Default",
@@ -55,6 +59,7 @@
       "OriginalItemSpec": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\KumoShopMVC.bundle.scp.css"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\404.html",
       "SourceId": "KumoShopMVC",
       "SourceType": "Discovered",
@@ -208,6 +213,9 @@
     },
     {
       "Identity": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\css\\app.min.css",
+=======
+      "Identity": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\css\\app.min.css",
+>>>>>>> 6c90aa46334017e0c49df0750d917739b1b883ce
       "SourceId": "KumoShopMVC",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\",
@@ -2981,6 +2989,7 @@
       "OriginalItemSpec": "wwwroot\\admin\\assets\\vendor\\jsvectormap\\maps\\world-merc.js"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\attributes-add.html",
       "SourceId": "KumoShopMVC",
       "SourceType": "Discovered",
@@ -5148,6 +5157,9 @@
     },
     {
       "Identity": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\apexcharts.com\\samples\\assets\\github-data.js",
+=======
+      "Identity": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\apexcharts.com\\samples\\assets\\github-data.js",
+>>>>>>> 6c90aa46334017e0c49df0750d917739b1b883ce
       "SourceId": "KumoShopMVC",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\",
@@ -8567,12 +8579,16 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\products\\2.jpg"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\products\\319d144a-9044-41d1-834b-118217e4f419.png",
+=======
+      "Identity": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\products\\24e459ab-8770-4004-a3d1-cc46ae5bca3a.jpg",
+>>>>>>> 6c90aa46334017e0c49df0750d917739b1b883ce
       "SourceId": "KumoShopMVC",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\",
       "BasePath": "_content/KumoShopMVC",
-      "RelativePath": "assets/img/products/319d144a-9044-41d1-834b-118217e4f419.png",
+      "RelativePath": "assets/img/products/24e459ab-8770-4004-a3d1-cc46ae5bca3a.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -8583,7 +8599,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\img\\products\\319d144a-9044-41d1-834b-118217e4f419.png"
+      "OriginalItemSpec": "wwwroot\\assets\\img\\products\\24e459ab-8770-4004-a3d1-cc46ae5bca3a.jpg"
     },
     {
       "Identity": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\products\\5a425623-dc1e-4b96-8f71-ef259a18259f.png",
@@ -8605,12 +8621,16 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\products\\5a425623-dc1e-4b96-8f71-ef259a18259f.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\products\\85effbe6-20ea-4211-8784-cc0ebfa88145.png",
+=======
+      "Identity": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\products\\Screenshot 2024-12-05 174143.png",
+>>>>>>> 6c90aa46334017e0c49df0750d917739b1b883ce
       "SourceId": "KumoShopMVC",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\",
       "BasePath": "_content/KumoShopMVC",
-      "RelativePath": "assets/img/products/85effbe6-20ea-4211-8784-cc0ebfa88145.png",
+      "RelativePath": "assets/img/products/Screenshot 2024-12-05 174143.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -8621,6 +8641,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
+<<<<<<< HEAD
       "OriginalItemSpec": "wwwroot\\assets\\img\\products\\85effbe6-20ea-4211-8784-cc0ebfa88145.png"
     },
     {
@@ -8679,6 +8700,9 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\img\\products\\f829503e-4b4d-4b96-b568-7b994c5ae224.png"
+=======
+      "OriginalItemSpec": "wwwroot\\assets\\img\\products\\Screenshot 2024-12-05 174143.png"
+>>>>>>> 6c90aa46334017e0c49df0750d917739b1b883ce
     },
     {
       "Identity": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\sneakers.png",
@@ -9344,6 +9368,7 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\js\\snackbar.min.js"
+<<<<<<< HEAD
     },
     {
       "Identity": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\backblue.gif",
@@ -9743,6 +9768,8 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\wishlist.html"
+=======
+>>>>>>> 6c90aa46334017e0c49df0750d917739b1b883ce
     }
   ]
 }

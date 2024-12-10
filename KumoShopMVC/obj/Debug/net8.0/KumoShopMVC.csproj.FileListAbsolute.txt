@@ -532,6 +532,7 @@ C:\Users\PC\OneDrive\KumoShop\KumoShopMVC\KumoShopMVC\obj\Debug\net8.0\refint\Ku
 C:\Users\PC\OneDrive\KumoShop\KumoShopMVC\KumoShopMVC\obj\Debug\net8.0\KumoShopMVC.pdb
 C:\Users\PC\OneDrive\KumoShop\KumoShopMVC\KumoShopMVC\obj\Debug\net8.0\KumoShopMVC.genruntimeconfig.cache
 C:\Users\PC\OneDrive\KumoShop\KumoShopMVC\KumoShopMVC\obj\Debug\net8.0\ref\KumoShopMVC.dll
+<<<<<<< HEAD
 D:\HỌC KỲ 1 2024-2025\Lập trình Web\Thực hành\KumoShopMVC\KumoShopMVC\bin\Debug\net8.0\appsettings.Development.json
 D:\HỌC KỲ 1 2024-2025\Lập trình Web\Thực hành\KumoShopMVC\KumoShopMVC\bin\Debug\net8.0\appsettings.json
 D:\HỌC KỲ 1 2024-2025\Lập trình Web\Thực hành\KumoShopMVC\KumoShopMVC\bin\Debug\net8.0\KumoShopMVC.staticwebassets.runtime.json
@@ -799,3 +800,20 @@ D:\HỌC KỲ 1 2024-2025\Lập trình Web\Thực hành\KumoShopMVC\KumoShopMVC\
 D:\HỌC KỲ 1 2024-2025\Lập trình Web\Thực hành\KumoShopMVC\KumoShopMVC\obj\Debug\net8.0\KumoShopMVC.pdb
 D:\HỌC KỲ 1 2024-2025\Lập trình Web\Thực hành\KumoShopMVC\KumoShopMVC\obj\Debug\net8.0\KumoShopMVC.genruntimeconfig.cache
 D:\HỌC KỲ 1 2024-2025\Lập trình Web\Thực hành\KumoShopMVC\KumoShopMVC\obj\Debug\net8.0\ref\KumoShopMVC.dll
+=======
+D:\asp.net\KumoShopMVC\KumoShopMVC\bin\Debug\net8.0\itext.barcodes.dll
+D:\asp.net\KumoShopMVC\KumoShopMVC\bin\Debug\net8.0\itext.bouncy-castle-connector.dll
+D:\asp.net\KumoShopMVC\KumoShopMVC\bin\Debug\net8.0\itext.forms.dll
+D:\asp.net\KumoShopMVC\KumoShopMVC\bin\Debug\net8.0\itext.io.dll
+D:\asp.net\KumoShopMVC\KumoShopMVC\bin\Debug\net8.0\itext.kernel.dll
+D:\asp.net\KumoShopMVC\KumoShopMVC\bin\Debug\net8.0\itext.layout.dll
+D:\asp.net\KumoShopMVC\KumoShopMVC\bin\Debug\net8.0\itext.pdfa.dll
+D:\asp.net\KumoShopMVC\KumoShopMVC\bin\Debug\net8.0\itext.pdfua.dll
+D:\asp.net\KumoShopMVC\KumoShopMVC\bin\Debug\net8.0\itext.sign.dll
+D:\asp.net\KumoShopMVC\KumoShopMVC\bin\Debug\net8.0\itext.styledxmlparser.dll
+D:\asp.net\KumoShopMVC\KumoShopMVC\bin\Debug\net8.0\itext.svg.dll
+D:\asp.net\KumoShopMVC\KumoShopMVC\bin\Debug\net8.0\itext.commons.dll
+D:\asp.net\KumoShopMVC\KumoShopMVC\bin\Debug\net8.0\Microsoft.DotNet.PlatformAbstractions.dll
+D:\asp.net\KumoShopMVC\KumoShopMVC\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+D:\asp.net\KumoShopMVC\KumoShopMVC\bin\Debug\net8.0\itext.bouncy-castle-adapter.dll
+>>>>>>> 6c90aa46334017e0c49df0750d917739b1b883ce

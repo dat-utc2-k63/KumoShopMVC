@@ -292,8 +292,8 @@
               "Title": "AdminController.cs",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "KumoShopMVC\\Controllers\\AdminController.cs",
-              "ToolTip": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Controllers\\AdminController.cs*",
-              "RelativeToolTip": "KumoShopMVC\\Controllers\\AdminController.cs*",
+              "ToolTip": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "KumoShopMVC\\Controllers\\AdminController.cs",
               "ViewState": "AgIAAFEDAAAAAAAAAAASwFoDAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-09T02:54:42.057Z",
@@ -331,7 +331,7 @@
               "RelativeDocumentMoniker": "KumoShopMVC\\Controllers\\ProductController.cs",
               "ToolTip": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Controllers\\ProductController.cs",
               "RelativeToolTip": "KumoShopMVC\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAI8AAAAAAAAAAAASwJsAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAIYAAAAAAAAAAAASwJsAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-09T11:29:52.866Z",
               "EditorCaption": ""
@@ -526,7 +526,8 @@
               "RelativeToolTip": "KumoShopMVC\\Controllers\\UserController.cs",
               "ViewState": "AgIAACIAAAAAAAAAAAAuwDAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T07:24:40.33Z"
+              "WhenOpened": "2024-12-09T07:24:40.33Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

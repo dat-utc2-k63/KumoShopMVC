@@ -7,8 +7,10 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using System.Web.Helpers;
 using X.PagedList.Extensions;
-
-
+using iText.Kernel.Pdf;
+using iText.Layout;
+using iText.Layout.Element;
+using iText.Layout.Properties;
 
 namespace KumoShopMVC.Controllers
 {
@@ -226,14 +228,14 @@ namespace KumoShopMVC.Controllers
                     db.Database.CommitTransaction();
                     var imagesToDelete = db.Images.Where(i => i.ProductId == model.ProductId);
                     db.RemoveRange(imagesToDelete);
-                    var image = new List<Image>();
+                    var image = new List<KumoShopMVC.Data.Image>();
 
                     if (model.Images != null && model.Images.Any())
                     {
                         var uploadedImageNames = MyUtil.UpLoadListProduct(Images, "products");
                         foreach (var item in uploadedImageNames)
                         {
-                            image.Add(new Image()
+                            image.Add(new KumoShopMVC.Data.Image()
                             {
                                 ProductId = product.ProductId,
                                 ImageUrl = item
@@ -704,14 +706,14 @@ namespace KumoShopMVC.Controllers
                 try
                 {
                     db.Database.CommitTransaction();
-                    var image = new List<Image>();
+                    var image = new List<KumoShopMVC.Data.Image>();
 
                     if (model.Images != null && model.Images.Any())
                     {
                         var uploadedImageNames = MyUtil.UpLoadListProduct(Images, "products");
                         foreach (var item in uploadedImageNames)
                         {
-                            image.Add(new Image()
+                            image.Add(new KumoShopMVC.Data.Image()
                             {
                                 ProductId = product.ProductId,
                                 ImageUrl = item
@@ -954,6 +956,63 @@ namespace KumoShopMVC.Controllers
             db.SaveChanges(); // Lưu thay đổi
 
             return RedirectToAction("OrderList"); // Quay lại danh sách đơn hàng
+        }
+        public IActionResult ExportInvoice(int orderId)
+        {
+            var order = db.Orders
+                .Include(o => o.OrderItems)
+                .ThenInclude(od => od.Product)
+                .FirstOrDefault(o => o.OrderId == orderId);
+
+            if (order == null)
+            {
+                return NotFound("Order not found");
+            }
+
+            using (MemoryStream ms = new MemoryStream())
+            {
+                PdfWriter writer = new PdfWriter(ms);
+                using (PdfDocument pdfDoc = new PdfDocument(writer))
+                {
+                    Document document = new Document(pdfDoc);
+
+                    // Header
+                    document.Add(new Paragraph("Invoice")
+                        .SetFontSize(20)
+                        .SetTextAlignment(TextAlignment.CENTER));
+
+                    document.Add(new Paragraph("\n"));
+                    document.Add(new Paragraph($"Customer Name: {order.Fullname}"));
+                    document.Add(new Paragraph($"Order Date: {order.OrderDate:dd-MM-yyyy}"));
+                    document.Add(new Paragraph($"Address: {order.Address}"));
+                    document.Add(new Paragraph($"Phone: {order.Phone}"));
+                    document.Add(new Paragraph("\n"));
+
+                    // Table header
+                    Table table = new Table(4, true);
+                    table.AddHeaderCell(new Cell().Add(new Paragraph("Product")));
+                    table.AddHeaderCell(new Cell().Add(new Paragraph("Quantity")));
+                    table.AddHeaderCell(new Cell().Add(new Paragraph("Price")));
+                    table.AddHeaderCell(new Cell().Add(new Paragraph("Total")));
+
+                    // Table rows
+                    foreach (var detail in order.OrderItems)
+                    {
+                        table.AddCell(detail.Product.NameProduct);
+                        table.AddCell(detail.Quantity.ToString());
+                        table.AddCell(detail.Price?.ToString("#,##0.00") ?? "0.00");
+                        table.AddCell((detail.Quantity * detail.Price)?.ToString("#,##0.00") ?? "0.00");
+                    }
+
+                    document.Add(table);
+
+                    // Tổng cộng
+                    document.Add(new Paragraph($"\nTotal: {order.OrderItems.Sum(o => (o.Price ?? 0) * o.Quantity):#,##0.00}"));
+                }
+
+                // Trả về file PDF
+                return File(ms.ToArray(), "application/pdf", $"Invoice_{orderId}.pdf");
+            }
         }
         public IActionResult Contact()
         {

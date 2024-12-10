@@ -155,7 +155,7 @@
                                             </td>
                                             <td>@order.Phone</td>
                                             <td>@order.Address</td>
-                                            <td>$@order.OrderItems.Sum(oi => oi.Price * oi.Quantity).ToString(("#,##0.00"))</td>
+                                            <td>$@order.OrderItems.Sum(oi => oi.Price * oi.Quantity).ToString("#,##0.00")</td>
                                             <td>
                                                 <span class="badge @(order.PaymentMethode == "Paid" ? "bg-success" : "bg-light text-dark") px-2 py-1 fs-13">@order.PaymentMethode</span>
                                             </td>
@@ -163,6 +163,9 @@
                                             <td>@order.StatusShipping</td>
                                             <td>
                                                 <div class="d-flex gap-2">
+                                                    <a asp-action="ExportInvoice" asp-route-orderId="@order.OrderId" class="btn btn-primary">
+                                                        Export PDF
+                                                    </a>
                                                     <a href="#!"
                                                        class="btn btn-light btn-sm"
                                                        data-bs-toggle="modal"

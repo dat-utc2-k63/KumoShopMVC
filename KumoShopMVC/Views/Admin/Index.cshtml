@@ -1,7 +1,261 @@
-﻿
+﻿@model KumoShopMVC.ViewModels.DashBoardAdmin
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
 
+<div class="page-content">
+
+    <!-- Start Container Fluid -->
+    <div class="container-fluid">
+
+        <!-- Row 1 -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="alert alert-primary text-truncate mb-3" role="alert">
+                    We regret to inform you that our server is currently experiencing technical difficulties.
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card overflow-hidden">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="avatar-md bg-soft-primary rounded">
+                                            <iconify-icon icon="solar:cart-5-bold-duotone" class="avatar-title fs-32 text-primary"></iconify-icon>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <p class="text-muted mb-0 text-truncate">Total Orders</p>
+                                        <h3 class="text-dark mt-1 mb-0">@Model.totalOrders</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer py-2 bg-light bg-opacity-50">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <a asp-controller="Admin" asp-action="OrderList" class="text-reset fw-semibold fs-12">View More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card overflow-hidden">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="avatar-md bg-soft-primary rounded">
+                                            <i class="bx bx-award avatar-title fs-24 text-primary"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <p class="text-muted mb-0 text-truncate">Total Products</p>
+                                        <h3 class="text-dark mt-1 mb-0">@Model.totalProducts</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer py-2 bg-light bg-opacity-50">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <a asp-action="ProductList" class="text-reset fw-semibold fs-12">View More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card overflow-hidden">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="avatar-md bg-soft-primary rounded">
+                                            <i class="bx bxs-backpack avatar-title fs-24 text-primary"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <p class="text-muted mb-0 text-truncate">Total Customer</p>
+                                        <h3 class="text-dark mt-1 mb-0">@Model.TotalUser</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer py-2 bg-light bg-opacity-50">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <a asp-action="UserList" class="text-reset fw-semibold fs-12">View More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card overflow-hidden">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="avatar-md bg-soft-primary rounded">
+                                            <i class="bx bx-dollar-circle avatar-title text-primary fs-24"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 text-end">
+                                        <p class="text-muted mb-0 text-truncate">Total Revenue</p>
+                                        <h3 class="text-dark mt-1 mb-0">$@Model.totalRevenue</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4 class="card-title">Performance</h4>
+                            <div>
+                                <a asp-route-filter="dd-MM-yyyy" name="filter" class="btn btn-sm btn-outline-light">Day</a>
+                                <a asp-route-filter="MM-yyyy" name="filter" class="btn btn-sm btn-outline-light">Month</a>
+                                <a asp-route-filter="yyyy" name="filter" class="btn btn-sm btn-outline-light">Year</a>
+                            </div>
+                        </div>
+                        <div dir="ltr">
+                            <div id="dash-performance-chart1" class="apex-charts"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+@section ScriptAdmin {
+    <script>
+        var options = {
+            series: [{
+                name: "Total Orders",
+                type: "bar",
+                data: @Html.Raw(Json.Serialize(Model.totalOrdersData))
+            },
+            {
+                name: "Total Revenue",
+                type: "area",
+                data: @Html.Raw(Json.Serialize(Model.totalRevenueData))
+            }],
+            chart: {
+                height: 313,
+                type: "line",
+                toolbar: {
+                    show: false,
+                },
+            },
+            stroke: {
+                dashArray: [0, 0],
+                width: [0, 2],
+                curve: 'smooth'
+            },
+            fill: {
+                opacity: [1, 1],
+                type: ['solid', 'gradient'],
+                gradient: {
+                    type: "vertical",
+                    inverseColors: false,
+                    opacityFrom: 0.5,
+                    opacityTo: 0,
+                    stops: [0, 90]
+                },
+            },
+            markers: {
+                size: [0, 0],
+                strokeWidth: 2,
+                hover: {
+                    size: 4,
+                },
+            },
+            xaxis: {
+                categories: @Html.Raw(Json.Serialize(Model.monthYears)), // Các tháng-năm
+                axisTicks: {
+                    show: false,
+                },
+                axisBorder: {
+                    show: false,
+                },
+            },
+            yaxis: {
+                min: 0,
+                axisBorder: {
+                    show: false,
+                }
+            },
+            grid: {
+                show: true,
+                strokeDashArray: 3,
+                xaxis: {
+                    lines: {
+                        show: false,
+                    },
+                },
+                yaxis: {
+                    lines: {
+                        show: true,
+                    },
+                },
+                padding: {
+                    top: 0,
+                    right: -2,
+                    bottom: 0,
+                    left: 10,
+                },
+            },
+            legend: {
+                show: true,
+                horizontalAlign: "center",
+                offsetX: 0,
+                offsetY: 5,
+                markers: {
+                    width: 9,
+                    height: 9,
+                    radius: 6,
+                },
+                itemMargin: {
+                    horizontal: 10,
+                    vertical: 0,
+                },
+            },
+            plotOptions: {
+                bar: {
+                    columnWidth: "30%",
+                    barHeight: "70%",
+                    borderRadius: 3,
+                },
+            },
+            colors: ["#ff6c2f", "#22c55e"],
+            tooltip: {
+                shared: true,
+                y: [{
+                    formatter: function (y) {
+                        if (typeof y !== "undefined") {
+                            return y.toFixed(1);
+                        }
+                        return y;
+                    },
+                },
+                {
+                    formatter: function (y) {
+                        if (typeof y !== "undefined") {
+                            return y.toFixed(1);
+                        }
+                        return y;
+                    },
+                }],
+            },
+        };
+
+        var chart = new ApexCharts(
+            document.querySelector("#dash-performance-chart1"),
+            options
+        );
+
+        chart.render();
+    </script>
+}

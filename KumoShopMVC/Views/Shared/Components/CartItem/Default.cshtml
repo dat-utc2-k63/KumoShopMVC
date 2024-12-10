@@ -19,11 +19,11 @@
 							<div class="d-flex align-items-center justify-content-between br-bottom px-3 py-3">
 								<div class="cart_single d-flex align-items-center">
 								<div class="cart_selected_single_thumb">
-									<img src="~/assets/img/product/4.jpg" width="60" class="img-fluid" alt="" />
+									<img src="~/assets/img/product/@item.Image" width="60" class="img-fluid" alt="" />
 								</div>
 								<div class="cart_single_caption pl-2">
 									<h4 class="product_title fs-sm ft-medium mb-0 lh-1">@item.NameProduct</h4>
-									<p class="mb-2"><span class="text-dark ft-medium small">@item.Size</span>, <span class="text-dark small">Red</span></p>
+								<p class="mb-2"><span class="text-dark ft-medium small">@item.Size</span>, <span class="text-dark small">@item.Color</span> - <span class="text-dark small">@item.Quantity</span></p>
 									<h4 class="fs-md ft-medium mb-0 lh-1">@item.Price</h4>
 								</div>
 							</div>
@@ -38,11 +38,11 @@
 
 			<div class="cart_action px-3 py-3">
 				<div class="form-group">
-					<button type="button" class="btn d-block full-width btn-dark">Checkout Now</button>
+					<a asp-controller="Cart" asp-action="Checkout" class="btn d-block full-width btn-dark">Checkout Now</a>
 				</div>
-					<div class="form-group">
-						<button type="button" class="btn d-block full-width btn-dark-light">Edit or View</button>
-					</div>
+				<div class="form-group">
+					<a asp-controller="Cart" class="btn d-block full-width btn-dark-light">Edit or View</a>
+				</div>
 			</div>
 		</div>
 	</div>

@@ -44,7 +44,6 @@ namespace KumoShopMVC.Controllers
 				Brand = p.Brands ?? "",
 				Gender = p.Gender.HasValue ? p.Gender.Value : false,
 				Price = (float)(p.Price ?? 0),
-				Discount = (float)(p.Discount ?? 0),
 				Images = db.Images
 					.Where(img => img.ProductId == p.ProductId)
 					.Select(img => img.ImageUrl ?? "")

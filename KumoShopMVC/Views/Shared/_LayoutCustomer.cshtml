@@ -27,49 +27,6 @@
 							<div class="top_second text-center"><p class="medium text-light m-0 p-0"><a asp-controller="Admin" asp-action="Index" class="medium text-light text-underline">Admin</a></p></div>
 						</div>
 
-						<!-- Right Menu -->
-						<div class="col-xl-4 col-lg-4 col-md-5 col-sm-12">
-
-							<div class="currency-selector dropdown js-dropdown float-right">
-								<a href="javascript:void(0);" data-toggle="dropdown" class="popup-title"  title="Currency" aria-label="Currency dropdown">
-									<span class="hidden-xl-down medium text-light">Currency:</span>
-									<span class="iso_code medium text-light">$USD</span>
-									<i class="fa fa-angle-down medium text-light"></i>
-								</a>
-								<ul class="popup-content dropdown-menu">  
-									<li><a title="Euro" href="#" class="dropdown-item medium text-medium">EUR €</a></li>
-									<li class="current"><a title="US Dollar" href="#" class="dropdown-item medium text-medium">USD $</a></li>
-								</ul>
-							</div>
-
-							<!-- Choose Language -->
-
-							<div class="language-selector-wrapper dropdown js-dropdown float-right mr-3">
-								<a class="popup-title" href="javascript:void(0)" data-toggle="dropdown" title="Language" aria-label="Language dropdown">
-									<span class="hidden-xl-down medium text-light">Language:</span>
-									<span class="iso_code medium text-light">English</span>
-									<i class="fa fa-angle-down medium text-light"></i>
-								</a>
-								<ul class="dropdown-menu popup-content link">
-									<li class="current"><a href="javascript:void(0);" class="dropdown-item medium text-medium"><img src="assets/img/1.jpg" alt="en" width="16" height="11" /><span>English</span></a></li>
-									<li><a href="javascript:void(0);" class="dropdown-item medium text-medium"><img src="assets/img/2.jpg" alt="fr" width="16" height="11" /><span>Français</span></a></li>
-									<li><a href="javascript:void(0);" class="dropdown-item medium text-medium"><img src="assets/img/3.jpg" alt="de" width="16" height="11" /><span>Deutsch</span></a></li>
-									<li><a href="javascript:void(0);" class="dropdown-item medium text-medium"><img src="assets/img/4.jpg" alt="it" width="16" height="11" /><span>Italiano</span></a></li>
-									<li><a href="javascript:void(0);" class="dropdown-item medium text-medium"><img src="assets/img/5.jpg" alt="es" width="16" height="11" /><span>Español</span></a></li>
-									<li ><a href="javascript:void(0);" class="dropdown-item medium text-medium"><img src="assets/img/6.jpg" alt="ar" width="16" height="11" /><span>اللغة العربية</span></a></li>
-								</ul>
-							</div>
-
-							<div class="currency-selector dropdown js-dropdown float-right mr-3">
-								<a href="javascript:void(0);" class="text-light medium">Wishlist</a>
-							</div>
-
-							<div class="currency-selector dropdown js-dropdown float-right mr-3">
-								<a href="javascript:void(0);" class="text-light medium">My Account</a>
-							</div>
-
-						</div>
-
 					</div>
 				</div>
 			</div>
@@ -114,8 +71,9 @@
 							<li>
 								<a asp-controller="Product" asp-action="Index">Product</a>
 							</li>
-
-
+							<li>
+								<a asp-controller="Contact">Contact</a>
+							</li>
 						</ul>
 
 						<ul class="nav-menu nav-menu-social align-to-right">
@@ -479,66 +437,11 @@
 							<input id="queryInput" name="query" type="text" class="form-control" placeholder="Product Keyword.." />
 						</div>
 
-						<div class="form-group">
-							<select class="custom-select">
-								<option value="1" selected="">Choose Category</option>
-								<option value="2">Men's Store</option>
-								<option value="3">Women's Store</option>
-								<option value="4">Kid's Fashion</option>
-								<option value="5">Inner Wear</option>
-							</select>
-						</div>
 						<div class="form-group mb-0">
 							<button id="SearchButton" type="submit" class="btn d-block full-width btn-dark">Search Product</button>
 						</div>
 					</form>
 				</div>
-
-				<div class="d-flex align-items-center justify-content-center br-top br-bottom py-2 px-3">
-					<h4 class="cart_heading fs-md mb-0">Hot Categories</h4>
-				</div>
-
-				<div class="cart_action px-3 py-3">
-					<div class="row">
-						<div class="col-xl-4 col-lg-4 col-md-4 col-4 mb-3">
-							<div class="cats_side_wrap text-center">
-								<div class="sl_cat_01"><div class="d-inline-flex align-items-center justify-content-center p-3 circle mb-2 gray"><a href="javascript:void(0);" class="d-block"><img src="assets/img/tshirt.png" class="img-fluid" width="40" alt="" /></a></div></div>
-								<div class="sl_cat_02"><h6 class="m-0 ft-medium fs-sm"><a href="javascript:void(0);">T-Shirts</a></h6></div>
-							</div>
-						</div>
-						<div class="col-xl-4 col-lg-4 col-md-4 col-4 mb-3">
-							<div class="cats_side_wrap text-center">
-								<div class="sl_cat_01"><div class="d-inline-flex align-items-center justify-content-center p-3 circle mb-2 gray"><a href="javascript:void(0);" class="d-block"><img src="assets/img/pant.png" class="img-fluid" width="40" alt="" /></a></div></div>
-								<div class="sl_cat_02"><h6 class="m-0 ft-medium fs-sm"><a href="javascript:void(0);">Pants</a></h6></div>
-							</div>
-						</div>
-						<div class="col-xl-4 col-lg-4 col-md-4 col-4 mb-3">
-							<div class="cats_side_wrap text-center">
-								<div class="sl_cat_01"><div class="d-inline-flex align-items-center justify-content-center p-3 circle mb-2 gray"><a href="javascript:void(0);" class="d-block"><img src="assets/img/fashion.png" class="img-fluid" width="40" alt="" /></a></div></div>
-								<div class="sl_cat_02"><h6 class="m-0 ft-medium fs-sm"><a href="javascript:void(0);">Women's</a></h6></div>
-							</div>
-						</div>
-						<div class="col-xl-4 col-lg-4 col-md-4 col-4 mb-3">
-							<div class="cats_side_wrap text-center">
-								<div class="sl_cat_01"><div class="d-inline-flex align-items-center justify-content-center p-3 circle mb-2 gray"><a href="javascript:void(0);" class="d-block"><img src="assets/img/sneakers.png" class="img-fluid" width="40" alt="" /></a></div></div>
-								<div class="sl_cat_02"><h6 class="m-0 ft-medium fs-sm"><a href="javascript:void(0);">Shoes</a></h6></div>
-							</div>
-						</div>
-						<div class="col-xl-4 col-lg-4 col-md-4 col-4 mb-3">
-							<div class="cats_side_wrap text-center">
-								<div class="sl_cat_01"><div class="d-inline-flex align-items-center justify-content-center p-3 circle mb-2 gray"><a href="javascript:void(0);" class="d-block"><img src="assets/img/television.png" class="img-fluid" width="40" alt="" /></a></div></div>
-								<div class="sl_cat_02"><h6 class="m-0 ft-medium fs-sm"><a href="javascript:void(0);">Television</a></h6></div>
-							</div>
-						</div>
-						<div class="col-xl-4 col-lg-4 col-md-4 col-4 mb-3">
-							<div class="cats_side_wrap text-center">
-								<div class="sl_cat_01"><div class="d-inline-flex align-items-center justify-content-center p-3 circle mb-2 gray"><a href="javascript:void(0);" class="d-block"><img src="assets/img/accessories.png" class="img-fluid" width="40" alt="" /></a></div></div>
-								<div class="sl_cat_02"><h6 class="m-0 ft-medium fs-sm"><a href="javascript:void(0);">Accessories</a></h6></div>
-							</div>
-						</div>
-					</div>
-				</div>
-
 			</div>
 		</div>
 

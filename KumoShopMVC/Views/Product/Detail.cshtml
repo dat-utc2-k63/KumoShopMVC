@@ -43,19 +43,25 @@
 						<div class="col-xl-7 col-lg-6 col-md-12 col-sm-12">
 							<div class="prd_details pl-3">
 
-								<div class="prt_01 mb-1"><span class="text-light bg-info rounded px-2 py-1">Dresses</span></div>
+								<div class="prt_01 mb-1"><span class="text-light bg-info rounded px-2 py-1">@Model.NameCategory</span></div>
 								<div class="prt_02 mb-3">
 									<h2 class="ft-bold mb-1">@Model.NameProduct</h2>
 									<div class="text-left">
-										<div class="star-rating align-items-center d-flex justify-content-left mb-1 p-0">
-											<i class="fas fa-star filled"></i>
-											<i class="fas fa-star filled"></i>
-											<i class="fas fa-star filled"></i>
-											<i class="fas fa-star filled"></i>
-											<i class="fas fa-star"></i>
-											<span class="small">(412 Reviews)</span>
-										</div>
-										<div class="elis_rty"><span class="ft-bold theme-cl fs-lg mr-2">$@Model.Price</span><span class="ft-regular text-danger bg-light-danger py-1 px-2 fs-sm">Out of Stock</span></div>
+									<div class="star-rating align-items-center d-flex justify-content-left mb-1 p-0">
+										@for (int i = 1; i <= 5; i++)
+										{
+											if (i <= Model.AverageRatePoint)
+											{
+												<i class="fas fa-star filled"></i>
+											}
+											else
+											{
+												<i class="fas fa-star"></i> 
+											}
+										}
+								@(Model.AverageRatePoint?.ToString("#,##0.0") ?? "0.0")
+									</div>
+										<div class="elis_rty"><span class="ft-bold theme-cl fs-lg mr-2">$@Model.Price</span></div>
 									</div>
 								</div>
 
@@ -182,8 +188,8 @@
 												  <th class="ft-medium text-dark">Color</th>
 													<td>@foreach (var color in Model.Colors)
 														{
-															@color
-														}, 
+															@color<span>,</span>
+														}
 													</td>
 												</tr>
 												<tr>
@@ -191,7 +197,7 @@
 													<td>
 														@foreach (var size in Model.Sizes)
 														{
-															@size
+															@size<span>,</span>
 														},
 													</td>
 												</tr>
@@ -251,7 +257,7 @@
 
 				var button = $(this);
 				var productId = '@Model.ProductId';
-				var quantity = $('#quantity').val();
+				var quantity = parseInt($('#quantity').val(), 10); 
 
 				var colors = $('input[name="color"]:checked').map(function () {
 					return $(this).val();
@@ -262,7 +268,7 @@
 				}).get();
 
 				if (colors.length === 0 || sizes.length === 0) {
-					$('#cartMessage').html('<div class="alert alert-danger">Please select at least one color and one size.</div>');
+					alert('Please select at least one color and one size.');
 					return;
 				}
 				console.log("Selected Colors: ", colors);
@@ -296,9 +302,11 @@
 				})
 					.done(function () {
 						$('#cartMessage').html('<div class="alert alert-success">Added to cart successfully</div>');
+						var currentCount = parseInt($('.cart-count').text(), 10) || 0; // Lấy số lượng hiện tại
+						$('.cart-count').text(currentCount + quantity); // Cộng thêm quantity mới
 					})
 					.fail(function () {
-						$('#cartMessage').html('<div class="alert alert-danger">Error adding to cart</div>');
+						alert('Error adding to cart.');
 					});
 			});
 		}); 
@@ -324,7 +332,7 @@
 				},
 				error: function (xhr, status, error) {
 					console.log("AJAX Error: " + status + ": " + error);
-					alert('Có lỗi xảy ra khi thêm sản phẩm vào danh sách yêu thích.');
+					alert('Cần đăng nhập để sử dụng chức năng này');
 				}
 			});
 		});

@@ -86,7 +86,7 @@ namespace KumoShopMVC.Controllers
 							new Claim(ClaimTypes.Email, model.Email),
 							new Claim(ClaimTypes.Name, user.Fullname),
 							new Claim(MySetting.CLAIM_CUSTOMERID, user.UserId.ToString()),
-							new Claim(ClaimTypes.Role, "Customer")
+							new Claim(ClaimTypes.Role, user.RoleId.ToString())
 						};
 						var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
 						var claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
@@ -136,7 +136,7 @@ namespace KumoShopMVC.Controllers
 				FullName = order.Fullname,
                 Address = order.Address,
                 Phone = order.Phone,
-                PaymentMethode = "COD",
+                PaymentMethode = order.PaymentMethode ?? "",
                 OrderItems = order.OrderItems.Select(oi => new OrderItemVM
                 {
 					OrderItemId = oi.OrderItemId,
@@ -147,7 +147,7 @@ namespace KumoShopMVC.Controllers
                     Image = oi.Image ?? string.Empty,
                     Color = oi.Color ?? string.Empty, 
                     Size = oi.Size ?? 0 ,
-					SubTotal = oi.SubTotal ?? 0,
+					Quantity = oi.Quantity ?? 0,
 					IsRating = oi.IsRating ?? false
 				}).ToList()
             }).ToList();

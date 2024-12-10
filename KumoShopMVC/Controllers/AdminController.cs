@@ -5,10 +5,14 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using System.Web.Helpers;
 using X.PagedList.Extensions;
+
+
 
 namespace KumoShopMVC.Controllers
 {
+    //[Authorize]
     public class AdminController : Controller
     {
 		private readonly KumoShopContext db;
@@ -19,41 +23,270 @@ namespace KumoShopMVC.Controllers
             _webHostEnvironment = webHostEnvironment;
         }
 
-		public IActionResult Index()
+        //[Authorize(Policy = "Admin")]
+        public IActionResult Index(string filter = "dd-MM-yyyy")
         {
-            return View();
-        }
-		public IActionResult ProductList()
-		{
-			return View();
-		}
-		public IActionResult ProductCreate()
-		{
-			return View();
-		}
+            var monthlyReports = db.Orders
+                .Include(o => o.OrderItems)
+                .AsEnumerable()
+                .Where(o => o.OrderDate.HasValue) 
+                .GroupBy(o => o.OrderDate.Value.ToString(filter))
+                .Select(g => new
+                {
+                    MonthYear = g.Key,
+                    TotalOrders = g.Count(),
+                    TotalRevenue = g.Sum(o => o.OrderItems != null
+                                              ? o.OrderItems.Sum(oi => (oi.Price ?? 0) * (oi.Quantity ?? 0))
+                                              : 0)
+                })
+                .ToList();
 
-		public IActionResult ProductEdit()
-		{
-			return View();
-		}
-        public IActionResult CategoryList()
+            var dashBoardAdmin = new DashBoardAdmin
+            {
+                TotalUser = db.Users.Count(u =>u.RoleId == 1), // Tổng khách hàng
+                totalProducts = db.Products.Count(), // Tổng số sản phẩm
+                totalOrders = db.Orders.Count(),
+                totalRevenue = db.Orders
+                                .SelectMany(o => o.OrderItems)
+                                .Sum(oi => (oi.Price ?? 0) * (oi.Quantity ?? 0)), // Tổng doanh thu
+
+                // Dữ liệu biểu đồ
+                monthYears = monthlyReports.Select(r => r.MonthYear).ToList(),
+                totalOrdersData = monthlyReports.Select(r => r.TotalOrders).ToList(),
+                totalRevenueData = monthlyReports.Select(r => r.TotalRevenue).ToList()
+            };
+
+            // Truyền ViewModel vào View
+            return View(dashBoardAdmin);
+        }
+
+
+        [HttpGet]
+        public IActionResult ProductList(int pageNumber = 1, int pageSize = 5)
         {
-            return View();
+            var products = db.Products.AsQueryable()
+                .Include(p =>p.Category)
+                .Include(p =>p.RatingProducts);  // Removed the Include for Category
+
+            var productList = products.Skip((pageNumber - 1) * pageSize).Take(pageSize).ToList();
+
+            var result = productList.Select(p => new ProductVM
+            {
+                ProductId = p.ProductId,
+                NameProduct = p.NameProduct ?? "",
+                NameCategory = p.Category.NameCategory ??"",
+                Brand = p.Brands ?? "",
+                Gender = p.Gender,
+                Price = (float)(p.Price ?? 0),
+                IsHot = p.IsHot ?? false,
+                IsNew = p.IsNew ?? false,
+                Images = db.Images
+                    .Where(img => img.ProductId == p.ProductId)
+                    .Select(img => img.ImageUrl ?? "")
+                    .ToList(),
+                Colors = db.ProductColors
+                    .Where(pc => pc.ProductId == p.ProductId)
+                    .Select(pc => pc.Color != null ? pc.Color.ColorName : "")
+                    .ToList(),
+                Sizes = db.ProductSizes
+                    .Where(ps => ps.ProductId == p.ProductId)
+                    .Select(ps => ps.Size != null ? ps.Size.SizeNumber : 0)
+                    .ToList(),
+                AverageRatePoint = p.RatingProducts.Any() ? p.RatingProducts.Average(r => r.RatePoint) : 0
+            }).ToList();
+
+            // Gán thông tin phân trang vào ViewBag
+            ViewBag.TotalPages = (int)Math.Ceiling((double)products.Count() / pageSize);
+            ViewBag.CurrentPage = pageNumber;
+
+            return View(result);
+        }
+
+
+        [HttpGet]
+		public IActionResult ProductEdit(int id)
+		{
+            var product = db.Products
+			.Include(p => p.Category)
+            .Include(p => p.ProductColors)
+            .Include(p => p.ProductSizes)
+            .FirstOrDefault(p => p.ProductId == id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+			var productDetail = new ProductDetailVM
+			{
+				ProductId = product.ProductId,
+				NameProduct = product.NameProduct ?? "",
+                NameCategory = product.Category.NameCategory ?? "",
+                Brand = product.Brands ?? "",
+				Gender = product.Gender.HasValue ? product.Gender.Value : false,
+				Images = db.Images
+						.Where(img => img.ProductId == product.ProductId)
+						.Select(img => img.ImageUrl ?? "")
+						.ToList(),
+				Colors = db.ProductColors
+						.Where(pc => pc.ProductId == product.ProductId)
+						.Select(pc => pc.Color != null ? pc.Color.ColorName : "")
+						.ToList(),
+				Sizes = db.ProductSizes
+						.Where(ps => ps.ProductId == product.ProductId)
+						.Select(ps => ps.Size != null ? ps.Size.SizeNumber : 0)
+						.ToList(),
+				Price = (float)(product.Price ?? 0),
+				DescProduct = product.DescProduct ?? string.Empty,
+				
+			};
+            ViewBag.Category = new SelectList(db.Categories.ToList(), "CategoryId", "NameCategory", product.CategoryId);
+            var colors = db.Colors.ToList();
+            var sizes = db.Sizes.ToList();
+            ViewBag.Colors = colors;
+            ViewBag.Sizes = sizes;
+            return View(productDetail);
+		}
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult ProductEdit(ProductVM model, List<IFormFile>? Images)
+        {
+            if (ModelState.IsValid)
+            {
+                var product = db.Products
+                    .FirstOrDefault(p => p.ProductId == model.ProductId);
+                if (product == null)
+                {
+                    return NotFound(); 
+                }
+
+                product.NameProduct = model.NameProduct;
+                product.Brands = model.Brand;
+                product.Gender = model.Gender;
+                product.Price = model.Price;
+                product.IsHot = model.IsHot;
+                product.IsNew = model.IsNew;
+                product.DescProduct = model.DescProduct;
+                product.CategoryId = model.CategoryId;
+                product.CreateDate = DateTime.Now;
+                db.Database.BeginTransaction();
+                try
+                {
+                    db.Database.CommitTransaction();
+                    db.Update(product);
+                    db.SaveChanges();
+                    var productSizesToDelete = db.ProductSizes.Where(ps => ps.ProductId == model.ProductId);
+                    db.RemoveRange(productSizesToDelete);
+                    var productSize = new List<ProductSize>();
+
+                    if (model.Sizes != null && model.Sizes.Any())
+                    {
+                        foreach (var item in model.Sizes)
+                        {
+                            productSize.Add(new ProductSize()
+                            {
+                                ProductId = product.ProductId,
+                                SizeId = item
+                            });
+                        }
+                    }
+
+                    db.AddRange(productSize);
+                }
+                catch
+                {
+                    db.Database.RollbackTransaction();
+                }
+                db.Database.BeginTransaction();
+                try
+                {
+                    db.Database.CommitTransaction();
+                    var productColorsToDelete = db.ProductColors.Where(pc => pc.ProductId == model.ProductId);
+                    db.RemoveRange(productColorsToDelete);
+                    var productColor = new List<ProductColor>();
+
+                    if (model.Colors != null && model.Colors.Any())
+                    {
+                        foreach (var item in model.Colors)
+                        {
+                            int colorId = int.Parse(item);
+                            productColor.Add(new ProductColor()
+                            {
+                                ProductId = product.ProductId,
+                                ColorId = colorId
+                            });
+                        }
+                    }
+
+                    db.AddRange(productColor);
+                }
+                catch
+                {
+                    db.Database.RollbackTransaction();
+                }
+                db.Database.BeginTransaction();
+                try
+                {
+                    db.Database.CommitTransaction();
+                    var imagesToDelete = db.Images.Where(i => i.ProductId == model.ProductId);
+                    db.RemoveRange(imagesToDelete);
+                    var image = new List<Image>();
+
+                    if (model.Images != null && model.Images.Any())
+                    {
+                        var uploadedImageNames = MyUtil.UpLoadListProduct(Images, "products");
+                        foreach (var item in model.Images)
+                        {
+                            image.Add(new Image()
+                            {
+                                ProductId = product.ProductId,
+                                ImageUrl = item
+                            });
+                        }
+                    }
+
+                    db.AddRange(image);
+                    db.SaveChanges();
+                }
+                catch
+                {
+                    db.Database.RollbackTransaction();
+                }
+                return RedirectToAction("ProductList");
+
+            }
+            else
+            {
+                return View(model);
+            }
+        }
+        [HttpGet]
+        public IActionResult CategoryList(int? id, int pageNumber = 1, int pageSize = 4)
+        {
+            var categoriesQuery = db.Categories
+                                    .OrderBy(c => c.NameCategory)
+                                    .Select(c => new CategoryMenuVM
+                                    {
+                                        CaterogyId = c.CategoryId,
+                                        NameCategory = c.NameCategory ?? "",
+                                        CreateDate = c.CreateDate,
+                                    });
+
+            // Tổng số danh mục
+            int totalCategories = categoriesQuery.Count();
+
+            // Lấy danh sách phân trang
+            var categories = categoriesQuery
+                                .Skip((pageNumber - 1) * pageSize) // Bỏ qua số lượng bản ghi của các trang trước
+                                .Take(pageSize) // Lấy số lượng bản ghi trong trang hiện tại
+                                .ToList();
+
+            // Tính tổng số trang
+            ViewBag.TotalPages = (int)Math.Ceiling((double)totalCategories / pageSize);
+            ViewBag.CurrentPage = pageNumber;
+
+            return View(categories);
         }
 
         public IActionResult CategoryCreate()
-		{
-			return View();
-		}
-		public IActionResult CategoryEdit()
-		{
-			return View();
-		}
-		public IActionResult OrderList()
-		{
-			return View();
-		}
-		public IActionResult OrderDetail()
 		{
 			return View();
 		}
@@ -144,15 +377,11 @@ namespace KumoShopMVC.Controllers
             // Chuyển hướng về danh sách vai trò sau khi cập nhật thành công
             return RedirectToAction("RoleList", "Admin");
         }
-
-
-
         public IActionResult UserList(int? page)
         {
-            int pageSize = 5; // Số lượng mục hiển thị trên mỗi trang
-            int pageNumber = page ?? 1; // Lấy số trang từ tham số, mặc định là trang 1
+            int pageSize = 5; 
+            int pageNumber = page ?? 1; 
 
-            // Lấy danh sách người dùng từ cơ sở dữ liệu và chuyển đổi thành một danh sách trang
             var users = db.Users
                 .Select(u => new UserVM
                 {
@@ -173,18 +402,16 @@ namespace KumoShopMVC.Controllers
             return View(users);
         }
 
-
         public IActionResult UserCreate()
         {
             ViewBag.Roles = db.Roles
-    .Select(r => new SelectListItem
-    {
-        Value = r.RoleId.ToString(),
-        Text = r.NameRole
-    })
-    .ToList();
+            .Select(r => new SelectListItem
+            {
+                Value = r.RoleId.ToString(),
+                Text = r.NameRole
+            })
+            .ToList();
             return View(new UserVM());
-           
 		}
         [HttpPost]
        
@@ -204,7 +431,6 @@ namespace KumoShopMVC.Controllers
                 return View(model);
             }
 
-            // Xử lý thông tin người dùng
             var user = new User
             {
                 Email = model.Email,
@@ -216,7 +442,6 @@ namespace KumoShopMVC.Controllers
                 RoleId = role.RoleId
             };
 
-            // Xử lý Avatar
             if (Avatar != null && Avatar.Length > 0)
             {
                 if (Avatar.ContentType.StartsWith("image/"))
@@ -241,7 +466,6 @@ namespace KumoShopMVC.Controllers
                 }
             }
 
-            // Lưu thông tin vào cơ sở dữ liệu
             try
             {
                 db.Users.Add(user);
@@ -273,7 +497,7 @@ namespace KumoShopMVC.Controllers
                 Email = user.Email,
                 Fullname = user.Fullname ?? "",
                 Status = user.Status ?? true,
-                RoleId = user.RoleId,
+                RoleId = user.RoleId ?? 0,
                 Namerole = user.Role.NameRole,
                 Address = user.Address,
                 Phone = user.Phone,
@@ -301,7 +525,6 @@ namespace KumoShopMVC.Controllers
                 return RedirectToAction("UserList", "Admin");
             }
 
-            // Cập nhật các thuộc tính dù Avatar có thay đổi hay không
             user.Email = model.Email;
             user.Fullname = model.Fullname;
             user.Phone = model.Phone;
@@ -349,20 +572,19 @@ namespace KumoShopMVC.Controllers
         }
 
 
-
         public IActionResult DeleteUser(int userId)
         {
             var user = db.Users.FirstOrDefault(u => u.UserId == userId);  // Tìm user theo UserId
 
             if (user == null)
             {
-                return NotFound();  // Nếu không tìm thấy user, trả về lỗi 404
+                return NotFound();
             }
 
-            db.Users.Remove(user);  // Xóa user khỏi cơ sở dữ liệu
+            db.Users.Remove(user); 
 			TempData["sucess"] = "Xóa User thành công";
-            db.SaveChanges();  // Lưu thay đổi vào cơ sở dữ liệu
-            return RedirectToAction("UserList");  // Quay lại trang danh sách user sau khi xóa
+            db.SaveChanges();  
+            return RedirectToAction("UserList");
         }
 		public IActionResult DeleteRole(int roleId)
 		{
@@ -371,12 +593,11 @@ namespace KumoShopMVC.Controllers
 			{
 				return NotFound();  // Nếu không tìm thấy role, trả về lỗi 404
             }
-            db.Roles.Remove(role);  // Xóa role khỏi cơ sở dữ liệu
+            db.Roles.Remove(role); 
             TempData["sucess"] = "Xóa Role thành công";
-            db.SaveChanges();  // Lưu thay đổi vào cơ sở dữ liệu
+            db.SaveChanges();
             return RedirectToAction("RoleList");  // Quay lại trang danh sách role sau khi xóa
         }
-
         public IActionResult RoleList(int? page)
         {
             int pageSize = 5;
@@ -395,81 +616,357 @@ namespace KumoShopMVC.Controllers
             return View(roles);
         }
 
-        public IActionResult Contact()
+
+        [HttpGet]
+        public IActionResult ProductCreate()
+        {
+            ViewBag.Categories = db.Categories
+                .Select(r => new SelectListItem
+                {
+                    Value = r.CategoryId.ToString(),
+                    Text = r.NameCategory
+                })
+                .ToList();
+            var colors = db.Colors.ToList();
+            var sizes = db.Sizes.ToList();
+            ViewBag.Colors = colors;
+            ViewBag.Sizes = sizes;
+
+            return View(new ProductVM());
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult ProductCreate(ProductVM model, List<IFormFile>? Images)
+        {
+            if (ModelState.IsValid)
+            {
+                        var product = new Product
+                        {
+                            NameProduct = model.NameProduct,
+                            Brands = model.Brand,
+                            Gender = model.Gender,
+                            Price = model.Price,
+                            IsHot = model.IsHot,
+                            IsNew = model.IsNew,
+                            DescProduct = model.DescProduct,
+                            CategoryId = model.CategoryId,
+                            CreateDate = DateTime.Now
+                        };
+                db.Database.BeginTransaction();
+                try
+                {
+                    db.Database.CommitTransaction();
+                    db.Add(product);
+                    db.SaveChanges();
+                    var productSize = new List<ProductSize>();
+
+                    if (model.Sizes != null && model.Sizes.Any())
+                    {
+                        foreach (var item in model.Sizes)
+                        {
+                            productSize.Add(new ProductSize()
+                            {
+                                ProductId = product.ProductId,
+                                SizeId = item
+                            });
+                        }
+                    }
+
+                    db.AddRange(productSize);
+                }
+                catch
+                {
+                    db.Database.RollbackTransaction();
+                }
+                db.Database.BeginTransaction();
+                try
+                {
+                    db.Database.CommitTransaction();
+                    var productColor = new List<ProductColor>();
+
+                    if (model.Colors != null && model.Colors.Any())
+                    {
+                        foreach (var item in model.Colors)
+                        {
+                            int colorId = int.Parse(item);
+                            productColor.Add(new ProductColor()
+                            {
+                                ProductId = product.ProductId,
+                                ColorId = colorId
+                            });
+                        }
+                    }
+                    db.AddRange(productColor);
+                }
+                catch
+                {
+                    db.Database.RollbackTransaction();
+                }
+                db.Database.BeginTransaction();
+                try
+                {
+                    db.Database.CommitTransaction();
+                    var image = new List<Image>();
+
+                    if (model.Images != null && model.Images.Any())
+                    {
+                        var uploadedImageNames = MyUtil.UpLoadListProduct(Images, "products");
+                        foreach (var item in model.Images)
+                        {
+                            image.Add(new Image()
+                            {
+                                ProductId = product.ProductId,
+                                ImageUrl = item
+                            });
+                        }
+                    }
+                    db.AddRange(image);
+                    db.SaveChanges();
+                }
+                catch
+                {
+                    db.Database.RollbackTransaction();
+                }
+                return RedirectToAction("ProductList");
+
+			}
+			else
+            {
+                return View(model);
+            }
+        }
+
+		[HttpGet]
+		public IActionResult CategoryEdit(int id)
 		{
-			return View();
-		}
-		[Authorize]
-		[HttpPost]
-		[ValidateAntiForgeryToken]
-		public IActionResult CreateProduct(ProductVM model)
-		{
-			if (!ModelState.IsValid)
+			var category = db.Categories.FirstOrDefault(c => c.CategoryId == id);
+
+			if (category == null)
 			{
-				return View(model);
+				return NotFound(); 
 			}
 
-			var product = new Product
+			var model = new CategoryMenuVM
 			{
-				NameProduct = model.NameProduct,
-				Brands = model.Brand,
-				Gender = model.Gender,
-				Price = model.Price,
-				Discount = model.Discount,
-				IsHot = model.IsHot,
-				IsNew = model.IsNew
+				CaterogyId = category.CategoryId,
+				NameCategory = category.NameCategory ?? "",
+				CreateDate = category.CreateDate
 			};
 
-			db.Products.Add(product);
-			db.SaveChanges();
-
-			return RedirectToAction("Index");
+			return View(model);
 		}
-
-		[Authorize]
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public IActionResult Edit(ProductVM model)
+		public IActionResult CategoryEdit(CategoryMenuVM model)
 		{
 			if (!ModelState.IsValid)
 			{
 				return View(model);
 			}
 
-			var product = db.Products.FirstOrDefault(p => p.ProductId == model.ProductId);
-			if (product == null)
+			var category = db.Categories.FirstOrDefault(c => c.CategoryId == model.CaterogyId);
+			if (category == null)
 			{
 				return NotFound();
 			}
 
-			product.NameProduct = model.NameProduct;
-			product.Brands = model.Brand;
-			product.Gender = model.Gender;
-			product.Price = model.Price;
-			product.Discount = model.Discount;
-			product.IsHot = model.IsHot;
-			product.IsNew = model.IsNew;
+			category.NameCategory = model.NameCategory;
 
+			// Lưu thay đổi
+			db.Update(category);
 			db.SaveChanges();
 
-			return RedirectToAction("Index");
+			return RedirectToAction("CategoryList", "Admin");
 		}
+        public IActionResult CategoryDelete(int id)
+        {
+            var category = db.Categories.FirstOrDefault(c => c.CategoryId == id);  // Tìm role theo RoleId
+            if (category == null)
+            {
+                return NotFound();  
+            }
+            db.Categories.Remove(category);
+            TempData["sucess"] = "Xóa Role thành công";
+            db.SaveChanges();
+            return RedirectToAction("CategoryList");  // Quay lại trang danh sách role sau khi xóa
+        }
+        private static DateTime GetUtcNow()
+        {
+            return DateTime.UtcNow;
+        }
 
-		[Authorize]
-		[HttpPost]
+        [HttpPost]
 		[ValidateAntiForgeryToken]
 		public IActionResult DeleteProduct(int id)
 		{
-			var product = db.Products.FirstOrDefault(p => p.ProductId == id);
-			if (product == null)
-			{
-				return NotFound();
-			}
+            var product = db.Products
+                             .FirstOrDefault(p => p.ProductId == id);
+            if (product == null)
+            {
+                return NotFound();
+            }
 
-			db.Products.Remove(product);
-			db.SaveChanges();
+            // Xóa sản phẩm
+            db.Remove(product);
+            db.SaveChanges();
 
-			return RedirectToAction("Index");
+			return RedirectToAction("ProductList");
 		}
-	}
+
+        [HttpPost]
+        public IActionResult CategoryCreate(CategoryMenuVM model)
+        {
+            if (ModelState.IsValid)
+            {
+                var category = new Category
+                {
+                    NameCategory = model.NameCategory,
+                    CreateDate = DateTime.Now
+                };
+
+                db.Categories.Add(category);
+                db.SaveChanges();
+
+                return RedirectToAction("CategoryList", "Admin");
+            }
+
+            return View(model);
+        }
+        public IActionResult OrderList()
+        {
+            var orders = db.Orders
+                .Select(o => new OrderVM
+                {
+                    OrderId = o.OrderId,
+                    OrderDate = o.OrderDate,
+                    DescOrder = o.DescOrder,
+                    ShippingDate = o.ShippingDate,
+                    FullName = o.Fullname,
+                    Address = o.Address,
+                    Phone = o.Phone,
+                    PaymentMethode = o.PaymentMethode,
+                    StatusShipping = o.Status.NameStatus,
+                    OrderItems = db.OrderItems.Where(oi => oi.OrderId == o.OrderId).Select(oi => new OrderItemVM
+                    {
+                        NameProduct = oi.Product.NameProduct,
+                        Quantity = (int)oi.Product.Quantity,
+                        Price = (float)oi.Product.Price
+                    }).ToList()
+                })
+                .ToList();
+
+            // Truyền dữ liệu vào view
+            return View(orders);
+        }
+        public IActionResult GetOrderDetails(int orderId)
+        {
+            var orderItems = db.OrderItems
+                .Where(oi => oi.OrderId == orderId)
+                .Select(oi => new OrderItemVM
+                {
+                    OrderItemId = oi.OrderItemId,
+                    OrderId = oi.OrderId,
+                    ProductId = oi.ProductId,
+                    NameProduct = oi.NameProduct ?? string.Empty,
+                    Price = (float)(oi.Price ?? 0),
+                    Image = oi.Image ?? string.Empty,
+                    Color = oi.Color ?? string.Empty,
+                    Size = oi.Size ?? 0,
+                    Quantity = oi.Quantity ?? 0,
+                    IsRating = oi.IsRating ?? false
+                })
+                .ToList();
+
+            if (orderItems == null || !orderItems.Any())
+            {
+                return NotFound();
+            }
+
+            return Json(orderItems);
+        }
+
+        [HttpGet]
+        public IActionResult OrderEdit(int id)
+        {
+            var order = db.Orders
+                .Include(o => o.Status)  // Bao gồm thông tin trạng thái
+                .FirstOrDefault(o => o.OrderId == id);
+            ViewBag.StatusShipping = new SelectList(db.StatusShippings.ToList(), "StatusId", "NameStatus", order.StatusId);
+            if (order == null)
+            {
+                return NotFound();  // Nếu không tìm thấy đơn hàng, trả về lỗi 404
+            }
+            var orderVM = new OrderVM
+            {
+                OrderId = order.OrderId,
+                OrderDate = order.OrderDate ?? DateTime.MinValue,
+                DescOrder = order.DescOrder ?? "No Description",
+                ShippingDate = order.ShippingDate,
+                FullName = order.Fullname ?? "Unknown",
+                Address = order.Address ?? "No Address",
+                Phone = order.Phone ?? "No Phone",
+                PaymentMethode = order.PaymentMethode ?? "Unknown",
+                StatusShipping = order.Status.NameStatus,  // Lấy tên trạng thái giao hàng
+            };
+
+            return View(orderVM);  // Truyền OrderVM vào view
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult OrderEdit(OrderVM model)
+        {
+            if (ModelState.IsValid)
+            {
+                var order = db.Orders.FirstOrDefault(o => o.OrderId == model.OrderId);
+                if (order == null)
+                {
+                    return NotFound();
+                }
+                order.Fullname = model.FullName;
+                order.Address = model.Address;
+                order.Phone = model.Phone;
+                order.StatusId = model.StatusShippingId;
+
+                db.SaveChanges();
+                return RedirectToAction("OrderList");  // Sau khi lưu thay đổi, chuyển về danh sách đơn hàng
+            }
+            return View(model); 
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult DeleteOrder(int id)
+        {
+            var order = db.Orders.FirstOrDefault(o => o.OrderId == id);
+            if (order == null)
+            {
+                return NotFound(); // Nếu không tìm thấy đơn hàng
+            }
+
+            // Xóa các mục trong đơn hàng (nếu có) trước khi xóa đơn hàng
+            var orderItems = db.OrderItems.Where(oi => oi.OrderId == order.OrderId).ToList();
+            db.OrderItems.RemoveRange(orderItems); // Xóa tất cả các mục của đơn hàng
+
+            db.Orders.Remove(order); // Xóa đơn hàng
+            db.SaveChanges(); // Lưu thay đổi
+
+            return RedirectToAction("OrderList"); // Quay lại danh sách đơn hàng
+        }
+        public IActionResult Contact()
+        {
+            var contact = db.Contacts
+                .Select(c => new ContactVM
+                {
+                    ContactId = c.ContactId,
+                    Name = c.Name,
+                    Email = c.Email,
+                    Subject = c.Subject,
+                    DescContact = c.DescContact,
+                    Status = c.Status,
+                    CreateDate = c.CreateDate,
+                })
+                .ToList();
+            return View(contact);
+        }
+    }
 }

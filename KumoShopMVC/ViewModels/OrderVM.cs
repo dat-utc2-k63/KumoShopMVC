@@ -13,7 +13,7 @@ namespace KumoShopMVC.ViewModels
 		public string? Address { get; set; }
 		public string? Email { get; set; }
 		public string? Phone { get; set; }
-		public string PaymentMethode { get; set; }
+		public string? PaymentMethode { get; set; }
 		public List<OrderItemVM> OrderItems { get; set; } = new List<OrderItemVM>();
 		public int StatusShippingId { get; set; }
 

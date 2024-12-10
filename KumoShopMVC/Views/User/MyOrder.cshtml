@@ -55,29 +55,37 @@
 
 					</div>
 					<div class="ord_list_body text-left">
-
-						<!-- First Product -->
 						@foreach(var item in order.OrderItems){
 						<div class="row align-items-center justify-content-center m-0 py-4">
 							<div class="col-xl-5 col-lg-5 col-md-5 col-12">
 								<div class="cart_single d-flex align-items-start mfliud-bot">
-									<div class="cart_selected_single_thumb">
-										<a href="#"><img src="~/assets/img/product/@item.Image" width="75" class="img-fluid rounded" alt=""></a>
-									</div>
+											<div class="cart_selected_single_thumb">
+												@if (item.ProductId == null)
+												{
+													<div class="image-wrapper">
+														<img src="~/assets/img/product/@item.Image" width="75" class="img-fluid rounded" alt="">
+														<span class="overlay-text">Sản phẩm đã xóa</span>
+													</div>
+												}
+												else
+												{
+													<a href="#"><img src="~/assets/img/product/@item.Image" width="75" class="img-fluid rounded" alt=""></a>
+												}
+											</div>
 									<div class="cart_single_caption pl-3">
 										<p class="mb-0"><span class="text-muted small">Men's</span></p>
 										<h4 class="product_title fs-sm ft-medium mb-1 lh-1">@item.NameProduct</h4>
-										<p class="mb-2"><span class="text-dark medium">Size: @item.Size</span>, <span class="text-dark medium">Color: @item.Color</span></p>
+												<p class="mb-2"><span class="text-dark medium">Size: @item.Size</span>, <span class="text-dark medium">Color: @item.Color</span>, <span class="text-dark medium">Quantity: @item.Quantity</span></p>,
 										<h4 class="fs-sm ft-bold mb-0 lh-1">$@item.Price</h4>
 									</div>
 								</div>
 							</div>
 									<div class="col-xl-3 col-lg-3 col-md-3 col-6">
 										<p class="mb-1 p-0"><span class="text-muted">SubTotal</span></p>
-										<div class="delv_status"><span class="fs-sm ft-bold mb-0 lh-1">@item.SubTotal</span></div>
+										<div class="delv_status"><span class="fs-sm ft-bold mb-0 lh-1">@item.SubTotal.ToString("#,##0.00")</span></div>
 									</div>
 									<div class="col-xl-3 col-lg-3 col-md-3 col-6">
-										<button type="button" class="btn stretched-link borders m-auto" data-order-item-id="@item.OrderItemId" @(item.IsRating && order.StatusShippingId != 3 ? "disabled" : "")
+										<button type="button" class="btn stretched-link borders m-auto" data-order-item-id="@item.OrderItemId" @(item.IsRating || order.StatusShippingId!=3 ? "disabled" : "")
 												data-product-id="@item.ProductId" data-toggle="modal" data-target="#rating">
 											@(item.IsRating ? "Đã đánh giá" : "Đánh giá sản phẩm")
 										</button>
@@ -88,9 +96,9 @@
 
 					</div>
 					<div class="ord_list_footer d-flex align-items-center justify-content-between br-top px-3">
-						<div class="col-xl-3 col-lg-3 col-md-4 olf_flex text-left px-0 py-2 br-right"><a href="javascript:void(0);" class="ft-medium fs-sm"><i class="ti-close mr-2"></i>Cancel Order</a></div>
+							<div class="col-xl-3 col-lg-3 col-md-4 olf_flex text-left px-0 py-2 br-right"><i class="ti-close mr-2"></i>Payment Method: @order.PaymentMethode</div>
 						<div class="col-xl-9 col-lg-9 col-md-8 pr-0 py-2 olf_flex d-flex align-items-center justify-content-between">
-							<div class="olf_flex_inner hide_mob"><p class="m-0 p-0"><span class="text-muted medium">Paid using debit card ending with 6472</span></p></div>
+							<div class="olf_flex_inner hide_mob"><p class="m-0 p-0"><span class="text-muted medium">@order.FullName, @order.Address, @order.Phone</span></p></div>
 								<div class="olf_inner_right"><h5 class="mb-0 fs-sm ft-bold">Total: $@order.OrderItems.Sum(p =>p.SubTotal).ToString("#,##0.00")</h5></div>
 						</div>
 					</div>

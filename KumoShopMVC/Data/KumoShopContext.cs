@@ -31,10 +31,6 @@ public partial class KumoShopContext : DbContext
 
     public virtual DbSet<OrderItem> OrderItems { get; set; }
 
-    public virtual DbSet<Payment> Payments { get; set; }
-
-    public virtual DbSet<PaymentMethode> PaymentMethodes { get; set; }
-
     public virtual DbSet<Product> Products { get; set; }
 
     public virtual DbSet<ProductColor> ProductColors { get; set; }
@@ -55,9 +51,9 @@ public partial class KumoShopContext : DbContext
 
     public virtual DbSet<User> Users { get; set; }
 
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Data Source=LAPTOP-98U3CSGC\\MATERMOS;Initial Catalog=KumoShop;Integrated Security=True;Trust Server Certificate=True");
+//    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
+//        => optionsBuilder.UseSqlServer("Data Source=MSI\\SQLEXPRESS;Initial Catalog=KumoShop;Integrated Security=True;Trust Server Certificate=True");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -95,7 +91,7 @@ public partial class KumoShopContext : DbContext
 
             entity.HasOne(d => d.User).WithMany(p => p.Favourites)
                 .HasForeignKey(d => d.UserId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
+                .OnDelete(DeleteBehavior.Cascade)
                 .HasConstraintName("FK_Favourite_Users");
         });
 
@@ -107,12 +103,11 @@ public partial class KumoShopContext : DbContext
 
             entity.HasOne(d => d.Favourite).WithMany(p => p.FavouriteItems)
                 .HasForeignKey(d => d.FavouriteId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_FavouriteItem_Favourite");
 
             entity.HasOne(d => d.Product).WithMany(p => p.FavouriteItems)
                 .HasForeignKey(d => d.ProductId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
+                .OnDelete(DeleteBehavior.Cascade)
                 .HasConstraintName("FK_FavouriteItem_Products");
         });
 
@@ -124,16 +119,13 @@ public partial class KumoShopContext : DbContext
 
             entity.HasOne(d => d.Product).WithMany(p => p.Images)
                 .HasForeignKey(d => d.ProductId)
-                .HasConstraintName("FK_Image_Products");
+                .OnDelete(DeleteBehavior.Cascade)
+                .HasConstraintName("FK_Images_Product");
         });
 
         modelBuilder.Entity<Order>(entity =>
         {
             entity.HasKey(e => e.OrderId).HasName("PK_orders");
-
-            entity.HasIndex(e => e.StatusId, "IX_Orders_StatusId");
-
-            entity.HasIndex(e => e.UserId, "IX_Orders_UserId");
 
             entity.Property(e => e.Address).HasMaxLength(50);
             entity.Property(e => e.DescOrder).HasColumnType("ntext");
@@ -145,11 +137,12 @@ public partial class KumoShopContext : DbContext
 
             entity.HasOne(d => d.Status).WithMany(p => p.Orders)
                 .HasForeignKey(d => d.StatusId)
+                .OnDelete(DeleteBehavior.SetNull)
                 .HasConstraintName("FK_Orders_StatusShipping");
 
             entity.HasOne(d => d.User).WithMany(p => p.Orders)
                 .HasForeignKey(d => d.UserId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
+                .OnDelete(DeleteBehavior.Cascade)
                 .HasConstraintName("FK_Orders_Users");
         });
 
@@ -159,64 +152,18 @@ public partial class KumoShopContext : DbContext
 
             entity.ToTable("OrderItem");
 
-            entity.HasIndex(e => e.OrderId, "IX_OrderItem_OrderId");
-
-            entity.HasIndex(e => e.ProductId, "IX_OrderItem_ProductId");
-
             entity.Property(e => e.Color).HasMaxLength(50);
             entity.Property(e => e.Image).HasMaxLength(50);
             entity.Property(e => e.NameProduct).HasMaxLength(50);
 
             entity.HasOne(d => d.Order).WithMany(p => p.OrderItems)
                 .HasForeignKey(d => d.OrderId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_Order_item_Orders");
+                .HasConstraintName("FK_OrderItem_Orders");
 
             entity.HasOne(d => d.Product).WithMany(p => p.OrderItems)
                 .HasForeignKey(d => d.ProductId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_Order_item_Products");
-        });
-
-        modelBuilder.Entity<Payment>(entity =>
-        {
-            entity.HasKey(e => e.PaymentId).HasName("PK_payment_method");
-
-            entity.ToTable("Payment");
-
-            entity.HasIndex(e => e.UserId, "IX_PaymentInformation_UserId");
-
-            entity.Property(e => e.PaymentId).HasMaxLength(50);
-            entity.Property(e => e.CardHolder).HasMaxLength(50);
-            entity.Property(e => e.CardNumber).HasMaxLength(50);
-            entity.Property(e => e.CreateDate).HasColumnType("datetime");
-            entity.Property(e => e.Cvv)
-                .HasMaxLength(50)
-                .HasColumnName("CVV");
-            entity.Property(e => e.ExpDate).HasMaxLength(50);
-            entity.Property(e => e.FullNameCard)
-                .HasMaxLength(10)
-                .IsFixedLength();
-            entity.Property(e => e.Quantity).HasMaxLength(50);
-
-            entity.HasOne(d => d.PaymentMethode).WithMany(p => p.Payments)
-                .HasForeignKey(d => d.PaymentMethodeId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_PaymentInformation_PaymentMethod");
-
-            entity.HasOne(d => d.User).WithMany(p => p.Payments)
-                .HasForeignKey(d => d.UserId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_Payment_information_Users");
-        });
-
-        modelBuilder.Entity<PaymentMethode>(entity =>
-        {
-            entity.HasKey(e => e.PaymentMethodeId).HasName("PK_Payment_method_1");
-
-            entity.ToTable("PaymentMethode");
-
-            entity.Property(e => e.NamePaymentMethode).HasMaxLength(50);
+                .OnDelete(DeleteBehavior.SetNull)
+                .HasConstraintName("FK_OrderItem_Products");
         });
 
         modelBuilder.Entity<Product>(entity =>
@@ -228,22 +175,22 @@ public partial class KumoShopContext : DbContext
 
             entity.HasOne(d => d.Category).WithMany(p => p.Products)
                 .HasForeignKey(d => d.CategoryId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
+                .OnDelete(DeleteBehavior.SetNull)
                 .HasConstraintName("FK_Products_Categories");
         });
 
         modelBuilder.Entity<ProductColor>(entity =>
         {
-            entity
-                .HasNoKey()
-                .ToTable("ProductColor");
+            entity.ToTable("ProductColor");
 
-            entity.HasOne(d => d.Color).WithMany()
+            entity.HasOne(d => d.Color).WithMany(p => p.ProductColors)
                 .HasForeignKey(d => d.ColorId)
-                .HasConstraintName("FK_ProductColor_Color1");
+                .OnDelete(DeleteBehavior.SetNull)
+                .HasConstraintName("FK_ProductColor_Color");
 
-            entity.HasOne(d => d.Product).WithMany()
+            entity.HasOne(d => d.Product).WithMany(p => p.ProductColors)
                 .HasForeignKey(d => d.ProductId)
+                .OnDelete(DeleteBehavior.Cascade)
                 .HasConstraintName("FK_ProductColor_Products");
         });
 
@@ -263,17 +210,15 @@ public partial class KumoShopContext : DbContext
 
         modelBuilder.Entity<ProductSize>(entity =>
         {
-            entity
-                .HasNoKey()
-                .ToTable("ProductSize");
+            entity.ToTable("ProductSize");
 
-            entity.HasOne(d => d.Product).WithMany()
+            entity.HasOne(d => d.Product).WithMany(p => p.ProductSizes)
                 .HasForeignKey(d => d.ProductId)
                 .HasConstraintName("FK_ProductSize_Products");
 
-            entity.HasOne(d => d.Size).WithMany()
+            entity.HasOne(d => d.Size).WithMany(p => p.ProductSizes)
                 .HasForeignKey(d => d.SizeId)
-                .HasConstraintName("FK_ProductSize_Size1");
+                .HasConstraintName("FK_ProductSize_Size");
         });
 
         modelBuilder.Entity<RatingImage>(entity =>
@@ -285,7 +230,6 @@ public partial class KumoShopContext : DbContext
 
             entity.HasOne(d => d.Rating).WithMany(p => p.RatingImages)
                 .HasForeignKey(d => d.RatingId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK_RatingImage_RatingProduct");
         });
 
@@ -295,23 +239,19 @@ public partial class KumoShopContext : DbContext
 
             entity.ToTable("RatingProduct");
 
-            entity.HasIndex(e => e.ProductId, "IX_RatingProduct_ProductId");
-
-            entity.HasIndex(e => e.UserId, "IX_RatingProduct_UserId");
-
             entity.Property(e => e.CreateDate).HasColumnType("datetime");
             entity.Property(e => e.DescRating).HasColumnType("ntext");
             entity.Property(e => e.Fullname).HasMaxLength(50);
 
             entity.HasOne(d => d.Product).WithMany(p => p.RatingProducts)
                 .HasForeignKey(d => d.ProductId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_Rating_product_Products");
+                .OnDelete(DeleteBehavior.Cascade)
+                .HasConstraintName("FK_RatingProduct_Products");
 
             entity.HasOne(d => d.User).WithMany(p => p.RatingProducts)
                 .HasForeignKey(d => d.UserId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK_Rating_product_Users");
+                .OnDelete(DeleteBehavior.SetNull)
+                .HasConstraintName("FK_RatingProduct_Users");
         });
 
         modelBuilder.Entity<Role>(entity =>
@@ -354,7 +294,7 @@ public partial class KumoShopContext : DbContext
 
             entity.HasOne(d => d.Role).WithMany(p => p.Users)
                 .HasForeignKey(d => d.RoleId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
+                .OnDelete(DeleteBehavior.SetNull)
                 .HasConstraintName("FK_Users_Roles");
         });
 

@@ -7,6 +7,7 @@ using System.Security.Claims;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Authorization;
 using KumoShopMVC.Services;
+using Newtonsoft.Json;
 
 namespace KumoShopMVC.Controllers
 {
@@ -23,7 +24,6 @@ namespace KumoShopMVC.Controllers
         }
 		public IActionResult Index()
 		{
-
 			var guestCartItems = HttpContext.Session.Get<List<CartItemVM>>(CART_KEY) ?? new List<CartItemVM>();
 			return View("Index", guestCartItems);
 		}
@@ -97,7 +97,6 @@ namespace KumoShopMVC.Controllers
 		{
 			var customerId = int.Parse(HttpContext.User.Claims.SingleOrDefault(p => p.Type == MySetting.CLAIM_CUSTOMERID).Value);
 			var user = new User();
-
 			if (model.LikeUser)
 			{
 				user = db.Users.SingleOrDefault(u => u.UserId == customerId);
@@ -109,10 +108,14 @@ namespace KumoShopMVC.Controllers
 					var vnPayModel = new PaymentInformationModel()
 					{
 						Amount = Cart.Sum(p => p.SubTotal),
-						CreatedDate = DateTime.Now,
 						Description = model.Desc ?? "",
-						FullName = model.FullName ?? ""
+						CreatedDate = DateTime.Now,
+						FullName = model.FullName ?? "",
+						Address = model.Address ?? "",
+						PhoneNumber = model.PhoneNumber ?? ""
 					};
+                    TempData["Cart"] = JsonConvert.SerializeObject(Cart);
+                    TempData["PaymentModel"] = JsonConvert.SerializeObject(vnPayModel);
                     var paymentUrl = _vnPayService.CreatePaymentUrl(HttpContext, vnPayModel);
                     return Redirect(paymentUrl);
                 }
@@ -149,7 +152,6 @@ namespace KumoShopMVC.Controllers
 								Image = item.Image,
 								Price = item.Price,
 								Quantity = item.Quantity,
-								SubTotal = item.Price * item.Quantity,
 								IsRating = false
 							});
 						}
@@ -214,8 +216,53 @@ namespace KumoShopMVC.Controllers
 				TempData["Message"] = $"Lỗi thanh toán VN Pay: {response.VnPayResponseCode}";
 				return RedirectToAction("PaymentFail");
 			}
-			TempData["Message"] = $"Thanh toán VN Pay thành công";
-			return RedirectToAction("PaymentSuccess");
-		}
+            var vnPayModel = JsonConvert.DeserializeObject<PaymentInformationModel>((string)TempData["PaymentModel"]);
+            var cart = JsonConvert.DeserializeObject<List<CartItemVM>>((string)TempData["Cart"]);
+            var customerId = int.Parse(HttpContext.User.Claims.SingleOrDefault(p => p.Type == MySetting.CLAIM_CUSTOMERID).Value);
+			var user = db.Users.SingleOrDefault(u => u.UserId == customerId);
+            var order = new Order()
+            {
+                UserId = customerId,
+                Fullname = vnPayModel.FullName,
+                Address = vnPayModel.Address,
+                Phone = vnPayModel.PhoneNumber,
+                OrderDate = vnPayModel.CreatedDate,
+                DescOrder = vnPayModel.Description,
+                StatusId = 0,
+                PaymentMethode = "VnPay"
+            };
+
+            db.Database.BeginTransaction();
+            try
+            {
+                db.Database.CommitTransaction();
+                db.Add(order);
+                db.SaveChanges();
+                var orderItems = new List<OrderItem>();
+                foreach (var item in cart)
+                {
+                    orderItems.Add(new OrderItem()
+                    {
+                        OrderId = order.OrderId,
+                        ProductId = item.ProductId,
+                        NameProduct = item.NameProduct,
+                        Color = item.Color,
+                        Size = item.Size,
+                        Image = item.Image,
+                        Price = item.Price,
+                        Quantity = item.Quantity,
+                        IsRating = false
+                    });
+                }
+                db.AddRange(orderItems);
+                db.SaveChanges();
+            }
+            catch
+            {
+                db.Database.RollbackTransaction();
+            }
+            TempData["Message"] = $"Thanh toán VN Pay thành công";
+            return View("Success", order.OrderId);
+        }
 	}
 }

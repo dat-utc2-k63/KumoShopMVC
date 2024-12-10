@@ -27,7 +27,7 @@ public partial class ProductDetailsView
 
     public int? Quantity { get; set; }
 
-    public int CategoryId { get; set; }
+    public int? CategoryId { get; set; }
 
     public string? ImageUrl { get; set; }
 

@@ -51,13 +51,16 @@
 											}
 										</div>
 									</div>
+									<div class="product-hover-overlay bg-dark d-flex align-items-center justify-content-center">
+										<div class="edlio"><a asp-action="Detail" asp-controller="Product" asp-route-id="@item.ProductId" class="text-white fs-sm ft-medium"><i class="fas fa-eye mr-1"></i>Detail</a></div>
+									</div>
 								</div>
 							</div>
 							<div class="card-footers b-0 pt-3 px-2 bg-white d-flex align-items-start justify-content-center">
 								<div class="text-left">
 									<div class="text-center">
-										<h5 class="fw-bolder fs-md mb-0 lh-1 mb-1"><a href="shop-single-v1.html">Formal Fluex Kurti</a></h5>
-										<div class="elis_rty"><span class="text-muted ft-medium line-through mr-2">$149.00</span><span class="ft-bold theme-cl fs-md">$129.00</span></div>
+										<h5 class="fw-bolder fs-md mb-0 lh-1 mb-1">@item.NameProduct</h5>
+										<div class="elis_rty"><span class="ft-bold theme-cl fs-md">$@item.Price</span></div>
 									</div>
 								</div>
 							</div>
@@ -126,13 +129,16 @@
 											}
 										</div>
 									</div>
+									<div class="product-hover-overlay bg-dark d-flex align-items-center justify-content-center">
+										<div class="edlio"><a asp-action="Detail" asp-controller="Product" asp-route-id="@item.ProductId" class="text-white fs-sm ft-medium"><i class="fas fa-eye mr-1"></i>Detail</a></div>
+									</div>
 								</div>
 							</div>
 							<div class="card-footers b-0 pt-3 px-2 bg-white d-flex align-items-start justify-content-center">
 								<div class="text-left">
 									<div class="text-center">
-										<h5 class="fw-bolder fs-md mb-0 lh-1 mb-1"><a href="shop-single-v1.html">Formal Fluex Kurti</a></h5>
-										<div class="elis_rty"><span class="text-muted ft-medium line-through mr-2">$149.00</span><span class="ft-bold theme-cl fs-md">$129.00</span></div>
+										<h5 class="fw-bolder fs-md mb-0 lh-1 mb-1">@item.NameProduct</h5>
+										<div class="elis_rty"><span class="ft-bold theme-cl fs-md">$@item.Price</span></div>
 									</div>
 								</div>
 							</div>

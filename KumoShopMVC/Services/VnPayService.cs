@@ -31,7 +31,7 @@ namespace KumoShopMVC.Services
 			vnpay.AddRequestData("vnp_CurrCode", _config["VnPay:CurrCode"]);
 			vnpay.AddRequestData("vnp_IpAddr", Utils.GetIpAddress(context));
 			vnpay.AddRequestData("vnp_Locale", _config["VnPay:Locale"]);
-			vnpay.AddRequestData("vnp_OrderInfo", $"{model.FullName} {model.Description} {model.Amount}"); ;
+			vnpay.AddRequestData("vnp_OrderInfo", $"{model.FullName} {model.Description} {model.Amount} {model.Address} {model.PhoneNumber}"); ;
 			vnpay.AddRequestData("vnp_OrderType", "other"); //default value: other
 			vnpay.AddRequestData("vnp_ReturnUrl", _config["VnPay:PaymentBackReturnUrl"]);
 			vnpay.AddRequestData("vnp_TxnRef", tick); // Mã tham chiếu của giao dịch tại hệ 

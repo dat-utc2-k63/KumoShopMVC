@@ -2,7 +2,9 @@ using KumoShopMVC.Data;
 using KumoShopMVC.Helpers;
 using KumoShopMVC.Services;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -28,6 +30,12 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
 	options.LoginPath = "/User/Login";
 	options.AccessDeniedPath = "/AccessDenied";
 });
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("Admin", policy =>
+        policy.RequireClaim(ClaimTypes.Role, "2")); 
+});
+builder.Services.AddSingleton<IAuthorizationHandler, RoleIdAuthorizationHandler>();
 builder.Services.AddScoped<IVnPayService, VnPayService>();
 var app = builder.Build();
 

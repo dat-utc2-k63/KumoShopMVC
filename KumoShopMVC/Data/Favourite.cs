@@ -7,7 +7,7 @@ public partial class Favourite
 {
     public int FavouriteId { get; set; }
 
-    public int UserId { get; set; }
+    public int? UserId { get; set; }
 
     public string? DescFavourite { get; set; }
 
@@ -15,5 +15,5 @@ public partial class Favourite
 
     public virtual ICollection<FavouriteItem> FavouriteItems { get; set; } = new List<FavouriteItem>();
 
-    public virtual User User { get; set; } = null!;
+    public virtual User? User { get; set; }
 }

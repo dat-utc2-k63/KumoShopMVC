@@ -14,7 +14,7 @@ using iText.Layout.Properties;
 
 namespace KumoShopMVC.Controllers
 {
-    //[Authorize]
+    [Authorize]
     public class AdminController : Controller
     {
 		private readonly KumoShopContext db;
@@ -25,7 +25,7 @@ namespace KumoShopMVC.Controllers
             _webHostEnvironment = webHostEnvironment;
         }
 
-        //[Authorize(Policy = "Admin")]
+        [Authorize(Policy = "Admin")]
         public IActionResult Index(string filter = "dd-MM-yyyy")
         {
             var monthlyReports = db.Orders

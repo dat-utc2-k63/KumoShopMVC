@@ -25,8 +25,6 @@ public partial class ProductDetailsView
 
     public DateTime? CreateDate { get; set; }
 
-    public int? Quantity { get; set; }
-
     public int? CategoryId { get; set; }
 
     public string? ImageUrl { get; set; }
@@ -34,6 +32,4 @@ public partial class ProductDetailsView
     public bool? IsNew { get; set; }
 
     public bool? IsHot { get; set; }
-
-    public double? Discount { get; set; }
 }

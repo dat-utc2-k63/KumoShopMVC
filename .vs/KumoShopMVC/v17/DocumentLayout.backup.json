@@ -3,6 +3,58 @@
   "WorkspaceRootPath": "D:\\asp.net\\KumoShopMVC\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|d:\\asp.net\\kumoshopmvc\\kumoshopmvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|solutionrelative:kumoshopmvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|d:\\asp.net\\kumoshopmvc\\kumoshopmvc\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|solutionrelative:kumoshopmvc\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|d:\\asp.net\\kumoshopmvc\\kumoshopmvc\\views\\product\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|solutionrelative:kumoshopmvc\\views\\product\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|d:\\asp.net\\kumoshopmvc\\kumoshopmvc\\views\\shared\\_layoutcustomer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|solutionrelative:kumoshopmvc\\views\\shared\\_layoutcustomer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|d:\\asp.net\\kumoshopmvc\\kumoshopmvc\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|solutionrelative:kumoshopmvc\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|d:\\asp.net\\kumoshopmvc\\kumoshopmvc\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|solutionrelative:kumoshopmvc\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|d:\\asp.net\\kumoshopmvc\\kumoshopmvc\\helpers\\mysetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|solutionrelative:kumoshopmvc\\helpers\\mysetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|d:\\asp.net\\kumoshopmvc\\kumoshopmvc\\helpers\\myutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|solutionrelative:kumoshopmvc\\helpers\\myutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|d:\\asp.net\\kumoshopmvc\\kumoshopmvc\\helpers\\dataencryptionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|solutionrelative:kumoshopmvc\\helpers\\dataencryptionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|d:\\asp.net\\kumoshopmvc\\kumoshopmvc\\helpers\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|solutionrelative:kumoshopmvc\\helpers\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|d:\\asp.net\\kumoshopmvc\\kumoshopmvc\\helpers\\roleidauthorizationrequirement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|solutionrelative:kumoshopmvc\\helpers\\roleidauthorizationrequirement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|d:\\asp.net\\kumoshopmvc\\kumoshopmvc\\helpers\\sessionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|solutionrelative:kumoshopmvc\\helpers\\sessionextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|d:\\asp.net\\kumoshopmvc\\kumoshopmvc\\helpers\\vnpaylibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|solutionrelative:kumoshopmvc\\helpers\\vnpaylibrary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|d:\\asp.net\\kumoshopmvc\\kumoshopmvc\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|solutionrelative:kumoshopmvc\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,16 +63,8 @@
       "RelativeMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|solutionrelative:kumoshopmvc\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|d:\\asp.net\\kumoshopmvc\\kumoshopmvc\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|solutionrelative:kumoshopmvc\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|d:\\asp.net\\kumoshopmvc\\kumoshopmvc\\data\\kumoshopcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|solutionrelative:kumoshopmvc\\data\\kumoshopcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|d:\\asp.net\\kumoshopmvc\\kumoshopmvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|solutionrelative:kumoshopmvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|d:\\asp.net\\kumoshopmvc\\kumoshopmvc\\views\\home\\pagenotfound.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -29,10 +73,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|d:\\asp.net\\kumoshopmvc\\kumoshopmvc\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|solutionrelative:kumoshopmvc\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|d:\\asp.net\\kumoshopmvc\\kumoshopmvc\\views\\shared\\_layoutcustomer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|solutionrelative:kumoshopmvc\\views\\shared\\_layoutcustomer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|d:\\asp.net\\kumoshopmvc\\kumoshopmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -49,10 +89,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|d:\\asp.net\\kumoshopmvc\\kumoshopmvc\\views\\product\\productitem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|solutionrelative:kumoshopmvc\\views\\product\\productitem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|d:\\asp.net\\kumoshopmvc\\kumoshopmvc\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|solutionrelative:kumoshopmvc\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|d:\\asp.net\\kumoshopmvc\\kumoshopmvc\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -73,10 +109,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|d:\\asp.net\\kumoshopmvc\\kumoshopmvc\\views\\admin\\productcreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|solutionrelative:kumoshopmvc\\views\\admin\\productcreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|d:\\asp.net\\kumoshopmvc\\kumoshopmvc\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|solutionrelative:kumoshopmvc\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|d:\\asp.net\\kumoshopmvc\\kumoshopmvc\\views\\product\\search.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -123,10 +155,6 @@
       "RelativeMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|solutionrelative:kumoshopmvc\\viewcomponents\\cartitemviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|d:\\asp.net\\kumoshopmvc\\kumoshopmvc\\helpers\\myutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|solutionrelative:kumoshopmvc\\helpers\\myutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|d:\\asp.net\\kumoshopmvc\\kumoshopmvc\\views\\admin\\userlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|solutionrelative:kumoshopmvc\\views\\admin\\userlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -145,10 +173,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|d:\\asp.net\\kumoshopmvc\\kumoshopmvc\\views\\admin\\orderedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|solutionrelative:kumoshopmvc\\views\\admin\\orderedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|d:\\asp.net\\kumoshopmvc\\kumoshopmvc\\views\\product\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|solutionrelative:kumoshopmvc\\views\\product\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B65602C0-90AF-483B-9B73-B9D3E63D9D3C}|KumoShopMVC\\KumoShopMVC.csproj|d:\\asp.net\\kumoshopmvc\\kumoshopmvc\\views\\cart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -230,7 +254,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 411,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -250,7 +274,169 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MyUtil.cs",
+              "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Helpers\\MyUtil.cs",
+              "RelativeDocumentMoniker": "KumoShopMVC\\Helpers\\MyUtil.cs",
+              "ToolTip": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Helpers\\MyUtil.cs",
+              "RelativeToolTip": "KumoShopMVC\\Helpers\\MyUtil.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAYwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T05:44:00.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "KumoShopMVC\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Controllers\\UserController.cs",
+              "RelativeToolTip": "KumoShopMVC\\Controllers\\UserController.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAAwC4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T07:24:40.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "KumoShopMVC\\Controllers\\AdminController.cs",
+              "ToolTip": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "KumoShopMVC\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAOwDAAAAAAAAAAAlwPMDAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T13:37:57.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_LayoutCustomer.cshtml",
+              "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\Shared\\_LayoutCustomer.cshtml",
+              "RelativeDocumentMoniker": "KumoShopMVC\\Views\\Shared\\_LayoutCustomer.cshtml",
+              "ToolTip": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\Shared\\_LayoutCustomer.cshtml",
+              "RelativeToolTip": "KumoShopMVC\\Views\\Shared\\_LayoutCustomer.cshtml",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAEoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-09T14:13:15.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\Product\\Detail.cshtml",
+              "RelativeDocumentMoniker": "KumoShopMVC\\Views\\Product\\Detail.cshtml",
+              "ToolTip": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\Product\\Detail.cshtml",
+              "RelativeToolTip": "KumoShopMVC\\Views\\Product\\Detail.cshtml",
+              "ViewState": "AgIAAAsAAAAAAAAAAADgvygAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-09T07:38:36.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "KumoShopMVC\\Views\\Product\\Index.cshtml",
+              "ToolTip": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "KumoShopMVC\\Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-09T07:38:37.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "KumoShopMVC\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "KumoShopMVC\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAAAKIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-10T05:14:47.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RoleIdAuthorizationRequirement.cs",
+              "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Helpers\\RoleIdAuthorizationRequirement.cs",
+              "RelativeDocumentMoniker": "KumoShopMVC\\Helpers\\RoleIdAuthorizationRequirement.cs",
+              "ToolTip": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Helpers\\RoleIdAuthorizationRequirement.cs",
+              "RelativeToolTip": "KumoShopMVC\\Helpers\\RoleIdAuthorizationRequirement.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T04:08:30.065Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MySetting.cs",
+              "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Helpers\\MySetting.cs",
+              "RelativeDocumentMoniker": "KumoShopMVC\\Helpers\\MySetting.cs",
+              "ToolTip": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Helpers\\MySetting.cs",
+              "RelativeToolTip": "KumoShopMVC\\Helpers\\MySetting.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T04:08:30.671Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "DataEncryptionExtensions.cs",
+              "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Helpers\\DataEncryptionExtensions.cs",
+              "RelativeDocumentMoniker": "KumoShopMVC\\Helpers\\DataEncryptionExtensions.cs",
+              "ToolTip": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Helpers\\DataEncryptionExtensions.cs",
+              "RelativeToolTip": "KumoShopMVC\\Helpers\\DataEncryptionExtensions.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T04:08:31.626Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AutoMapperProfile.cs",
+              "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Helpers\\AutoMapperProfile.cs",
+              "RelativeDocumentMoniker": "KumoShopMVC\\Helpers\\AutoMapperProfile.cs",
+              "ToolTip": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Helpers\\AutoMapperProfile.cs",
+              "RelativeToolTip": "KumoShopMVC\\Helpers\\AutoMapperProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T04:08:34.461Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SessionExtensions.cs",
+              "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Helpers\\SessionExtensions.cs",
+              "RelativeDocumentMoniker": "KumoShopMVC\\Helpers\\SessionExtensions.cs",
+              "ToolTip": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Helpers\\SessionExtensions.cs",
+              "RelativeToolTip": "KumoShopMVC\\Helpers\\SessionExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T04:37:51.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "VnPayLibrary.cs",
+              "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Helpers\\VnPayLibrary.cs",
+              "RelativeDocumentMoniker": "KumoShopMVC\\Helpers\\VnPayLibrary.cs",
+              "ToolTip": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Helpers\\VnPayLibrary.cs",
+              "RelativeToolTip": "KumoShopMVC\\Helpers\\VnPayLibrary.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T04:08:36.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Program.cs",
               "RelativeDocumentMoniker": "KumoShopMVC\\Program.cs",
@@ -262,45 +448,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "_LayoutCustomer.cshtml",
-              "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\Shared\\_LayoutCustomer.cshtml",
-              "RelativeDocumentMoniker": "KumoShopMVC\\Views\\Shared\\_LayoutCustomer.cshtml",
-              "ToolTip": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\Shared\\_LayoutCustomer.cshtml",
-              "RelativeToolTip": "KumoShopMVC\\Views\\Shared\\_LayoutCustomer.cshtml",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAEoAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-09T14:13:15.213Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "KumoShopMVC\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "KumoShopMVC\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAJYAAAAAAAAAAAAAAKIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-10T05:14:47.415Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 13,
               "Title": "CartController.cs",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Controllers\\CartController.cs",
               "RelativeDocumentMoniker": "KumoShopMVC\\Controllers\\CartController.cs",
               "ToolTip": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Controllers\\CartController.cs",
               "RelativeToolTip": "KumoShopMVC\\Controllers\\CartController.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAADgvyMAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAAASwDIAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T08:00:47.199Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T08:00:47.199Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 15,
               "Title": "KumoShopContext.cs",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Data\\KumoShopContext.cs",
               "RelativeDocumentMoniker": "KumoShopMVC\\Data\\KumoShopContext.cs",
@@ -308,25 +468,11 @@
               "RelativeToolTip": "KumoShopMVC\\Data\\KumoShopContext.cs",
               "ViewState": "AgIAADQAAAAAAAAAAAAQwDgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T06:46:43.142Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-10T06:46:43.142Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AdminController.cs",
-              "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Controllers\\AdminController.cs",
-              "RelativeDocumentMoniker": "KumoShopMVC\\Controllers\\AdminController.cs",
-              "ToolTip": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Controllers\\AdminController.cs",
-              "RelativeToolTip": "KumoShopMVC\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABsAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T13:37:57.39Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 14,
               "Title": "ContactController.cs",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Controllers\\ContactController.cs",
               "RelativeDocumentMoniker": "KumoShopMVC\\Controllers\\ContactController.cs",
@@ -334,25 +480,11 @@
               "RelativeToolTip": "KumoShopMVC\\Controllers\\ContactController.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAuwCAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:20:19.84Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T14:20:19.84Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "KumoShopMVC\\Controllers\\UserController.cs",
-              "ToolTip": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Controllers\\UserController.cs",
-              "RelativeToolTip": "KumoShopMVC\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAIQAAAAAAAAAAAAvwIsAAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T07:24:40.33Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 19,
               "Title": "OrderList.cshtml",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\Admin\\OrderList.cshtml",
               "RelativeDocumentMoniker": "KumoShopMVC\\Views\\Admin\\OrderList.cshtml",
@@ -364,7 +496,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 21,
               "Title": "ProductItem.cshtml",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\Product\\ProductItem.cshtml",
               "RelativeDocumentMoniker": "KumoShopMVC\\Views\\Product\\ProductItem.cshtml",
@@ -376,7 +508,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 16,
               "Title": "PageNotFound.cshtml",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\Home\\PageNotFound.cshtml",
               "RelativeDocumentMoniker": "KumoShopMVC\\Views\\Home\\PageNotFound.cshtml",
@@ -388,7 +520,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 17,
               "Title": "_LayoutAdmin.cshtml",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\Shared\\_LayoutAdmin.cshtml",
               "RelativeDocumentMoniker": "KumoShopMVC\\Views\\Shared\\_LayoutAdmin.cshtml",
@@ -400,7 +532,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 20,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\Cart\\Index.cshtml",
               "RelativeDocumentMoniker": "KumoShopMVC\\Views\\Cart\\Index.cshtml",
@@ -412,7 +544,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 22,
               "Title": "ProductController.cs",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "KumoShopMVC\\Controllers\\ProductController.cs",
@@ -424,7 +556,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 25,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\Admin\\Index.cshtml",
               "RelativeDocumentMoniker": "KumoShopMVC\\Views\\Admin\\Index.cshtml",
@@ -436,7 +568,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 24,
               "Title": "VnPayService.cs",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Services\\VnPayService.cs",
               "RelativeDocumentMoniker": "KumoShopMVC\\Services\\VnPayService.cs",
@@ -448,7 +580,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 23,
               "Title": "MyOrder.cshtml",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\User\\MyOrder.cshtml",
               "RelativeDocumentMoniker": "KumoShopMVC\\Views\\User\\MyOrder.cshtml",
@@ -460,19 +592,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\Product\\Index.cshtml",
-              "RelativeDocumentMoniker": "KumoShopMVC\\Views\\Product\\Index.cshtml",
-              "ToolTip": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\Product\\Index.cshtml",
-              "RelativeToolTip": "KumoShopMVC\\Views\\Product\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-09T07:38:37.338Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 26,
               "Title": "ProductCreate.cshtml",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\Admin\\ProductCreate.cshtml",
               "RelativeDocumentMoniker": "KumoShopMVC\\Views\\Admin\\ProductCreate.cshtml",
@@ -484,7 +604,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 28,
               "Title": "ProductVM.cs",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\ViewModels\\ProductVM.cs",
               "RelativeDocumentMoniker": "KumoShopMVC\\ViewModels\\ProductVM.cs",
@@ -496,7 +616,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 29,
               "Title": "ContactVM.cs",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\ViewModels\\ContactVM.cs",
               "RelativeDocumentMoniker": "KumoShopMVC\\ViewModels\\ContactVM.cs",
@@ -508,7 +628,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 32,
               "Title": "Default.cshtml",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\Shared\\Components\\CategoryMenu\\Default.cshtml",
               "RelativeDocumentMoniker": "KumoShopMVC\\Views\\Shared\\Components\\CategoryMenu\\Default.cshtml",
@@ -520,7 +640,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 27,
               "Title": "Search.cshtml",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\Product\\Search.cshtml",
               "RelativeDocumentMoniker": "KumoShopMVC\\Views\\Product\\Search.cshtml",
@@ -532,7 +652,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 33,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "KumoShopMVC\\Controllers\\HomeController.cs",
@@ -544,7 +664,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 31,
               "Title": "app-chat.js",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\js\\pages\\app-chat.js",
               "RelativeDocumentMoniker": "KumoShopMVC\\wwwroot\\admin\\assets\\js\\pages\\app-chat.js",
@@ -556,7 +676,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 30,
               "Title": "app.min.css",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\css\\app.min.css",
               "RelativeDocumentMoniker": "KumoShopMVC\\wwwroot\\admin\\assets\\css\\app.min.css",
@@ -568,7 +688,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 35,
               "Title": "DashboardNavigationViewComponent.cs",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\ViewComponents\\DashboardNavigationViewComponent.cs",
               "RelativeDocumentMoniker": "KumoShopMVC\\ViewComponents\\DashboardNavigationViewComponent.cs",
@@ -580,7 +700,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 34,
               "Title": "CategoryMenuViewComponent.cs",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\ViewComponents\\CategoryMenuViewComponent.cs",
               "RelativeDocumentMoniker": "KumoShopMVC\\ViewComponents\\CategoryMenuViewComponent.cs",
@@ -592,7 +712,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 36,
               "Title": "CartViewComponent.cs",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\ViewComponents\\CartViewComponent.cs",
               "RelativeDocumentMoniker": "KumoShopMVC\\ViewComponents\\CartViewComponent.cs",
@@ -604,7 +724,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 37,
               "Title": "CartItemViewComponent.cs",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\ViewComponents\\CartItemViewComponent.cs",
               "RelativeDocumentMoniker": "KumoShopMVC\\ViewComponents\\CartItemViewComponent.cs",
@@ -616,19 +736,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "MyUtil.cs",
-              "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Helpers\\MyUtil.cs",
-              "RelativeDocumentMoniker": "KumoShopMVC\\Helpers\\MyUtil.cs",
-              "ToolTip": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Helpers\\MyUtil.cs",
-              "RelativeToolTip": "KumoShopMVC\\Helpers\\MyUtil.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAQwBgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T05:44:00.376Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 42,
               "Title": "OrderEdit.cshtml",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\Admin\\OrderEdit.cshtml",
               "RelativeDocumentMoniker": "KumoShopMVC\\Views\\Admin\\OrderEdit.cshtml",
@@ -640,7 +748,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 41,
               "Title": "ProductList.cshtml",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\Admin\\ProductList.cshtml",
               "RelativeDocumentMoniker": "KumoShopMVC\\Views\\Admin\\ProductList.cshtml",
@@ -652,7 +760,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 38,
               "Title": "UserList.cshtml",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\Admin\\UserList.cshtml",
               "RelativeDocumentMoniker": "KumoShopMVC\\Views\\Admin\\UserList.cshtml",
@@ -664,7 +772,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 39,
               "Title": "UserEdit.cshtml",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\Admin\\UserEdit.cshtml",
               "RelativeDocumentMoniker": "KumoShopMVC\\Views\\Admin\\UserEdit.cshtml",
@@ -676,7 +784,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 40,
               "Title": "RoleList.cshtml",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\Admin\\RoleList.cshtml",
               "RelativeDocumentMoniker": "KumoShopMVC\\Views\\Admin\\RoleList.cshtml",
@@ -688,19 +796,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "Detail.cshtml",
-              "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\Product\\Detail.cshtml",
-              "RelativeDocumentMoniker": "KumoShopMVC\\Views\\Product\\Detail.cshtml",
-              "ToolTip": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\Product\\Detail.cshtml",
-              "RelativeToolTip": "KumoShopMVC\\Views\\Product\\Detail.cshtml",
-              "ViewState": "AgIAAAsAAAAAAAAAAADgvygAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-09T07:38:36.209Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 43,
               "Title": "CheckOut.cshtml",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\Cart\\CheckOut.cshtml",
               "RelativeDocumentMoniker": "KumoShopMVC\\Views\\Cart\\CheckOut.cshtml",
@@ -712,7 +808,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 44,
               "Title": "Default.cshtml",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\Shared\\Components\\CartItem\\Default.cshtml",
               "RelativeDocumentMoniker": "KumoShopMVC\\Views\\Shared\\Components\\CartItem\\Default.cshtml",
@@ -724,7 +820,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 45,
               "Title": "WishList.cshtml",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\User\\WishList.cshtml",
               "RelativeDocumentMoniker": "KumoShopMVC\\Views\\User\\WishList.cshtml",
@@ -736,7 +832,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 46,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\Contact\\Index.cshtml",
               "RelativeDocumentMoniker": "KumoShopMVC\\Views\\Contact\\Index.cshtml",
@@ -748,7 +844,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 47,
               "Title": "RoleCreate.cshtml",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\Admin\\RoleCreate.cshtml",
               "RelativeDocumentMoniker": "KumoShopMVC\\Views\\Admin\\RoleCreate.cshtml",
@@ -760,7 +856,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 51,
               "Title": "RoleEdit.cshtml",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\Admin\\RoleEdit.cshtml",
               "RelativeDocumentMoniker": "KumoShopMVC\\Views\\Admin\\RoleEdit.cshtml",
@@ -772,7 +868,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 50,
               "Title": "UserCreate.cshtml",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\Admin\\UserCreate.cshtml",
               "RelativeDocumentMoniker": "KumoShopMVC\\Views\\Admin\\UserCreate.cshtml",
@@ -784,7 +880,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 48,
               "Title": "OrderVM.cs",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\ViewModels\\OrderVM.cs",
               "RelativeDocumentMoniker": "KumoShopMVC\\ViewModels\\OrderVM.cs",
@@ -796,7 +892,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 49,
               "Title": "OrderDetail.cshtml",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\Admin\\OrderDetail.cshtml",
               "RelativeDocumentMoniker": "KumoShopMVC\\Views\\Admin\\OrderDetail.cshtml",
@@ -808,7 +904,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 52,
               "Title": "_RatingModalPartial.cshtml",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\User\\_RatingModalPartial.cshtml",
               "RelativeDocumentMoniker": "KumoShopMVC\\Views\\User\\_RatingModalPartial.cshtml",
@@ -820,7 +916,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 53,
               "Title": "Contact.cshtml",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\Admin\\Contact.cshtml",
               "RelativeDocumentMoniker": "KumoShopMVC\\Views\\Admin\\Contact.cshtml",
@@ -832,7 +928,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 54,
               "Title": "CategoryCreate.cshtml",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\Admin\\CategoryCreate.cshtml",
               "RelativeDocumentMoniker": "KumoShopMVC\\Views\\Admin\\CategoryCreate.cshtml",
@@ -844,7 +940,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 55,
               "Title": "CategoryEdit.cshtml",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\Admin\\CategoryEdit.cshtml",
               "RelativeDocumentMoniker": "KumoShopMVC\\Views\\Admin\\CategoryEdit.cshtml",
@@ -856,7 +952,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 59,
               "Title": "CategoryList.cshtml",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\Views\\Admin\\CategoryList.cshtml",
               "RelativeDocumentMoniker": "KumoShopMVC\\Views\\Admin\\CategoryList.cshtml",
@@ -868,7 +964,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 57,
               "Title": "CartModel.cs",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\ViewModels\\CartModel.cs",
               "RelativeDocumentMoniker": "KumoShopMVC\\ViewModels\\CartModel.cs",
@@ -880,7 +976,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 56,
               "Title": "FavouriteItemVM.cs",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\ViewModels\\FavouriteItemVM.cs",
               "RelativeDocumentMoniker": "KumoShopMVC\\ViewModels\\FavouriteItemVM.cs",
@@ -892,7 +988,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 58,
               "Title": "CategoryMenuVM.cs",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\ViewModels\\CategoryMenuVM.cs",
               "RelativeDocumentMoniker": "KumoShopMVC\\ViewModels\\CategoryMenuVM.cs",
@@ -904,7 +1000,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 60,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\appsettings.json",
               "RelativeDocumentMoniker": "KumoShopMVC\\appsettings.json",

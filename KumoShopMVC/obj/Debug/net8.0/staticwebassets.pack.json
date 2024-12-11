@@ -5,7 +5,47 @@
       "PackagePath": "staticwebassets\\KumoShopMVC.bundle.scp.css"
     },
     {
+<<<<<<< HEAD
       "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\css\\app.min.css",
+=======
+<<<<<<< HEAD
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\404.html",
+      "PackagePath": "staticwebassets\\404.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\about-us.html",
+      "PackagePath": "staticwebassets\\about-us.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\add-card.html",
+      "PackagePath": "staticwebassets\\add-card.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\addresses.html",
+      "PackagePath": "staticwebassets\\addresses.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\apps-calendar.html",
+      "PackagePath": "staticwebassets\\admin\\apps-calendar.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\apps-chat.html",
+      "PackagePath": "staticwebassets\\admin\\apps-chat.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\apps-email.html",
+      "PackagePath": "staticwebassets\\admin\\apps-email.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\apps-todo.html",
+      "PackagePath": "staticwebassets\\admin\\apps-todo.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\css\\app.min.css",
+=======
+      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\assets\\css\\app.min.css",
+>>>>>>> 6c90aa46334017e0c49df0750d917739b1b883ce
+>>>>>>> 35f36276d14b370829066272f8ce3bdf1f677c25
       "PackagePath": "staticwebassets\\admin\\assets\\css\\app.min.css"
     },
     {
@@ -589,7 +629,471 @@
       "PackagePath": "staticwebassets\\admin\\assets\\vendor\\jsvectormap\\maps\\world.js"
     },
     {
+<<<<<<< HEAD
       "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\apexcharts.com\\samples\\assets\\github-data.js",
+=======
+<<<<<<< HEAD
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\attributes-add.html",
+      "PackagePath": "staticwebassets\\admin\\attributes-add.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\attributes-edit.html",
+      "PackagePath": "staticwebassets\\admin\\attributes-edit.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\attributes-list.html",
+      "PackagePath": "staticwebassets\\admin\\attributes-list.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\auth-lock-screen.html",
+      "PackagePath": "staticwebassets\\admin\\auth-lock-screen.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\auth-password.html",
+      "PackagePath": "staticwebassets\\admin\\auth-password.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\auth-signin.html",
+      "PackagePath": "staticwebassets\\admin\\auth-signin.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\auth-signup.html",
+      "PackagePath": "staticwebassets\\admin\\auth-signup.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\category-add.html",
+      "PackagePath": "staticwebassets\\admin\\category-add.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\category-edit.html",
+      "PackagePath": "staticwebassets\\admin\\category-edit.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\category-list.html",
+      "PackagePath": "staticwebassets\\admin\\category-list.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-area.html",
+      "PackagePath": "staticwebassets\\admin\\charts-apex-area.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-bar.html",
+      "PackagePath": "staticwebassets\\admin\\charts-apex-bar.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-boxplot.html",
+      "PackagePath": "staticwebassets\\admin\\charts-apex-boxplot.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-bubble.html",
+      "PackagePath": "staticwebassets\\admin\\charts-apex-bubble.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-candlestick.html",
+      "PackagePath": "staticwebassets\\admin\\charts-apex-candlestick.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-column.html",
+      "PackagePath": "staticwebassets\\admin\\charts-apex-column.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-heatmap.html",
+      "PackagePath": "staticwebassets\\admin\\charts-apex-heatmap.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-line.html",
+      "PackagePath": "staticwebassets\\admin\\charts-apex-line.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-mixed.html",
+      "PackagePath": "staticwebassets\\admin\\charts-apex-mixed.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-pie.html",
+      "PackagePath": "staticwebassets\\admin\\charts-apex-pie.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-polar-area.html",
+      "PackagePath": "staticwebassets\\admin\\charts-apex-polar-area.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-radar.html",
+      "PackagePath": "staticwebassets\\admin\\charts-apex-radar.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-radialbar.html",
+      "PackagePath": "staticwebassets\\admin\\charts-apex-radialbar.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-scatter.html",
+      "PackagePath": "staticwebassets\\admin\\charts-apex-scatter.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-timeline.html",
+      "PackagePath": "staticwebassets\\admin\\charts-apex-timeline.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\charts-apex-treemap.html",
+      "PackagePath": "staticwebassets\\admin\\charts-apex-treemap.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\coupons-add.html",
+      "PackagePath": "staticwebassets\\admin\\coupons-add.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\coupons-list.html",
+      "PackagePath": "staticwebassets\\admin\\coupons-list.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\customer-detail.html",
+      "PackagePath": "staticwebassets\\admin\\customer-detail.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\customer-list.html",
+      "PackagePath": "staticwebassets\\admin\\customer-list.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\extended-ratings.html",
+      "PackagePath": "staticwebassets\\admin\\extended-ratings.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\extended-scrollbar.html",
+      "PackagePath": "staticwebassets\\admin\\extended-scrollbar.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\extended-sweetalert.html",
+      "PackagePath": "staticwebassets\\admin\\extended-sweetalert.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\extended-swiper-silder.html",
+      "PackagePath": "staticwebassets\\admin\\extended-swiper-silder.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\extended-toastify.html",
+      "PackagePath": "staticwebassets\\admin\\extended-toastify.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\forms-basic.html",
+      "PackagePath": "staticwebassets\\admin\\forms-basic.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\forms-checkbox-radio.html",
+      "PackagePath": "staticwebassets\\admin\\forms-checkbox-radio.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\forms-choices.html",
+      "PackagePath": "staticwebassets\\admin\\forms-choices.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\forms-clipboard.html",
+      "PackagePath": "staticwebassets\\admin\\forms-clipboard.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\forms-editors.html",
+      "PackagePath": "staticwebassets\\admin\\forms-editors.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\forms-fileuploads.html",
+      "PackagePath": "staticwebassets\\admin\\forms-fileuploads.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\forms-flatepicker.html",
+      "PackagePath": "staticwebassets\\admin\\forms-flatepicker.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\forms-input-mask.html",
+      "PackagePath": "staticwebassets\\admin\\forms-input-mask.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\forms-range-slider.html",
+      "PackagePath": "staticwebassets\\admin\\forms-range-slider.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\forms-validation.html",
+      "PackagePath": "staticwebassets\\admin\\forms-validation.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\forms-wizard.html",
+      "PackagePath": "staticwebassets\\admin\\forms-wizard.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\help-center.html",
+      "PackagePath": "staticwebassets\\admin\\help-center.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\icons-boxicons.html",
+      "PackagePath": "staticwebassets\\admin\\icons-boxicons.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\icons-solar.html",
+      "PackagePath": "staticwebassets\\admin\\icons-solar.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\index.html",
+      "PackagePath": "staticwebassets\\admin\\index.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\inventory-received-orders.html",
+      "PackagePath": "staticwebassets\\admin\\inventory-received-orders.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\inventory-warehouse.html",
+      "PackagePath": "staticwebassets\\admin\\inventory-warehouse.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\invoice-add.html",
+      "PackagePath": "staticwebassets\\admin\\invoice-add.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\invoice-details.html",
+      "PackagePath": "staticwebassets\\admin\\invoice-details.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\invoice-list.html",
+      "PackagePath": "staticwebassets\\admin\\invoice-list.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\maps-google.html",
+      "PackagePath": "staticwebassets\\admin\\maps-google.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\maps-vector.html",
+      "PackagePath": "staticwebassets\\admin\\maps-vector.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\order-cart.html",
+      "PackagePath": "staticwebassets\\admin\\order-cart.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\order-checkout.html",
+      "PackagePath": "staticwebassets\\admin\\order-checkout.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\order-detail.html",
+      "PackagePath": "staticwebassets\\admin\\order-detail.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\orders-list.html",
+      "PackagePath": "staticwebassets\\admin\\orders-list.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\pages-404-alt.html",
+      "PackagePath": "staticwebassets\\admin\\pages-404-alt.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\pages-404.html",
+      "PackagePath": "staticwebassets\\admin\\pages-404.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\pages-comingsoon.html",
+      "PackagePath": "staticwebassets\\admin\\pages-comingsoon.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\pages-faqs.html",
+      "PackagePath": "staticwebassets\\admin\\pages-faqs.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\pages-maintenance.html",
+      "PackagePath": "staticwebassets\\admin\\pages-maintenance.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\pages-permissions.html",
+      "PackagePath": "staticwebassets\\admin\\pages-permissions.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\pages-pricing.html",
+      "PackagePath": "staticwebassets\\admin\\pages-pricing.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\pages-profile.html",
+      "PackagePath": "staticwebassets\\admin\\pages-profile.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\pages-review.html",
+      "PackagePath": "staticwebassets\\admin\\pages-review.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\pages-starter.html",
+      "PackagePath": "staticwebassets\\admin\\pages-starter.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\pages-timeline.html",
+      "PackagePath": "staticwebassets\\admin\\pages-timeline.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\privacy-policy.html",
+      "PackagePath": "staticwebassets\\admin\\privacy-policy.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\product-add.html",
+      "PackagePath": "staticwebassets\\admin\\product-add.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\product-details.html",
+      "PackagePath": "staticwebassets\\admin\\product-details.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\product-edit.html",
+      "PackagePath": "staticwebassets\\admin\\product-edit.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\product-grid.html",
+      "PackagePath": "staticwebassets\\admin\\product-grid.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\product-list.html",
+      "PackagePath": "staticwebassets\\admin\\product-list.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\purchase-list.html",
+      "PackagePath": "staticwebassets\\admin\\purchase-list.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\purchase-order.html",
+      "PackagePath": "staticwebassets\\admin\\purchase-order.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\purchase-returns.html",
+      "PackagePath": "staticwebassets\\admin\\purchase-returns.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\role-add.html",
+      "PackagePath": "staticwebassets\\admin\\role-add.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\role-edit.html",
+      "PackagePath": "staticwebassets\\admin\\role-edit.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\role-list.html",
+      "PackagePath": "staticwebassets\\admin\\role-list.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\seller-add.html",
+      "PackagePath": "staticwebassets\\admin\\seller-add.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\seller-details.html",
+      "PackagePath": "staticwebassets\\admin\\seller-details.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\seller-edit.html",
+      "PackagePath": "staticwebassets\\admin\\seller-edit.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\seller-list.html",
+      "PackagePath": "staticwebassets\\admin\\seller-list.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\settings.html",
+      "PackagePath": "staticwebassets\\admin\\settings.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\tables-basic.html",
+      "PackagePath": "staticwebassets\\admin\\tables-basic.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\tables-gridjs.html",
+      "PackagePath": "staticwebassets\\admin\\tables-gridjs.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-accordion.html",
+      "PackagePath": "staticwebassets\\admin\\ui-accordion.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-alerts.html",
+      "PackagePath": "staticwebassets\\admin\\ui-alerts.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-avatar.html",
+      "PackagePath": "staticwebassets\\admin\\ui-avatar.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-badge.html",
+      "PackagePath": "staticwebassets\\admin\\ui-badge.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-breadcrumb.html",
+      "PackagePath": "staticwebassets\\admin\\ui-breadcrumb.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-buttons.html",
+      "PackagePath": "staticwebassets\\admin\\ui-buttons.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-card.html",
+      "PackagePath": "staticwebassets\\admin\\ui-card.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-carousel.html",
+      "PackagePath": "staticwebassets\\admin\\ui-carousel.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-collapse.html",
+      "PackagePath": "staticwebassets\\admin\\ui-collapse.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-dropdown.html",
+      "PackagePath": "staticwebassets\\admin\\ui-dropdown.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-list-group.html",
+      "PackagePath": "staticwebassets\\admin\\ui-list-group.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-modal.html",
+      "PackagePath": "staticwebassets\\admin\\ui-modal.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-offcanvas.html",
+      "PackagePath": "staticwebassets\\admin\\ui-offcanvas.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-pagination.html",
+      "PackagePath": "staticwebassets\\admin\\ui-pagination.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-placeholders.html",
+      "PackagePath": "staticwebassets\\admin\\ui-placeholders.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-popovers.html",
+      "PackagePath": "staticwebassets\\admin\\ui-popovers.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-progress.html",
+      "PackagePath": "staticwebassets\\admin\\ui-progress.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-scrollspy.html",
+      "PackagePath": "staticwebassets\\admin\\ui-scrollspy.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-spinners.html",
+      "PackagePath": "staticwebassets\\admin\\ui-spinners.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-tabs.html",
+      "PackagePath": "staticwebassets\\admin\\ui-tabs.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-toasts.html",
+      "PackagePath": "staticwebassets\\admin\\ui-toasts.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\ui-tooltips.html",
+      "PackagePath": "staticwebassets\\admin\\ui-tooltips.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\admin\\widgets.html",
+      "PackagePath": "staticwebassets\\admin\\widgets.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\apexcharts.com\\samples\\assets\\github-data.js",
+=======
+      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\apexcharts.com\\samples\\assets\\github-data.js",
+>>>>>>> 6c90aa46334017e0c49df0750d917739b1b883ce
+>>>>>>> 35f36276d14b370829066272f8ce3bdf1f677c25
       "PackagePath": "staticwebassets\\apexcharts.com\\samples\\assets\\github-data.js"
     },
     {
@@ -933,10 +1437,24 @@
       "PackagePath": "staticwebassets\\assets\\img\\User\\976bf233-055e-49de-a92d-70d297bd62fd.jpg"
     },
     {
+<<<<<<< HEAD
+=======
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\User\\a5848f75-eff7-4375-af5a-4df9b1057f6a.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\User\\a5848f75-eff7-4375-af5a-4df9b1057f6a.jpg"
+    },
+    {
+>>>>>>> 35f36276d14b370829066272f8ce3bdf1f677c25
       "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\User\\ad93131c-6854-458d-bef2-fd93170ec723.png",
       "PackagePath": "staticwebassets\\assets\\img\\User\\ad93131c-6854-458d-bef2-fd93170ec723.png"
     },
     {
+<<<<<<< HEAD
+=======
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\User\\b0f92a2b-cb1b-4263-86d9-a5bb5aa85a1b.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\User\\b0f92a2b-cb1b-4263-86d9-a5bb5aa85a1b.jpg"
+    },
+    {
+>>>>>>> 35f36276d14b370829066272f8ce3bdf1f677c25
       "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\User\\c75d5be0-c144-4342-b498-43f21616fdc0.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\User\\c75d5be0-c144-4342-b498-43f21616fdc0.jpg"
     },
@@ -1189,14 +1707,182 @@
       "PackagePath": "staticwebassets\\assets\\img\\paypal.html"
     },
     {
+<<<<<<< HEAD
       "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\products\\1-a.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\1-a.jpg"
     },
     {
+=======
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\1-a.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\1-a.jpg"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\1.jpg"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\10-a.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\10-a.jpg"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\10.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\10.jpg"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\11-a.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\11-a.jpg"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\11.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\11.jpg"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\12-a.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\12-a.jpg"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\12.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\12.jpg"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\13-a.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\13-a.jpg"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\13.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\13.jpg"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\14-a.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\14-a.jpg"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\14.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\14.jpg"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\15.png",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\15.png"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\16.png",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\16.png"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\17.png",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\17.png"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\18.png",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\18.png"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\19.png",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\19.png"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\2-a.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\2-a.jpg"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\2.jpg"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\20.png",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\20.png"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\21.png",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\21.png"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\22.png",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\22.png"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\3.jpg"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\4.jpg"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\5-a.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\5-a.jpg"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\5.jpg"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\6-a.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\6-a.jpg"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\6.jpg"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\7-a.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\7-a.jpg"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\7.jpg"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\8-a.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\8-a.jpg"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\8.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\8.jpg"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\9-a.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\9-a.jpg"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\9.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\9.jpg"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\a.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\a.jpg"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\b.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\b.jpg"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\c.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\c.jpg"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\d.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\d.jpg"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\e.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\e.jpg"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\f.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\f.jpg"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\product\\g.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\product\\g.jpg"
+    },
+    {
+>>>>>>> 35f36276d14b370829066272f8ce3bdf1f677c25
       "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\products\\1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\1.jpg"
     },
     {
+<<<<<<< HEAD
       "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\products\\10-a.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\10-a.jpg"
     },
@@ -1257,10 +1943,17 @@
       "PackagePath": "staticwebassets\\assets\\img\\products\\2-a.jpg"
     },
     {
+=======
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\products\\1b52c0ee-2e35-42fd-8587-cd848f80af3e.png",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\1b52c0ee-2e35-42fd-8587-cd848f80af3e.png"
+    },
+    {
+>>>>>>> 35f36276d14b370829066272f8ce3bdf1f677c25
       "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\products\\2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\2.jpg"
     },
     {
+<<<<<<< HEAD
       "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\products\\20.png",
       "PackagePath": "staticwebassets\\assets\\img\\products\\20.png"
     },
@@ -1351,6 +2044,40 @@
     {
       "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\products\\menTshirt.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\menTshirt.jpg"
+=======
+<<<<<<< HEAD
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\products\\319d144a-9044-41d1-834b-118217e4f419.png",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\319d144a-9044-41d1-834b-118217e4f419.png"
+=======
+      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\products\\24e459ab-8770-4004-a3d1-cc46ae5bca3a.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\24e459ab-8770-4004-a3d1-cc46ae5bca3a.jpg"
+>>>>>>> 6c90aa46334017e0c49df0750d917739b1b883ce
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\products\\5a425623-dc1e-4b96-8f71-ef259a18259f.png",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\5a425623-dc1e-4b96-8f71-ef259a18259f.png"
+    },
+    {
+<<<<<<< HEAD
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\products\\85effbe6-20ea-4211-8784-cc0ebfa88145.png",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\85effbe6-20ea-4211-8784-cc0ebfa88145.png"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\products\\a6a888bf-069d-4043-be84-ee8bad4b29c9.png",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\a6a888bf-069d-4043-be84-ee8bad4b29c9.png"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\products\\bbd3ba15-e69f-4396-ac1c-695adb361060.png",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\bbd3ba15-e69f-4396-ac1c-695adb361060.png"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\products\\f829503e-4b4d-4b96-b568-7b994c5ae224.png",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\f829503e-4b4d-4b96-b568-7b994c5ae224.png"
+=======
+      "Id": "D:\\asp.net\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\products\\Screenshot 2024-12-05 174143.png",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\Screenshot 2024-12-05 174143.png"
+>>>>>>> 6c90aa46334017e0c49df0750d917739b1b883ce
+>>>>>>> 35f36276d14b370829066272f8ce3bdf1f677c25
     },
     {
       "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\assets\\img\\sneakers.png",
@@ -1429,6 +2156,93 @@
       "PackagePath": "staticwebassets\\assets\\js\\snackbar.min.js"
     },
     {
+<<<<<<< HEAD
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\backblue.gif",
+      "PackagePath": "staticwebassets\\backblue.gif"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\blog-detail.html",
+      "PackagePath": "staticwebassets\\blog-detail.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\blog.html",
+      "PackagePath": "staticwebassets\\blog.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\checkout.html",
+      "PackagePath": "staticwebassets\\checkout.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\complete-order.html",
+      "PackagePath": "staticwebassets\\complete-order.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\contact.html",
+      "PackagePath": "staticwebassets\\contact.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\docs.html",
+      "PackagePath": "staticwebassets\\docs.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\edit-account-address.html",
+      "PackagePath": "staticwebassets\\edit-account-address.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\fade.gif",
+      "PackagePath": "staticwebassets\\fade.gif"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\faq.html",
+      "PackagePath": "staticwebassets\\faq.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\login.html",
+      "PackagePath": "staticwebassets\\login.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\my-orders.html",
+      "PackagePath": "staticwebassets\\my-orders.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\payment-methode.html",
+      "PackagePath": "staticwebassets\\payment-methode.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\privacy.html",
+      "PackagePath": "staticwebassets\\privacy.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\profile-info.html",
+      "PackagePath": "staticwebassets\\profile-info.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\shop-list-sidebar.html",
+      "PackagePath": "staticwebassets\\shop-list-sidebar.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\shop-single-v4.html",
+      "PackagePath": "staticwebassets\\shop-single-v4.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\shop-style-5.html",
+      "PackagePath": "staticwebassets\\shop-style-5.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\shoping-cart.html",
+      "PackagePath": "staticwebassets\\shoping-cart.html"
+    },
+    {
+      "Id": "D:\\HỌC KỲ 1 2024-2025\\Lập trình Web\\Thực hành\\KumoShopMVC\\KumoShopMVC\\wwwroot\\wishlist.html",
+      "PackagePath": "staticwebassets\\wishlist.html"
+    },
+    {
+=======
+>>>>>>> 6c90aa46334017e0c49df0750d917739b1b883ce
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.KumoShopMVC.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

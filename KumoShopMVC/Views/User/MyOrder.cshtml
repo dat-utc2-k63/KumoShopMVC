@@ -35,15 +35,15 @@
 						</div>
 							<div class="col-xl-3 col-lg-3 col-md-3 col-6">
 								<p class="mb-1 p-0"><span class="text-muted">Status</span></p>
-								@if (order.StatusShippingId == -1)
+								@if (order.StatusShippingId == 1)
 								{
 									<div class="delv_status"><span class="ft-medium small text-danger bg-light-danger rounded px-3 py-1">@order.StatusShipping</span></div>
 								}
-								else if (order.StatusShippingId == 0 || order.StatusShippingId == 1 || order.StatusShippingId == 2)
+								else if (order.StatusShippingId == 2 || order.StatusShippingId == 3 || order.StatusShippingId == 4)
 								{
 									<div class="delv_status"><span class="ft-medium small text-warning bg-light-warning rounded px-3 py-1">@order.StatusShipping</span></div>
 								}
-								else if (order.StatusShippingId == 3)
+								else if (order.StatusShippingId == 5)
 								{
 									<div class="delv_status"><span class="ft-medium small text-success bg-light-success rounded px-3 py-1">@order.StatusShipping</span></div>
 								}
@@ -85,7 +85,7 @@
 										<div class="delv_status"><span class="fs-sm ft-bold mb-0 lh-1">@item.SubTotal.ToString("#,##0.00")</span></div>
 									</div>
 									<div class="col-xl-3 col-lg-3 col-md-3 col-6">
-										<button type="button" class="btn stretched-link borders m-auto" data-order-item-id="@item.OrderItemId" @(item.IsRating || order.StatusShippingId!=3 ? "disabled" : "")
+										<button type="button" class="btn btn-rating stretched-link borders m-auto" data-order-item-id="@item.OrderItemId" @(item.IsRating || order.StatusShippingId!=5 ? "disabled" : "")
 												data-product-id="@item.ProductId" data-toggle="modal" data-target="#rating">
 											@(item.IsRating ? "Đã đánh giá" : "Đánh giá sản phẩm")
 										</button>
@@ -109,6 +109,7 @@
         </div>
     </div>
 </section>
+
 @section Scripts{
 	<script>
 		$(document).ready(function () {

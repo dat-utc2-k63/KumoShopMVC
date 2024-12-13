@@ -228,7 +228,7 @@ namespace KumoShopMVC.Controllers
                 Phone = vnPayModel.PhoneNumber,
                 OrderDate = vnPayModel.CreatedDate,
                 DescOrder = vnPayModel.Description,
-                StatusId = 0,
+                StatusId = 2,
                 PaymentMethode = "VnPay"
             };
 

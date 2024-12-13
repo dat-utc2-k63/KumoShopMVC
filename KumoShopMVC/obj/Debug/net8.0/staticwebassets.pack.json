@@ -1313,6 +1313,14 @@
       "PackagePath": "staticwebassets\\assets\\img\\products\\RunningShoes.jpg"
     },
     {
+      "Id": "D:\\asp.net\\KumoShopMVC-master\\KumoShopMVC\\wwwroot\\assets\\img\\products\\Screenshot 2024-11-27 111956.png",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\Screenshot 2024-11-27 111956.png"
+    },
+    {
+      "Id": "D:\\asp.net\\KumoShopMVC-master\\KumoShopMVC\\wwwroot\\assets\\img\\products\\Screenshot 2024-12-05 135725.png",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\Screenshot 2024-12-05 135725.png"
+    },
+    {
       "Id": "D:\\asp.net\\KumoShopMVC-master\\KumoShopMVC\\wwwroot\\assets\\img\\products\\Skirt.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\Skirt.jpg"
     },
@@ -1365,6 +1373,10 @@
       "PackagePath": "staticwebassets\\assets\\img\\products\\giaynu.jpg"
     },
     {
+      "Id": "D:\\asp.net\\KumoShopMVC-master\\KumoShopMVC\\wwwroot\\assets\\img\\products\\hinh-dep.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\hinh-dep.jpg"
+    },
+    {
       "Id": "D:\\asp.net\\KumoShopMVC-master\\KumoShopMVC\\wwwroot\\assets\\img\\products\\menJean.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\menJean.jpg"
     },
@@ -1383,6 +1395,10 @@
     {
       "Id": "D:\\asp.net\\KumoShopMVC-master\\KumoShopMVC\\wwwroot\\assets\\img\\products\\menTshirt1.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\products\\menTshirt1.jpg"
+    },
+    {
+      "Id": "D:\\asp.net\\KumoShopMVC-master\\KumoShopMVC\\wwwroot\\assets\\img\\products\\pngtree-nature-background-sunset-wallpaer-with-beautiful-flower-farms-image_2592160.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\products\\pngtree-nature-background-sunset-wallpaer-with-beautiful-flower-farms-image_2592160.jpg"
     },
     {
       "Id": "D:\\asp.net\\KumoShopMVC-master\\KumoShopMVC\\wwwroot\\assets\\img\\products\\quanthunnu.jpg",

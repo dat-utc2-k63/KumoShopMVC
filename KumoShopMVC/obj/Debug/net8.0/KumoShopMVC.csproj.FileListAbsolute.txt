@@ -843,3 +843,4 @@ D:\asp.net\KumoShopMVC-master\KumoShopMVC\obj\Debug\net8.0\refint\KumoShopMVC.dl
 D:\asp.net\KumoShopMVC-master\KumoShopMVC\obj\Debug\net8.0\KumoShopMVC.pdb
 D:\asp.net\KumoShopMVC-master\KumoShopMVC\obj\Debug\net8.0\KumoShopMVC.genruntimeconfig.cache
 D:\asp.net\KumoShopMVC-master\KumoShopMVC\obj\Debug\net8.0\ref\KumoShopMVC.dll
+D:\asp.net\KumoShopMVC-master\KumoShopMVC\obj\Debug\net8.0\KumoShopMVC.sourcelink.json

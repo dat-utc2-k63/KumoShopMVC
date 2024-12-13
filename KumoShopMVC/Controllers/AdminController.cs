@@ -189,7 +189,7 @@ namespace KumoShopMVC.Controllers
                         }
                     }
 
-                    db.AddRange(productSize);
+                    db.ProductSizes.AddRange(productSize);
                 }
                 catch
                 {
@@ -216,7 +216,7 @@ namespace KumoShopMVC.Controllers
                         }
                     }
 
-                    db.AddRange(productColor);
+                    db.ProductColors.AddRange(productColor);
                 }
                 catch
                 {
@@ -672,7 +672,7 @@ namespace KumoShopMVC.Controllers
                         }
                     }
 
-                    db.AddRange(productSize);
+                    db.ProductSizes.AddRange(productSize);
                 }
                 catch
                 {
@@ -696,8 +696,9 @@ namespace KumoShopMVC.Controllers
                             });
                         }
                     }
-                    db.AddRange(productColor);
-                }
+                    db.ProductColors.AddRange(productColor);
+
+				}
                 catch
                 {
                     db.Database.RollbackTransaction();

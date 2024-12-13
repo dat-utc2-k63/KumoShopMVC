@@ -1,0 +1,54 @@
+﻿@model KumoShopMVC.ViewModels.CategoryMenuVM    
+@{
+    ViewData["Title"] = "Create Category";
+}
+
+<h1>Create Category</h1>
+
+<div class="page-content">
+    <!-- Start Container Fluid -->
+    <div class="container-xxl">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Category Information</h4>
+                    </div>
+                    <div class="card-body">
+                        <form asp-action="CategoryCreate" asp-controller="Admin" method="post">
+                            <div class="form-group mb-3">
+                                <label for="NameCategory" class="form-label">Category Name</label>
+                                <input type="text"
+                                       class="form-control"
+                                       id="NameCategory"
+                                       name="NameCategory"
+                                       value="@Model?.NameCategory"
+                                       placeholder="Enter category name"
+                                       required />
+                                @Html.ValidationMessageFor(model => model.NameCategory, "", new { @class = "text-danger" })
+                            </div>
+
+                            <div class="form-group d-flex justify-content-end">
+                                <button type="submit" class="btn btn-primary me-2">Create</button>
+                                <a href="@Url.Action("CategoryList", "Admin")" class="btn btn-secondary">Cancel</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer mt-4">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-center">
+                <script>document.write(new Date().getFullYear())</script> &copy; Larkon. Crafted by
+                <iconify-icon icon="iconamoon:heart-duotone" class="fs-18 align-middle text-danger"></iconify-icon>
+                <a href="#" class="fw-bold footer-text" target="_blank">Techzaa</a>
+            </div>
+        </div>
+    </div>
+</footer>

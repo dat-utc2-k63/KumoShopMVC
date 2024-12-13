@@ -1,0 +1,67 @@
+﻿@model IEnumerable<KumoShopMVC.ViewModels.ProductVM>
+@{
+    Layout = "_LayoutCustomer";
+}
+@RenderSection("BreadCum", required: false)
+
+
+<!-- ============================= Filter Wrap ============================== -->
+<!-- ======================= All Product List ======================== -->
+<section class="middle">
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-3 col-lg-4 col-md-12 col-sm-12 p-xl-0">
+							<div class="search-sidebar sm-sidebar border">
+								<div class="search-sidebar-body">
+							 <form asp-action="Search" asp-controller="Product">
+								<div class="form-group">
+									<input type="text" class="form-control" name ="query" id="queryInput" placeholder="Product Keyword">
+								</div>
+								<div class="form-group mb-0">
+									<button type="submit" class="btn d-block full-width btn-dark" onclick="submitSearch()">Search Product</button>
+								</div>
+							
+									<!-- Single Option -->
+									<div class="single_search_boxed">
+										<div class="widget-boxed-header px-3">
+											<h4 class="mt-3">Categories</h4>
+										</div>
+										<div class="widget-boxed-body">
+											<div class="side-list no-border">
+												<div class="filter-card" id="shop-categories">
+
+			@await Component.InvokeAsync("CategoryMenu")
+			</form>
+			<div class="col-xl-9 col-lg-8 col-md-12 col-sm-12">
+
+				<div class="row">
+					<div class="col-xl-12 col-lg-12 col-md-12">
+						<div class="border mb-3 mfliud">
+							<div class="row align-items-center py-2 m-0">
+								<div class="col-xl-3 col-lg-4 col-md-5 col-sm-12">
+								<h6 class="mb-0">@ViewData["TotalProducts"] Items Found</h6>
+								</div>
+
+								<div class="col-xl-9 col-lg-8 col-md-7 col-sm-12">
+									<div class="filter_wraps d-flex align-items-center justify-content-end m-start">
+										<div class="single_fitres mr-2 br-right">
+											<a asp-action="SortByPrice" asp-route-sortOrder="asc" class="btn stretched-link borders m-auto">Sort by price: Low price</a>
+											<a asp-action="SortByPrice" asp-route-sortOrder="desc" class="btn stretched-link borders m-auto">Sort by price: High price</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- row -->
+				<div class="row align-items-center rows-products">
+					@RenderBody()
+			</div>
+
+		</div>
+	</div>
+</section>
+<!-- ======================= All Product List ======================== -->
+	

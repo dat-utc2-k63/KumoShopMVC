@@ -1,0 +1,124 @@
+﻿@{
+    ViewData["Title"] = "Contact";
+}
+@model IEnumerable<KumoShopMVC.ViewModels.ContactVM>
+<h1>Contact</h1>
+
+<div class="page-content">
+
+    <!-- Start Container Fluid -->
+    <div class="container-xxl">
+        <div class="row justify-content-center">
+            <div class="col-lg-12">
+                <div class="card overflow-hidden" style="background: url('assets/images/small/img-2.jpg'); ">
+                    <div class="position-absolute top-0 end-0 bottom-0 start-0 bg-dark opacity-75"></div>
+                    <div class="card-body">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-7 text-center">
+                                <h3 class="text-white">Help Center</h3>
+
+                                <p class="text-white-50">How can we help you ?</p>
+
+                                <div class="search-bar">
+                                    <span><i class="bx bx-search-alt"></i></span>
+                                    <input type="search" class="form-control rounded-pill bg-white border-0" id="search" placeholder="Search ...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Subject</th>
+                    <th>Description</th>
+                    <th>Status</th>
+                    <th>Created Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var contact in Model)
+                {
+                    <tr>
+                        <td>@contact.ContactId</td>
+                        <td>@contact.Name</td>
+                        <td>@contact.Email</td>
+                        <td>@contact.Subject</td>
+                        <td>@contact.DescContact</td>
+                        <td>
+                            @if (contact.Status == true)
+                            {
+                                <span class="badge bg-success">Resolved</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-warning">Pending</span>
+                            }
+                        </td>
+                        <td>@contact.CreateDate?.ToString("MM/dd/yyyy")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <div class="modal fade" id="staticBackdrop" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header border-bottom">
+                        <h1 class="modal-title fs-18" id="staticBackdropLabel">Show Video</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h4 class="card-title">Getting Started with Larkon</h4>
+                        <div class="row g-2 mt-2">
+                            <div class="col-lg-6">
+                                <div class="ratio ratio-16x9">
+                                    <iframe src="https://www.youtube.com/embed/PrUxWZiQfy4?autohide=0&amp;showinfo=0&amp;controls=0" class="rounded"></iframe>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="ratio ratio-16x9">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/D89Dgg32yLk?si=hxvuTzNEzCyfuBN1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" class="rounded" allowfullscreen=""></iframe>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="ratio ratio-16x9">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/qBpY4MJt6lc?si=LXHNQxR1XHEt_5VT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" class="rounded"></iframe>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="ratio ratio-16x9">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wEw4A7CcSWU?si=BWA7J4IpWkiYvypk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" class="rounded"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer p-2">
+                        <a href="#!" class="btn btn-primary">More Video</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- End Container xxl -->
+    <!-- ========== Footer Start ========== -->
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <script>document.write(new Date().getFullYear())</script> &copy; Larkon. Crafted by <iconify-icon icon="iconamoon:heart-duotone" class="fs-18 align-middle text-danger"></iconify-icon> <a href="#" class="fw-bold footer-text" target="_blank">Techzaa</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ========== Footer End ========== -->
+
+</div>

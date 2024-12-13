@@ -1,0 +1,38 @@
+﻿@model KumoShopMVC.ViewModels.LoginVM
+@{
+    ViewData["Title"] = "Login";
+}
+
+						<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+							<form asp-action="Login" asp-route-returnurl="@ViewBag.ReturnUrl" class="border p-3 rounded">
+								<div class="text-danger" asp-validation-summary="All"></div>
+								<div class="form-group">
+									<label asp-for="@Model.Email">Email *</label>
+									<input asp-for="@Model.Email" type="text" class="form-control" placeholder="Email*">
+									<span asp-validation-for="@Model.Email" class="text-danger"></span>
+								</div>
+
+								<div class="form-group">
+									<label asp-for="@Model.Password">Password *</label>
+									<input asp-for="@Model.Password" type="password" class="form-control" placeholder="Password*">
+									<span asp-validation-for="@Model.Password" class="text-danger"></span>
+								</div>
+
+								<div class="form-group">
+									<div class="d-flex align-items-center justify-content-between">
+										<div class="flex-1">
+											<input id="dd" class="checkbox-custom" name="dd" type="checkbox">
+											<label for="dd" class="checkbox-custom-label">Remember Me</label>
+										</div>	
+										<div class="eltio_k2">
+											<a asp-controller="User" asp-action="ForgetPassword" class="btn border-danger">Lost Your Password?</a>
+										</div>	
+									</div>
+								</div>
+
+								<div class="form-group">
+									<button type="submit" class="btn btn-md full-width bg-dark text-light fs-md ft-medium">Login</button>
+								</div>
+							</form>
+							<a asp-controller="User" asp-action="Register" class="btn border-danger">Create An Account?</a>
+						</div>

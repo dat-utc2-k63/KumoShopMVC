@@ -1,0 +1,39 @@
+﻿@model IEnumerable<KumoShopMVC.ViewModels.CategoryMenuVM>
+
+													<!-- Single Filter Card -->
+							<ul>
+								@foreach (var item in Model)
+								{
+									<li class="single_filter_card" >
+										<h5>
+											<a asp-controller="Product" asp-action="Index" asp-route-category="@item.CaterogyId" class="collapsed">@item.NameCategory</a>
+										</h5>
+									</li>
+								}
+							</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="single_search_boxed">
+										<div class="widget-boxed-header">
+											<h4><a href="#pricing" data-toggle="collapse" aria-expanded="false" role="button" name="prices">Pricing</a></h4>
+										</div>
+										<div class="widget-boxed-body collapse show" id="pricing" data-parent="#pricing">
+											<div class="side-list no-border mb-4">
+												<div class="price-range">
+													<input type="text" id="minPrice" class="form-control" placeholder="Min Price" name="minPrice" value="" />
+													<span class="separator">-</span>
+													<input type="text" id="maxPrice" class="form-control" placeholder="Max Price" name="maxPrice" value="" />
+												</div>
+											</div>
+										</div>
+									</div>
+
+
+
+
+											</div>
+										</div>
+									</div>	

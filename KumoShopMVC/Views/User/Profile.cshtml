@@ -1,0 +1,85 @@
+﻿@model KumoShopMVC.ViewModels.RegisterVM
+@{
+    ViewData["Title"] = "Profile";
+}
+
+<!-- ======================= Top Breadcrumbs ======================== -->
+<div class="gray py-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Profile Info</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ======================= Dashboard Detail ======================== -->
+<section class="middle">
+    <div class="container">
+        <div class="row align-items-start justify-content-between">
+            @await Component.InvokeAsync("DashboardNavigation")
+            <div class="col-12 col-md-12 col-lg-8 col-xl-8">
+                <!-- row -->
+                <div class="row align-items-center">
+                    <form asp-action="UpdateProfile" asp-controller="User" method="post" enctype="multipart/form-data" class="col-12">
+                        @Html.AntiForgeryToken()
+
+                        <div class="form-group">
+                            <label class="small text-dark ft-medium">Full Name *</label>
+                            <input type="text" class="form-control" name="FullName" value="@Model.FullName" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label class="small text-dark ft-medium">Email ID *</label>
+                            <input type="email" class="form-control" name="Email" value="@Model.Email" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label class="small text-dark ft-medium">Address *</label>
+                            <input type="text" class="form-control" name="Address" value="@Model.Address" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label class="small text-dark ft-medium">Phone *</label>
+                            <input type="tel" class="form-control" name="Phone" value="@Model.Phone" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label class="small text-dark ft-medium">About Us *</label>
+                            <textarea class="form-control ht-80" name="AboutUs" required>@Model.AboutUs</textarea>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label class="small text-dark ft-medium">Current Password *</label>
+                                <input type="password" class="form-control" name="CurrentPassword" required />
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label class="small text-dark ft-medium">New Password *</label>
+                                <input type="password" class="form-control" name="NewPassword" required />
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <label>Avatar</label>
+                            <input type="file" class="form-control" name="Avatar">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-dark">Save Changes</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- row -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ======================= Dashboard Detail End ======================== -->

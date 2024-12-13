@@ -1,0 +1,87 @@
+﻿@using X.PagedList.Mvc.Core
+@model X.PagedList.IPagedList<KumoShopMVC.ViewModels.RoleVM>
+@{
+    ViewData["Title"] = "ListRole";
+}
+
+<h1>ListRole</h1>
+
+<div class="page-content">
+
+    <!-- Start Container Fluid -->
+    <div class="container-xxl">
+        <div class="mb-3">
+            <a asp-controller="Admin" asp-action="RoleCreate" class="btn btn-primary">Add Role</a>
+        </div>
+        <div class="card overflow-hiddenCoupons">
+            <div class="card-body p-0">
+                <div class="table-responsive">
+                    <table class="table align-middle mb-0 table-hover table-centered">
+                        <thead class="bg-light-subtle">
+                            <tr>
+                                <th>Id</th>
+                                <th>NameRole</th>
+                                <th>Create Date</th>
+                                <th>Manage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.RoleId</td>
+                                    <td>@item.NameRole</td>
+                                    <td>@item.CreateDate?.ToString("dd/MM/yyyy")</td>
+                                    <td>
+                                        <a class="btn btn-warning btn-sm" asp-controller="Admin" asp-action="RoleEdit" asp-route-Id="@item.RoleId">Edit</a>
+                                        <form method="post" asp-controller="Admin" asp-action="DeleteRole" asp-route-roleId="@item.RoleId" onsubmit="return confirm('Are you sure you want to delete this role?');" style="display:inline;">
+                                            <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                                        </form>
+                                </tr>
+                            }
+
+
+                        </tbody>
+                    </table>
+                </div>
+                <!-- end table-responsive -->
+            </div>
+            <div class="row g-0 align-items-center justify-content-between text-center text-sm-start p-3 border-top">
+                <div class="col-sm">
+                    <div class="text-muted">
+                        Showing @Model.FirstItemOnPage to @Model.LastItemOnPage of @Model.TotalItemCount Results
+                    </div>
+                </div>
+                <div class="col-sm-auto mt-3 mt-sm-0">
+                    @Html.PagedListPager(
+      Model,
+      page => Url.Action("RoleList", new { page }),
+      new PagedListRenderOptions
+      {
+          LiElementClasses = new[] { "page-item" },
+          PageClasses = new[] { "page-link" },
+          ActiveLiElementClass = "active",
+          PreviousElementClass = "page-item",
+          NextElementClass = "page-item"
+      }
+  )
+
+                </div>
+            </div>
+        </div> <!-- end card -->
+
+    </div>
+    <!-- End Container Fluid -->
+    <!-- ========== Footer Start ========== -->
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <script>document.write(new Date().getFullYear())</script> &copy; Larkon. Crafted by <iconify-icon icon="iconamoon:heart-duotone" class="fs-18 align-middle text-danger"></iconify-icon> <a href="#" class="fw-bold footer-text" target="_blank">Techzaa</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ========== Footer End ========== -->
+
+</div>

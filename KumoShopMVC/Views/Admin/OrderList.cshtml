@@ -1,0 +1,313 @@
+﻿@using X.PagedList.Mvc.Core
+@model X.PagedList.IPagedList<KumoShopMVC.ViewModels.OrderVM>
+@{
+    ViewData["Title"] = "ListOrder";
+}
+
+<h1>ListOrder</h1>
+
+<div class="page-content">
+
+    <!-- Start Container Fluid -->
+    <div class="container-xxl">
+
+        <div class="row">
+            <div class="col-md-6 col-xl-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div>
+                                <h4 class="card-title mb-2">Total Order</h4>
+                                <p class="text-muted fw-medium fs-22 mb-0">@ViewBag.TotalOrders</p>
+                            </div>
+                            <div>
+                                <div class="avatar-md bg-primary bg-opacity-10 rounded">
+                                    <iconify-icon icon="solar:chat-round-money-broken" class="fs-32 text-primary avatar-title"></iconify-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div>
+                                <h4 class="card-title mb-2">Order Cancel</h4>
+                                <p class="text-muted fw-medium fs-22 mb-0">@ViewBag.TotalOrdersStatus1</p>
+                            </div>
+                            <div>
+                                <div class="avatar-md bg-primary bg-opacity-10 rounded">
+                                    <iconify-icon icon="solar:cart-cross-broken" class="fs-32 text-primary avatar-title"></iconify-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div>
+                                <h4 class="card-title mb-2">Order Preparing</h4>
+                                <p class="text-muted fw-medium fs-22 mb-0">@ViewBag.TotalOrdersStatus2</p>
+                            </div>
+                            <div>
+                                <div class="avatar-md bg-primary bg-opacity-10 rounded">
+                                    <iconify-icon icon="solar:box-broken" class="fs-32 text-primary avatar-title"></iconify-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div>
+                                <h4 class="card-title mb-2">Order Payment</h4>
+                                <p class="text-muted fw-medium fs-22 mb-0">@ViewBag.TotalOrdersStatus3</p>
+                            </div>
+                            <div>
+                                <div class="avatar-md bg-primary bg-opacity-10 rounded">
+                                    <iconify-icon icon="solar:tram-broken" class="fs-32 text-primary avatar-title"></iconify-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-xl-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div>
+                                <h4 class="card-title mb-2">Order Delivery</h4>
+                                <p class="text-muted fw-medium fs-22 mb-0">@ViewBag.TotalOrdersStatus4</p>
+                            </div>
+                            <div>
+                                <div class="avatar-md bg-primary bg-opacity-10 rounded">
+                                    <iconify-icon icon="solar:clipboard-remove-broken" class="fs-32 text-primary avatar-title"></iconify-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div>
+                                <h4 class="card-title mb-2">Order Success</h4>
+                                <p class="text-muted fw-medium fs-22 mb-0">@ViewBag.TotalOrdersStatus5</p>
+                            </div>
+                            <div>
+                                <div class="avatar-md bg-primary bg-opacity-10 rounded">
+                                    <iconify-icon icon="solar:clock-circle-broken" class="fs-32 text-primary avatar-title"></iconify-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="card">
+                    <div class="d-flex card-header justify-content-between align-items-center">
+                        <div>
+                            <h4 class="card-title">All Order List</h4>
+                        </div>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="table-responsive">
+                            <table class="table align-middle mb-0 table-hover table-centered">
+                                <thead class="bg-light-subtle">
+                                    <tr>
+                                        <th>Order ID</th>
+                                        <th>Created at</th>
+                                        <th>Customer</th>
+                                        <th>Phone</th>
+                                        <th>Address</th>
+                                        <th>Total</th>
+                                        <th>Payment Status</th>
+                                        <th>Items</th>
+                                        <th>Order Status</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var order in Model)
+                                    {
+                                        <tr>
+                                            <td>#@order.OrderId</td>
+                                            <td>@order.OrderDate</td>
+                                            <td>
+                                                <a href="#!" class="link-primary fw-medium">@order.FullName</a>
+                                            </td>
+                                            <td>@order.Phone</td>
+                                            <td>@order.Address</td>
+                                            <td>$@order.OrderItems.Sum(oi => oi.Price * oi.Quantity).ToString("#,##0.00")</td>
+                                            <td>
+                                                <span class="badge @(order.PaymentMethode == "Paid" ? "bg-success" : "bg-light text-dark") px-2 py-1 fs-13">@order.PaymentMethode</span>
+                                            </td>
+                                            <td>@order.OrderItems.Sum(oi => oi.Quantity)</td>
+                                            <td>@order.StatusShipping</td>
+                                            <td>
+                                                <div class="d-flex gap-2">
+                                                    <a asp-action="ExportInvoice" asp-route-orderId="@order.OrderId" class="btn btn-primary">
+                                                        Export PDF
+                                                    </a>
+                                                    <a href="#!"
+                                                       class="btn btn-light btn-sm"
+                                                       data-bs-toggle="modal"
+                                                       data-bs-target="#orderDetailsModal"
+                                                       onclick="showOrderDetails(@order.OrderId)">
+                                                        <iconify-icon icon="solar:eye-broken" class="align-middle fs-18"></iconify-icon>
+                                                    </a>
+                                                    <a href="@Url.Action("OrderEdit", "Admin", new { id = order.OrderId })" class="btn btn-light btn-sm" class="btn btn-soft-primary btn-sm"><iconify-icon icon="solar:pen-2-broken" class="align-middle fs-18"></iconify-icon></a>
+                                                    <form asp-action="DeleteOrder" method="post" onsubmit="return confirm('Are you sure you want to delete this order?');">
+                                                        <input type="hidden" name="id" value="@order.OrderId" />
+                                                        <button type="submit" class="btn btn-soft-danger btn-sm">
+                                                            <iconify-icon icon="solar:trash-bin-minimalistic-2-broken" class="align-middle fs-18"></iconify-icon>
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    }
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- end table-responsive -->
+                    </div>
+                    <div class="card-footer border-top">
+                        <nav aria-label="Page navigation example">
+                            @Html.PagedListPager(
+                                     Model, // Model phải là kiểu IPagedList
+                                     page => Url.Action("OrderList", new { page }),
+                                     new PagedListRenderOptions
+                            {
+                                LiElementClasses = new[] { "page-item" },
+                                PageClasses = new[] { "page-link" },
+                                ActiveLiElementClass = "active",
+                                PreviousElementClass = "page-item",
+                                NextElementClass = "page-item"
+                            }
+                                     )
+                        </nav>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="modal fade" id="orderDetailsModal" tabindex="-1" aria-labelledby="orderDetailsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="orderDetailsModalLabel">Order Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="orderDetailsContent">
+                        <p>Loading...</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- End Container Fluid -->
+    <!-- ========== Footer Start ========== -->
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <script>document.write(new Date().getFullYear())</script> &copy; Larkon. Crafted by <iconify-icon icon="iconamoon:heart-duotone" class="fs-18 align-middle text-danger"></iconify-icon> <a href="#" class="fw-bold footer-text" target="_blank">Techzaa</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ========== Footer End ========== -->
+
+</div>
+@section ScriptAdmin{
+    <script>
+        function showOrderDetails(orderId) {
+            const content = document.getElementById('orderDetailsContent');
+            content.innerHTML = `<p>Loading...</p>`; // Hiển thị loading trong khi chờ
+
+            // Gửi yêu cầu đến server
+            fetch(`/Admin/GetOrderDetails?orderId=${orderId}`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.length === 0) {
+                        content.innerHTML = `<p>No order items found for this order.</p>`;
+                        return;
+                    }
+
+                    // Tính tổng subtotal
+                    const subtotal = data.reduce((total, item) => total + (item.price * item.quantity), 0);
+
+                    // Cập nhật nội dung modal
+                    content.innerHTML = `
+                            <h6>Order ID: ${orderId}</h6>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Image</th>
+                                        <th>Product Name</th>
+                                        <th>Price</th>
+                                        <th>Quantity</th>
+                                        <th>Color</th>
+                                        <th>Size</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${data.map(item => `
+                                        <tr>
+                                            <td>
+                                                <img src="${item.image.startsWith('http') ? item.image : '/assets/img/products/' + item.image}" alt="${item.nameProduct}" style="width: 50px; height: auto;">
+                                                    </td>
+                                            <td>${item.nameProduct}</td>
+                                            <td>${item.price.toFixed(2)}</td>
+                                            <td>${item.quantity}</td>
+                                            <td>${item.color}</td>
+                                            <td>${item.size}</td>
+                                            <td>${(item.price * item.quantity).toFixed(2)}</td>
+                                        </tr>
+                                    `).join('')}
+                                </tbody>
+                            </table>
+                            <div class="mt-3">
+                                <h6 class="text-end">Subtotal: <strong>${subtotal.toFixed(2)}</strong></h6>
+                            </div>
+                        `;
+                })
+                .catch(error => {
+                    content.innerHTML = `<p class="text-danger">Error fetching order details. Please try again later.</p>`;
+                    console.error('Error:', error);
+                });
+        }
+    </script>
+
+}

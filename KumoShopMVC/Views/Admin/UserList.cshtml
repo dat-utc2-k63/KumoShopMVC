@@ -1,0 +1,121 @@
+﻿@using X.PagedList.Mvc.Core
+@model X.PagedList.IPagedList<KumoShopMVC.ViewModels.UserVM>
+    ViewData["Title"] = "ListUser";
+}
+
+<h1>ListUser</h1>
+
+
+<div>
+    <div class="page-content">
+
+        <!-- Start Container Fluid -->
+        <div class="container-xxl">
+
+            <div class="mb-3">
+                <a asp-controller="Admin" asp-action="UserCreate" class="btn btn-primary">Add User</a>
+            </div>
+            <div class="card overflow-hiddenCoupons">
+                <div class="card-body p-0">
+                    <div class="table-responsive">
+                        <table class="table align-middle mb-0 table-hover table-centered">
+                            <thead class="bg-light-subtle">
+
+                                <tr>
+                                    <th>UserId</th>
+                                    <th>Email</th>
+                                    <th>FullName</th>
+                                    <th>Phone</th>
+                                    <th>Address</th>
+                                    <th>Status</th>
+                                    <th>Avatar</th>
+                                    <th>Create Date</th>
+                                    <th>RoleName</th>
+                                    <th>Manage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var user in Model)
+                                {
+                                    <tr>
+                                        <td>@user.UserId</td>
+                                        <td>@user.Email</td>
+                                        <td>@user.Fullname</td>
+                                        <td>@user.Phone</td>
+                                        <td>@user.Address</td>
+                                        <td>@(user.Status == true ? "Active" : "Inactive")</td>
+                                        <td>
+                                            @if (!string.IsNullOrEmpty(user.Avatar))
+                                            {
+                                                <img src="@Url.Content("~/assets/img/User/" + user.Avatar)" alt="Avatar" style="max-width: 50px; max-height: 50px; border-radius: 50%;" />
+                                            }
+                                            else
+                                            {
+                                                <img src="@Url.Content("~/assets/img/default-avatar.png")" alt="Default Avatar" style="max-width: 50px; max-height: 50px; border-radius: 50%;" />
+                                            }
+                                        </td>
+                                        <td>@user.CreateDate</td>
+                                        <td>@user.Namerole</td>
+
+                                        <td>
+                                            <a class="btn btn-warning btn-sm" asp-controller="Admin" asp-action="UserEdit" asp-route-id="@user.UserId">Edit</a>
+                                            <form method="post" asp-controller="Admin" asp-action="DeleteUser" asp-route-userId="@user.UserId" onsubmit="return confirm('Are you sure you want to delete this user?');" style="display:inline;">
+                                                <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- end table-responsive -->
+                </div>
+            </div>
+
+
+        </div>
+        <!-- End Container Fluid -->
+                  <div class="row g-0 align-items-center justify-content-between text-center text-sm-start p-3 border-top">
+              <div class="col-sm">
+                  <div class="text-muted">
+                      Showing @Model.FirstItemOnPage to @Model.LastItemOnPage of @Model.TotalItemCount Results
+                  </div>
+              </div>
+              <div class="col-sm-auto mt-3 mt-sm-0">
+                  @Html.PagedListPager(
+    Model,
+    page => Url.Action("UserList", new { page }),
+    new PagedListRenderOptions
+    {
+        LiElementClasses = new[] { "page-item" },
+        PageClasses = new[] { "page-link" },
+        ActiveLiElementClass = "active",
+        PreviousElementClass = "page-item",
+        NextElementClass = "page-item"
+    }
+)
+
+              </div>
+          </div>
+      </div> <!-- end card -->
+
+  </div>
+        <!-- ========== Footer Start ========== -->
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <script>document.write(new Date().getFullYear())</script> &copy; Larkon. Crafted by <iconify-icon icon="iconamoon:heart-duotone" class="fs-18 align-middle text-danger"></iconify-icon> <a href="#" class="fw-bold footer-text" target="_blank">Techzaa</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- ========== Footer End ========== -->
+
+    </div>
+    <!-- ==================================================== -->
+    <!-- End Page Content -->
+    <!-- ==================================================== -->
+
+</div>
+
